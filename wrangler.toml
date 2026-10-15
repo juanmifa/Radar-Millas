@@ -2,4 +2,6 @@ name = "radar-millas"
 main = "dist/worker.js"
 compatibility_date = "2026-10-01"
 workers_dev = true
+# Versiones previas por rama: sin secretos propios; la web previa usa la API de producción.
+previews = { }
 # Secretos (no van en el repo): SEATS_KEY y APP_TOKEN, ya configurados en Cloudflare.

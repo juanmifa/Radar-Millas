@@ -21,7 +21,7 @@ head, rest = src.split('<script>', 1)
 main, tail = rest.split('</script>', 1)
 R = [
  ("const AIRPORTS = __AIRPORTS__;", "const AIRPORTS = window.__AIRPORTS;"),
- ("function wk(){return {url:(store.get('wkUrl','')||'').replace(/\\/+$/,''),tok:store.get('wkTok','')}}", "function wk(){return {url:'',tok:store.get('wkTok','')}}"),
+ ("function wk(){return {url:(store.get('wkUrl','')||'').replace(/\\/+$/,''),tok:store.get('wkTok','')}}", "function wk(){return {url:(/^radar-millas\\./.test(location.hostname)||location.protocol==='file:')?'':'https://radar-millas.juanmyf.workers.dev',tok:store.get('wkTok','')}}"),
  ("const {url,tok}=wk(); if(!url||!tok) throw", "const {url,tok}=wk(); if(!tok) throw"),
  ("document.getElementById('f').addEventListener('submit',()=>{const {url,tok}=wk();if(url&&tok)runAll();else renderSummary()});", "document.getElementById('f').addEventListener('submit',()=>{if(wk().tok)runAll();else renderSummary()});"),
  ("const r=await fetch(url+'/'); const j=await r.json(); if(!j.ok)", "const r=await fetch('/health'); const j=await r.json(); if(!j.ok)"),
