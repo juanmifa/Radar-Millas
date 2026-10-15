@@ -121,6 +121,67 @@ a.st.go{text-decoration:none;color:var(--vfr);font-weight:650;background:var(--s
 a.st.go:hover{border-color:var(--vfr)}
 .stepnote{font-size:.84rem}
 #tip{position:fixed;z-index:60;pointer-events:none;max-width:260px;background:var(--ink);color:var(--surface);font:500 .8rem/1.4 var(--f);padding:8px 10px;border-radius:6px;white-space:pre-line;box-shadow:0 8px 24px rgb(0 0 0 / .25)}
+/* fase 2: alertas y mejor fecha */
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.al-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px}
+.al-head .note{margin-top:4px}
+.al-form{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin-top:12px;align-items:end}
+.al-wide{grid-column:1/-1}
+.al-checks{border:0;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px 22px}
+.al-checks legend{margin-bottom:6px}
+.al-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.alc{border:1px solid var(--rule);border-left:6px solid var(--route);border-radius:4px;padding:12px 14px;display:grid;gap:6px;background:var(--surface)}
+.alc+.alc{margin-top:8px}
+.alc.off{border-left-color:var(--rule);opacity:.75}
+.alc .t{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 12px;align-items:baseline}
+.alc .t b{font:750 1.15rem var(--f);font-stretch:80%}
+.alc .r{font:700 .95rem var(--f)}
+.alc .chips{display:flex;flex-wrap:wrap;gap:4px}
+.alc .st{font-size:.86rem;color:var(--muted)}
+.alc .best{font-size:.9rem}
+.alc .acts{display:flex;flex-wrap:wrap;gap:6px}
+.alc .acts button{padding:5px 10px;min-height:32px;font-size:.84rem}
+.al-empty{display:grid;gap:8px;justify-items:start}
+.al-ch{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin:12px 0}
+.al-chcol{display:grid;gap:8px;align-content:start}
+.al-steps{margin:0;padding-left:18px;display:grid;gap:2px}
+.al-log{display:grid;gap:6px}
+.al-log .e{border-bottom:1px solid var(--rule);padding:6px 0;font-size:.86rem;display:grid;gap:2px}
+.al-log .e .h{display:flex;flex-wrap:wrap;gap:4px 10px;color:var(--muted);font-size:.8rem}
+.al-log .e pre{margin:0;font:inherit;white-space:pre-wrap;color:var(--ink)}
+.watch{margin-left:auto}
+.best-head{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;align-items:center}
+.best-ctl{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.best-nights{display:inline-flex;gap:6px;align-items:center}
+.best-lead{font-size:1.02rem;line-height:1.45;padding:12px 14px;border-radius:6px;background:var(--route-soft);border-left:4px solid var(--route)}
+.best-lead b{font-weight:750}
+.best-grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:18px;align-items:start}
+@media (max-width:860px){.best-grid{grid-template-columns:1fr}}
+.rank{display:grid;gap:4px}
+.rk{display:grid;grid-template-columns:28px minmax(84px,auto) minmax(0,1fr) auto;gap:8px;align-items:center;padding:7px 10px;border:1px solid var(--rule);border-radius:4px;background:var(--surface);cursor:pointer;text-align:left;font:inherit;color:var(--ink);min-height:0}
+.rk:hover{border-color:var(--ink);filter:none}
+.rk .n{font:800 1rem var(--f);font-stretch:75%;color:var(--muted)}
+.rk:first-child{border-color:var(--route);box-shadow:inset 3px 0 0 var(--route)}
+.rk:first-child .n{color:var(--route)}
+.rk .dt{font-weight:700}
+.rk .dt small{display:block;font-weight:500;color:var(--muted);font-size:.76rem}
+.rk .pg{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.rk .tt{font:800 1.05rem var(--f);font-stretch:78%;text-align:right}
+.rk .tt small{display:block;font:500 .74rem var(--f);font-stretch:100%;color:var(--muted)}
+.rk.mine{background:var(--ink-soft)}
+.bars{display:grid;gap:6px}
+.bar{display:grid;grid-template-columns:76px minmax(0,1fr) 72px;gap:8px;align-items:center;font-size:.84rem}
+.bar i{display:block;height:14px;border-radius:2px;background:var(--land)}
+.bar.top i{background:var(--good)}
+.bar .v{text-align:right;font-weight:650}
+.combo{display:grid;grid-template-columns:minmax(150px,auto) minmax(0,1fr) auto;gap:10px;align-items:center;padding:8px 10px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)}
+.combo+.combo{margin-top:4px}
+.combo:first-child{border-color:var(--route)}
+.combo .legs{font-size:.84rem;color:var(--muted);display:grid;gap:2px}
+.combo .legs b{color:var(--ink);font-weight:600}
+.combo .tt{font:800 1.1rem var(--f);font-stretch:78%;text-align:right}
+@media (max-width:640px){.combo{grid-template-columns:1fr auto}.combo .legs{grid-column:1/-1;grid-row:2}}
+.subh{font:700 1.05rem var(--f);margin:6px 0 2px}
 /* respuesta: fichas de progreso de vuelo */
 #answer{display:grid;gap:8px}
 #answer:empty{display:none}
@@ -293,6 +354,7 @@ details.set summary h2{font-size:1.2rem}
     <span>Radar de Millas</span></a>
   <nav class="tabs" role="tablist" aria-label="Secciones">
     <button type="button" role="tab" id="tb-buscar" aria-controls="tab-buscar" aria-selected="true">Buscar</button>
+    <button type="button" role="tab" id="tb-alertas" aria-controls="tab-alertas" aria-selected="false">Alertas</button>
     <button type="button" role="tab" id="tb-socios" aria-controls="tab-socios" aria-selected="false">Socios y transferencias</button>
     <button type="button" role="tab" id="tb-ganar" aria-controls="tab-ganar" aria-selected="false">Ganar puntos</button>
   </nav>
@@ -329,6 +391,7 @@ details.set summary h2{font-size:1.2rem}
 
   <nav class="views" role="tablist" aria-label="Detalle">
     <button type="button" role="tab" data-view="opts" aria-selected="true">Opciones por día</button>
+    <button type="button" role="tab" data-view="best" aria-selected="false">Mejor fecha</button>
     <button type="button" role="tab" data-view="cal" aria-selected="false">Calendario</button>
     <button type="button" role="tab" data-view="alt" aria-selected="false">Otros aeropuertos</button>
     <button type="button" role="tab" data-view="cash" aria-selected="false">Efectivo</button>
@@ -344,6 +407,18 @@ details.set summary h2{font-size:1.2rem}
       </div>
     </div>
         <div id="liveOut" style="margin-top:12px"></div>
+  </section></div>
+  <div class="view" id="v-best" hidden><section class="view-body" aria-labelledby="t-best">
+    <div class="best-head">
+      <h2 id="t-best">Mejor fecha y programa</h2>
+      <div class="best-ctl">
+        <label class="label" for="bestRange">Buscar en</label>
+        <select id="bestRange" style="width:auto"><option value="7">±7 días de tu fecha</option><option value="30" selected>±30 días de tu fecha</option><option value="90">±3 meses</option><option value="0">Los próximos 12 meses</option></select>
+        <span id="bestNightsWrap" class="best-nights"><label class="label" for="bestNmin">Noches</label><input id="bestNmin" type="number" min="1" max="60" style="width:64px"> <span class="note">a</span> <input id="bestNmax" type="number" min="1" max="90" style="width:64px" aria-label="Noches máximo"></span>
+        <button type="button" class="ghost" id="bestGo">Analizar</button>
+      </div>
+    </div>
+    <div id="bestOut"><p class="note">Compara todas las fechas y programas con los datos de Seats.aero y te dice cuándo y con qué programa sale más barato, incluidas las mejores combinaciones de ida y vuelta.</p></div>
   </section></div>
   <div class="view" id="v-cal" hidden><section class="view-body" aria-labelledby="t-cal" id="calBox" style="display:grid;gap:12px">
     <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;align-items:center">
@@ -403,6 +478,60 @@ details.set summary h2{font-size:1.2rem}
     <p class="note" style="margin:10px 0">Precios de tabla, no disponibilidad real. Tramo = un sentido. Rango = temporada baja → alta.</p>
     <div class="grid" id="cards"></div>
   </div></div>
+  </div>
+
+  <div id="tab-alertas" class="tabpane" role="tabpanel" aria-labelledby="tb-alertas" hidden>
+    <section class="panel al-head">
+      <div>
+        <h2>Alertas de tramo</h2>
+        <p class="note">Reviso tus tramos 6 veces al día y te aviso por WhatsApp o email cuando aparecen plazas nuevas o baja el precio. Cada alerta gasta unas 6 consultas diarias de tus 1.000.</p>
+      </div>
+      <button type="button" id="alNew">Nueva alerta</button>
+    </section>
+    <section class="panel" id="alFormBox" hidden>
+      <h2 id="alFormTitle">Nueva alerta</h2>
+      <form id="alForm" class="al-form">
+        <div class="field al-wide"><label class="label" for="alName">Nombre</label><input id="alName" maxlength="60" placeholder="p. ej. Japón en primavera"></div>
+        <div class="field"><label class="label" for="alO">Origen (códigos)</label><input id="alO" class="code" placeholder="ZRH, GVA" spellcheck="false" required></div>
+        <div class="field"><label class="label" for="alD">Destino (códigos)</label><input id="alD" class="code" placeholder="HND, NRT" spellcheck="false" required></div>
+        <div class="field"><label class="label" for="alStart">Desde</label><input id="alStart" type="date" required></div>
+        <div class="field"><label class="label" for="alEnd">Hasta</label><input id="alEnd" type="date" required></div>
+        <div class="field"><label class="label" for="alCab">Cabina</label><select id="alCab"><option value="Y">Turista</option><option value="W">Turista Premium</option><option value="J">Business</option><option value="F">Primera</option></select></div>
+        <div class="field"><label class="label" for="alProgs">Programas</label><select id="alProgs"><option value="all">Todos</option><option value="mine">Mis programas</option><option value="filter">Los de mi filtro actual</option></select></div>
+        <div class="field"><label class="label" for="alMax">Máximo de millas por persona</label><input id="alMax" type="number" min="0" step="500" inputmode="numeric" placeholder="Sin límite"></div>
+        <div class="field"><label class="label" for="alTax">Máximo de tasas (CHF)</label><input id="alTax" type="number" min="0" step="10" inputmode="numeric" placeholder="Sin límite"></div>
+        <div class="field"><label class="label" for="alSeats">Asientos mínimos</label><input id="alSeats" type="number" min="1" max="9" value="1"></div>
+        <fieldset class="al-checks al-wide"><legend class="label">Avisar</legend>
+          <label class="check"><input type="checkbox" id="alWa" checked> Por WhatsApp</label>
+          <label class="check"><input type="checkbox" id="alEmail" checked> Por email</label>
+          <label class="check"><input type="checkbox" id="alDirect"> Solo vuelos directos</label>
+          <label class="check"><input type="checkbox" id="alRelease" checked> El día que se abre el canje (Iberia, BA, Qatar, Miles &amp; More, Flying Blue)</label>
+          <label class="check" id="alRetWrap"><input type="checkbox" id="alRet"> Crear también la alerta de vuelta</label>
+        </fieldset>
+        <div class="al-actions al-wide"><button type="submit" id="alSave">Guardar alerta</button><button type="button" class="ghost" id="alCancel">Cancelar</button><span class="note" id="alMsg"></span></div>
+      </form>
+    </section>
+    <section class="panel" aria-labelledby="t-allist"><h2 id="t-allist" class="sr">Tus alertas</h2><div id="alList"><p class="note">Cargando…</p></div></section>
+    <details class="panel" id="alChBox">
+      <summary><h2>Canales de aviso</h2><span class="label" id="alChSum"></span></summary>
+      <div class="al-ch">
+        <div class="al-chcol">
+          <h3>WhatsApp</h3>
+          <ol class="note al-steps"><li>Guarda el número <b>+34 644 43 38 04</b> (CallMeBot) en tus contactos.</li><li>Envíale por WhatsApp: <i>I allow callmebot to send me messages</i></li><li>Pega aquí la clave que te responde.</li></ol>
+          <div class="field"><label class="label" for="chPhone">Tu número, con prefijo</label><input id="chPhone" inputmode="tel" placeholder="+41 79 123 45 67"></div>
+          <div class="field"><label class="label" for="chWaKey">Clave de CallMeBot</label><input id="chWaKey" type="password" autocomplete="off"></div>
+        </div>
+        <div class="al-chcol">
+          <h3>Email</h3>
+          <ol class="note al-steps"><li>Crea una cuenta gratis en <a href="https://resend.com" target="_blank" rel="noopener">resend.com</a> con el email donde quieres los avisos.</li><li>En «API Keys», crea una clave.</li><li>Pégala aquí. Los avisos llegan desde onboarding@resend.dev: mira en spam la primera vez.</li></ol>
+          <div class="field"><label class="label" for="chEmail">Tu email (el de la cuenta de Resend)</label><input id="chEmail" type="email" placeholder="tu@correo.com"></div>
+          <div class="field"><label class="label" for="chResend">Clave de Resend</label><input id="chResend" type="password" autocomplete="off"></div>
+        </div>
+      </div>
+      <div class="al-actions"><button type="button" id="chSave">Guardar canales</button><button type="button" class="ghost" id="chTest">Enviar mensaje de prueba</button><span class="note" id="chMsg"></span></div>
+      <p class="note">Las claves se guardan en tu servidor de Cloudflare y la web nunca las vuelve a mostrar. CallMeBot es gratuito solo para uso personal; Resend permite 100 emails al día gratis.</p>
+    </details>
+    <section class="panel" aria-labelledby="t-allog"><h2 id="t-allog">Últimos avisos</h2><div id="alLog"></div></section>
   </div>
 
   <div id="tab-socios" class="tabpane" role="tabpanel" aria-labelledby="tb-socios" hidden>
@@ -1042,7 +1171,7 @@ function renderProgs(){const v=progSel();const n=progCounts();
   document.getElementById('progNote').textContent=`${sel} de ${keys.length} programas activos. Se aplica a la búsqueda por días, al calendario y al comparador de aeropuertos. El número es cuántas plazas hay en lo que has cargado. LATAM Pass y Air Europa SUMA no están en Seats.aero.`;
   ['all','mine','avios','none'].forEach(p=>{const b=document.querySelector(`[data-pp="${p}"]`);const want=p==='all'?null:p==='mine'?MINE:p==='avios'?AVIOS:[];
     const same=want===null?v===null:(v&&v.length===want.length&&want.every(x=>v.includes(x)));b.setAttribute('aria-pressed',String(!!same))});}
-function progChanged(){renderProgs();if(LIVE.legs)paintLive();if(CAL.legs[CAL.leg])calPaint();if(EU.legs)euPaint();renderSummary();drawMap()}
+function progChanged(){if(typeof BEST!=='undefined'&&BEST.ready)setTimeout(bestPaint,0);renderProgs();if(LIVE.legs)paintLive();if(CAL.legs[CAL.leg])calPaint();if(EU.legs)euPaint();renderSummary();drawMap()}
 /* ===== Ranking: zona + millas + tasas ===== */
 const FXFB={CHF:1,USD:.84,EUR:.93,GBP:1.07,CAD:.6,AUD:.55,JPY:.0056,BRL:.15,SGD:.64,AED:.23,QAR:.23,SEK:.08,NOK:.08,DKK:.125,MXN:.046,TRY:.025,INR:.01};
 let FXR=null; fxToCHFLater();
@@ -1147,7 +1276,8 @@ async function runAll(){if(RUNNING)return;RUNNING=true;const ans=document.getEle
   if(currentView()==='cal')calLoad();}
 function currentView(){const b=document.querySelector('.views [aria-selected="true"]');return b?b.dataset.view:'opts'}
 function showView(v){document.querySelectorAll('.views [data-view]').forEach(b=>b.setAttribute('aria-selected',String(b.dataset.view===v)));
-  ['opts','cal','alt','cash','res'].forEach(k=>{document.getElementById('v-'+k).hidden=k!==v});
+  ['opts','best','cal','alt','cash','res'].forEach(k=>{document.getElementById('v-'+k).hidden=k!==v});
+  if(v==='best'&&!BEST.ready&&wk().tok&&SEL.org&&SEL.dst)bestRun();
   if(v==='cal'&&!CAL.legs[CAL.leg]&&wk().tok&&SEL.org&&SEL.dst)calLoad();
   if(v==='alt'&&!EU.legs&&wk().tok&&SEL.org&&SEL.dst)euLoad();}
 document.querySelector('.views').addEventListener('click',e=>{const b=e.target.closest('[data-view]');if(b)showView(b.dataset.view)});
@@ -1188,10 +1318,11 @@ function renderSummary(){const ans=document.getElementById('answer');if(!ans)ret
     if(bR)out.push(strip(bR,C,{why:'Vuelta',cls:'ret',go:'opts',leg:1}))}
   // marca la más barata
   const all=[...out];
-  ans.innerHTML=`<div class="ans-head"><h2>Mejores opciones</h2><span class="note">${CAB[C]} · ${state.pax} pax · ±${document.getElementById('win').value} días · milla a ${mileVal()} Rp · tasas por persona y trayecto</span></div>`+
+  ans.innerHTML=`<div class="ans-head"><h2>Mejores opciones</h2><button type="button" class="ghost small watch" data-watch>Vigilar este tramo</button><span class="note">${CAB[C]} · ${state.pax} pax · ±${document.getElementById('win').value} días · milla a ${mileVal()} Rp · tasas por persona y trayecto</span></div>`+
     (all.length?all.join(''):`<div class="ans-empty"><span>Sin plazas en ${CAB[C].toLowerCase()} en estas fechas con tu filtro de programas. Prueba otra cabina, más días o el calendario.</span><button type="button" class="ghost" data-view-go="cal">Abrir calendario</button></div>`);
   const strips=[...ans.querySelectorAll('.strip')];if(strips.length){const out1=strips.filter(el=>!el.classList.contains('ret'));const ok=out1.filter(el=>!el.classList.contains('flag'));const pool=ok.length?ok:out1.length?out1:strips;let min=Infinity,w=null;pool.forEach(el=>{const v=Number(el.querySelector('.tot').textContent.replace(/\D/g,''));if(v<min){min=v;w=el}});w.classList.add('win');const rec=RECBYID[w.dataset.id];if(rec)w.insertAdjacentHTML('afterend',`<div class="win-steps"><span class="k">Cómo conseguir la opción marcada</span>${transferSteps(rec,C)}</div>`)}}
 document.getElementById('answer').addEventListener('click',e=>{
+  const wb=e.target.closest('[data-watch]');if(wb){showTab('alertas');if(!AL.loaded)alLoad();alFormOpen(null);return}
   const o=e.target.closest('[data-open]');if(o){openSettings(o.dataset.open);return}
   const vg=e.target.closest('[data-view-go]');if(vg){showView(vg.dataset.viewGo);return}
   const g=e.target.closest('[data-goto]');if(!g)return;
@@ -1244,8 +1375,8 @@ function drawMap(){const svg=document.getElementById('map');if(!svg)return;const
   svg.innerHTML=`${g}<path d="${dots}" stroke="var(--land)" stroke-width="3.2" stroke-linecap="round" opacity=".85"/>${routes}${marks}${labs}`;}
 let MAPT=null;window.addEventListener('resize',()=>{clearTimeout(MAPT);MAPT=setTimeout(drawMap,150)});
 /* ===== Pestañas ===== */
-function showTab(id){['buscar','socios','ganar'].forEach(t=>{document.getElementById('tab-'+t).hidden=(t!==id);document.getElementById('tb-'+t).setAttribute('aria-selected',String(t===id))});store.set('tab',id)}
-['buscar','socios','ganar'].forEach(t=>document.getElementById('tb-'+t).addEventListener('click',()=>showTab(t)));
+function showTab(id){['buscar','alertas','socios','ganar'].forEach(t=>{document.getElementById('tab-'+t).hidden=(t!==id);document.getElementById('tb-'+t).setAttribute('aria-selected',String(t===id))});store.set('tab',id)}
+['buscar','alertas','socios','ganar'].forEach(t=>document.getElementById('tb-'+t).addEventListener('click',()=>showTab(t)));
 
 /* ===== Datos de ganar puntos y socios ===== */
 const EARN = __EARN__;
@@ -1450,4 +1581,160 @@ document.getElementById('altGo').addEventListener('click',compareAirports);
 
 (function(){const {url,tok}=wk(); if(!url||!tok){document.getElementById('liveCfg').hidden=false;
   document.getElementById('liveOut').innerHTML='<p class="status s-none">Conecta tu Worker de Cloudflare para ver vuelos reales con asientos de premio, por día y por programa.</p>'}})();
+/* ===== Fase 2 · Alertas de tramo (servidor con tarea programada; avisos por WhatsApp y email) ===== */
+const AL={list:[],cfg:{},log:[],max:15,loaded:false,edit:null};
+async function apiSend(path,method,body){const {url,tok}=wk();if(!tok)throw new Error('Conecta primero la app: Ajustes → Conexión con Seats.aero.');
+  const r=await fetch(url+path,{method,headers:{'X-App-Token':tok,'Content-Type':'application/json'},body:body?JSON.stringify(body):undefined});
+  const t=await r.text();let j;try{j=JSON.parse(t)}catch(e){j={error:t.slice(0,200)}}
+  if(r.status===404&&/Ruta no permitida/.test(j.error||'')||r.status===405)throw new Error('Tu servidor todavía no tiene esta función: se activa al publicar esta versión.');
+  if(!r.ok)throw new Error(j.error||('Error '+r.status));return j}
+const agoTxt=iso=>{if(!iso)return 'nunca';const m=Math.round((Date.now()-Date.parse(iso))/60000);return m<1?'ahora mismo':m<60?`hace ${m} min`:m<1440?`hace ${Math.round(m/60)} h`:`hace ${Math.round(m/1440)} días`};
+function entryFor(cs){if(cs.length===1)return findEntry('metro',cs[0])||findEntry('ap',cs[0]);
+  const m=INDEX.find(e=>e.kind!=='ap'&&e.codes.length===cs.length&&cs.every(c=>e.codes.includes(c)));
+  return m||{kind:'metro',key:cs.join('/'),codes:cs,title:cs.join(' / ')+' · '+cs.length+' aeropuertos',sub:cs.join(', ')}}
+function bestTxt(b){const [date,route,src]=b.k.split('|');return `${dayName(date)} ${dayNum(date)} · ${route.replace('-',' → ')} · ${progBadge(src)}${srcName(src)} <b>${fmt(b.m)}</b>${b.t!=null?' + CHF '+fmt(b.t):''}${b.s?` · ${b.s} asientos`:''}`}
+async function alLoad(){const box=document.getElementById('alList');
+  try{const j=await apiSend('/alerts','GET');AL.list=j.alerts||[];AL.cfg=j.cfg||{};AL.log=j.log||[];AL.max=j.max||15;AL.loaded=true;alPaint();chPaint();logPaint()}
+  catch(e){box.innerHTML=`<p class="status s-bad">${esc(e.message)}</p>`}}
+function alPaint(){const box=document.getElementById('alList');
+  if(!AL.list.length){box.innerHTML=`<div class="al-empty"><p style="margin:0">Aún no vigilas ningún tramo.</p><p class="note">Busca una ruta y pulsa «Vigilar este tramo» en Mejores opciones, o crea una alerta con el botón de arriba.</p></div>`;return}
+  box.innerHTML=`<p class="note" style="margin:0 0 8px">${AL.list.length} de ${AL.max} alertas · se revisan 6 veces al día</p>`+AL.list.map(a=>`<article class="alc${a.active?'':' off'}" data-id="${a.id}">
+    <div class="t"><b>${esc(a.name||(a.o.join('/')+' → '+a.d.join('/')))}</b>${a.name?`<span class="r">${a.o.join('/')} → ${a.d.join('/')}</span>`:''}</div>
+    <div class="chips"><span class="tag">${CAB[a.cab]}</span><span class="tag">${dayNum(a.start)} – ${dayNum(a.end)}</span>${a.maxMiles?`<span class="tag">hasta ${fmt(a.maxMiles)} millas</span>`:''}${a.maxTax!=null?`<span class="tag">tasas hasta CHF ${fmt(a.maxTax)}</span>`:''}${a.direct?'<span class="tag">Solo directos</span>':''}${a.seats>1?`<span class="tag">${a.seats}+ asientos</span>`:''}${a.progs?`<span class="tag">${a.progs.length} programas</span>`:''}${a.wa?'<span class="tag ok">WhatsApp</span>':''}${a.email?'<span class="tag ok">Email</span>':''}${a.release?'<span class="tag">Aviso de apertura</span>':''}${a.active?'':'<span class="tag warn">Pausada</span>'}</div>
+    <div class="st">Revisada ${agoTxt(a.lastRun)}${a.lastCount!=null?` · ${a.lastCount} ${a.lastCount===1?'opción cumple':'opciones cumplen'} tus filtros`:''}${a.lastChange?` · último cambio ${agoTxt(a.lastChange)}`:''}</div>
+    ${a.best?`<div class="best">Mejor ahora: ${bestTxt(a.best)}</div>`:''}
+    ${a.lastError?`<div class="status s-bad">${esc(a.lastError)}</div>`:''}
+    <div class="acts"><button type="button" class="ghost" data-al="run">Revisar ahora</button><button type="button" class="ghost" data-al="open">Ver en el buscador</button><button type="button" class="ghost" data-al="edit">Editar</button><button type="button" class="ghost" data-al="toggle">${a.active?'Pausar':'Activar'}</button><button type="button" class="ghost" data-al="del">Borrar</button></div>
+    <div class="al-res" aria-live="polite"></div></article>`).join('')}
+function chPaint(){const c=AL.cfg;document.getElementById('chPhone').value=c.waPhone||'';document.getElementById('chEmail').value=c.email||'';
+  document.getElementById('chWaKey').placeholder=c.waKey?'Guardada · escribe para cambiarla':'';document.getElementById('chResend').placeholder=c.resendKey?'Guardada · escribe para cambiarla':'';
+  const wa=c.waPhone&&c.waKey,em=c.email&&c.resendKey;document.getElementById('alChSum').textContent=`WhatsApp ${wa?'listo':'sin configurar'} · Email ${em?'listo':'sin configurar'}`;
+  if(!wa&&!em)document.getElementById('alChBox').open=true}
+function logPaint(){const box=document.getElementById('alLog');
+  box.innerHTML=AL.log.length?`<div class="al-log">${AL.log.map(e=>`<div class="e"><div class="h"><span>${agoTxt(e.t)}</span><b>${esc(e.name)}</b><span>WhatsApp: ${esc(e.sent&&e.sent.wa||'—')} · Email: ${esc(e.sent&&e.sent.email||'—')}</span></div><pre>${esc(e.text)}</pre></div>`).join('')}</div>`:'<p class="note">Todavía no se ha enviado ningún aviso.</p>'}
+function alFormOpen(a){AL.edit=a||null;const box=document.getElementById('alFormBox');box.hidden=false;
+  document.getElementById('alFormTitle').textContent=a?'Editar alerta':'Nueva alerta';
+  const today=new Date().toISOString().slice(0,10);const clamp=x=>x<today?today:x;
+  const set=(id,v)=>{document.getElementById(id).value=v??''};
+  if(a){set('alName',a.name);set('alO',a.o.join(', '));set('alD',a.d.join(', '));set('alStart',a.start);set('alEnd',a.end);set('alCab',a.cab);
+    set('alProgs',!a.progs?'all':(a.progs.length===MINE.length&&MINE.every(x=>a.progs.includes(x)))?'mine':'filter');set('alMax',a.maxMiles);set('alTax',a.maxTax);set('alSeats',a.seats||1);
+    ['Wa','Email','Direct','Release'].forEach(k=>document.getElementById('al'+k).checked=!!a[k==='Wa'?'wa':k.toLowerCase()]);document.getElementById('alRetWrap').hidden=true}
+  else{const d1=state.d1||isoAdd(today,60);set('alName','');set('alO',SEL.org?SEL.org.codes.join(', '):'');set('alD',SEL.dst?SEL.dst.codes.join(', '):'');
+    set('alStart',clamp(isoAdd(d1,-3)));set('alEnd',isoAdd(d1,3));set('alCab',state.cab||'Y');set('alProgs',progSel()?'filter':'all');set('alMax','');set('alTax','');set('alSeats',state.pax||1);
+    document.getElementById('alWa').checked=true;document.getElementById('alEmail').checked=true;document.getElementById('alDirect').checked=false;document.getElementById('alRelease').checked=true;
+    document.getElementById('alRetWrap').hidden=!state.d2;document.getElementById('alRet').checked=!!state.d2}
+  document.getElementById('alMsg').textContent='';box.scrollIntoView({behavior:'smooth',block:'start'})}
+function alBody(){const g=id=>document.getElementById(id).value;const ps=g('alProgs');const a=AL.edit;
+  return {id:a?a.id:undefined,name:g('alName').trim(),o:g('alO'),d:g('alD'),start:g('alStart'),end:g('alEnd'),cab:g('alCab'),
+    progs:ps==='mine'?MINE.slice():ps==='filter'?((a&&a.progs&&!progSel())?a.progs:(progSel()||null)):null,
+    maxMiles:g('alMax'),maxTax:g('alTax'),seats:g('alSeats'),direct:document.getElementById('alDirect').checked,
+    wa:document.getElementById('alWa').checked,email:document.getElementById('alEmail').checked,release:document.getElementById('alRelease').checked,active:a?a.active:true}}
+async function alRun(id,card){const res=card&&card.querySelector('.al-res');if(res)res.innerHTML='<p class="note">Revisando en Seats.aero…</p>';
+  const j=await apiSend(`/alerts/${id}/run`,'POST');AL.list=AL.list.map(x=>x.id===id?j.alert:x);const r=j.result||{};
+  alPaint();const c2=document.querySelector(`.alc[data-id="${id}"] .al-res`);
+  const sent=r.sent?` Aviso: WhatsApp ${r.sent.wa||'no pedido'}, email ${r.sent.email||'no pedido'}.`:'';
+  const txt=r.error?`<p class="status s-bad">${esc(r.error)}</p>`:r.skipped?'<p class="status s-warn">Las fechas de esta alerta ya pasaron.</p>':
+    `<p class="status ${r.neu||r.drop||r.first?'s-good':'s-none'}">${r.first?`Primera revisión: ${r.count} opciones cumplen tus filtros. A partir de ahora te aviso de los cambios.`:`${r.neu} plazas nuevas, ${r.drop} bajadas de precio, ${r.gone} ya no aparecen.`}${sent}</p>`;
+  if(c2)c2.innerHTML=txt;if(r.sent)alLoad()}
+document.getElementById('alNew').addEventListener('click',()=>alFormOpen(null));
+document.getElementById('alCancel').addEventListener('click',()=>{document.getElementById('alFormBox').hidden=true});
+document.getElementById('alForm').addEventListener('submit',async e=>{e.preventDefault();const msg=document.getElementById('alMsg');const btn=document.getElementById('alSave');
+  btn.disabled=true;msg.textContent='Guardando…';
+  try{const body=alBody();const j=await apiSend('/alerts','POST',body);const ids=[j.alert.id];
+    if(!AL.edit&&document.getElementById('alRet').checked&&state.d2){const r=await apiSend('/alerts','POST',{...body,id:undefined,name:body.name?body.name+' (vuelta)':'',o:body.d,d:body.o,start:isoAdd(state.d2,-3),end:isoAdd(state.d2,3)});ids.push(r.alert.id)}
+    document.getElementById('alFormBox').hidden=true;await alLoad();
+    for(const id of ids){try{await alRun(id,document.querySelector(`.alc[data-id="${id}"]`))}catch(err){}}
+  }catch(err){msg.textContent=err.message}finally{btn.disabled=false}});
+document.getElementById('alList').addEventListener('click',async e=>{const b=e.target.closest('[data-al]');if(!b)return;const card=b.closest('.alc');const id=card.dataset.id;const a=AL.list.find(x=>x.id===id);if(!a)return;const act=b.dataset.al;
+  try{
+    if(act==='run'){b.disabled=true;await alRun(id,card);return}
+    if(act==='edit'){alFormOpen(a);return}
+    if(act==='open'){setSel('org',entryFor(a.o));setSel('dst',entryFor(a.d));document.getElementById('d1').value=a.best?a.best.k.slice(0,10):a.start;tripSel.value='ow';applyTrip();document.getElementById('cab').value=a.cab;showTab('buscar');render();if(wk().tok)runAll();window.scrollTo({top:0,behavior:'smooth'});return}
+    if(act==='toggle'){b.disabled=true;await apiSend('/alerts','POST',{...a,active:!a.active});await alLoad();return}
+    if(act==='del'){if(!b.dataset.sure){b.dataset.sure='1';b.textContent='Pulsa otra vez para borrar';setTimeout(()=>{if(b.isConnected){delete b.dataset.sure;b.textContent='Borrar'}},4000);return}
+      b.disabled=true;await apiSend('/alerts/'+id,'DELETE');await alLoad();return}
+  }catch(err){card.querySelector('.al-res').innerHTML=`<p class="status s-bad">${esc(err.message)}</p>`;b.disabled=false}});
+document.getElementById('chSave').addEventListener('click',async()=>{const m=document.getElementById('chMsg');m.textContent='Guardando…';
+  const body={waPhone:document.getElementById('chPhone').value,email:document.getElementById('chEmail').value};
+  const wk1=document.getElementById('chWaKey').value.trim(),rk=document.getElementById('chResend').value.trim();if(wk1)body.waKey=wk1;if(rk)body.resendKey=rk;
+  try{const j=await apiSend('/notify/config','POST',body);AL.cfg=j.cfg;document.getElementById('chWaKey').value='';document.getElementById('chResend').value='';chPaint();m.textContent='Guardado.'}catch(err){m.textContent=err.message}});
+document.getElementById('chTest').addEventListener('click',async()=>{const m=document.getElementById('chMsg');m.textContent='Enviando…';
+  try{const j=await apiSend('/notify/test','POST',{});const s=j.sent||{};m.textContent=`WhatsApp: ${s.wa||'—'} · Email: ${s.email||'—'}`}catch(err){m.textContent=err.message}});
+document.getElementById('tb-alertas').addEventListener('click',()=>{if(!AL.loaded)alLoad()});
+if(!document.getElementById('tab-alertas').hidden)alLoad();
+
+/* ===== Fase 2 · Mejor fecha y programa ===== */
+const BEST={ready:false};
+async function loadLegWindow(li){const o=li?SEL.dst.codes:SEL.org.codes,d=li?SEL.org.codes:SEL.dst.codes;const today=new Date().toISOString().slice(0,10),end=isoAdd(today,365);
+  const L=CAL.legs[li];if(L&&L.o.join()===o.join()&&L.d.join()===d.join()&&L.end>=isoAdd(today,300))return L;
+  const q=new URLSearchParams({origin_airport:o.join(','),destination_airport:d.join(','),start_date:today,end_date:end,take:'1000',order_by:'lowest_mileage'});
+  let all=[],j=await api('/search?'+q),pages=1;all=all.concat(j.data||[]);
+  while(j.hasMore&&j.cursor&&pages<8){q.set('cursor',j.cursor);q.set('skip',String(all.length));j=await api('/search?'+q);all=all.concat(j.data||[]);pages++}
+  return CAL.legs[li]={o,d,start:today,end,data:tagSet(all),pages,more:!!j.hasMore}}
+function bestNightsDefault(){const w=document.getElementById('bestNightsWrap');w.hidden=!state.d2;if(!state.d2)return;
+  const n=Math.max(1,Math.round((Date.parse(state.d2)-Date.parse(state.d1))/864e5));const a=document.getElementById('bestNmin'),b=document.getElementById('bestNmax');
+  if(!a.dataset.touched)a.value=Math.max(1,n-3);if(!b.dataset.touched)b.value=n+3}
+['bestNmin','bestNmax'].forEach(id=>document.getElementById(id).addEventListener('input',e=>{e.target.dataset.touched='1';if(BEST.ready)bestPaint()}));
+document.getElementById('bestRange').addEventListener('change',()=>{if(BEST.ready)bestPaint()});
+async function bestRun(){const out=document.getElementById('bestOut');
+  if(!SEL.org||!SEL.dst||!state.d1){out.innerHTML='<p class="status s-bad">Elige origen, destino y fecha arriba.</p>';return}
+  if(!wk().tok){out.innerHTML='<p class="status s-none">Conecta Seats.aero en Ajustes para analizar fechas con datos reales.</p>';return}
+  out.innerHTML='<p class="status s-none">Leyendo los próximos 12 meses en Seats.aero…</p>';bestNightsDefault();
+  try{await loadLegWindow(0);if(state.d2)await loadLegWindow(1);BEST.ready=true;bestPaint();renderProgs();if(currentView()==='cal')calPaint()}
+  catch(err){out.innerHTML=`<p class="status s-bad">${esc(err.message)}</p>`}}
+function perDay(L,C,lo,hi){const m={};if(!L)return m;L.data.forEach(a=>{if(a.Date<lo||a.Date>hi)return;if(!a[C+'Available']||!progOK(a.Source)||isAnom(a,C))return;
+  const s=qScore(a,C);if(!m[a.Date]||s<m[a.Date].s)m[a.Date]={a,s,tot:totalCHF(a,C)}});return m}
+const WD=['lun','mar','mié','jue','vie','sáb','dom'];
+const wdOf=iso=>(new Date(iso+'T12:00:00Z').getUTCDay()+6)%7;
+function bestPaint(){const out=document.getElementById('bestOut');const L0=CAL.legs[0];if(!L0){out.innerHTML='';return}
+  const C=state.cab;const today=new Date().toISOString().slice(0,10);const r=+document.getElementById('bestRange').value;
+  const lo=r?(isoAdd(state.d1,-r)<today?today:isoAdd(state.d1,-r)):today, hi=r?isoAdd(state.d1,r):L0.end;
+  const P0=perDay(L0,C,lo,hi);const days=Object.entries(P0).sort((x,y)=>x[1].s-y[1].s);
+  if(!days.length){out.innerHTML=`<p class="status s-none">Sin plazas en ${CAB[C].toLowerCase()} entre ${dayNum(lo)} y ${dayNum(hi)} con tu filtro de programas. Amplía el rango o cambia de cabina.</p>`;return}
+  const best=days[0],mine=P0[state.d1];const ba=best[1].a;
+  const lead=`La fecha más barata es el <b>${dayName(best[0])} ${dayNum(best[0])}</b> con ${progBadge(ba.Source)}<b>${srcName(ba.Source)}</b>: ${fmt(ba[C+'MileageCost'])} millas + ${taxCHF(ba,C)==null?'tasas sin dato':'CHF '+fmt(taxCHF(ba,C))} ≈ <b>CHF ${fmt(best[1].tot)}</b>.`+
+    (best[0]===state.d1?' Es justo tu fecha.':mine?` Tu fecha (${dayNum(state.d1)}) sale por CHF ${fmt(mine.tot)}: cambiando de día ahorras <b>CHF ${fmt(mine.tot-best[1].tot)}</b>.`:` Tu fecha (${dayNum(state.d1)}) no tiene plazas con estos filtros.`);
+  const row=(date,v,i,li)=>{const a=v.a,t=taxCHF(a,C);return `<button type="button" class="rk${date===(li?state.d2:state.d1)?' mine':''}" data-bd="${date}" data-bl="${li}"><span class="n">${i+1}</span><span class="dt">${dayName(date)} ${dayNum(date)}<small>${date===(li?state.d2:state.d1)?'tu fecha':a[C+'Direct']?'directo':'con escala'}</small></span><span class="pg">${progBadge(a.Source)}${srcName(a.Source)} · ${fmt(a[C+'MileageCost'])}${t==null?'':' + CHF '+fmt(t)}${qTier(a,C)?' · '+qualBadges(a,C,true):''}</span><span class="tt">CHF ${fmt(v.tot)}<small>total</small></span></button>`};
+  const ranks=days.slice(0,8).map(([d,v],i)=>row(d,v,i,0)).join('');
+  // por programa
+  const byP={};L0.data.forEach(a=>{if(a.Date<lo||a.Date>hi||!a[C+'Available']||!progOK(a.Source)||isAnom(a,C))return;const s=qScore(a,C);const p=byP[a.Source]=byP[a.Source]||{best:null,s:Infinity,days:new Set()};p.days.add(a.Date);if(s<p.s){p.s=s;p.best=a}});
+  const progRows=Object.entries(byP).sort((x,y)=>x[1].s-y[1].s).map(([src,p])=>{const a=p.best,t=taxCHF(a,C);return `<tr data-bd="${a.Date}" data-bl="0" style="cursor:pointer"><td>${progBadge(src)}${srcName(src)}</td><td>${dayName(a.Date)} ${dayNum(a.Date)}</td><td class="n">${fmt(a[C+'MileageCost'])}</td><td class="n">${t==null?'¿?':'CHF '+fmt(t)}</td><td class="n"><b>CHF ${fmt(totalCHF(a,C))}</b></td><td class="n">${p.days.size}</td></tr>`}).join('');
+  // día de la semana y mes
+  const wd=WD.map(()=>[]);days.forEach(([d,v])=>{if(!qTier(v.a,C))wd[wdOf(d)].push(v.tot)});
+  const med=arr=>{if(!arr.length)return null;const s=arr.slice().sort((x,y)=>x-y);return s[Math.floor(s.length/2)]};
+  const wdv=wd.map(med);const wmin=Math.min(...wdv.filter(x=>x!=null)),wmax=Math.max(...wdv.filter(x=>x!=null));
+  const bar=(lab,v,mn,mx)=>v==null?`<div class="bar"><span>${lab}</span><i style="width:2%;opacity:.3"></i><span class="v">—</span></div>`:`<div class="bar${v===mn?' top':''}"><span>${lab}</span><i style="width:${Math.max(8,Math.round(100*(0.35+0.65*(v-mn)/Math.max(1,mx-mn))))}%"></i><span class="v">CHF ${fmt(v)}</span></div>`;
+  const wdBars=wdv.map((v,i)=>bar(WD[i],v,wmin,wmax)).join('');
+  const mon={};days.forEach(([d,v])=>{const k=d.slice(0,7);if(!mon[k]||v.tot<mon[k])mon[k]=v.tot});const mk=Object.keys(mon).sort();
+  const mmin=Math.min(...Object.values(mon)),mmax=Math.max(...Object.values(mon));
+  const monBars=mk.length>=3?mk.map(k=>bar(new Date(k+'-15T12:00:00').toLocaleDateString('es-ES',{month:'short',year:'2-digit'}),mon[k],mmin,mmax)).join(''):'';
+  // combinaciones ida + vuelta
+  let combos='';if(state.d2&&CAL.legs[1]){const nmin=Math.max(1,+document.getElementById('bestNmin').value||1),nmax=Math.max(nmin,+document.getElementById('bestNmax').value||nmin);
+    const P1=perDay(CAL.legs[1],C,isoAdd(lo,nmin),isoAdd(hi,nmax));const list=[];
+    for(const [d,v] of days)for(let n=nmin;n<=nmax;n++){const rd=isoAdd(d,n);const w=P1[rd];if(w)list.push({d,rd,n,v,w,s:v.s+w.s,tot:v.tot+w.tot})}
+    list.sort((x,y)=>x.s-y.s);
+    const leg=(lab,x)=>{const a=x.a,t=taxCHF(a,C);return `<span>${lab}: <b>${dayName(a.Date)} ${dayNum(a.Date)}</b> · ${progBadge(a.Source)}${srcName(a.Source)} ${fmt(a[C+'MileageCost'])}${t==null?'':' + CHF '+fmt(t)}</span>`};
+    combos=`<h3 class="subh">Mejores combinaciones de ida y vuelta (${nmin}–${nmax} noches)</h3>`+(list.length?list.slice(0,5).map(c=>`<div class="combo"><b>${dayNum(c.d)} → ${dayNum(c.rd)}<span class="note" style="display:block;font-weight:500">${c.n} noches</span></b><div class="legs">${leg('Ida',c.v)}${leg('Vuelta',c.w)}</div><span class="tt">CHF ${fmt(c.tot)}</span></div>`).join(''):'<p class="status s-none">No hay ida y vuelta con esas noches en el rango. Amplía el rango o las noches.</p>')}
+  out.innerHTML=`<div style="display:grid;gap:16px"><p class="best-lead">${lead}</p>
+    <div class="best-grid"><div><h3 class="subh">Las fechas más baratas · ${dayNum(lo)} – ${dayNum(hi)}</h3><div class="rank">${ranks}</div></div>
+      <div><h3 class="subh">Por programa</h3><div class="scroll"><table class="eu"><thead><tr><th>Programa</th><th>Mejor fecha</th><th>Millas</th><th>Tasas</th><th>Total</th><th>Días</th></tr></thead><tbody>${progRows}</tbody></table></div><p class="note">«Días» = cuántos días del rango tienen plaza con ese programa.</p></div></div>
+    ${combos?`<div>${combos}</div>`:''}
+    <div class="best-grid"><div><h3 class="subh">Por día de la semana</h3><div class="bars">${wdBars}</div><p class="note">Coste total típico (mediana) de cada día de la semana.</p></div>${monBars?`<div><h3 class="subh">Por mes</h3><div class="bars">${monBars}</div><p class="note">Lo más barato que hay en cada mes.</p></div>`:''}</div>
+    <p class="note">Coste total = millas × ${mileVal()} Rp + tasas, por persona y trayecto. Lo visto hace más de 7 días va detrás y los precios anómalos no cuentan. Pulsa una fecha para verla en el calendario.</p></div>`}
+document.getElementById('bestGo').addEventListener('click',bestRun);
+document.getElementById('bestOut').addEventListener('click',e=>{const el=e.target.closest('[data-bd]');if(!el)return;const li=+el.dataset.bl;const d=el.dataset.bd;
+  CAL.leg=li;document.getElementById('calLeg').value=String(li);CAL.cab=state.cab;CAL.day=d;CAL.month=monthKey(d);showView('cal');calPaint();
+  document.querySelector('.views').scrollIntoView({behavior:'smooth',block:'start'})});
+document.getElementById('cab').addEventListener('change',()=>{if(BEST.ready)bestPaint()});
+
+/* ===== Enlaces directos: ?o=ZRH&d=TYO&d1=2027-03-14&d2=&c=Y&go=1 (los usan los avisos) ===== */
+(function(){const p=new URLSearchParams(location.search);const o=p.get('o'),d=p.get('d');if(!o||!d)return;
+  const ent=s=>{const cs=s.toUpperCase().split(/[,\s]+/).filter(x=>/^[A-Z]{3}$/.test(x));return cs.length?entryFor(cs):null};
+  const eo=ent(o),ed=ent(d);if(!eo||!ed)return;setSel('org',eo);setSel('dst',ed);
+  const d1=p.get('d1'),d2=p.get('d2'),c=p.get('c');if(d1&&/^\d{4}-\d{2}-\d{2}$/.test(d1))document.getElementById('d1').value=d1;
+  tripSel.value=d2?'rt':'ow';if(d2)document.getElementById('d2').value=d2;store.set('trip',tripSel.value);applyTrip();
+  if(c&&/^[YWJF]$/.test(c))document.getElementById('cab').value=c;
+  showTab('buscar');render();history.replaceState(null,'',location.pathname);
+  if(p.get('go')==='1'&&wk().tok)setTimeout(()=>runAll(),300)})();
+
 </script>
