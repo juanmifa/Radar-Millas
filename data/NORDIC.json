@@ -1,0 +1,286 @@
+{
+  "country": "NORDIC",
+  "country_name": "Países nórdicos (Suecia, Noruega, Dinamarca, Finlandia)",
+  "checked": "2026-10",
+  "programs": [
+    {
+      "id": "sas-eurobonus",
+      "name": "SAS EuroBonus",
+      "type": "airline",
+      "countries": ["SE", "NO", "DK", "FI"],
+      "how_to_earn": [
+        "Vuelos SAS y SkyTeam (SAS en SkyTeam desde 2024)",
+        "Tarjetas SAS Amex (SE, NO), SAS Mastercard SEB (SE, NO, DK), Lunar débito (SE, NO, DK), SAS Executive (empresa)",
+        "Trumf (NO): 1 kr de bono = 13.5 puntos con transferencia automática, 10 puntos manual",
+        "Nykredit (DK): 10-16 puntos por 100 DKK con tarjetas Nykredit Visa/Mastercard",
+        "E.ON Drive carga de coche eléctrico: 50 puntos/100 SEK (SE), 30/100 DKK (DK)",
+        "SAS Transfer (traslados terrestres): 60 puntos por 10 EUR",
+        "Portal de hoteles SAS (Hotels.com): 30 puntos + 15 Level Points por 100 kr",
+        "Alquiler de coches (Sixt, Avis, Enterprise, Hertz, Europcar), seguros Tryg/Trygg-Hansa, Verisure, Fortum, Tre",
+        "Amex Membership Rewards UK 1:1 (ver UK.json)",
+        "Scandic Friends -> EuroBonus 2:1 (ratio en fuente contradictorio)"
+      ],
+      "transfers": [],
+      "notes": "Moneda principal nórdica. Sweet spot: vouchers 2x1 de las SAS Amex y 'Fly Premium' de la Mastercard Premium (Business a precio de turista en puntos). Desde 2026: canje en TAP, Premium Economy de AF/KLM y Virgin/Delta online. Status match gratis desde Finnair Plus/airBaltic hasta 27 mar 2026 (cerrado). Rove Miles (EE. UU.) 1:1 desde 9 mar 2026, no relevante para residentes nórdicos.",
+      "sources": ["https://awardfares.com/blog/eurobonus-updates/", "https://awardfares.com/blog/sas-credit-cards-guide/", "https://awardfares.com/blog/eurobonus-guide-nb-no/"],
+      "confidence": "alta"
+    },
+    {
+      "id": "trumf",
+      "name": "Trumf (NorgesGruppen: Kiwi, Meny, Spar, Joker)",
+      "type": "retail",
+      "countries": ["NO"],
+      "how_to_earn": [
+        "1% de bono en supermercados NorgesGruppen",
+        "Trumf Kredittkort (gratis): 2% en cadenas NorgesGruppen, 4% en 'Trippel-Trumf' jueves",
+        "Trumf Kredittkort + Trumf Pay en jueves Trippel-Trumf: hasta 5%"
+      ],
+      "transfers": [
+        { "to": "SAS EuroBonus", "to_type": "airline", "ratio": "1 NOK de bono = 13.5 puntos EuroBonus (auto) / 10 puntos (manual)", "notes": "Hay que activar la transferencia automática para 13.5. Irreversible", "source": "https://www.bytt.no/artikler/forbruker/a-adgb/sannheten-om-bonuspoengene-sa-mye-er-lojalitetsprogrammene-egentlig-verdt-i-2026" }
+      ],
+      "notes": "Fuente bytt.no verificada oct 2026; kredittkortlisten.no (13 ago 2026) confirma 13.5 auto. kortio.no menciona 10 (probablemente la tasa manual).",
+      "sources": ["https://www.bytt.no/artikler/forbruker/a-adgb/sannheten-om-bonuspoengene-sa-mye-er-lojalitetsprogrammene-egentlig-verdt-i-2026", "https://www.kredittkortlisten.no/kredittkortskolen/alt-om-sas-eurobonus/kombinere-eurobonus-med-andre-programmer/", "https://kortio.no/kort/trumf-kredittkort/"],
+      "confidence": "alta"
+    },
+    {
+      "id": "scandic-friends",
+      "name": "Scandic Friends",
+      "type": "hotel",
+      "countries": ["SE", "NO", "DK", "FI"],
+      "how_to_earn": ["Estancias en hoteles Scandic"],
+      "transfers": [
+        { "to": "SAS EuroBonus", "to_type": "airline", "ratio": "2 Scandic Friends = 1 EuroBonus (ejemplo: 20.000 -> 10.000)", "notes": "La fuente también enuncia el ratio inverso de forma contradictoria", "source": "https://www.kredittkortlisten.no/kredittkortskolen/alt-om-sas-eurobonus/kombinere-eurobonus-med-andre-programmer/" }
+      ],
+      "notes": "Verificar en scandichotels.com antes de usar.",
+      "sources": ["https://www.kredittkortlisten.no/kredittkortskolen/alt-om-sas-eurobonus/kombinere-eurobonus-med-andre-programmer/"],
+      "confidence": "baja"
+    },
+    {
+      "id": "nykredit-eurobonus",
+      "name": "Nykredit SAS EuroBonus (tarjetas de crédito Nykredit)",
+      "type": "bank",
+      "countries": ["DK"],
+      "how_to_earn": [
+        "Por cada 100 DKK facturados: Private Banking Elite Ultima+ 16, Elite Ultima 14, Elite Aftale 12, Private Banking 12, BoligBank 365 10 puntos"
+      ],
+      "transfers": [
+        { "to": "SAS EuroBonus", "to_type": "airline", "ratio": "10-16 puntos por 100 DKK según paquete", "notes": "Solo clientes con paquete BoligBank 365 o Private Banking; en tramos completos de 100 DKK; sin tope", "source": "https://www.nykredit.dk/globalassets/dit-liv/pdf/priser-og-vilkar/vilkar/galdende-vilkar/ovrige-vilkar/vilkaar-sas-eurobonus.pdf" }
+      ],
+      "notes": "Condiciones vigentes desde 2 abr 2026.",
+      "sources": ["https://www.nykredit.dk/globalassets/dit-liv/pdf/priser-og-vilkar/vilkar/galdende-vilkar/ovrige-vilkar/vilkaar-sas-eurobonus.pdf"],
+      "confidence": "alta"
+    },
+    {
+      "id": "finnair-plus",
+      "name": "Finnair Plus (Avios)",
+      "type": "airline",
+      "countries": ["FI"],
+      "how_to_earn": [
+        "Vuelos Finnair/oneworld",
+        "Finnair Visa Credit / Credit Light (Aktia)",
+        "Avios desde BA Club, Iberia Plus, Qatar Privilege Club y Aer Lingus 1:1 (vía BA/avios.com)"
+      ],
+      "transfers": [
+        { "to": "BA Club / Iberia / Qatar / Aer Lingus (Avios)", "to_type": "airline", "ratio": "1:1 (Avios combinables)", "notes": "TPG confirma 1:1 hacia Finnair; la dirección inversa no se confirmó explícitamente", "source": "https://thepointsguy.com/loyalty-programs/finnair-plus-avios" }
+      ],
+      "notes": "Ruta desde UK: Amex MR UK -> BA Avios 1:1 -> Finnair 1:1. Nordea dejó de ser emisor (fin oct 2023). Con la tarjeta Credit: conversión Avios -> tier points 3:1 una vez por periodo.",
+      "sources": ["https://thepointsguy.com/loyalty-programs/finnair-plus-avios", "https://www.nordea.fi/en/personal/our-services/credit-payment-cards/finnair-plus-mastercard.html", "https://www.finnair.com/fi-fi/finnair-plus/finnair-visa-luottokortti"],
+      "confidence": "alta"
+    },
+    {
+      "id": "norwegian-reward",
+      "name": "Norwegian Reward (CashPoints y Spenn)",
+      "type": "airline",
+      "countries": ["NO", "SE", "DK", "FI"],
+      "how_to_earn": [
+        "Vuelos Norwegian/Widerøe: Spenn por defecto (LowFare: 1 Spenn por 10 kr sin tasas); se puede optar por seguir con CashPoints",
+        "Bank Norwegian card: CashPoints (o cashback) en todas las compras, tope 100.000 kr/año",
+        "Strawberry (hoteles y Strawberry Mastercard) y Reitan Retail (REMA 1000, Narvesen, 7-Eleven, Uno-X): Spenn"
+      ],
+      "transfers": [],
+      "notes": "No son millas transferibles: 1 CashPoint = 1 kr fijo; Spenn ≈ 0.10 kr variable. Sirven solo para pagar total/parcialmente vuelos Norwegian. Spenn lanzado 19 nov 2024 con Strawberry. No hay conversión a otros programas aéreos.",
+      "sources": ["https://kredittkort360.com/guide/spenn-vs-cashpoints/", "https://inderes.fi/releases/nas-spenn-loyalty-currency-launches-in-the-nordics", "https://www.norwegian.com/se/reward/tjana-cashpoints/bank-norwegian-kortet/", "https://www.bytt.no/artikler/forbruker/a-adgb/sannheten-om-bonuspoengene-sa-mye-er-lojalitetsprogrammene-egentlig-verdt-i-2026"],
+      "confidence": "alta"
+    },
+    {
+      "id": "coop-medmera",
+      "name": "Coop MedMera (SE) / Coop (DK/NO)",
+      "type": "retail",
+      "countries": ["SE", "DK", "NO"],
+      "how_to_earn": ["Compras en Coop"],
+      "transfers": [],
+      "notes": "No se encontró en fuentes 2025-2026 ninguna conversión vigente de Coop a EuroBonus (solo hilos antiguos de foros comparando Coop MedMera Mer vs tarjetas SAS). No usar sin verificar.",
+      "sources": ["https://www.flyertalk.com/forum/23381508-post1.html"],
+      "confidence": "baja"
+    },
+    {
+      "id": "amex-mr-nordic",
+      "name": "American Express Membership Rewards (Suecia/Noruega/Dinamarca/Finlandia)",
+      "type": "bank",
+      "countries": ["SE", "NO", "DK", "FI"],
+      "how_to_earn": [],
+      "transfers": [],
+      "notes": "No se pudo confirmar en 2026 la existencia de un programa MR con transferencias a aerolíneas en los nórdicos; en SE/NO Amex se canaliza vía tarjetas cobranded SAS (puntos directos a EuroBonus). Pendiente de verificar.",
+      "sources": [],
+      "confidence": "baja"
+    }
+  ],
+  "cards": [
+    {
+      "id": "sas-amex-classic",
+      "name": "SAS EuroBonus American Express Classic",
+      "country": ["SE", "NO"],
+      "issuer": "SAS / American Express (SE, NO)",
+      "annual_fee": "Gratis hasta 31 oct 2026; desde 1 nov 2026: 30 SEK/NOK al mes",
+      "earns": "SAS EuroBonus",
+      "earn_rate": "10 puntos por 100 SEK/NOK",
+      "welcome_bonus": "No confirmado",
+      "transfers": [],
+      "notes": "Voucher 2x1 europeo tras gastar 100.000 kr. No disponible en Dinamarca.",
+      "sources": ["https://awardfares.com/blog/sas-credit-cards-guide/", "https://awardfares.com/blog/eurobonus-updates/"],
+      "confidence": "alta"
+    },
+    {
+      "id": "sas-amex-premium",
+      "name": "SAS EuroBonus American Express Premium",
+      "country": ["SE", "NO"],
+      "issuer": "SAS / American Express (SE, NO)",
+      "annual_fee": "150 SEK/NOK al mes (1.800/año) desde 29 ene 2026",
+      "earns": "SAS EuroBonus",
+      "earn_rate": "15 puntos por 100 SEK/NOK",
+      "welcome_bonus": "No confirmado",
+      "transfers": [],
+      "notes": "Voucher 2x1 mundial (Economy/Premium Economy) tras 150.000 kr.",
+      "sources": ["https://awardfares.com/blog/sas-amex-changes-2026/", "https://awardfares.com/blog/sas-credit-cards-guide/"],
+      "confidence": "alta"
+    },
+    {
+      "id": "sas-amex-elite",
+      "name": "SAS EuroBonus American Express Elite",
+      "country": ["SE", "NO"],
+      "issuer": "SAS / American Express (SE, NO)",
+      "annual_fee": "575 SEK/NOK al mes (6.900/año) desde 29 ene 2026",
+      "earns": "SAS EuroBonus",
+      "earn_rate": "20 puntos + 6 Level Points por 100 SEK/NOK",
+      "welcome_bonus": "Oct 2026: 60.000 puntos (SE) / 80.000 (NO), solicitudes hasta 3 nov 2026",
+      "transfers": [],
+      "notes": "Dos vouchers 2x1 utilizables en Business. Si el saldo EuroBonus es negativo no se ganan Level Points.",
+      "sources": ["https://awardfares.com/blog/sas-amex-changes-2026/", "https://awardfares.com/blog/eurobonus-updates/", "https://awardfares.com/blog/sas-credit-cards-guide/"],
+      "confidence": "alta"
+    },
+    {
+      "id": "sas-mastercard-world",
+      "name": "SAS EuroBonus World Mastercard (SEB)",
+      "country": ["SE", "NO", "DK"],
+      "issuer": "SEB Kort",
+      "annual_fee": "≈455 kr/año",
+      "earns": "SAS EuroBonus",
+      "earn_rate": "10-20 puntos por 100 kr según categoría (desglose no confirmado)",
+      "welcome_bonus": "No confirmado (SE: doble puntos en billetes sas.se 20-31 ago 2026)",
+      "transfers": [],
+      "notes": "Sin voucher 2x1.",
+      "sources": ["https://awardfares.com/blog/sas-credit-cards-guide/", "https://awardfares.com/blog/eurobonus-updates/"],
+      "confidence": "media"
+    },
+    {
+      "id": "sas-mastercard-premium",
+      "name": "SAS EuroBonus World Premium Mastercard (SEB)",
+      "country": ["SE", "NO", "DK"],
+      "issuer": "SEB Kort (NO: SEB Kort Bank AB Oslofilialen)",
+      "annual_fee": "NO: 3.348 NOK/año; SE/DK: 2.335 kr/año (desde 1 sep 2026)",
+      "earns": "SAS EuroBonus",
+      "earn_rate": "NO: 15 puntos/100 NOK en Noruega, 20 en divisa extranjera, 25 en billetes SAS; Level Points = 25% de los puntos ganados (SE/DK: 15-25 por 100 kr, desglose no confirmado)",
+      "welcome_bonus": "No confirmado",
+      "transfers": [],
+      "notes": "Beneficio 'Fly Premium': Business al precio en puntos de turista. Sin tope anual de puntos.",
+      "sources": ["https://www.bestekredittkortet.com/kort/sas-eurobonus-world-premium/", "https://awardfares.com/blog/sas-credit-cards-guide/"],
+      "confidence": "alta"
+    },
+    {
+      "id": "sas-lunar-debit",
+      "name": "SAS EuroBonus Lunar (débito)",
+      "country": ["SE", "NO", "DK"],
+      "issuer": "Lunar",
+      "annual_fee": "49 kr/mes (588/año); incluido en Lunar Unlimited",
+      "earns": "SAS EuroBonus",
+      "earn_rate": "8 puntos por 100 kr",
+      "welcome_bonus": "Hasta 3.000 puntos al activar (nuevos clientes, oct 2026)",
+      "transfers": [],
+      "notes": "Débito, sin estudio de crédito.",
+      "sources": ["https://www.kredittkortlisten.no/kredittkort/sas-eurobonus-lunar", "https://awardfares.com/blog/sas-credit-cards-guide/"],
+      "confidence": "alta"
+    },
+    {
+      "id": "sas-executive-card",
+      "name": "SAS EuroBonus Executive (empresa)",
+      "country": ["SE", "NO", "DK"],
+      "issuer": "Bankaktiebolaget Nordiska",
+      "annual_fee": "7.188 SEK/NOK o 5.988 DKK por tarjeta y año",
+      "earns": "SAS EuroBonus",
+      "earn_rate": "25 puntos por 100 SEK/NOK/DKK de gasto empresarial + 20.000 Level Points/año",
+      "welcome_bonus": "20.000 puntos (NO/DK); bono de 25.000 Level Points caducó 20 sep 2026",
+      "transfers": [],
+      "notes": "Combinada con Amex Elite puede dar EuroBonus Gold sin volar.",
+      "sources": ["https://awardfares.com/blog/sas-credit-cards-guide/", "https://awardfares.com/blog/eurobonus-updates/"],
+      "confidence": "media"
+    },
+    {
+      "id": "trumf-kredittkort",
+      "name": "Trumf Kredittkort",
+      "country": ["NO"],
+      "issuer": "NorgesGruppen Finans AS",
+      "annual_fee": "0 NOK",
+      "earns": "Trumf (convertible a EuroBonus)",
+      "earn_rate": "2% en NorgesGruppen; 4% Trippel-Trumf jueves; 5% Talkmore",
+      "welcome_bonus": "No confirmado",
+      "transfers": [
+        { "to": "SAS EuroBonus", "ratio": "1 NOK = 13.5 puntos (auto) / 10 (manual)", "source": "https://www.bytt.no/artikler/forbruker/a-adgb/sannheten-om-bonuspoengene-sa-mye-er-lojalitetsprogrammene-egentlig-verdt-i-2026" }
+      ],
+      "notes": "2% Trumf con auto-transferencia ≈ 27 puntos EuroBonus por 100 NOK en supermercado.",
+      "sources": ["https://kortio.no/kort/trumf-kredittkort/"],
+      "confidence": "alta"
+    },
+    {
+      "id": "finnair-visa-credit",
+      "name": "Finnair Visa Credit",
+      "country": ["FI"],
+      "issuer": "Aktia Pankki Oyj",
+      "annual_fee": "6 EUR/mes (72/año)",
+      "earns": "Finnair Plus (Avios)",
+      "earn_rate": "Desde 1 jul 2025: 1 Avios/EUR (Basic), 1.2 (Silver), 1.4 (Gold), 1.6 (Platinum), 1.8 (Platinum Lumo)",
+      "welcome_bonus": "No indicado",
+      "transfers": [],
+      "notes": "500 tier points en meses con gasto ≥1.500 EUR. Ganancia limitada al límite de crédito por periodo. Requiere residencia finlandesa.",
+      "sources": ["https://www.finnair.com/fi-fi/finnair-plus/finnair-visa-luottokortti", "https://www.finnair.com/fi-en/frequently-asked-questions/finnair-plus/how-many-finnair-plus-award-points-can-i-earn-when-making-purchases-with-the-finnair-visa-credit-card----2616868"],
+      "confidence": "alta"
+    },
+    {
+      "id": "finnair-visa-credit-light",
+      "name": "Finnair Visa Credit Light",
+      "country": ["FI"],
+      "issuer": "Aktia Pankki Oyj",
+      "annual_fee": "0 EUR",
+      "earns": "Finnair Plus (Avios)",
+      "earn_rate": "1 Avios por 2 EUR (todos los niveles)",
+      "welcome_bonus": "No indicado",
+      "transfers": [],
+      "notes": "Sin tier points.",
+      "sources": ["https://www.finnair.com/fi-fi/finnair-plus/finnair-visa-luottokortti"],
+      "confidence": "alta"
+    },
+    {
+      "id": "bank-norwegian-card",
+      "name": "Bank Norwegian kredittkort",
+      "country": ["NO", "SE", "DK", "FI"],
+      "issuer": "Bank Norwegian",
+      "annual_fee": "0",
+      "earns": "Norwegian CashPoints (o cashback)",
+      "earn_rate": "Tasa por compra no publicada en la web; tope de ganancia 100.000 kr/año",
+      "welcome_bonus": "No confirmado",
+      "transfers": [],
+      "notes": "1 CashPoint = 1 kr en vuelos Norwegian; no transferible a otras aerolíneas. Interés efectivo 24.36% (SE, ene 2026).",
+      "sources": ["https://www.norwegian.com/se/reward/tjana-cashpoints/bank-norwegian-kortet/", "https://kredittkort360.com/guide/spenn-vs-cashpoints/"],
+      "confidence": "media"
+    }
+  ]
+}

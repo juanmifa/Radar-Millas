@@ -1,0 +1,719 @@
+{
+  "country": "CH",
+  "country_name": "Suiza",
+  "checked": "2026-10",
+  "programs": [
+    {
+      "id": "amex-mr-ch",
+      "name": "American Express Membership Rewards (Suiza, Swisscard)",
+      "type": "bank",
+      "how_to_earn": [
+        "Amex Gold / Platinum CH: 1 punto por CHF",
+        "American Express Card CH (antes 'Green'): 0,5 puntos por CHF",
+        "Bonos de bienvenida (Gold 40.000 hasta 29.10.2026; Platinum 75.000 hasta 02.11.2026)"
+      ],
+      "transfers": [
+        {
+          "to": "Miles & More",
+          "to_type": "airline",
+          "ratio": "2:1",
+          "notes": "Directo. Mín. 1.000 pts, máx. 999.998 por transferencia, abono en ≤3 días, solo a cuenta propia (datos de mínimo/plazo de reisetopia 2019, no reverificados)",
+          "source": "https://reisetopia.ch/guides/einloesungen-100k-amex-punkte/"
+        },
+        {
+          "to": "Air France-KLM Flying Blue",
+          "to_type": "airline",
+          "ratio": "2:1",
+          "notes": "Directo",
+          "source": "https://reisetopia.ch/guides/einloesungen-100k-amex-punkte/"
+        },
+        {
+          "to": "Delta SkyMiles",
+          "to_type": "airline",
+          "ratio": "2:1",
+          "notes": "Directo",
+          "source": "https://reisetopia.ch/guides/einloesungen-100k-amex-punkte/"
+        },
+        {
+          "to": "British Airways Club (Avios)",
+          "to_type": "airline",
+          "ratio": "3:2",
+          "notes": "Directo. Desde BA se pueden mover Avios gratis a Iberia Club, Qatar Privilege Club, Finnair Plus, Aer Lingus, Vueling, Loganair (indirecto, 3:2 efectivo)",
+          "source": "https://reisetopia.ch/guides/einloesungen-100k-amex-punkte/"
+        },
+        {
+          "to": "Marriott Bonvoy",
+          "to_type": "hotel",
+          "ratio": "3:2",
+          "notes": "Directo",
+          "source": "https://reisetopia.ch/guides/einloesungen-100k-amex-punkte/"
+        },
+        {
+          "to": "Hilton Honors",
+          "to_type": "hotel",
+          "ratio": "5:4",
+          "notes": "Directo",
+          "source": "https://reisetopia.ch/guides/einloesungen-100k-amex-punkte/"
+        },
+        {
+          "to": "Iberia Club / Qatar Privilege Club / Finnair Plus / Aer Lingus AerClub / Vueling Club / Loganair (vía Avios BA)",
+          "to_type": "airline",
+          "ratio": "3:2 (vía BA, combinación Avios 1:1)",
+          "notes": "Indirecto: primero a BA Club, luego combinar Avios. meilenoptimieren (CH) escribe '5 MR = 4 Avios' en un listado, contradictorio con su propio 3:2 en otras páginas; tomar 3:2",
+          "source": "https://meilenoptimieren.com/american-express-gold-card-schweiz/"
+        }
+      ],
+      "notes": "Confirmados los 6 socios directos y ratios indicados por reisetopia (oct 2026), coinciden con meilenoptimieren (sept 2026). Sin Payback ni SAS/Singapore/Cathay/Emirates en CH (sí en DE). Transferencias irreversibles. 1 pt ≈ 0,5 millas M&M / 0,67 Avios. Mínimos y plazos actuales no confirmados en fuente 2025-2026 (web oficial americanexpress.ch no accesible).",
+      "sources": [
+        "https://reisetopia.ch/guides/einloesungen-100k-amex-punkte/",
+        "https://meilenoptimieren.com/membership-rewards-punkte-in-meilen-umwandeln/",
+        "https://meilenoptimieren.com/american-express-gold-card-schweiz/",
+        "https://meilenoptimieren.com/american-express-platinum-card-schweiz/",
+        "https://reisetopia.ch/guides/membership-rewards-in-miles-more-tauschen"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "id": "coop-supercard",
+      "name": "Coop Supercard (superpuntos)",
+      "type": "retail",
+      "how_to_earn": [
+        "Compras en Coop y socios: 1 superpunto por CHF",
+        "Tarjeta de crédito Supercard fuera de Coop: 1 superpunto por CHF 3",
+        "Bonos digitales, pases de colección (p.ej. 100 pts por compra ≥ CHF 15)",
+        "Banco Cler: su tarjeta de crédito permite sumar superpuntos (moneyland)"
+      ],
+      "transfers": [
+        {
+          "to": "Miles & More",
+          "to_type": "airline",
+          "ratio": "2 superpuntos = 1 milla (paquetes fijos: 7.500 = 3.750; 10.000 = 5.000 ...)",
+          "notes": "Mín. 7.500 superpuntos; máx. 500.000 superpuntos/año; diferencia pagable con tarjeta. Promos 1-2 veces/año de hasta +33% (ej. 1-14.10.2026: 10.000 = 6.666 millas, máx. 90.000 pts/cuenta, ya caducada)",
+          "source": "https://reisetopia.ch/guides/coop-superpunkte"
+        }
+      ],
+      "notes": "La vía comercio→millas más sólida de Suiza. Valor ~1 Rp/superpunto (~2 Rp/milla). La Coop Trophy no se puede canjear por millas. coop@home es además socio directo de M&M. Promo de octubre 2026: https://www.preispirat.ch/miles-more-6666-meilen-fuer-10000-superpunkte-aktion/",
+      "sources": [
+        "https://reisetopia.ch/guides/coop-superpunkte",
+        "https://www.preispirat.ch/miles-more-6666-meilen-fuer-10000-superpunkte-aktion/",
+        "https://www.moneyland.ch/de/kreditkarten-flugmeilen"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "id": "migros-cumulus",
+      "name": "Migros Cumulus",
+      "type": "retail",
+      "how_to_earn": [
+        "Migros: 1 punto por CHF (tarjeta de crédito Cumulus: 2/CHF el primer año)",
+        "Fuera de Migros con tarjeta Cumulus: 1 punto por CHF 3"
+      ],
+      "transfers": [],
+      "notes": "No se encontró conversión a millas: 500 puntos = bono CHF 5 (≈1% cashback), canjeable solo en Migros y socios minoristas.",
+      "sources": [
+        "https://reisetopia.ch/?p=91428",
+        "https://www.moneyland.ch/de/kreditkarten-flugmeilen"
+      ],
+      "confidence": "media"
+    },
+    {
+      "id": "manor",
+      "name": "Manor (puntos Manor / MyOne)",
+      "type": "retail",
+      "how_to_earn": [
+        "Manor World Mastercard (Viseca, sin cuota): 2 pts/CHF en Manor, 1 pt/CHF 2 fuera",
+        "Sin tarjeta: 1 pt/CHF en Manor"
+      ],
+      "transfers": [],
+      "notes": "500 puntos = CHF 5. No se encontró conversión a millas. Página sin fecha visible.",
+      "sources": [
+        "https://www.moneyland.ch/de/viseca/kreditkarten/manor-mastercard"
+      ],
+      "confidence": "baja"
+    },
+    {
+      "id": "ubs-keyclub",
+      "name": "UBS KeyClub",
+      "type": "bank",
+      "how_to_earn": [
+        "Tarjetas de crédito UBS: 2 pts por CHF 1.000 (Classic), 4 (Gold), 6 (Platinum)",
+        "Uso de cuenta según paquete bancario, bonos de apertura/referidos"
+      ],
+      "transfers": [
+        {
+          "to": "Miles & More",
+          "to_type": "airline",
+          "ratio": "20 puntos KeyClub = 1.000 millas (≈1 pt : 50 millas)",
+          "notes": "Vía eStore KeyClub en paquetes fijos (1.000 a 20.000 millas); precios fijados por el eStore y pueden cambiar. 1 pt = CHF 1 en eStore → ~2 Rp/milla, es decir compra de millas, no ganancia real",
+          "source": "https://reisetopia.ch/guides/ubs-keyclub-punkte-zu-miles-more-transferieren"
+        }
+      ],
+      "notes": "Ganancia muy baja (0,2-0,6% en puntos). Puntos caducan el 31.12 del año siguiente.",
+      "sources": [
+        "https://reisetopia.ch/guides/ubs-keyclub-punkte-zu-miles-more-transferieren",
+        "https://www.moneyland.ch/de/bonusprogramm-schweizer-banken"
+      ],
+      "confidence": "media"
+    },
+    {
+      "id": "bonuscard-liberty",
+      "name": "BonusCard / LibertyCard (Libertypunkte)",
+      "type": "bank",
+      "how_to_earn": [
+        "LibertyCard Plus: 1 pt/CHF; 4 pts/CHF en movilidad/viajes"
+      ],
+      "transfers": [
+        {
+          "to": "Miles & More",
+          "to_type": "airline",
+          "ratio": "5,6 pts = 1 milla (artículo) o 6,5 pts = 1 milla (corrección de lector aceptada por el editor)",
+          "notes": "Ratio actual no confirmado",
+          "source": "https://reisetopia.ch/kreditkarten/libertycard-plus/"
+        }
+      ],
+      "notes": "Fuente de 2019 con corrección pendiente; moneyland 2026 confirma que los puntos BonusCard se pueden canjear por millas, sin ratio.",
+      "sources": [
+        "https://reisetopia.ch/kreditkarten/libertycard-plus/",
+        "https://www.moneyland.ch/de/kreditkarten-flugmeilen"
+      ],
+      "confidence": "baja"
+    },
+    {
+      "id": "revolut-revpoints-ch",
+      "name": "Revolut RevPoints (Suiza)",
+      "type": "fintech",
+      "how_to_earn": [
+        "Standard: 1 RevPoint por CHF 10",
+        "Premium (CHF 11,99/mes): 1 por CHF 4",
+        "Metal (CHF 20,99/mes): 1 por CHF 2",
+        "Ultra (CHF 65/mes): 1 por CHF 1"
+      ],
+      "transfers": [
+        {
+          "to": "Flying Blue, British Airways Club, Iberia Club, Qatar Privilege Club, Finnair, Aer Lingus, Vueling (Avios), Aegean, Avianca LifeMiles, Etihad Guest, Icelandair, SAS EuroBonus, TAP Miles&Go, Turkish Miles&Smiles, China Southern",
+          "to_type": "airline",
+          "ratio": "1:1",
+          "notes": "Mínimos y comisiones por transferencia no indicados",
+          "source": "https://reisetopia.ch/guides/revolut-revpoints/amp/"
+        },
+        {
+          "to": "Emirates Skywards, Singapore KrisFlyer",
+          "to_type": "airline",
+          "ratio": "2:1",
+          "notes": "",
+          "source": "https://reisetopia.ch/guides/revolut-revpoints/amp/"
+        },
+        {
+          "to": "Accor ALL",
+          "to_type": "hotel",
+          "ratio": "2:1",
+          "notes": "",
+          "source": "https://reisetopia.ch/guides/revolut-revpoints/amp/"
+        }
+      ],
+      "notes": "Miles & More NO es socio; vuelos SWISS accesibles vía Aegean, Turkish o TAP. Mejores ratios que Amex CH pero ganancia baja salvo Metal/Ultra.",
+      "sources": [
+        "https://reisetopia.ch/guides/revolut-revpoints/amp/"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "id": "yuh-swissqoin",
+      "name": "Yuh Swissqoins",
+      "type": "fintech",
+      "how_to_earn": [
+        "0,5 SWQ por pago con Yuh Mastercard ≥ CHF 1 (máx. 10/día)",
+        "5 SWQ por trade (máx. 50/día)",
+        "Bonos de apertura/referidos"
+      ],
+      "transfers": [],
+      "notes": "Token cripto; solo venta a CHF (~0,021 CHF/SWQ), regalo o mantener. Sin conversión a millas.",
+      "sources": [
+        "https://www.yuh.com/en/swissqoins",
+        "https://www.moneyland.ch/de/bonusprogramm-schweizer-banken"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "id": "neon",
+      "name": "Neon",
+      "type": "fintech",
+      "how_to_earn": [
+        "Neon Green: planta un árbol por cada CHF 500 gastados"
+      ],
+      "transfers": [],
+      "notes": "Sin programa de puntos convertible a millas según moneyland (mayo 2026).",
+      "sources": [
+        "https://www.moneyland.ch/de/bonusprogramm-schweizer-banken"
+      ],
+      "confidence": "media"
+    },
+    {
+      "id": "otros-bancos-cashback",
+      "name": "PostFinance / Raiffeisen / Cler-Surprize (cashback y puntos bancarios)",
+      "type": "bank",
+      "how_to_earn": [
+        "PostFinance: 0,3% (Classic) / 0,5% (Gold) cashback",
+        "Raiffeisen (desde jul 2026): 0,25% / 0,5% cashback",
+        "Cler y bancos cantonales/Valiant: Surprize, 1 pt/CHF canjeable por premios"
+      ],
+      "transfers": [],
+      "notes": "No se encontró conversión a millas en ninguno.",
+      "sources": [
+        "https://www.moneyland.ch/de/bonusprogramm-schweizer-banken"
+      ],
+      "confidence": "media"
+    },
+    {
+      "id": "miles-and-more",
+      "name": "Miles & More (SWISS / Lufthansa Group)",
+      "type": "airline",
+      "how_to_earn": [
+        "Vuelos SWISS/LH Group/Star Alliance",
+        "Tarjetas co-branded Swisscard (SWISS Duo) y Cornèrcard",
+        "Coop superpuntos 2:1, Amex MR 2:1, UBS KeyClub, BonusCard"
+      ],
+      "transfers": [],
+      "notes": "Moneda principal para quien vive en Zúrich. Con tarjetas co-branded las millas no caducan si hay ≥1 transacción elegible al mes (si no, 36 meses).",
+      "sources": [
+        "https://reisetopia.ch/guides/swiss-kreditkarte-vergleich",
+        "https://reisetopia.ch/kreditkarten/cornercard-miles-more-gold/"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "id": "flying-blue",
+      "name": "Flying Blue (Air France-KLM)",
+      "type": "airline",
+      "how_to_earn": [
+        "Flying Blue World Mastercard (Viseca)",
+        "Amex MR CH 2:1",
+        "RevPoints 1:1"
+      ],
+      "transfers": [],
+      "notes": "Alcanzable desde Amex MR y Revolut.",
+      "sources": [
+        "https://reisetopia.ch/flying-blue-world-mastercard",
+        "https://reisetopia.ch/guides/einloesungen-100k-amex-punkte/"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "id": "ba-club-avios",
+      "name": "British Airways Club (Avios)",
+      "type": "airline",
+      "how_to_earn": [
+        "Amex MR CH 3:2",
+        "RevPoints 1:1"
+      ],
+      "transfers": [
+        {
+          "to": "Iberia Club / Qatar Privilege Club / Finnair / Aer Lingus / Vueling",
+          "to_type": "airline",
+          "ratio": "1:1 (combinar Avios)",
+          "notes": "Transferencia interna inmediata según meilenoptimieren",
+          "source": "https://meilenoptimieren.com/membership-rewards-punkte-in-meilen-umwandeln/"
+        }
+      ],
+      "notes": "Mejor ratio de Amex CH (1 pt = 0,67 Avios). Abre Iberia/Qatar (programas que ya usa el usuario).",
+      "sources": [
+        "https://reisetopia.ch/guides/einloesungen-100k-amex-punkte/",
+        "https://meilenoptimieren.com/membership-rewards-punkte-in-meilen-umwandeln/"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "id": "marriott-bonvoy",
+      "name": "Marriott Bonvoy",
+      "type": "hotel",
+      "how_to_earn": [
+        "Amex MR CH 3:2",
+        "Platinum CH da estatus Gold"
+      ],
+      "transfers": [],
+      "notes": "",
+      "sources": [
+        "https://reisetopia.ch/guides/einloesungen-100k-amex-punkte/",
+        "https://meilenoptimieren.com/american-express-platinum-card-schweiz/"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "id": "hilton-honors",
+      "name": "Hilton Honors",
+      "type": "hotel",
+      "how_to_earn": [
+        "Amex MR CH 5:4",
+        "Platinum CH da estatus Gold"
+      ],
+      "transfers": [],
+      "notes": "",
+      "sources": [
+        "https://reisetopia.ch/guides/einloesungen-100k-amex-punkte/",
+        "https://meilenoptimieren.com/american-express-platinum-card-schweiz/"
+      ],
+      "confidence": "alta"
+    }
+  ],
+  "cards": [
+    {
+      "id": "amex-gold-ch",
+      "name": "American Express Gold Card (Rose Gold)",
+      "issuer": "Swisscard AECS GmbH / American Express",
+      "annual_fee": "CHF 350 (CHF 175 el 1.er año en promoción)",
+      "earns": "Membership Rewards",
+      "earn_rate": "1 punto por CHF (≈0,5 millas M&M / 0,67 Avios); comisión moneda extranjera 2,5%",
+      "welcome_bonus": "40.000 pts MR sin gasto mínimo, solicitudes 22.09–29.10.2026; excluye titulares Gold/Platinum Swisscard en últimos 18 meses; reembolso si se cancela <13 meses",
+      "transfers": [
+        {
+          "to": "Miles & More",
+          "ratio": "2:1",
+          "source": "https://reisetopia.ch/guides/einloesungen-100k-amex-punkte/"
+        },
+        {
+          "to": "Air France-KLM Flying Blue",
+          "ratio": "2:1",
+          "source": "https://reisetopia.ch/guides/einloesungen-100k-amex-punkte/"
+        },
+        {
+          "to": "Delta SkyMiles",
+          "ratio": "2:1",
+          "source": "https://reisetopia.ch/guides/einloesungen-100k-amex-punkte/"
+        },
+        {
+          "to": "British Airways Club (Avios)",
+          "ratio": "3:2",
+          "source": "https://reisetopia.ch/guides/einloesungen-100k-amex-punkte/"
+        },
+        {
+          "to": "Marriott Bonvoy",
+          "ratio": "3:2",
+          "source": "https://reisetopia.ch/guides/einloesungen-100k-amex-punkte/"
+        },
+        {
+          "to": "Hilton Honors",
+          "ratio": "5:4",
+          "source": "https://reisetopia.ch/guides/einloesungen-100k-amex-punkte/"
+        },
+        {
+          "to": "Iberia Club / Qatar Privilege Club / Finnair Plus / Aer Lingus AerClub / Vueling Club / Loganair (vía Avios BA)",
+          "ratio": "3:2 (vía BA, combinación Avios 1:1)",
+          "source": "https://meilenoptimieren.com/american-express-gold-card-schweiz/"
+        }
+      ],
+      "notes": "reisetopia (mar 2026) indica CHF 300; meilenoptimieren (sept 2026) CHF 350, se toma la más reciente. Créditos: CHF 100/año restaurantes, CHF 80 Flaschenpost, 2 visitas Priority Pass.",
+      "sources": [
+        "https://meilenoptimieren.com/american-express-gold-card-schweiz/",
+        "https://meilenoptimieren.com/meilen-sammeln-mit-kreditkarten-schweiz/",
+        "https://reisetopia.ch/kreditkarten/kreditkarten-meilen-sammeln/"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "id": "amex-platinum-ch",
+      "name": "American Express Platinum Card",
+      "issuer": "Swisscard AECS GmbH / American Express",
+      "annual_fee": "CHF 900 (CHF 450 el 1.er año en promoción)",
+      "earns": "Membership Rewards",
+      "earn_rate": "1 punto por CHF; comisión moneda extranjera 1,75%",
+      "welcome_bonus": "75.000 pts MR sin gasto mínimo, solicitudes 24.08–02.11.2026 (+ bono Vergani CHF 100 con código AXSOW26)",
+      "transfers": [
+        {
+          "to": "Miles & More",
+          "ratio": "2:1",
+          "source": "https://reisetopia.ch/guides/einloesungen-100k-amex-punkte/"
+        },
+        {
+          "to": "Air France-KLM Flying Blue",
+          "ratio": "2:1",
+          "source": "https://reisetopia.ch/guides/einloesungen-100k-amex-punkte/"
+        },
+        {
+          "to": "Delta SkyMiles",
+          "ratio": "2:1",
+          "source": "https://reisetopia.ch/guides/einloesungen-100k-amex-punkte/"
+        },
+        {
+          "to": "British Airways Club (Avios)",
+          "ratio": "3:2",
+          "source": "https://reisetopia.ch/guides/einloesungen-100k-amex-punkte/"
+        },
+        {
+          "to": "Marriott Bonvoy",
+          "ratio": "3:2",
+          "source": "https://reisetopia.ch/guides/einloesungen-100k-amex-punkte/"
+        },
+        {
+          "to": "Hilton Honors",
+          "ratio": "5:4",
+          "source": "https://reisetopia.ch/guides/einloesungen-100k-amex-punkte/"
+        },
+        {
+          "to": "Iberia Club / Qatar Privilege Club / Finnair Plus / Aer Lingus AerClub / Vueling Club / Loganair (vía Avios BA)",
+          "ratio": "3:2 (vía BA, combinación Avios 1:1)",
+          "source": "https://meilenoptimieren.com/american-express-gold-card-schweiz/"
+        }
+      ],
+      "notes": "Créditos SWISS CHF 100, restaurantes CHF 160, SIXT CHF 200; Priority Pass, Centurion, lounges LH Group; estatus Hilton/Marriott/Radisson/Meliá Gold.",
+      "sources": [
+        "https://meilenoptimieren.com/american-express-platinum-card-schweiz/",
+        "https://meilenoptimieren.com/meilen-sammeln-mit-kreditkarten-schweiz/"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "id": "amex-card-ch",
+      "name": "American Express Card (antes Green Card)",
+      "issuer": "Swisscard AECS GmbH / American Express",
+      "annual_fee": "CHF 140 (gratis el 1.er año)",
+      "earns": "Membership Rewards",
+      "earn_rate": "0,5 puntos por CHF (≈0,25 millas M&M); comisión moneda extranjera 2,5%",
+      "welcome_bonus": "Ninguno indicado (oct 2026)",
+      "transfers": [
+        {
+          "to": "Miles & More",
+          "ratio": "2:1",
+          "source": "https://reisetopia.ch/guides/einloesungen-100k-amex-punkte/"
+        },
+        {
+          "to": "Air France-KLM Flying Blue",
+          "ratio": "2:1",
+          "source": "https://reisetopia.ch/guides/einloesungen-100k-amex-punkte/"
+        },
+        {
+          "to": "Delta SkyMiles",
+          "ratio": "2:1",
+          "source": "https://reisetopia.ch/guides/einloesungen-100k-amex-punkte/"
+        },
+        {
+          "to": "British Airways Club (Avios)",
+          "ratio": "3:2",
+          "source": "https://reisetopia.ch/guides/einloesungen-100k-amex-punkte/"
+        },
+        {
+          "to": "Marriott Bonvoy",
+          "ratio": "3:2",
+          "source": "https://reisetopia.ch/guides/einloesungen-100k-amex-punkte/"
+        },
+        {
+          "to": "Hilton Honors",
+          "ratio": "5:4",
+          "source": "https://reisetopia.ch/guides/einloesungen-100k-amex-punkte/"
+        },
+        {
+          "to": "Iberia Club / Qatar Privilege Club / Finnair Plus / Aer Lingus AerClub / Vueling Club / Loganair (vía Avios BA)",
+          "ratio": "3:2 (vía BA, combinación Avios 1:1)",
+          "source": "https://meilenoptimieren.com/american-express-gold-card-schweiz/"
+        }
+      ],
+      "notes": "reisetopia 2025 menciona upgrade 'Classic' (+CHF 50) a 1 pt/CHF y comisión 2%; no confirmado en 2026.",
+      "sources": [
+        "https://www.moneyland.ch/de/swisscard-aecs/kreditkarten/american-express-personal-card",
+        "https://meilenoptimieren.com/meilen-sammeln-mit-kreditkarten-schweiz/",
+        "https://reisetopia.ch/kreditkarten/american-express-green-card/"
+      ],
+      "confidence": "media"
+    },
+    {
+      "id": "swiss-mm-classic-duo",
+      "name": "SWISS Miles & More Classic Duo (Amex + Visa)",
+      "issuer": "Swisscard",
+      "annual_fee": "CHF 120 (CHF 60 el 1.er año)",
+      "earns": "Miles & More",
+      "earn_rate": "Amex: 1,5 millas por CHF 2; Visa: 0,6 millas por CHF 2",
+      "welcome_bonus": "30.000 millas hasta 30.11.2026 (solo combinación Amex+Visa, mantener 13 meses)",
+      "transfers": [],
+      "notes": "",
+      "sources": [
+        "https://reisetopia.ch/guides/swiss-kreditkarte-vergleich",
+        "https://meilenoptimieren.com/meilen-sammeln-mit-kreditkarten-schweiz/",
+        "https://reisetopia.ch/deals/miles-and-more-promo/"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "id": "swiss-mm-gold-duo",
+      "name": "SWISS Miles & More Gold Duo (Amex + Visa)",
+      "issuer": "Swisscard",
+      "annual_fee": "CHF 220 (CHF 110 el 1.er año)",
+      "earns": "Miles & More",
+      "earn_rate": "Amex: 2 millas por CHF 2 (1/CHF); Visa: 0,8 millas por CHF 2",
+      "welcome_bonus": "40.000 millas hasta 30.11.2026",
+      "transfers": [],
+      "notes": "SIXT Gold.",
+      "sources": [
+        "https://reisetopia.ch/guides/swiss-kreditkarte-vergleich",
+        "https://meilenoptimieren.com/meilen-sammeln-mit-kreditkarten-schweiz/"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "id": "swiss-mm-platinum-duo",
+      "name": "SWISS Miles & More Platinum Duo (Amex + Visa)",
+      "issuer": "Swisscard",
+      "annual_fee": "CHF 700 (CHF 350 el 1.er año)",
+      "earns": "Miles & More",
+      "earn_rate": "Amex: 2,4 millas por CHF 2 (1,2/CHF); Visa: 1 milla por CHF 2",
+      "welcome_bonus": "60.000 millas hasta 30.11.2026",
+      "transfers": [],
+      "notes": "Check-in mostrador First SWISS, SIXT Platinum. La Amex de este Duo es la mejor tasa directa a M&M en Suiza.",
+      "sources": [
+        "https://reisetopia.ch/guides/swiss-kreditkarte-vergleich",
+        "https://meilenoptimieren.com/meilen-sammeln-mit-kreditkarten-schweiz/"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "id": "cornercard-mm-classic",
+      "name": "Cornèrcard Miles & More Kombi Classic (Visa/Mastercard + Diners)",
+      "issuer": "Cornèrcard",
+      "annual_fee": "CHF 140",
+      "earns": "Miles & More",
+      "earn_rate": "Visa: 0,8 millas por CHF 2; Diners: 2 millas por CHF 2",
+      "welcome_bonus": "20.000 millas hasta 29.11.2026 (+ sorteo 25×25.000)",
+      "transfers": [],
+      "notes": "Diners tiene aceptación limitada.",
+      "sources": [
+        "https://meilenoptimieren.com/meilen-sammeln-mit-kreditkarten-schweiz/"
+      ],
+      "confidence": "media"
+    },
+    {
+      "id": "cornercard-mm-gold",
+      "name": "Cornèrcard Miles & More Kombi Gold (Visa/Mastercard + Diners)",
+      "issuer": "Cornèrcard",
+      "annual_fee": "CHF 220 (reisetopia menciona mitad el 1.er año)",
+      "earns": "Miles & More",
+      "earn_rate": "Visa/Mastercard: 1 milla por CHF 2; Diners: 1 milla por CHF 1; comisión moneda extranjera hasta 1,2%",
+      "welcome_bonus": "40.000 millas hasta 29.11.2026 + hasta 10.000 por umbrales de gasto (meilenoptimieren); reisetopia anuncia 'hasta 65.000' sin fechas",
+      "transfers": [],
+      "notes": "Bonos anuales 1.000/3.000/5.000 millas a CHF 10k/20k/30k. Seguros de cancelación y CDW de alquiler incluidos. Comisión FX baja (1,2%).",
+      "sources": [
+        "https://reisetopia.ch/kreditkarten/cornercard-miles-more-gold/",
+        "https://meilenoptimieren.com/meilen-sammeln-mit-kreditkarten-schweiz/"
+      ],
+      "confidence": "media"
+    },
+    {
+      "id": "cornercard-mm-platinum",
+      "name": "Cornèrcard Miles & More Kombi Platinum (Visa Platinum + Diners)",
+      "issuer": "Cornèrcard",
+      "annual_fee": "CHF 750 (670 Frequent Traveller, 530 Senator/HON)",
+      "earns": "Miles & More",
+      "earn_rate": "Visa: 1,2 millas por CHF 2; Diners: 2 millas por CHF 2",
+      "welcome_bonus": "60.000 millas hasta 29.11.2026 + hasta 12.500 por umbrales",
+      "transfers": [],
+      "notes": "",
+      "sources": [
+        "https://meilenoptimieren.com/meilen-sammeln-mit-kreditkarten-schweiz/"
+      ],
+      "confidence": "media"
+    },
+    {
+      "id": "flying-blue-world-mc-ch",
+      "name": "Flying Blue World Mastercard",
+      "issuer": "Viseca",
+      "annual_fee": "CHF 230 (adicional CHF 70)",
+      "earns": "Flying Blue",
+      "earn_rate": "1 milla por CHF 2; 1,5 millas por CHF 2 en Air France-KLM; comisión FX 1,75%",
+      "welcome_bonus": "No indicado",
+      "transfers": [],
+      "notes": "Bonos por gasto anual 4.000/7.000/9.000 millas a CHF 30k/60k/90k; 2.000 millas por renovación. Fuente de julio 2025.",
+      "sources": [
+        "https://reisetopia.ch/flying-blue-world-mastercard"
+      ],
+      "confidence": "media"
+    },
+    {
+      "id": "coop-supercard-credit",
+      "name": "Supercard Kreditkarte (Coop)",
+      "issuer": "Coop / TopCard Service AG (UBS)",
+      "annual_fee": "CHF 0",
+      "earns": "Coop superpuntos (→ Miles & More 2:1)",
+      "earn_rate": "1 superpunto/CHF en Coop y socios; 1 superpunto por CHF 3 fuera (≈0,17 millas/CHF)",
+      "welcome_bonus": "No indicado",
+      "transfers": [
+        {
+          "to": "Miles & More",
+          "ratio": "2 superpuntos = 1 milla (paquetes desde 7.500)",
+          "source": "https://reisetopia.ch/guides/coop-superpunkte"
+        }
+      ],
+      "notes": "Comisión moneda extranjera: reisetopia (mar 2026) dice 1,5%; liebefinanzen (may 2026) dice 0% desde 12.05.2026 (1,5% si se paga en CHF en el extranjero). Verificar.",
+      "sources": [
+        "https://reisetopia.ch/kreditkarten/supercard-kreditkarte-coop",
+        "https://liebefinanzen.ch/coop-supercard-kreditkarte-erfahrungen/"
+      ],
+      "confidence": "media"
+    },
+    {
+      "id": "libertycard-plus",
+      "name": "LibertyCard Plus",
+      "issuer": "BonusCard (Cornèr)",
+      "annual_fee": "CHF 150",
+      "earns": "Libertypunkte",
+      "earn_rate": "1 pt/CHF; 4 pts/CHF en movilidad/viajes",
+      "welcome_bonus": "No indicado",
+      "transfers": [
+        {
+          "to": "Miles & More",
+          "ratio": "5,6:1 o 6,5:1 (no confirmado)",
+          "source": "https://reisetopia.ch/kreditkarten/libertycard-plus/"
+        }
+      ],
+      "notes": "Fuente de 2019; ratio dudoso. Emisor indicado como 'Bonus Card'; la relación con Cornèr no está confirmada en la fuente.",
+      "sources": [
+        "https://reisetopia.ch/kreditkarten/libertycard-plus/"
+      ],
+      "confidence": "baja"
+    },
+    {
+      "id": "ubs-credit-keyclub",
+      "name": "Tarjetas de crédito UBS (Classic/Gold/Platinum)",
+      "issuer": "UBS",
+      "annual_fee": "No confirmado",
+      "earns": "UBS KeyClub",
+      "earn_rate": "2/4/6 pts KeyClub por CHF 1.000 (Classic/Gold/Platinum)",
+      "welcome_bonus": "No indicado",
+      "transfers": [
+        {
+          "to": "Miles & More",
+          "ratio": "20 pts = 1.000 millas (eStore)",
+          "source": "https://reisetopia.ch/guides/ubs-keyclub-punkte-zu-miles-more-transferieren"
+        }
+      ],
+      "notes": "Equivale a 0,1-0,3 millas/CHF. Cuotas no investigadas.",
+      "sources": [
+        "https://reisetopia.ch/guides/ubs-keyclub-punkte-zu-miles-more-transferieren"
+      ],
+      "confidence": "media"
+    },
+    {
+      "id": "revolut-metal-ch",
+      "name": "Revolut Metal / Ultra (Suiza)",
+      "issuer": "Revolut",
+      "annual_fee": "Metal CHF 200/año (20,99/mes); Ultra CHF 650/año (65/mes); Premium CHF 125/año",
+      "earns": "RevPoints",
+      "earn_rate": "Metal 1 pt por CHF 2; Ultra 1 pt por CHF; Premium 1 por CHF 4; Standard 1 por CHF 10",
+      "welcome_bonus": "Ninguno",
+      "transfers": [
+        {
+          "to": "Avios (BA/Iberia/Qatar), Flying Blue, Turkish, TAP, Aegean, LifeMiles, etc.",
+          "ratio": "1:1",
+          "source": "https://reisetopia.ch/guides/revolut-revpoints/amp/"
+        },
+        {
+          "to": "Emirates, KrisFlyer, Accor",
+          "ratio": "2:1",
+          "source": "https://reisetopia.ch/guides/revolut-revpoints/amp/"
+        }
+      ],
+      "notes": "Es tarjeta de débito. Sin Miles & More.",
+      "sources": [
+        "https://reisetopia.ch/guides/revolut-revpoints/amp/",
+        "https://meilenoptimieren.com/meilen-sammeln-mit-kreditkarten-schweiz/"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

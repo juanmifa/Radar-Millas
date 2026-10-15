@@ -1,0 +1,501 @@
+{
+  "country": "ES",
+  "country_name": "España",
+  "checked": "2026-10",
+  "programs": [
+    {
+      "id": "iberia-club",
+      "name": "Iberia Club (antes Iberia Plus / Club Iberia Plus)",
+      "type": "airline",
+      "how_to_earn": [
+        "Vuelos Iberia/Iberia Express/LEVEL/Air Nostrum y oneworld: Avios y Elite Points según precio pagado (1 Elite Point por € de tarifa sin tasas + bonus por tramo)",
+        "Tarjetas co-branded Iberia Cards, BBVA Iberia, Plan Santander Iberia Club (ver cards)",
+        "Transferencia Amex Membership Rewards España (1:1 implícito) y Revolut RevPoints (1:1)",
+        "Repsol (Waylet): 2-3 Avios/litro según carburante, 1 Avios/kWh recarga, 1 Avios/€ en tienda",
+        "Moeve (antes Cepsa): 2 Avios/litro (nota de prensa, sin fecha clara)",
+        "El Corte Inglés ShopFly: 3 Avios/€ en compras tax free, solo residentes fuera de la UE",
+        "Endesa: Avios por contratar luz/gas (cantidad no publicada)"
+      ],
+      "transfers": [
+        {
+          "to": "British Airways Club / Vueling Club / Aer Lingus / Qatar / Finnair (Avios)",
+          "to_type": "airline",
+          "ratio": "1:1 (Avios entre programas Avios)",
+          "notes": "Movimiento sin coste entre programas Avios según guialowcost; útil para aprovechar bonus de transferencia en Iberia y luego mover",
+          "source": "https://www.guialowcost.es/20-extra-transferir-puntos-mr-amex-a-avios-iberia-plus/"
+        }
+      ],
+      "notes": "Renombrado a Club Iberia Plus el 1-abr-2025 y a 'Iberia Club' el 2-jun-2025. Niveles: Plata 3.500 EP, Oro 7.500 EP, Platino 20.000 EP, Platino Prime 30.000 EP (2 años), Infinita/Infinita Prime vitalicios. Promos recurrentes de 20-40% de descuento en canjes (2026: hasta 35% incluyendo Buenos Aires, según infoviajera). Partner de gasolinera Repsol: límites 2 transacciones/día, 80 l/transacción, 200 Avios/mes; tienda 30 €/día. Oferta Repsol Waylet 400 Avios bonus hasta 31-dic-2026. No he podido acceder a iberia.com (bloqueado) para confirmar lista oficial de partners.",
+      "sources": [
+        "https://www.reasonwhy.es/actualidad/iberia-plus-cambia-iberia-club-sentirse-especial",
+        "https://onemileatatime.com/news/club-iberia-plus/",
+        "https://iberiaclubmagazine.iberia.com/en/collect-more-avios/energy/repsol/",
+        "https://www.repsol.es/es/productos-y-servicios/tarjetas/iberia-plus/index.cshtml",
+        "https://www.moeveglobal.com/en/press/Cepsa-service-station-customers-can-now-collect-Avios-and-redeem-them-for-quality-leisure-experiences",
+        "https://iberiaclubmagazine.iberia.com/en/collect-more-avios/leisure-and-shopping/shopfly-by-el-corte-ingles/",
+        "https://iberiaclubmagazine.iberia.com/en/collect-more-avios/energy/",
+        "https://iberiaclubmagazine.iberia.com/en/collect-more-avios/financial/"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "id": "amex-mr-es",
+      "name": "American Express Membership Rewards (España)",
+      "type": "bank",
+      "how_to_earn": [
+        "Amex Gold (personal): 1 punto por 2 € general; 2 puntos/€ en Agencia de Viajes Online Amex; 1 punto/€ en aerolíneas, hoteles, trenes, alquiler de coches; 1 punto por 5 € en supermercados en España (desde 29-mar-2023)",
+        "Amex Platinum: 1 punto/€ según infoviajera (2024)"
+      ],
+      "transfers": [
+        {
+          "to": "Iberia Club (Avios)",
+          "to_type": "airline",
+          "ratio": "1:1 (implícito: 10.000 MR = 12.000 Avios con bonus +20%)",
+          "notes": "Mínimo 50 puntos por operación, máx. 999.999. Bonus +20% puntuales (p.ej. 5-may a 2-jun-2025). Ratio base no publicado explícitamente en la fuente",
+          "source": "https://www.guialowcost.es/20-extra-transferir-puntos-mr-amex-a-avios-iberia-plus/"
+        },
+        {
+          "to": "Air Europa SUMA",
+          "to_type": "airline",
+          "ratio": "1 MR = 1 Milla SUMA",
+          "notes": "Según página oficial de partners SUMA; bonus ocasionales del 25%",
+          "source": "https://www.aireuropa.com/es/es/aea/suma/nuestro-programa/nuestros-partners"
+        },
+        {
+          "to": "British Airways Club (Avios)",
+          "to_type": "airline",
+          "ratio": "no confirmado",
+          "notes": "Socio mencionado, ratio no verificado",
+          "source": "https://www.guialowcost.es/20-extra-transferir-puntos-mr-amex-a-avios-iberia-plus/"
+        },
+        {
+          "to": "Flying Blue, Delta, Emirates, SAS; hoteles Hilton, Marriott, Meliá, Paradores, Radisson; Renfe",
+          "to_type": "other",
+          "ratio": "no confirmado",
+          "notes": "Lista de socios citada por guialowcost; sin ratios",
+          "source": "https://www.guialowcost.es/20-extra-transferir-puntos-mr-amex-a-avios-iberia-plus/"
+        }
+      ],
+      "notes": "No pude acceder a americanexpress.com/es-es (bloqueado) para confirmar la tabla oficial de ratios. La guía de 2017 de infoviajera con ratio 1000:800 es de Amex Argentina, no aplica.",
+      "sources": [
+        "https://www.americanexpress.com/content/dam/amex/es-es/beneficios/rewards/PDF_MRChange_Gold_271222.pdf",
+        "https://www.guialowcost.es/20-extra-transferir-puntos-mr-amex-a-avios-iberia-plus/",
+        "https://www.aireuropa.com/es/es/aea/suma/nuestro-programa/nuestros-partners",
+        "https://www.infoviajera.com/2024/11/opciones-obtener-avios-iberia-plus-tarjetas-de-credito-espana/"
+      ],
+      "confidence": "media"
+    },
+    {
+      "id": "air-europa-suma",
+      "name": "Air Europa SUMA",
+      "type": "airline",
+      "how_to_earn": [
+        "Vuelos Air Europa: hasta 9 Millas/€",
+        "Visa Air Europa SUMA (Bankinter Consumer Finance): hasta 10 Millas/€ en Air Europa con pago aplazado",
+        "Amex MR 1:1",
+        "Galp: 3 Millas SUMA por litro",
+        "Iberdrola: 16.000 Millas en 12 meses al contratar",
+        "OK Mobility 5 Millas/€; Vinoselección/FelizYdad 10 Millas/€; Air Europa Holidays 2 Millas/€",
+        "Accor ALL: 1 Milla por Reward point; Meliá: 1 Milla por 3 puntos"
+      ],
+      "transfers": [
+        {
+          "to": "ALL Accor",
+          "to_type": "hotel",
+          "ratio": "4 Millas SUMA = 1 Reward point",
+          "notes": "Dirección SUMA→Accor",
+          "source": "https://www.aireuropa.com/es/es/aea/suma/nuestro-programa/nuestros-partners"
+        },
+        {
+          "to": "Meliá Rewards",
+          "to_type": "hotel",
+          "ratio": "5 Millas = 4 puntos",
+          "notes": "",
+          "source": "https://www.aireuropa.com/es/es/aea/suma/nuestro-programa/nuestros-partners"
+        }
+      ],
+      "notes": "Canje desde 1.500 Millas en Air Europa; partners SkyTeam desde 6.000. El partner 'Iberdrola' de electricidad está en SUMA, no confirmado en Iberia Club. Air Europa está en proceso de integración/compra por Turkish Airlines (no verificado aquí).",
+      "sources": [
+        "https://www.aireuropa.com/es/es/aea/suma/nuestro-programa/nuestros-partners"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "id": "vueling-club",
+      "name": "Vueling Club (Avios)",
+      "type": "airline",
+      "how_to_earn": [
+        "Vuelos Vueling: 4-9 Avios/€ con tarjeta Vueling según tarifa y nivel",
+        "Visa Vueling / Vueling UP! de CaixaBank: 1 Avios por 2 € general",
+        "Revolut RevPoints 1:1"
+      ],
+      "transfers": [
+        {
+          "to": "Iberia Club / BA Club (Avios)",
+          "to_type": "airline",
+          "ratio": "1:1",
+          "notes": "Avios combinables entre programas IAG",
+          "source": "https://www.guialowcost.es/20-extra-transferir-puntos-mr-amex-a-avios-iberia-plus/"
+        }
+      ],
+      "notes": "Moeve/Cepsa tuvo acuerdo con Vueling (nota de prensa antigua); no verificado para 2026.",
+      "sources": [
+        "https://www.caixabank.es/particular/tarjetas/visa-vueling_en.html",
+        "https://reisetopia.de/guides/revolut-revpoints/"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "id": "revolut-revpoints-es",
+      "name": "Revolut RevPoints (España)",
+      "type": "fintech",
+      "how_to_earn": [
+        "Débito: Standard/Plus 1 pt por 10 €, Premium 1 pt por 4 €, Metal 1 pt por 2 €, Ultra 1 pt por 1 €",
+        "Crédito: Standard/Plus 1,5 pt por 10 €, Metal 1 pt por 1 €, Ultra 1 pt por 1,5 €",
+        "Excluidos: transferencias, cripto, impuestos, utilities, alquiler, apuestas"
+      ],
+      "transfers": [
+        {
+          "to": "Iberia Club / BA / Vueling / Aer Lingus / Qatar / Finnair (Avios)",
+          "to_type": "airline",
+          "ratio": "1:1",
+          "notes": "Bonus puntuales +20% (13-24 ago 2025, residentes ES/PT incluidos)",
+          "source": "https://reisetopia.de/guides/revolut-revpoints/"
+        },
+        {
+          "to": "TAP Miles&Go",
+          "to_type": "airline",
+          "ratio": "1:1",
+          "notes": "",
+          "source": "https://reisetopia.de/guides/revolut-revpoints/"
+        },
+        {
+          "to": "Flying Blue / Turkish / Etihad / Aegean / SAS",
+          "to_type": "airline",
+          "ratio": "1:1",
+          "notes": "",
+          "source": "https://reisetopia.de/guides/revolut-revpoints/"
+        },
+        {
+          "to": "Emirates Skywards / Singapore KrisFlyer",
+          "to_type": "airline",
+          "ratio": "2:1",
+          "notes": "",
+          "source": "https://reisetopia.de/guides/revolut-revpoints/"
+        },
+        {
+          "to": "Air Europa SUMA",
+          "to_type": "airline",
+          "ratio": "no confirmado",
+          "notes": "Aparece listada en ayuda Revolut ES pero sin ratio verificado",
+          "source": "https://help.revolut.com/es-ES/help/revpoints/"
+        }
+      ],
+      "notes": "Ratios tomados de reisetopia (versión alemana, revisada oct-2026); la lista de socios puede variar por país. Puntos caducan a 3 años.",
+      "sources": [
+        "https://help.revolut.com/es-ES/help/revpoints/what-is-revpoints/question-how-to-earn-revpoints/",
+        "https://reisetopia.de/guides/revolut-revpoints/",
+        "https://www.revolut.com/en-PT/legal/revpoints-avios-promotion/",
+        "https://www.guialowcost.es/revpoints-revolut/"
+      ],
+      "confidence": "media"
+    },
+    {
+      "id": "repsol-waylet",
+      "name": "Repsol Waylet (con Iberia Club)",
+      "type": "retail",
+      "how_to_earn": [
+        "3 Avios/l: Diésel e+10, Diesel e+10 Zero, Efitec Zero 95, Efitec 98 Neotech",
+        "2 Avios/l: Diésel e+, Efitec 95 Neotech, Diesel NEXA, Efitec NEXA 95",
+        "1 Avios/kWh recarga VE (máx. 1.800 Avios/mes)",
+        "1 Avios/€ en tienda o lavado (máx. 30 €/día)",
+        "Gasóleo calefacción: 1 Avios por 10 l (máx. 1.500/mes)",
+        "400 Avios bonus primer repostaje vía Waylet (hasta 31-dic-2026)"
+      ],
+      "transfers": [],
+      "notes": "Hay que pagar con Waylet y vincular tarjeta Iberia Club. Tope carburante 200 Avios/mes. 1 Elite Point por cada 10 Avios.",
+      "sources": [
+        "https://iberiaclubmagazine.iberia.com/en/collect-more-avios/energy/repsol/",
+        "https://www.repsol.es/es/productos-y-servicios/tarjetas/iberia-plus/index.cshtml"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "id": "moeve-cepsa",
+      "name": "Moeve (antes Cepsa) con Iberia Club",
+      "type": "retail",
+      "how_to_earn": [
+        "2 Avios por litro en estaciones en España (nota de prensa sin fecha)"
+      ],
+      "transfers": [],
+      "notes": "La nota de prensa es antigua (habla de Iberia Plus); no he confirmado que siga activo en 2026 tras el rebranding a Moeve. La página de energía de Iberia Club 2026 solo lista Repsol y Endesa.",
+      "sources": [
+        "https://www.moeveglobal.com/en/press/Cepsa-service-station-customers-can-now-collect-Avios-and-redeem-them-for-quality-leisure-experiences",
+        "https://iberiaclubmagazine.iberia.com/en/collect-more-avios/energy/"
+      ],
+      "confidence": "baja"
+    },
+    {
+      "id": "el-corte-ingles",
+      "name": "El Corte Inglés ShopFly (Iberia Club)",
+      "type": "retail",
+      "how_to_earn": [
+        "3 Avios por € en compras tax free (Castellana, Serrano 47, Diagonal, Puerto Banús)"
+      ],
+      "transfers": [],
+      "notes": "Solo para miembros residentes FUERA de la UE: Juan (residente en Suiza) podría ser elegible. Oferta hasta 31-dic-2026.",
+      "sources": [
+        "https://iberiaclubmagazine.iberia.com/en/collect-more-avios/leisure-and-shopping/shopfly-by-el-corte-ingles/"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "id": "endesa",
+      "name": "Endesa (Iberia Club)",
+      "type": "other",
+      "how_to_earn": [
+        "'Miles de Avios' por contratar luz y gas (cantidad no publicada)"
+      ],
+      "transfers": [],
+      "notes": "Sin ratio concreto en la fuente.",
+      "sources": [
+        "https://iberiaclubmagazine.iberia.com/en/collect-more-avios/energy/"
+      ],
+      "confidence": "baja"
+    },
+    {
+      "id": "iberdrola",
+      "name": "Iberdrola",
+      "type": "other",
+      "how_to_earn": [
+        "Air Europa SUMA: 16.000 Millas en 12 meses al contratar"
+      ],
+      "transfers": [],
+      "notes": "No encontrado como partner de Iberia Club en 2026; el acuerdo verificado es con Air Europa SUMA.",
+      "sources": [
+        "https://www.aireuropa.com/es/es/aea/suma/nuestro-programa/nuestros-partners"
+      ],
+      "confidence": "media"
+    },
+    {
+      "id": "travel-club",
+      "name": "Travel Club",
+      "type": "coalition",
+      "how_to_earn": [],
+      "transfers": [],
+      "notes": "No he podido verificar el estado de Travel Club en 2026 ni si convierte a Avios (límite de búsquedas agotado). Hubo reclamaciones OCU sobre puntos desaparecidos. Tratar como no confirmado.",
+      "sources": [
+        "https://www.ocu.org/reclamar/lista-reclamaciones-publicas/mis-puntos-desaparecen/120e7d92908c8ba30d"
+      ],
+      "confidence": "baja"
+    },
+    {
+      "id": "ing-es",
+      "name": "ING España",
+      "type": "bank",
+      "how_to_earn": [],
+      "transfers": [],
+      "notes": "No se ha encontrado ningún programa de ING España que dé Avios o millas; Iberia Club tampoco lo lista como partner financiero.",
+      "sources": [
+        "https://iberiaclubmagazine.iberia.com/en/collect-more-avios/financial/",
+        "https://www.guialowcost.es/ganar-avios/"
+      ],
+      "confidence": "baja"
+    }
+  ],
+  "cards": [
+    {
+      "id": "iberia-aire",
+      "name": "Visa Iberia Aire",
+      "issuer": "Iberia Cards",
+      "annual_fee": "60 € (5 €/mes)",
+      "earns": "Avios (Iberia Club)",
+      "earn_rate": "1 Avios/€ en iberia.com; 1 por 2 € en partners Iberia Club; 1 por 3 € resto",
+      "welcome_bonus": "Hasta 15.500 Avios (9.500 tras 6 meses + 6.000 en mes 18, con gasto mínimo); datos a 13-jul-2026",
+      "transfers": [],
+      "notes": "Gama nueva lanzada nov-2025 (Aire, Icon, Zenit).",
+      "sources": [
+        "https://www.helpmycash.com/tarjetas/iberia-sendo/tarjeta-iberia-aire/",
+        "https://emprendedores.es/afterwork/iberia-cards-lanza-tres-nuevas-tarjetas-para-transformar-la-experiencia-de-viajar/"
+      ],
+      "confidence": "media"
+    },
+    {
+      "id": "iberia-icon",
+      "name": "Visa Iberia Icon",
+      "issuer": "Iberia Cards",
+      "annual_fee": "118,80 € (9,90 €/mes)",
+      "earns": "Avios (Iberia Club)",
+      "earn_rate": "1 Avios/€ en iberia.com; 1 por 2 € en partners y viajes; 1 por 3 € resto; si gasto anual >18.000 € baja a 1 por 10 €",
+      "welcome_bonus": "Hasta 20.000 Avios (10.000 mes 6, 5.000 mes 12, 5.000 mes 18) con gasto mínimo; datos a 13-jul-2026",
+      "transfers": [],
+      "notes": "Contradicción en la fuente sobre compras en divisa (1 por 2 € vs 1 por 1 €).",
+      "sources": [
+        "https://www.helpmycash.com/tarjetas/iberia-sendo/tarjeta-iberia-icon/"
+      ],
+      "confidence": "media"
+    },
+    {
+      "id": "iberia-zenit",
+      "name": "Visa Iberia Zenit",
+      "issuer": "Iberia Cards",
+      "annual_fee": "948 € (79 €/mes)",
+      "earns": "Avios (Iberia Club)",
+      "earn_rate": "3 Avios/€ en Iberia e IAG; 1 Avios/€ resto",
+      "welcome_bonus": "Hasta 40.000 Avios con condiciones; datos a 13-jul-2026",
+      "transfers": [],
+      "notes": "",
+      "sources": [
+        "https://www.helpmycash.com/tarjetas/iberia-sendo/tarjeta-iberia-zenit/"
+      ],
+      "confidence": "media"
+    },
+    {
+      "id": "bbva-iberia-icon",
+      "name": "Tarjeta Iberia Icon BBVA",
+      "issuer": "BBVA",
+      "annual_fee": "118,80 € (50% primer año; exenta con uso aplazado)",
+      "earns": "Avios (Iberia Club)",
+      "earn_rate": "1 Avios por 3 €",
+      "welcome_bonus": "9.000 Avios gastando 2.000 € en 4 meses (sin fecha fija)",
+      "transfers": [],
+      "notes": "",
+      "sources": [
+        "https://www.bbva.es/en/personas/productos/tarjetas/tarjeta-iberia-icon.html"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "id": "bbva-iberia-classic",
+      "name": "Tarjeta Iberia Classic BBVA",
+      "issuer": "BBVA",
+      "annual_fee": "50 € (50% primer año; exenta con uso aplazado)",
+      "earns": "Avios (Iberia Club)",
+      "earn_rate": "1 Avios por 5 €",
+      "welcome_bonus": "4.500 Avios gastando 2.000 € en 4 meses",
+      "transfers": [],
+      "notes": "",
+      "sources": [
+        "https://www.bbva.es/en/personas/productos/tarjetas/tarjeta-iberia-classic.html"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "id": "santander-iberia-club",
+      "name": "Plan Santander Iberia Club",
+      "issuer": "Banco Santander",
+      "annual_fee": "60 € (5 €/mes)",
+      "earns": "Avios (Iberia Club)",
+      "earn_rate": "1 Avios por 2 €; +100 Avios/mes por nómina y +100 Avios/mes por recibos",
+      "welcome_bonus": "10.000 Avios (modalidad Premium, 700 € en alguno de los 3 primeros meses), hasta 31-ene-2027",
+      "transfers": [],
+      "notes": "Requiere cuenta Santander en España. El 10% de descuento en vuelos pasó a ser de un solo uso (jul-2026, infoviajera).",
+      "sources": [
+        "https://www.bancosantander.es/particulares/tarjetas/credito/plan-iberia-plus",
+        "https://www.infoviajera.com/2026/07/el-10-de-descuento-del-santander-iberia-club-pasa-a-ser-de-un-unico-uso/"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "id": "caixabank-vueling",
+      "name": "Visa Vueling",
+      "issuer": "CaixaBank",
+      "annual_fee": "0 € primer año, 45 € después",
+      "earns": "Avios (Vueling Club)",
+      "earn_rate": "1 Avios por 2 € general; 4-9 Avios/€ en Vueling según tarifa y nivel",
+      "welcome_bonus": "4.500 Avios con 400 € en 3 meses",
+      "transfers": [
+        {
+          "to": "Iberia Club / BA (Avios)",
+          "ratio": "1:1",
+          "source": "https://www.guialowcost.es/20-extra-transferir-puntos-mr-amex-a-avios-iberia-plus/"
+        }
+      ],
+      "notes": "Solo residentes en España.",
+      "sources": [
+        "https://www.caixabank.es/particular/tarjetas/visa-vueling_en.html"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "id": "caixabank-vueling-up",
+      "name": "Visa Vueling UP!",
+      "issuer": "CaixaBank",
+      "annual_fee": "0 € primer año, 90 € después",
+      "earns": "Avios (Vueling Club)",
+      "earn_rate": "1 Avios por 2 € general; 7-9 Avios/€ en Vueling",
+      "welcome_bonus": "9.000 Avios con 600 € en 3 meses",
+      "transfers": [],
+      "notes": "Solo residentes en España.",
+      "sources": [
+        "https://www.caixabank.es/particular/tarjetas/visa-vueling_en.html"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "id": "visa-air-europa-suma",
+      "name": "Visa Air Europa SUMA",
+      "issuer": "Bankinter Consumer Finance",
+      "annual_fee": "0 €",
+      "earns": "Millas Air Europa SUMA",
+      "earn_rate": "Pago a fin de mes: 2 Millas/€ en Air Europa, 0,5/€ resto. Aplazado (revolving): 10/€ y 2/€",
+      "welcome_bonus": "3.000 Millas tras tres compras (actualizado 28-jul-2026)",
+      "transfers": [],
+      "notes": "Las ratios altas solo con revolving (intereses altos): no compensa.",
+      "sources": [
+        "https://www.helpmycash.com/tarjetas/bankinter-consumer-finance/tarjeta-visa-air-europa-suma/",
+        "https://www.aireuropa.com/es/es/aea/suma/nuestro-programa/nuestros-partners"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "id": "amex-gold-es",
+      "name": "American Express Gold (España)",
+      "issuer": "American Express España",
+      "annual_fee": "192 € (16 €/mes) según infoviajera 2024, no verificado 2026",
+      "earns": "Membership Rewards",
+      "earn_rate": "1 punto por 2 €; 2/€ en Amex Travel; 1/€ en viajes; 1 por 5 € en supermercados",
+      "welcome_bonus": "40.000 MR con 4.000 € en 4 meses (nov-2024, no verificado 2026)",
+      "transfers": [
+        {
+          "to": "Iberia Club (Avios)",
+          "ratio": "1:1 (implícito)",
+          "source": "https://www.guialowcost.es/20-extra-transferir-puntos-mr-amex-a-avios-iberia-plus/"
+        },
+        {
+          "to": "Air Europa SUMA",
+          "ratio": "1:1",
+          "source": "https://www.aireuropa.com/es/es/aea/suma/nuestro-programa/nuestros-partners"
+        }
+      ],
+      "notes": "Cuota y bono no confirmados con fuente 2026.",
+      "sources": [
+        "https://www.americanexpress.com/content/dam/amex/es-es/beneficios/rewards/PDF_MRChange_Gold_271222.pdf",
+        "https://www.infoviajera.com/2024/11/opciones-obtener-avios-iberia-plus-tarjetas-de-credito-espana/"
+      ],
+      "confidence": "media"
+    },
+    {
+      "id": "amex-platinum-es",
+      "name": "American Express Platinum Metal (España)",
+      "issuer": "American Express España",
+      "annual_fee": "780 € según infoviajera 2024, no verificado 2026",
+      "earns": "Membership Rewards",
+      "earn_rate": "1 punto por € (infoviajera 2024)",
+      "welcome_bonus": "Hasta 120.000 Avios (vía MR) en primer año/8 meses; oferta hasta 31-dic-2026, gasto no indicado",
+      "transfers": [
+        {
+          "to": "Iberia Club (Avios)",
+          "ratio": "1:1 (implícito)",
+          "source": "https://www.guialowcost.es/20-extra-transferir-puntos-mr-amex-a-avios-iberia-plus/"
+        }
+      ],
+      "notes": "La fuente Iberia es contradictoria en el plazo (primer año vs 8 meses).",
+      "sources": [
+        "https://iberiaclubmagazine.iberia.com/en/collect-more-avios/financial/american-express/",
+        "https://www.infoviajera.com/2024/11/opciones-obtener-avios-iberia-plus-tarjetas-de-credito-espana/"
+      ],
+      "confidence": "media"
+    }
+  ]
+}

@@ -1,0 +1,236 @@
+{
+  "country": "PT",
+  "country_name": "Portugal",
+  "checked": "2026-10",
+  "programs": [
+    {
+      "id": "tap-miles-and-go",
+      "name": "TAP Miles&Go",
+      "type": "airline",
+      "how_to_earn": [
+        "Vuelos TAP y Star Alliance (porcentaje de millas voladas según clase)",
+        "Cartões TAP Millennium bcp: 1-2 milhas/€",
+        "Cartão TAP Fly+ (Unibanco/Novo Banco): 1 milha por 2 € desde 1-out-2025",
+        "Revolut RevPoints 1:1",
+        "CarTrawler 2 milhas/€; Europcar 3-4 milhas/€; Avis 500 milhas por aluguer"
+      ],
+      "transfers": [],
+      "notes": "Las tarjetas TAP bcp exigen cuenta bancaria en Portugal. No se encontró en la web oficial ningún partner de combustible ni de supermercado en Portugal. La mayoría de transferencias bancarias a TAP (Livelo, Esfera, C6, Itaú...) son de Brasil, no aplican a Portugal.",
+      "sources": [
+        "https://www.flytap.com/pt-pt/miles-and-go/parceiros",
+        "https://www.flytap.com/pt-pt/miles-and-go/parceiros/bancos-e-cartoes-de-credito"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "id": "revolut-revpoints-pt",
+      "name": "Revolut RevPoints (Portugal)",
+      "type": "fintech",
+      "how_to_earn": [
+        "Mismas tasas por plan que en la UE (Standard 0,1/€, Premium 0,25/€, Metal 0,5/€, Ultra 1/€ en débito), no verificado específicamente para PT"
+      ],
+      "transfers": [
+        {
+          "to": "TAP Miles&Go",
+          "to_type": "airline",
+          "ratio": "1:1",
+          "notes": "Lista de socios de reisetopia; la ayuda de Revolut PT nombra TAP, Avios y Flying Blue sin ratio",
+          "source": "https://reisetopia.de/guides/revolut-revpoints/"
+        },
+        {
+          "to": "Avios (Iberia, BA, Vueling, Aer Lingus)",
+          "to_type": "airline",
+          "ratio": "1:1",
+          "notes": "Promo +20% 13-24 ago 2025 para residentes en Portugal",
+          "source": "https://www.revolut.com/en-PT/legal/revpoints-avios-promotion/"
+        }
+      ],
+      "notes": "La forma más sencilla de conseguir millas TAP o Avios en Portugal sin tarjeta co-branded.",
+      "sources": [
+        "https://reisetopia.de/guides/revolut-revpoints/",
+        "https://www.revolut.com/en-PT/legal/revpoints-avios-promotion/",
+        "https://help.revolut.com/pt-PT/help/revpoints/"
+      ],
+      "confidence": "media"
+    },
+    {
+      "id": "cartao-continente",
+      "name": "Cartão Continente",
+      "type": "retail",
+      "how_to_earn": [
+        "Saldo en euros en compras Continente (porcentaje no verificado)"
+      ],
+      "transfers": [],
+      "notes": "No he podido acceder a continente.pt (robots bloqueado). No hay evidencia de conversión a millas TAP o Avios; parece ser saldo en euros para descuentos. No confirmado.",
+      "sources": [
+        "https://www.continente.pt/cartao-continente/"
+      ],
+      "confidence": "baja"
+    },
+    {
+      "id": "pingo-doce-poupa-mais",
+      "name": "Pingo Doce Poupa Mais",
+      "type": "retail",
+      "how_to_earn": [],
+      "transfers": [],
+      "notes": "No he podido acceder a la web. No hay evidencia de conversión a millas. No confirmado.",
+      "sources": [
+        "https://www.pingodoce.pt/poupa-mais/"
+      ],
+      "confidence": "baja"
+    },
+    {
+      "id": "galp-pt",
+      "name": "Galp (Portugal)",
+      "type": "retail",
+      "how_to_earn": [
+        "En España (no Portugal): 3 Millas Air Europa SUMA por litro"
+      ],
+      "transfers": [],
+      "notes": "El acuerdo verificado Galp-SUMA está en la página de partners SUMA de España. No he podido verificar el programa de Galp en Portugal ni sus vínculos con Continente, TAP o Air Europa (página oficial devolvió 404).",
+      "sources": [
+        "https://www.aireuropa.com/es/es/aea/suma/nuestro-programa/nuestros-partners"
+      ],
+      "confidence": "baja"
+    },
+    {
+      "id": "repsol-pt",
+      "name": "Repsol (Portugal)",
+      "type": "retail",
+      "how_to_earn": [],
+      "transfers": [],
+      "notes": "La oferta Repsol Waylet + Avios verificada es para estaciones en España; no confirmada para Portugal.",
+      "sources": [
+        "https://iberiaclubmagazine.iberia.com/en/collect-more-avios/energy/repsol/"
+      ],
+      "confidence": "baja"
+    }
+  ],
+  "cards": [
+    {
+      "id": "tap-classic-bcp",
+      "name": "Cartão TAP Classic",
+      "issuer": "Millennium bcp",
+      "annual_fee": "41,60 € (con Imposto do Selo)",
+      "earns": "TAP Miles&Go",
+      "earn_rate": "1 milha/€ (máx. 5.000/mes)",
+      "welcome_bonus": "No indicado",
+      "transfers": [],
+      "notes": "1 Milha Status por cada 5 milhas de compras (máx. 5.000/período). Sin millas en avances de efectivo, recargas de wallets, pagos al Estado, peajes. Requiere cuenta en Portugal.",
+      "sources": [
+        "https://www.flytap.com/pt-pt/miles-and-go/parceiros/bancos-e-cartoes-de-credito",
+        "https://cartoesdecredito.flytap.com/"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "id": "tap-gold-bcp",
+      "name": "Cartão TAP Gold",
+      "issuer": "Millennium bcp",
+      "annual_fee": "83,20 €",
+      "earns": "TAP Miles&Go",
+      "earn_rate": "1,5 milhas/€ (máx. 15.000/mes)",
+      "welcome_bonus": "No indicado",
+      "transfers": [],
+      "notes": "",
+      "sources": [
+        "https://www.flytap.com/pt-pt/miles-and-go/parceiros/bancos-e-cartoes-de-credito",
+        "https://cartoesdecredito.flytap.com/"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "id": "tap-platinum-bcp",
+      "name": "Cartão TAP Platinum",
+      "issuer": "Millennium bcp",
+      "annual_fee": "312,00 €",
+      "earns": "TAP Miles&Go",
+      "earn_rate": "2 milhas/€ (máx. 75.000/mes)",
+      "welcome_bonus": "No indicado",
+      "transfers": [],
+      "notes": "",
+      "sources": [
+        "https://www.flytap.com/pt-pt/miles-and-go/parceiros/bancos-e-cartoes-de-credito",
+        "https://cartoesdecredito.flytap.com/"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "id": "tap-business-bcp",
+      "name": "Cartão TAP Business",
+      "issuer": "Millennium bcp",
+      "annual_fee": "88,40 €",
+      "earns": "TAP Miles&Go",
+      "earn_rate": "1,5 milhas/€ (máx. 15.000/mes)",
+      "welcome_bonus": "No indicado",
+      "transfers": [],
+      "notes": "Para empresas.",
+      "sources": [
+        "https://www.flytap.com/pt-pt/miles-and-go/parceiros/bancos-e-cartoes-de-credito",
+        "https://cartoesdecredito.flytap.com/"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "id": "tap-fly-plus-unibanco",
+      "name": "Cartão TAP Fly+",
+      "issuer": "Unibanco (Novo Banco)",
+      "annual_fee": "60 € comisión de disponibilización (+15 € adicional) según cartaotapfly.pt; flytap menciona 40 €",
+      "earns": "TAP Miles&Go",
+      "earn_rate": "1 milha por 2 € (desde 1-out-2025, máx. 5.000/mes)",
+      "welcome_bonus": "1.000 milhas al adherirse + 1.000 tras la 1ª compra (según flytap.com)",
+      "transfers": [],
+      "notes": "Solo residentes en Portugal. Fuentes contradictorias en la cuota y en el bono.",
+      "sources": [
+        "https://cartaotapfly.pt/",
+        "https://www.flytap.com/pt-pt/miles-and-go/parceiros/bancos-e-cartoes-de-credito"
+      ],
+      "confidence": "media"
+    },
+    {
+      "id": "santander-pt",
+      "name": "Santander Portugal (tarjetas con millas)",
+      "issuer": "Santander Totta",
+      "annual_fee": "desconocida",
+      "earns": "desconocido",
+      "earn_rate": "no verificado",
+      "welcome_bonus": "",
+      "transfers": [],
+      "notes": "No se ha encontrado ninguna tarjeta Santander PT que gane millas (web inaccesible).",
+      "sources": [
+        "https://www.santander.pt/cartoes"
+      ],
+      "confidence": "baja"
+    },
+    {
+      "id": "cgd-pt",
+      "name": "Caixa Geral de Depósitos (tarjetas con millas)",
+      "issuer": "CGD",
+      "annual_fee": "desconocida",
+      "earns": "desconocido",
+      "earn_rate": "no verificado",
+      "welcome_bonus": "",
+      "transfers": [],
+      "notes": "No se ha verificado ninguna tarjeta CGD que gane millas (página 404).",
+      "sources": [
+        "https://www.cgd.pt/Particulares/Cartoes/Pages/Cartoes.aspx"
+      ],
+      "confidence": "baja"
+    },
+    {
+      "id": "amex-pt",
+      "name": "American Express Portugal",
+      "issuer": "desconocido",
+      "annual_fee": "desconocida",
+      "earns": "desconocido",
+      "earn_rate": "no verificado",
+      "welcome_bonus": "",
+      "transfers": [],
+      "notes": "No se ha podido confirmar si existen tarjetas Amex con Membership Rewards emitidas en Portugal (americanexpress.com/pt-pt inaccesible).",
+      "sources": [
+        "https://www.americanexpress.com/pt-pt/"
+      ],
+      "confidence": "baja"
+    }
+  ]
+}

@@ -1,0 +1,5626 @@
+{
+ "checked": "2026-10",
+ "alliances_2026": {
+  "oneworld": [
+   "American Airlines",
+   "Alaska Airlines",
+   "British Airways",
+   "Cathay Pacific",
+   "Finnair",
+   "Fiji Airways",
+   "Hawaiian Airlines",
+   "Iberia",
+   "Japan Airlines",
+   "Malaysia Airlines",
+   "Oman Air",
+   "Qantas",
+   "Qatar Airways",
+   "Royal Air Maroc",
+   "Royal Jordanian",
+   "SriLankan Airlines"
+  ],
+  "Star Alliance": [
+   "Aegean Airlines",
+   "Air Canada",
+   "Air China",
+   "Air India",
+   "Air New Zealand",
+   "ANA",
+   "Asiana Airlines",
+   "Austrian Airlines",
+   "Avianca",
+   "Brussels Airlines",
+   "Copa Airlines",
+   "Croatia Airlines",
+   "EgyptAir",
+   "Ethiopian Airlines",
+   "EVA Air",
+   "ITA Airways",
+   "LOT Polish Airlines",
+   "Lufthansa",
+   "Shenzhen Airlines",
+   "Singapore Airlines",
+   "South African Airways",
+   "SWISS",
+   "TAP Air Portugal",
+   "Thai Airways",
+   "Turkish Airlines",
+   "United Airlines"
+  ],
+  "SkyTeam": [
+   "Aerolíneas Argentinas",
+   "Aeroméxico",
+   "Air Europa",
+   "Air France",
+   "China Airlines",
+   "China Eastern",
+   "Delta Air Lines",
+   "Garuda Indonesia",
+   "Kenya Airways",
+   "KLM",
+   "Korean Air",
+   "Middle East Airlines",
+   "Saudia",
+   "SAS Scandinavian Airlines",
+   "TAROM",
+   "Vietnam Airlines",
+   "Virgin Atlantic",
+   "Xiamen Airlines"
+  ]
+ },
+ "key_changes_2026": [
+  {
+   "change": "ITA Airways deja SkyTeam y entra en Star Alliance + Miles & More (Volare sustituido) el 1-abr-2026; Flying Blue ya no canjea ITA.",
+   "source": "https://onemileatatime.com/news/ita-airways-star-alliance-miles-more/"
+  },
+  {
+   "change": "Lufthansa dejó de liberar First a programas socios el 1-jun-2026 (Miles & More sí puede).",
+   "source": "https://onemileatatime.com/news/lufthansa-first-class-awards-partner-miles-restrictions/"
+  },
+  {
+   "change": "SAS en SkyTeam desde 1-sep-2024; EuroBonus canjea SkyTeam, no Star.",
+   "source": "https://awardfares.com/blog/booking-skyteam-airlines-with-eurobonus/"
+  },
+  {
+   "change": "Asiana sale de Star Alliance el 16-dic-2026.",
+   "source": "https://reisetopia.de/guides/miles-and-more-airlines/"
+  },
+  {
+   "change": "Alaska Mileage Plan + HawaiianMiles = Atmos Rewards; 20 USD por canje con socios desde jul-2026.",
+   "source": "https://meilenoptimieren.com/alaska-airlines-mileage-plan-partnerairlines/"
+  },
+  {
+   "change": "Avios 1:1 entre BA, Iberia, Qatar, Aer Lingus, Finnair, Vueling y Loganair.",
+   "source": "https://www.insideflyer.com/posts/avios-can-be-transferred-between-airlines-and-people-for-10"
+  }
+ ],
+ "programs": [
+  {
+   "id": "iberia-club",
+   "name": "Iberia Club",
+   "currency": "Avios (Iberia)",
+   "alliance": "oneworld",
+   "redeem_on": [
+    {
+     "airline": "Air Nostrum (Iberia Regional)",
+     "code": "YW",
+     "basis": "aerolínea propia / grupo IAG",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "media"
+    },
+    {
+     "airline": "Alaska Airlines",
+     "code": "AS",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "media"
+    },
+    {
+     "airline": "American Airlines",
+     "code": "AA",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "media"
+    },
+    {
+     "airline": "Avianca",
+     "code": "AV",
+     "basis": "socio bilateral",
+     "notes": "Solo por teléfono.",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "media"
+    },
+    {
+     "airline": "Binter Canarias",
+     "code": "NT",
+     "basis": "socio bilateral",
+     "notes": "Comentarios de lectores: quizá solo combinado con un itinerario Iberia.",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "media"
+    },
+    {
+     "airline": "British Airways",
+     "code": "BA",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "media"
+    },
+    {
+     "airline": "Cathay Pacific",
+     "code": "CX",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "media"
+    },
+    {
+     "airline": "Fiji Airways",
+     "code": "FJ",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "media"
+    },
+    {
+     "airline": "Finnair",
+     "code": "AY",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "media"
+    },
+    {
+     "airline": "Hawaiian Airlines",
+     "code": "HA",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "media"
+    },
+    {
+     "airline": "Iberia",
+     "code": "IB",
+     "basis": "aerolínea propia",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "media"
+    },
+    {
+     "airline": "Iberia Express",
+     "code": "I2",
+     "basis": "aerolínea propia / grupo IAG",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "media"
+    },
+    {
+     "airline": "Japan Airlines",
+     "code": "JL",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "media"
+    },
+    {
+     "airline": "LATAM",
+     "code": "LA",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "media"
+    },
+    {
+     "airline": "LEVEL",
+     "code": "LV",
+     "basis": "aerolínea propia / grupo IAG",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "media"
+    },
+    {
+     "airline": "Malaysia Airlines",
+     "code": "MH",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "media"
+    },
+    {
+     "airline": "Oman Air",
+     "code": "WY",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "media"
+    },
+    {
+     "airline": "Qantas",
+     "code": "QF",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "media"
+    },
+    {
+     "airline": "Qatar Airways",
+     "code": "QR",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "media"
+    },
+    {
+     "airline": "Royal Air Maroc",
+     "code": "AT",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "media"
+    },
+    {
+     "airline": "Royal Jordanian",
+     "code": "RJ",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "media"
+    },
+    {
+     "airline": "SriLankan Airlines",
+     "code": "UL",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "media"
+    },
+    {
+     "airline": "Vueling",
+     "code": "VY",
+     "basis": "aerolínea propia / grupo IAG",
+     "notes": "Canje de Vueling también vía Vueling Club.",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "media"
+    }
+   ],
+   "transfers_out": [
+    {
+     "to": "British Airways Club",
+     "ratio": "1:1",
+     "source": "https://www.insideflyer.com/posts/avios-can-be-transferred-between-airlines-and-people-for-10"
+    },
+    {
+     "to": "Qatar Privilege Club",
+     "ratio": "1:1",
+     "source": "https://www.insideflyer.com/posts/avios-can-be-transferred-between-airlines-and-people-for-10"
+    },
+    {
+     "to": "Aer Lingus AerClub",
+     "ratio": "1:1",
+     "source": "https://www.insideflyer.com/posts/avios-can-be-transferred-between-airlines-and-people-for-10"
+    },
+    {
+     "to": "Finnair Plus",
+     "ratio": "1:1",
+     "source": "https://www.insideflyer.com/posts/avios-can-be-transferred-between-airlines-and-people-for-10"
+    },
+    {
+     "to": "Vueling Club",
+     "ratio": "1:1",
+     "source": "https://www.insideflyer.com/posts/avios-can-be-transferred-between-airlines-and-people-for-10"
+    },
+    {
+     "to": "Loganair Loyalty",
+     "ratio": "1:1",
+     "source": "https://www.insideflyer.com/posts/avios-can-be-transferred-between-airlines-and-people-for-10"
+    }
+   ],
+   "pricing": "tabla por distancia",
+   "notes": "Vuelos Iberia con tabla por distancia y temporada alta/baja; socios oneworld por distancia. Interesante para Avianca (bilateral exclusivo de Iberia) y LEVEL. Avios se mueve 1:1 entre BA, Iberia, Aer Lingus, Finnair, Vueling y Loganair vía avios.com (requiere 2FA y vincular cuentas); Qatar se vincula a través de BA Club. Sin tasa para traspasos entre programas (el 'Send Avios' de Finnair a otras personas cuesta 10 EUR). Restricciones de antigüedad de cuenta/actividad no confirmadas en las fuentes de 2026. La web oficial iberia.com/iberia-club/partners/flights no se pudo leer (error del servidor).",
+   "sources": [
+    "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+    "https://www.insideflyer.com/posts/avios-can-be-transferred-between-airlines-and-people-for-10",
+    "https://awardwallet.com/blog/how-to-transfer-avios-between-accounts"
+   ],
+   "confidence": "media",
+   "checked": "2026-10"
+  },
+  {
+   "id": "british-airways-club",
+   "name": "British Airways Club",
+   "currency": "Avios (BA)",
+   "alliance": "oneworld",
+   "redeem_on": [
+    {
+     "airline": "Aer Lingus",
+     "code": "EI",
+     "basis": "aerolínea propia / grupo IAG",
+     "notes": "Canje online confirmado por AwardWallet (oct-2026).",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Air Nostrum (Iberia Regional)",
+     "code": "YW",
+     "basis": "aerolínea propia / grupo IAG",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Alaska Airlines",
+     "code": "AS",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "alta"
+    },
+    {
+     "airline": "American Airlines",
+     "code": "AA",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "alta"
+    },
+    {
+     "airline": "British Airways",
+     "code": "BA",
+     "basis": "aerolínea propia",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Cathay Pacific",
+     "code": "CX",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "alta"
+    },
+    {
+     "airline": "China Southern Airlines",
+     "code": "CZ",
+     "basis": "socio bilateral",
+     "notes": "Comentarios de lectores: no siempre reservable.",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Fiji Airways",
+     "code": "FJ",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Finnair",
+     "code": "AY",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Hawaiian Airlines",
+     "code": "HA",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Iberia",
+     "code": "IB",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Iberia Express",
+     "code": "I2",
+     "basis": "aerolínea propia / grupo IAG",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Japan Airlines",
+     "code": "JL",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "alta"
+    },
+    {
+     "airline": "LATAM",
+     "code": "LA",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Malaysia Airlines",
+     "code": "MH",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Oman Air",
+     "code": "WY",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Qantas",
+     "code": "QF",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Qatar Airways",
+     "code": "QR",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Royal Air Maroc",
+     "code": "AT",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Royal Jordanian",
+     "code": "RJ",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "alta"
+    },
+    {
+     "airline": "SriLankan Airlines",
+     "code": "UL",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "alta"
+    },
+    {
+     "airline": "SUN-AIR of Scandinavia",
+     "code": "EZ",
+     "basis": "franquicia BA",
+     "notes": "Listado online por AwardWallet.",
+     "source": "https://awardwallet.com/airlines/british-airways-club/british-airways-partners/",
+     "confidence": "alta"
+    }
+   ],
+   "transfers_out": [
+    {
+     "to": "Iberia Club",
+     "ratio": "1:1",
+     "source": "https://www.insideflyer.com/posts/avios-can-be-transferred-between-airlines-and-people-for-10"
+    },
+    {
+     "to": "Qatar Privilege Club",
+     "ratio": "1:1",
+     "source": "https://www.insideflyer.com/posts/avios-can-be-transferred-between-airlines-and-people-for-10"
+    },
+    {
+     "to": "Aer Lingus AerClub",
+     "ratio": "1:1",
+     "source": "https://www.insideflyer.com/posts/avios-can-be-transferred-between-airlines-and-people-for-10"
+    },
+    {
+     "to": "Finnair Plus",
+     "ratio": "1:1",
+     "source": "https://www.insideflyer.com/posts/avios-can-be-transferred-between-airlines-and-people-for-10"
+    },
+    {
+     "to": "Vueling Club",
+     "ratio": "1:1",
+     "source": "https://www.insideflyer.com/posts/avios-can-be-transferred-between-airlines-and-people-for-10"
+    },
+    {
+     "to": "Loganair Loyalty",
+     "ratio": "1:1",
+     "source": "https://www.insideflyer.com/posts/avios-can-be-transferred-between-airlines-and-people-for-10"
+    }
+   ],
+   "pricing": "tabla por distancia",
+   "notes": "Tabla por bandas de distancia por socio (BA no publica tabla para socios individuales); tabla multi-socio oneworld por distancia total. Recargos de combustible altos en vuelos BA. AwardWallet (11-oct-2026) también lista SUN-AIR of Scandinavia online. Avios se mueve 1:1 entre BA, Iberia, Aer Lingus, Finnair, Vueling y Loganair vía avios.com (requiere 2FA y vincular cuentas); Qatar se vincula a través de BA Club. Sin tasa para traspasos entre programas (el 'Send Avios' de Finnair a otras personas cuesta 10 EUR). Restricciones de antigüedad de cuenta/actividad no confirmadas en las fuentes de 2026.",
+   "sources": [
+    "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+    "https://awardwallet.com/airlines/british-airways-club/british-airways-partners/",
+    "https://www.insideflyer.com/posts/avios-can-be-transferred-between-airlines-and-people-for-10"
+   ],
+   "confidence": "alta",
+   "checked": "2026-10"
+  },
+  {
+   "id": "qatar-privilege-club",
+   "name": "Qatar Airways Privilege Club",
+   "currency": "Avios (Qatar)",
+   "alliance": "oneworld",
+   "redeem_on": [
+    {
+     "airline": "Airlink",
+     "code": "4Z",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "media"
+    },
+    {
+     "airline": "Alaska Airlines",
+     "code": "AS",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "media"
+    },
+    {
+     "airline": "American Airlines",
+     "code": "AA",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "media"
+    },
+    {
+     "airline": "Bangkok Airways",
+     "code": "PG",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "media"
+    },
+    {
+     "airline": "British Airways",
+     "code": "BA",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "media"
+    },
+    {
+     "airline": "Cathay Pacific",
+     "code": "CX",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "media"
+    },
+    {
+     "airline": "Fiji Airways",
+     "code": "FJ",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "media"
+    },
+    {
+     "airline": "Finnair",
+     "code": "AY",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "media"
+    },
+    {
+     "airline": "Garuda Indonesia",
+     "code": "GA",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "media"
+    },
+    {
+     "airline": "Hawaiian Airlines",
+     "code": "HA",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "media"
+    },
+    {
+     "airline": "Iberia",
+     "code": "IB",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "media"
+    },
+    {
+     "airline": "Japan Airlines",
+     "code": "JL",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "media"
+    },
+    {
+     "airline": "JetBlue",
+     "code": "B6",
+     "basis": "socio bilateral",
+     "notes": "Precio aparte (Mint 74-78k Avios por tramo, sin recargos).",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "media"
+    },
+    {
+     "airline": "LATAM",
+     "code": "LA",
+     "basis": "socio bilateral",
+     "notes": "Socio bilateral (LATAM no es oneworld).",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "media"
+    },
+    {
+     "airline": "Malaysia Airlines",
+     "code": "MH",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "media"
+    },
+    {
+     "airline": "Middle East Airlines",
+     "code": "ME",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "media"
+    },
+    {
+     "airline": "Oman Air",
+     "code": "WY",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "media"
+    },
+    {
+     "airline": "Philippine Airlines",
+     "code": "PR",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "media"
+    },
+    {
+     "airline": "Qantas",
+     "code": "QF",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "media"
+    },
+    {
+     "airline": "Qatar Airways",
+     "code": "QR",
+     "basis": "aerolínea propia",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "media"
+    },
+    {
+     "airline": "Royal Air Maroc",
+     "code": "AT",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "media"
+    },
+    {
+     "airline": "Royal Jordanian",
+     "code": "RJ",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "media"
+    },
+    {
+     "airline": "RwandAir",
+     "code": "WB",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "media"
+    },
+    {
+     "airline": "S7 Airlines",
+     "code": "S7",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "media"
+    },
+    {
+     "airline": "SriLankan Airlines",
+     "code": "UL",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "media"
+    },
+    {
+     "airline": "Virgin Australia",
+     "code": "VA",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "media"
+    },
+    {
+     "airline": "Xiamen Airlines",
+     "code": "MF",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "media"
+    }
+   ],
+   "transfers_out": [
+    {
+     "to": "British Airways Club",
+     "ratio": "1:1",
+     "source": "https://www.insideflyer.com/posts/avios-can-be-transferred-between-airlines-and-people-for-10"
+    },
+    {
+     "to": "Iberia Club",
+     "ratio": "1:1",
+     "source": "https://www.insideflyer.com/posts/avios-can-be-transferred-between-airlines-and-people-for-10"
+    },
+    {
+     "to": "Aer Lingus AerClub",
+     "ratio": "1:1",
+     "source": "https://www.insideflyer.com/posts/avios-can-be-transferred-between-airlines-and-people-for-10"
+    },
+    {
+     "to": "Finnair Plus",
+     "ratio": "1:1",
+     "source": "https://www.insideflyer.com/posts/avios-can-be-transferred-between-airlines-and-people-for-10"
+    },
+    {
+     "to": "Vueling Club",
+     "ratio": "1:1",
+     "source": "https://www.insideflyer.com/posts/avios-can-be-transferred-between-airlines-and-people-for-10"
+    },
+    {
+     "to": "Loganair Loyalty",
+     "ratio": "1:1",
+     "source": "https://www.insideflyer.com/posts/avios-can-be-transferred-between-airlines-and-people-for-10"
+    }
+   ],
+   "pricing": "tabla por distancia",
+   "notes": "Vuelos propios QR sin tabla publicada fija (Qsuites Europa-Doha ~85k saver, Flexi x2); socios con tabla por tramo/distancia. Socios exclusivos: JetBlue, Virgin Australia, RwandAir, Airlink, Bangkok Airways, Garuda, MEA, Xiamen, Philippine Airlines, S7 (S7 suspendido según otras fuentes). Avios se mueve 1:1 entre BA, Iberia, Aer Lingus, Finnair, Vueling y Loganair vía avios.com (requiere 2FA y vincular cuentas); Qatar se vincula a través de BA Club. Sin tasa para traspasos entre programas (el 'Send Avios' de Finnair a otras personas cuesta 10 EUR). Restricciones de antigüedad de cuenta/actividad no confirmadas en las fuentes de 2026.",
+   "sources": [
+    "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+    "https://www.point.me/insights/the-complete-guide-to-qatar-airways-privilege-club/",
+    "https://www.insideflyer.com/posts/avios-can-be-transferred-between-airlines-and-people-for-10"
+   ],
+   "confidence": "media",
+   "checked": "2026-10"
+  },
+  {
+   "id": "aer-lingus-aerclub",
+   "name": "Aer Lingus AerClub",
+   "currency": "Avios (Aer Lingus)",
+   "alliance": "ninguna",
+   "redeem_on": [
+    {
+     "airline": "Aer Lingus",
+     "code": "EI",
+     "basis": "aerolínea propia",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "media"
+    },
+    {
+     "airline": "British Airways",
+     "code": "BA",
+     "basis": "socio bilateral / grupo IAG",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "media"
+    },
+    {
+     "airline": "United Airlines",
+     "code": "UA",
+     "basis": "socio bilateral",
+     "notes": "Mencionado como socio de canje por Upgraded Points (sep-2026), no confirmado en tabla de Head for Points.",
+     "source": "https://upgradedpoints.com/travel/airlines/aer-lingus-aerclub-loyalty-program/",
+     "confidence": "media"
+    },
+    {
+     "airline": "Alaska Airlines",
+     "code": "AS",
+     "basis": "socio bilateral",
+     "notes": "Mencionado como socio de canje por Upgraded Points (sep-2026), no confirmado en tabla de Head for Points.",
+     "source": "https://upgradedpoints.com/travel/airlines/aer-lingus-aerclub-loyalty-program/",
+     "confidence": "media"
+    }
+   ],
+   "transfers_out": [
+    {
+     "to": "British Airways Club",
+     "ratio": "1:1",
+     "source": "https://www.insideflyer.com/posts/avios-can-be-transferred-between-airlines-and-people-for-10"
+    },
+    {
+     "to": "Iberia Club",
+     "ratio": "1:1",
+     "source": "https://www.insideflyer.com/posts/avios-can-be-transferred-between-airlines-and-people-for-10"
+    },
+    {
+     "to": "Qatar Privilege Club",
+     "ratio": "1:1",
+     "source": "https://www.insideflyer.com/posts/avios-can-be-transferred-between-airlines-and-people-for-10"
+    },
+    {
+     "to": "Finnair Plus",
+     "ratio": "1:1",
+     "source": "https://www.insideflyer.com/posts/avios-can-be-transferred-between-airlines-and-people-for-10"
+    },
+    {
+     "to": "Vueling Club",
+     "ratio": "1:1",
+     "source": "https://www.insideflyer.com/posts/avios-can-be-transferred-between-airlines-and-people-for-10"
+    },
+    {
+     "to": "Loganair Loyalty",
+     "ratio": "1:1",
+     "source": "https://www.insideflyer.com/posts/avios-can-be-transferred-between-airlines-and-people-for-10"
+    }
+   ],
+   "pricing": "tabla por regiones",
+   "notes": "Muy pocos socios de canje: lo normal es traspasar Avios a BA/Iberia para volar con oneworld. United/Alaska como canje con AerClub: confianza baja. Avios se mueve 1:1 entre BA, Iberia, Aer Lingus, Finnair, Vueling y Loganair vía avios.com (requiere 2FA y vincular cuentas); Qatar se vincula a través de BA Club. Sin tasa para traspasos entre programas (el 'Send Avios' de Finnair a otras personas cuesta 10 EUR). Restricciones de antigüedad de cuenta/actividad no confirmadas en las fuentes de 2026.",
+   "sources": [
+    "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+    "https://upgradedpoints.com/travel/airlines/aer-lingus-aerclub-loyalty-program/",
+    "https://www.insideflyer.com/posts/avios-can-be-transferred-between-airlines-and-people-for-10"
+   ],
+   "confidence": "media",
+   "checked": "2026-10"
+  },
+  {
+   "id": "finnair-plus",
+   "name": "Finnair Plus",
+   "currency": "Avios (Finnair)",
+   "alliance": "oneworld",
+   "redeem_on": [
+    {
+     "airline": "Alaska Airlines",
+     "code": "AS",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "alta"
+    },
+    {
+     "airline": "American Airlines",
+     "code": "AA",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "alta"
+    },
+    {
+     "airline": "British Airways",
+     "code": "BA",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Cathay Pacific",
+     "code": "CX",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Fiji Airways",
+     "code": "FJ",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Finnair",
+     "code": "AY",
+     "basis": "aerolínea propia",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Hawaiian Airlines",
+     "code": "HA",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Iberia",
+     "code": "IB",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Japan Airlines",
+     "code": "JL",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "alta"
+    },
+    {
+     "airline": "LATAM",
+     "code": "LA",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Malaysia Airlines",
+     "code": "MH",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Oman Air",
+     "code": "WY",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Qantas",
+     "code": "QF",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Qatar Airways",
+     "code": "QR",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Royal Air Maroc",
+     "code": "AT",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Royal Jordanian",
+     "code": "RJ",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "alta"
+    },
+    {
+     "airline": "SriLankan Airlines",
+     "code": "UL",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Juneyao Air",
+     "code": "HO",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://thepointsguy.com/loyalty-programs/finnair-plus-avios",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Braathens Regional (BRA)",
+     "code": "TF",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://thepointsguy.com/loyalty-programs/finnair-plus-avios",
+     "confidence": "alta"
+    }
+   ],
+   "transfers_out": [
+    {
+     "to": "British Airways Club",
+     "ratio": "1:1",
+     "source": "https://www.insideflyer.com/posts/avios-can-be-transferred-between-airlines-and-people-for-10"
+    },
+    {
+     "to": "Iberia Club",
+     "ratio": "1:1",
+     "source": "https://www.insideflyer.com/posts/avios-can-be-transferred-between-airlines-and-people-for-10"
+    },
+    {
+     "to": "Qatar Privilege Club",
+     "ratio": "1:1",
+     "source": "https://www.insideflyer.com/posts/avios-can-be-transferred-between-airlines-and-people-for-10"
+    },
+    {
+     "to": "Aer Lingus AerClub",
+     "ratio": "1:1",
+     "source": "https://www.insideflyer.com/posts/avios-can-be-transferred-between-airlines-and-people-for-10"
+    },
+    {
+     "to": "Vueling Club",
+     "ratio": "1:1",
+     "source": "https://www.insideflyer.com/posts/avios-can-be-transferred-between-airlines-and-people-for-10"
+    },
+    {
+     "to": "Loganair Loyalty",
+     "ratio": "1:1",
+     "source": "https://www.insideflyer.com/posts/avios-can-be-transferred-between-airlines-and-people-for-10"
+    }
+   ],
+   "pricing": "tabla por regiones",
+   "notes": "Vuelos Finnair por tramo; socios por origen-destino (no por tramo). Recargos moderados. Socios no-oneworld: LATAM, Juneyao, BRA. S7 suspendido. Avios se mueve 1:1 entre BA, Iberia, Aer Lingus, Finnair, Vueling y Loganair vía avios.com (requiere 2FA y vincular cuentas); Qatar se vincula a través de BA Club. Sin tasa para traspasos entre programas (el 'Send Avios' de Finnair a otras personas cuesta 10 EUR). Restricciones de antigüedad de cuenta/actividad no confirmadas en las fuentes de 2026.",
+   "sources": [
+    "https://headforpoints.com/2024/07/27/which-32-airlines-can-you-book-with-avios-points/comment-page-1",
+    "https://thepointsguy.com/loyalty-programs/finnair-plus-avios",
+    "https://www.insideflyer.com/posts/avios-can-be-transferred-between-airlines-and-people-for-10"
+   ],
+   "confidence": "alta",
+   "checked": "2026-10"
+  },
+  {
+   "id": "miles-and-more",
+   "name": "Miles & More",
+   "currency": "millas Miles & More",
+   "alliance": "Star Alliance",
+   "redeem_on": [
+    {
+     "airline": "Lufthansa",
+     "code": "LH",
+     "basis": "aerolínea propia / grupo Lufthansa",
+     "notes": "First de Lufthansa NO se libera a programas socios desde 1-jun-2026.",
+     "source": "https://reisetopia.de/guides/miles-and-more-airlines/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "SWISS",
+     "code": "LX",
+     "basis": "aerolínea propia / grupo Lufthansa",
+     "notes": "",
+     "source": "https://reisetopia.de/guides/miles-and-more-airlines/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Austrian Airlines",
+     "code": "OS",
+     "basis": "aerolínea propia / grupo Lufthansa",
+     "notes": "",
+     "source": "https://reisetopia.de/guides/miles-and-more-airlines/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Brussels Airlines",
+     "code": "SN",
+     "basis": "aerolínea propia / grupo Lufthansa",
+     "notes": "",
+     "source": "https://reisetopia.de/guides/miles-and-more-airlines/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "ITA Airways",
+     "code": "AZ",
+     "basis": "aerolínea propia / grupo Lufthansa",
+     "notes": "",
+     "source": "https://reisetopia.de/guides/miles-and-more-airlines/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Air Dolomiti",
+     "code": "EN",
+     "basis": "aerolínea propia / grupo Lufthansa",
+     "notes": "",
+     "source": "https://reisetopia.de/guides/miles-and-more-airlines/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Discover Airlines",
+     "code": "4Y",
+     "basis": "aerolínea propia / grupo Lufthansa",
+     "notes": "",
+     "source": "https://reisetopia.de/guides/miles-and-more-airlines/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Eurowings",
+     "code": "EW",
+     "basis": "aerolínea propia / grupo Lufthansa",
+     "notes": "",
+     "source": "https://reisetopia.de/guides/miles-and-more-airlines/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Edelweiss Air",
+     "code": "WK",
+     "basis": "aerolínea propia / grupo Lufthansa",
+     "notes": "Solo vuelos LX8000-LX8499.",
+     "source": "https://reisetopia.de/guides/miles-and-more-airlines/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Croatia Airlines",
+     "code": "OU",
+     "basis": "socio integrado",
+     "notes": "",
+     "source": "https://reisetopia.de/guides/miles-and-more-airlines/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "LOT Polish Airlines",
+     "code": "LO",
+     "basis": "socio integrado",
+     "notes": "",
+     "source": "https://reisetopia.de/guides/miles-and-more-airlines/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Luxair",
+     "code": "LG",
+     "basis": "socio integrado",
+     "notes": "",
+     "source": "https://reisetopia.de/guides/miles-and-more-airlines/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Aegean Airlines",
+     "code": "A3",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://reisetopia.de/guides/miles-and-more-airlines/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Air Canada",
+     "code": "AC",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://reisetopia.de/guides/miles-and-more-airlines/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Air China",
+     "code": "CA",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://reisetopia.de/guides/miles-and-more-airlines/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Air India",
+     "code": "AI",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://reisetopia.de/guides/miles-and-more-airlines/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Air New Zealand",
+     "code": "NZ",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://reisetopia.de/guides/miles-and-more-airlines/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "ANA",
+     "code": "NH",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://reisetopia.de/guides/miles-and-more-airlines/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Asiana Airlines",
+     "code": "OZ",
+     "basis": "alianza (Star Alliance)",
+     "notes": "Asiana sale de Star Alliance el 16-dic-2026; canjes con viaje hasta esa fecha (según reisetopia).",
+     "source": "https://reisetopia.de/guides/miles-and-more-airlines/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Avianca",
+     "code": "AV",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://reisetopia.de/guides/miles-and-more-airlines/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Copa Airlines",
+     "code": "CM",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://reisetopia.de/guides/miles-and-more-airlines/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "EgyptAir",
+     "code": "MS",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://reisetopia.de/guides/miles-and-more-airlines/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Ethiopian Airlines",
+     "code": "ET",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://reisetopia.de/guides/miles-and-more-airlines/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "EVA Air",
+     "code": "BR",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://reisetopia.de/guides/miles-and-more-airlines/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Shenzhen Airlines",
+     "code": "ZH",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://reisetopia.de/guides/miles-and-more-airlines/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Singapore Airlines",
+     "code": "SQ",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://reisetopia.de/guides/miles-and-more-airlines/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "South African Airways",
+     "code": "SA",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://reisetopia.de/guides/miles-and-more-airlines/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "TAP Air Portugal",
+     "code": "TP",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://reisetopia.de/guides/miles-and-more-airlines/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Thai Airways",
+     "code": "TG",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://reisetopia.de/guides/miles-and-more-airlines/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Turkish Airlines",
+     "code": "TK",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://reisetopia.de/guides/miles-and-more-airlines/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "United Airlines",
+     "code": "UA",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://reisetopia.de/guides/miles-and-more-airlines/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Air Astana",
+     "code": "KC",
+     "basis": "socio bilateral",
+     "notes": "Restringido a rutas/números de vuelo concretos.",
+     "source": "https://reisetopia.de/guides/miles-and-more-airlines/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Cathay Pacific",
+     "code": "CX",
+     "basis": "socio bilateral",
+     "notes": "Restringido a rutas/números de vuelo concretos.",
+     "source": "https://reisetopia.de/guides/miles-and-more-airlines/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "LATAM",
+     "code": "LA",
+     "basis": "socio bilateral",
+     "notes": "Restringido a rutas/números de vuelo concretos.",
+     "source": "https://reisetopia.de/guides/miles-and-more-airlines/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Olympic Air",
+     "code": "OA",
+     "basis": "socio bilateral",
+     "notes": "Restringido a rutas/números de vuelo concretos.",
+     "source": "https://reisetopia.de/guides/miles-and-more-airlines/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Lufthansa City Airlines",
+     "code": "VL",
+     "basis": "grupo Lufthansa",
+     "notes": "",
+     "source": "https://reisetopia.de/guides/miles-and-more-airlines/",
+     "confidence": "alta"
+    }
+   ],
+   "transfers_out": [],
+   "pricing": "dinámico",
+   "notes": "Dinámico en LH/LX/OS/City (desde jun-2025) y Discover/Air Dolomiti (desde mar-2026); Brussels, ITA y LOT con 'Meilenschnäppchen'; Star Alliance y otros socios con tabla fija por zonas. ITA en Miles & More desde 1-abr-2026 (Volare sustituido). Miles & More sigue pudiendo canjear First de LH (solo socios externos la perdieron el 1-jun-2026). Sin traspasos a otros programas aéreos confirmados.",
+   "sources": [
+    "https://reisetopia.de/guides/miles-and-more-airlines/",
+    "https://onemileatatime.com/news/lufthansa-first-class-awards-partner-miles-restrictions/",
+    "https://onemileatatime.com/news/ita-airways-star-alliance-miles-more/"
+   ],
+   "confidence": "alta",
+   "checked": "2026-10"
+  },
+  {
+   "id": "flying-blue",
+   "name": "Flying Blue",
+   "currency": "millas Flying Blue",
+   "alliance": "SkyTeam",
+   "redeem_on": [
+    {
+     "airline": "Air France",
+     "code": "AF",
+     "basis": "aerolínea propia",
+     "notes": "",
+     "source": "https://www.point.me/insights/air-france-klm-partner-airlines",
+     "confidence": "media"
+    },
+    {
+     "airline": "KLM",
+     "code": "KL",
+     "basis": "aerolínea propia",
+     "notes": "",
+     "source": "https://www.point.me/insights/air-france-klm-partner-airlines",
+     "confidence": "media"
+    },
+    {
+     "airline": "Aerolíneas Argentinas",
+     "code": "AR",
+     "basis": "alianza (SkyTeam)",
+     "notes": "",
+     "source": "https://www.point.me/insights/air-france-klm-partner-airlines",
+     "confidence": "media"
+    },
+    {
+     "airline": "Aeroméxico",
+     "code": "AM",
+     "basis": "alianza (SkyTeam)",
+     "notes": "",
+     "source": "https://www.point.me/insights/air-france-klm-partner-airlines",
+     "confidence": "media"
+    },
+    {
+     "airline": "Air Europa",
+     "code": "UX",
+     "basis": "alianza (SkyTeam)",
+     "notes": "",
+     "source": "https://www.point.me/insights/air-france-klm-partner-airlines",
+     "confidence": "media"
+    },
+    {
+     "airline": "China Airlines",
+     "code": "CI",
+     "basis": "alianza (SkyTeam)",
+     "notes": "",
+     "source": "https://www.point.me/insights/air-france-klm-partner-airlines",
+     "confidence": "media"
+    },
+    {
+     "airline": "China Eastern",
+     "code": "MU",
+     "basis": "alianza (SkyTeam)",
+     "notes": "",
+     "source": "https://www.point.me/insights/air-france-klm-partner-airlines",
+     "confidence": "media"
+    },
+    {
+     "airline": "Delta Air Lines",
+     "code": "DL",
+     "basis": "alianza (SkyTeam)",
+     "notes": "",
+     "source": "https://www.point.me/insights/air-france-klm-partner-airlines",
+     "confidence": "media"
+    },
+    {
+     "airline": "Garuda Indonesia",
+     "code": "GA",
+     "basis": "alianza (SkyTeam)",
+     "notes": "",
+     "source": "https://www.point.me/insights/air-france-klm-partner-airlines",
+     "confidence": "media"
+    },
+    {
+     "airline": "Kenya Airways",
+     "code": "KQ",
+     "basis": "alianza (SkyTeam)",
+     "notes": "",
+     "source": "https://www.point.me/insights/air-france-klm-partner-airlines",
+     "confidence": "media"
+    },
+    {
+     "airline": "Korean Air",
+     "code": "KE",
+     "basis": "alianza (SkyTeam)",
+     "notes": "",
+     "source": "https://www.point.me/insights/air-france-klm-partner-airlines",
+     "confidence": "media"
+    },
+    {
+     "airline": "Middle East Airlines",
+     "code": "ME",
+     "basis": "alianza (SkyTeam)",
+     "notes": "",
+     "source": "https://www.point.me/insights/air-france-klm-partner-airlines",
+     "confidence": "media"
+    },
+    {
+     "airline": "Saudia",
+     "code": "SV",
+     "basis": "alianza (SkyTeam)",
+     "notes": "",
+     "source": "https://www.point.me/insights/air-france-klm-partner-airlines",
+     "confidence": "media"
+    },
+    {
+     "airline": "SAS Scandinavian Airlines",
+     "code": "SK",
+     "basis": "alianza (SkyTeam)",
+     "notes": "",
+     "source": "https://www.point.me/insights/air-france-klm-partner-airlines",
+     "confidence": "media"
+    },
+    {
+     "airline": "TAROM",
+     "code": "RO",
+     "basis": "alianza (SkyTeam)",
+     "notes": "",
+     "source": "https://www.point.me/insights/air-france-klm-partner-airlines",
+     "confidence": "media"
+    },
+    {
+     "airline": "Vietnam Airlines",
+     "code": "VN",
+     "basis": "alianza (SkyTeam)",
+     "notes": "",
+     "source": "https://www.point.me/insights/air-france-klm-partner-airlines",
+     "confidence": "media"
+    },
+    {
+     "airline": "Virgin Atlantic",
+     "code": "VS",
+     "basis": "alianza (SkyTeam)",
+     "notes": "",
+     "source": "https://www.point.me/insights/air-france-klm-partner-airlines",
+     "confidence": "media"
+    },
+    {
+     "airline": "Xiamen Airlines",
+     "code": "MF",
+     "basis": "alianza (SkyTeam)",
+     "notes": "",
+     "source": "https://www.point.me/insights/air-france-klm-partner-airlines",
+     "confidence": "media"
+    },
+    {
+     "airline": "Air Corsica",
+     "code": "XK",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://www.point.me/insights/air-france-klm-partner-airlines",
+     "confidence": "media"
+    },
+    {
+     "airline": "Air Mauritius",
+     "code": "MK",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://www.point.me/insights/air-france-klm-partner-airlines",
+     "confidence": "media"
+    },
+    {
+     "airline": "airBaltic",
+     "code": "BT",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://www.point.me/insights/air-france-klm-partner-airlines",
+     "confidence": "media"
+    },
+    {
+     "airline": "Aircalin",
+     "code": "SB",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://www.point.me/insights/air-france-klm-partner-airlines",
+     "confidence": "media"
+    },
+    {
+     "airline": "Bangkok Airways",
+     "code": "PG",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://www.point.me/insights/air-france-klm-partner-airlines",
+     "confidence": "media"
+    },
+    {
+     "airline": "China Southern Airlines",
+     "code": "CZ",
+     "basis": "socio bilateral",
+     "notes": "Suspendido temporalmente (dic-2024).",
+     "source": "https://www.point.me/insights/air-france-klm-partner-airlines",
+     "confidence": "media"
+    },
+    {
+     "airline": "Copa Airlines",
+     "code": "CM",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://www.point.me/insights/air-france-klm-partner-airlines",
+     "confidence": "media"
+    },
+    {
+     "airline": "El Al",
+     "code": "LY",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://www.point.me/insights/air-france-klm-partner-airlines",
+     "confidence": "media"
+    },
+    {
+     "airline": "Etihad Airways",
+     "code": "EY",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://www.point.me/insights/air-france-klm-partner-airlines",
+     "confidence": "media"
+    },
+    {
+     "airline": "GOL",
+     "code": "G3",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://www.point.me/insights/air-france-klm-partner-airlines",
+     "confidence": "media"
+    },
+    {
+     "airline": "Japan Airlines",
+     "code": "JL",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://www.point.me/insights/air-france-klm-partner-airlines",
+     "confidence": "media"
+    },
+    {
+     "airline": "Malaysia Airlines",
+     "code": "MH",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://www.point.me/insights/air-france-klm-partner-airlines",
+     "confidence": "media"
+    },
+    {
+     "airline": "Oman Air",
+     "code": "WY",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://www.point.me/insights/air-france-klm-partner-airlines",
+     "confidence": "media"
+    },
+    {
+     "airline": "Qantas",
+     "code": "QF",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://www.point.me/insights/air-france-klm-partner-airlines",
+     "confidence": "media"
+    },
+    {
+     "airline": "Transavia",
+     "code": "HV",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://www.point.me/insights/air-france-klm-partner-airlines",
+     "confidence": "media"
+    },
+    {
+     "airline": "WestJet",
+     "code": "WS",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://www.point.me/insights/air-france-klm-partner-airlines",
+     "confidence": "media"
+    }
+   ],
+   "transfers_out": [],
+   "pricing": "dinámico",
+   "notes": "Sin tabla publicada; Promo Rewards mensuales. Lista de socios de point.me (dic-2024): socios menores no listados (Chalair, Twin Jet, Winair). ITA eliminado desde 1-abr-2026. Sin traspasos a otros programas aéreos confirmados.",
+   "sources": [
+    "https://www.point.me/insights/air-france-klm-partner-airlines",
+    "https://ulysse.com/news/ita-airways-star-alliance-avril-2026-miles-flying-blue"
+   ],
+   "confidence": "media",
+   "checked": "2026-10"
+  },
+  {
+   "id": "latam-pass",
+   "name": "LATAM Pass",
+   "currency": "millas LATAM Pass",
+   "alliance": "ninguna",
+   "redeem_on": [
+    {
+     "airline": "LATAM",
+     "code": "LA",
+     "basis": "aerolínea propia",
+     "notes": "Precio dinámico, sin tabla publicada; a menudo caro.",
+     "source": "https://upgradedpoints.com/travel/airlines/best-ways-to-redeem-latam-pass-miles/",
+     "confidence": "media"
+    },
+    {
+     "airline": "Qatar Airways",
+     "code": "QR",
+     "basis": "socio bilateral",
+     "notes": "CONFIRMADO canjeable: Upgraded Points (act. 8-feb-2026) dice que Qatar suele reservarse online; AwardFares también lo lista. Tabla por regiones para socios.",
+     "source": "https://upgradedpoints.com/travel/airlines/best-ways-to-redeem-latam-pass-miles/",
+     "confidence": "media"
+    },
+    {
+     "airline": "Iberia",
+     "code": "IB",
+     "basis": "socio bilateral",
+     "notes": "CONFIRMADO canjeable pero normalmente por teléfono (call center, 25 USD de cargo). Itinerarios con tramos Iberia no permiten stopover. El acuerdo LATAM-Iberia de ene-2026 amplió acumulación y salas, no canjes.",
+     "source": "https://upgradedpoints.com/travel/airlines/best-ways-to-redeem-latam-pass-miles/",
+     "confidence": "media"
+    },
+    {
+     "airline": "Delta Air Lines",
+     "code": "DL",
+     "basis": "socio bilateral",
+     "notes": "Socio bilateral (joint venture); aparece online.",
+     "source": "https://upgradedpoints.com/travel/airlines/best-ways-to-redeem-latam-pass-miles/",
+     "confidence": "media"
+    },
+    {
+     "airline": "Qantas",
+     "code": "QF",
+     "basis": "socio bilateral",
+     "notes": "Online según Upgraded Points.",
+     "source": "https://upgradedpoints.com/travel/airlines/best-ways-to-redeem-latam-pass-miles/",
+     "confidence": "media"
+    },
+    {
+     "airline": "British Airways",
+     "code": "BA",
+     "basis": "socio bilateral",
+     "notes": "Probablemente solo por teléfono.",
+     "source": "https://upgradedpoints.com/travel/airlines/best-ways-to-redeem-latam-pass-miles/",
+     "confidence": "media"
+    },
+    {
+     "airline": "Cathay Pacific",
+     "code": "CX",
+     "basis": "socio bilateral",
+     "notes": "Probablemente solo por teléfono.",
+     "source": "https://upgradedpoints.com/travel/airlines/best-ways-to-redeem-latam-pass-miles/",
+     "confidence": "media"
+    },
+    {
+     "airline": "Finnair",
+     "code": "AY",
+     "basis": "socio bilateral",
+     "notes": "Probablemente solo por teléfono.",
+     "source": "https://upgradedpoints.com/travel/airlines/best-ways-to-redeem-latam-pass-miles/",
+     "confidence": "media"
+    },
+    {
+     "airline": "Japan Airlines",
+     "code": "JL",
+     "basis": "socio bilateral",
+     "notes": "Probablemente solo por teléfono.",
+     "source": "https://upgradedpoints.com/travel/airlines/best-ways-to-redeem-latam-pass-miles/",
+     "confidence": "media"
+    },
+    {
+     "airline": "Lufthansa",
+     "code": "LH",
+     "basis": "socio bilateral",
+     "notes": "Probablemente solo por teléfono.",
+     "source": "https://upgradedpoints.com/travel/airlines/best-ways-to-redeem-latam-pass-miles/",
+     "confidence": "media"
+    },
+    {
+     "airline": "Austrian Airlines",
+     "code": "OS",
+     "basis": "socio bilateral",
+     "notes": "Probablemente solo por teléfono.",
+     "source": "https://upgradedpoints.com/travel/airlines/best-ways-to-redeem-latam-pass-miles/",
+     "confidence": "media"
+    },
+    {
+     "airline": "SWISS",
+     "code": "LX",
+     "basis": "socio bilateral",
+     "notes": "Probablemente solo por teléfono.",
+     "source": "https://upgradedpoints.com/travel/airlines/best-ways-to-redeem-latam-pass-miles/",
+     "confidence": "media"
+    },
+    {
+     "airline": "Royal Jordanian",
+     "code": "RJ",
+     "basis": "socio bilateral",
+     "notes": "Probablemente solo por teléfono.",
+     "source": "https://upgradedpoints.com/travel/airlines/best-ways-to-redeem-latam-pass-miles/",
+     "confidence": "media"
+    },
+    {
+     "airline": "Aeroméxico",
+     "code": "AM",
+     "basis": "socio bilateral",
+     "notes": "Solo listado por AwardFares; no confirmado por otra fuente.",
+     "source": "https://awardfares.com/es/programs/latam-pass",
+     "confidence": "media"
+    },
+    {
+     "airline": "Alaska Airlines",
+     "code": "AS",
+     "basis": "socio bilateral",
+     "notes": "Solo listado por AwardFares; no confirmado por otra fuente.",
+     "source": "https://awardfares.com/es/programs/latam-pass",
+     "confidence": "media"
+    },
+    {
+     "airline": "Virgin Atlantic",
+     "code": "VS",
+     "basis": "socio bilateral",
+     "notes": "Solo listado por AwardFares; no confirmado por otra fuente.",
+     "source": "https://awardfares.com/es/programs/latam-pass",
+     "confidence": "media"
+    }
+   ],
+   "transfers_out": [],
+   "pricing": "tabla por regiones",
+   "notes": "LATAM salió de oneworld (2020): todos los socios son bilaterales. Vuelos LATAM dinámicos; socios con tabla por regiones. Respuesta explícita: SÍ se puede canjear LATAM Pass en Qatar Airways (online) e Iberia (por teléfono); también Delta, Qantas, BA, Cathay, Finnair, JAL, grupo Lufthansa (LH/LX/OS), Royal Jordanian. Malaysia y S7 aparecen en listas antiguas, se omiten. La web oficial de socios (latampass.latam.com) no mostró en la lectura qué socios permiten canje, solo acumulación. Sin traspasos a otros programas aéreos.",
+   "sources": [
+    "https://upgradedpoints.com/travel/airlines/best-ways-to-redeem-latam-pass-miles/",
+    "https://awardfares.com/es/programs/latam-pass",
+    "https://latampass.latam.com/en_au/associated-airlines",
+    "https://pointsnav.com/reward-programs/latam-airlines"
+   ],
+   "confidence": "media",
+   "checked": "2026-10"
+  },
+  {
+   "id": "smiles",
+   "name": "Smiles (GOL)",
+   "currency": "milhas Smiles",
+   "alliance": "ninguna",
+   "redeem_on": [
+    {
+     "airline": "GOL",
+     "code": "G3",
+     "basis": "aerolínea propia",
+     "notes": "Precio dinámico.",
+     "source": "https://cartoeseviagens.com.br/cias-parcerias-smiles",
+     "confidence": "media"
+    },
+    {
+     "airline": "Air France",
+     "code": "AF",
+     "basis": "socio bilateral",
+     "notes": "Canje confirmado explícitamente (Cartões e Viagens, ago-2026).",
+     "source": "https://cartoeseviagens.com.br/cias-parcerias-smiles",
+     "confidence": "media"
+    },
+    {
+     "airline": "KLM",
+     "code": "KL",
+     "basis": "socio bilateral",
+     "notes": "Canje confirmado explícitamente (Cartões e Viagens, ago-2026).",
+     "source": "https://cartoeseviagens.com.br/cias-parcerias-smiles",
+     "confidence": "media"
+    },
+    {
+     "airline": "Emirates",
+     "code": "EK",
+     "basis": "socio bilateral",
+     "notes": "Canje confirmado explícitamente (Cartões e Viagens, ago-2026).",
+     "source": "https://cartoeseviagens.com.br/cias-parcerias-smiles",
+     "confidence": "media"
+    },
+    {
+     "airline": "TAP Air Portugal",
+     "code": "TP",
+     "basis": "socio bilateral",
+     "notes": "Canje confirmado explícitamente (Cartões e Viagens, ago-2026).",
+     "source": "https://cartoeseviagens.com.br/cias-parcerias-smiles",
+     "confidence": "media"
+    },
+    {
+     "airline": "Copa Airlines",
+     "code": "CM",
+     "basis": "socio bilateral",
+     "notes": "Canje confirmado explícitamente (Cartões e Viagens, ago-2026).",
+     "source": "https://cartoeseviagens.com.br/cias-parcerias-smiles",
+     "confidence": "media"
+    },
+    {
+     "airline": "British Airways",
+     "code": "BA",
+     "basis": "socio bilateral",
+     "notes": "Canje confirmado explícitamente (Cartões e Viagens, ago-2026).",
+     "source": "https://cartoeseviagens.com.br/cias-parcerias-smiles",
+     "confidence": "media"
+    },
+    {
+     "airline": "Turkish Airlines",
+     "code": "TK",
+     "basis": "socio bilateral",
+     "notes": "Canje confirmado explícitamente (Cartões e Viagens, ago-2026).",
+     "source": "https://cartoeseviagens.com.br/cias-parcerias-smiles",
+     "confidence": "media"
+    },
+    {
+     "airline": "EgyptAir",
+     "code": "MS",
+     "basis": "socio bilateral",
+     "notes": "En lista de canje de Passageiro de Primeira (mar-2025); verificar disponibilidad.",
+     "source": "https://passageirodeprimeira.com/saiba-quais-sao-as-companhias-parceiras-da-smiles",
+     "confidence": "media"
+    },
+    {
+     "airline": "Ethiopian Airlines",
+     "code": "ET",
+     "basis": "socio bilateral",
+     "notes": "En lista de canje de Passageiro de Primeira (mar-2025); verificar disponibilidad.",
+     "source": "https://passageirodeprimeira.com/saiba-quais-sao-as-companhias-parceiras-da-smiles",
+     "confidence": "media"
+    },
+    {
+     "airline": "FlySafair",
+     "code": "FA",
+     "basis": "socio bilateral",
+     "notes": "En lista de canje de Passageiro de Primeira (mar-2025); verificar disponibilidad.",
+     "source": "https://passageirodeprimeira.com/saiba-quais-sao-as-companhias-parceiras-da-smiles",
+     "confidence": "media"
+    },
+    {
+     "airline": "Kenya Airways",
+     "code": "KQ",
+     "basis": "socio bilateral",
+     "notes": "En lista de canje de Passageiro de Primeira (mar-2025); verificar disponibilidad.",
+     "source": "https://passageirodeprimeira.com/saiba-quais-sao-as-companhias-parceiras-da-smiles",
+     "confidence": "media"
+    },
+    {
+     "airline": "Royal Air Maroc",
+     "code": "AT",
+     "basis": "socio bilateral",
+     "notes": "En lista de canje de Passageiro de Primeira (mar-2025); verificar disponibilidad.",
+     "source": "https://passageirodeprimeira.com/saiba-quais-sao-as-companhias-parceiras-da-smiles",
+     "confidence": "media"
+    },
+    {
+     "airline": "South African Airways",
+     "code": "SA",
+     "basis": "socio bilateral",
+     "notes": "En lista de canje de Passageiro de Primeira (mar-2025); verificar disponibilidad.",
+     "source": "https://passageirodeprimeira.com/saiba-quais-sao-as-companhias-parceiras-da-smiles",
+     "confidence": "media"
+    },
+    {
+     "airline": "TAAG Angola",
+     "code": "DT",
+     "basis": "socio bilateral",
+     "notes": "En lista de canje de Passageiro de Primeira (mar-2025); verificar disponibilidad.",
+     "source": "https://passageirodeprimeira.com/saiba-quais-sao-as-companhias-parceiras-da-smiles",
+     "confidence": "media"
+    },
+    {
+     "airline": "Bahamasair",
+     "code": "UP",
+     "basis": "socio bilateral",
+     "notes": "En lista de canje de Passageiro de Primeira (mar-2025); verificar disponibilidad.",
+     "source": "https://passageirodeprimeira.com/saiba-quais-sao-as-companhias-parceiras-da-smiles",
+     "confidence": "media"
+    },
+    {
+     "airline": "Caribbean Airlines",
+     "code": "BW",
+     "basis": "socio bilateral",
+     "notes": "En lista de canje de Passageiro de Primeira (mar-2025); verificar disponibilidad.",
+     "source": "https://passageirodeprimeira.com/saiba-quais-sao-as-companhias-parceiras-da-smiles",
+     "confidence": "media"
+    },
+    {
+     "airline": "Aeroméxico",
+     "code": "AM",
+     "basis": "socio bilateral",
+     "notes": "En lista de canje de Passageiro de Primeira (mar-2025); verificar disponibilidad.",
+     "source": "https://passageirodeprimeira.com/saiba-quais-sao-as-companhias-parceiras-da-smiles",
+     "confidence": "media"
+    },
+    {
+     "airline": "Air Canada",
+     "code": "AC",
+     "basis": "socio bilateral",
+     "notes": "En lista de canje de Passageiro de Primeira (mar-2025); verificar disponibilidad.",
+     "source": "https://passageirodeprimeira.com/saiba-quais-sao-as-companhias-parceiras-da-smiles",
+     "confidence": "media"
+    },
+    {
+     "airline": "Alaska Airlines",
+     "code": "AS",
+     "basis": "socio bilateral",
+     "notes": "En lista de canje de Passageiro de Primeira (mar-2025); verificar disponibilidad.",
+     "source": "https://passageirodeprimeira.com/saiba-quais-sao-as-companhias-parceiras-da-smiles",
+     "confidence": "media"
+    },
+    {
+     "airline": "American Airlines",
+     "code": "AA",
+     "basis": "socio bilateral",
+     "notes": "En lista de canje de Passageiro de Primeira (mar-2025); verificar disponibilidad.",
+     "source": "https://passageirodeprimeira.com/saiba-quais-sao-as-companhias-parceiras-da-smiles",
+     "confidence": "media"
+    },
+    {
+     "airline": "Hawaiian Airlines",
+     "code": "HA",
+     "basis": "socio bilateral",
+     "notes": "En lista de canje de Passageiro de Primeira (mar-2025); verificar disponibilidad.",
+     "source": "https://passageirodeprimeira.com/saiba-quais-sao-as-companhias-parceiras-da-smiles",
+     "confidence": "media"
+    },
+    {
+     "airline": "WestJet",
+     "code": "WS",
+     "basis": "socio bilateral",
+     "notes": "En lista de canje de Passageiro de Primeira (mar-2025); verificar disponibilidad.",
+     "source": "https://passageirodeprimeira.com/saiba-quais-sao-as-companhias-parceiras-da-smiles",
+     "confidence": "media"
+    },
+    {
+     "airline": "Aerolíneas Argentinas",
+     "code": "AR",
+     "basis": "socio bilateral",
+     "notes": "En lista de canje de Passageiro de Primeira (mar-2025); verificar disponibilidad.",
+     "source": "https://passageirodeprimeira.com/saiba-quais-sao-as-companhias-parceiras-da-smiles",
+     "confidence": "media"
+    },
+    {
+     "airline": "Avianca",
+     "code": "AV",
+     "basis": "socio bilateral",
+     "notes": "En lista de canje de Passageiro de Primeira (mar-2025); verificar disponibilidad.",
+     "source": "https://passageirodeprimeira.com/saiba-quais-sao-as-companhias-parceiras-da-smiles",
+     "confidence": "media"
+    },
+    {
+     "airline": "BoA",
+     "code": "OB",
+     "basis": "socio bilateral",
+     "notes": "En lista de canje de Passageiro de Primeira (mar-2025); verificar disponibilidad.",
+     "source": "https://passageirodeprimeira.com/saiba-quais-sao-as-companhias-parceiras-da-smiles",
+     "confidence": "media"
+    },
+    {
+     "airline": "SKY Airline",
+     "code": "H2",
+     "basis": "socio bilateral",
+     "notes": "En lista de canje de Passageiro de Primeira (mar-2025); verificar disponibilidad.",
+     "source": "https://passageirodeprimeira.com/saiba-quais-sao-as-companhias-parceiras-da-smiles",
+     "confidence": "media"
+    },
+    {
+     "airline": "ANA",
+     "code": "NH",
+     "basis": "socio bilateral",
+     "notes": "En lista de canje de Passageiro de Primeira (mar-2025); verificar disponibilidad.",
+     "source": "https://passageirodeprimeira.com/saiba-quais-sao-as-companhias-parceiras-da-smiles",
+     "confidence": "media"
+    },
+    {
+     "airline": "Air India",
+     "code": "AI",
+     "basis": "socio bilateral",
+     "notes": "En lista de canje de Passageiro de Primeira (mar-2025); verificar disponibilidad.",
+     "source": "https://passageirodeprimeira.com/saiba-quais-sao-as-companhias-parceiras-da-smiles",
+     "confidence": "media"
+    },
+    {
+     "airline": "Bangkok Airways",
+     "code": "PG",
+     "basis": "socio bilateral",
+     "notes": "En lista de canje de Passageiro de Primeira (mar-2025); verificar disponibilidad.",
+     "source": "https://passageirodeprimeira.com/saiba-quais-sao-as-companhias-parceiras-da-smiles",
+     "confidence": "media"
+    },
+    {
+     "airline": "China Eastern",
+     "code": "MU",
+     "basis": "socio bilateral",
+     "notes": "En lista de canje de Passageiro de Primeira (mar-2025); verificar disponibilidad.",
+     "source": "https://passageirodeprimeira.com/saiba-quais-sao-as-companhias-parceiras-da-smiles",
+     "confidence": "media"
+    },
+    {
+     "airline": "Garuda Indonesia",
+     "code": "GA",
+     "basis": "socio bilateral",
+     "notes": "En lista de canje de Passageiro de Primeira (mar-2025); verificar disponibilidad.",
+     "source": "https://passageirodeprimeira.com/saiba-quais-sao-as-companhias-parceiras-da-smiles",
+     "confidence": "media"
+    },
+    {
+     "airline": "Hong Kong Airlines",
+     "code": "HX",
+     "basis": "socio bilateral",
+     "notes": "En lista de canje de Passageiro de Primeira (mar-2025); verificar disponibilidad.",
+     "source": "https://passageirodeprimeira.com/saiba-quais-sao-as-companhias-parceiras-da-smiles",
+     "confidence": "media"
+    },
+    {
+     "airline": "Juneyao Air",
+     "code": "HO",
+     "basis": "socio bilateral",
+     "notes": "En lista de canje de Passageiro de Primeira (mar-2025); verificar disponibilidad.",
+     "source": "https://passageirodeprimeira.com/saiba-quais-sao-as-companhias-parceiras-da-smiles",
+     "confidence": "media"
+    },
+    {
+     "airline": "Korean Air",
+     "code": "KE",
+     "basis": "socio bilateral",
+     "notes": "En lista de canje de Passageiro de Primeira (mar-2025); verificar disponibilidad.",
+     "source": "https://passageirodeprimeira.com/saiba-quais-sao-as-companhias-parceiras-da-smiles",
+     "confidence": "media"
+    },
+    {
+     "airline": "Malaysia Airlines",
+     "code": "MH",
+     "basis": "socio bilateral",
+     "notes": "En lista de canje de Passageiro de Primeira (mar-2025); verificar disponibilidad.",
+     "source": "https://passageirodeprimeira.com/saiba-quais-sao-as-companhias-parceiras-da-smiles",
+     "confidence": "media"
+    },
+    {
+     "airline": "Scoot",
+     "code": "TR",
+     "basis": "socio bilateral",
+     "notes": "En lista de canje de Passageiro de Primeira (mar-2025); verificar disponibilidad.",
+     "source": "https://passageirodeprimeira.com/saiba-quais-sao-as-companhias-parceiras-da-smiles",
+     "confidence": "media"
+    },
+    {
+     "airline": "STARLUX Airlines",
+     "code": "JX",
+     "basis": "socio bilateral",
+     "notes": "En lista de canje de Passageiro de Primeira (mar-2025); verificar disponibilidad.",
+     "source": "https://passageirodeprimeira.com/saiba-quais-sao-as-companhias-parceiras-da-smiles",
+     "confidence": "media"
+    },
+    {
+     "airline": "Thai Airways",
+     "code": "TG",
+     "basis": "socio bilateral",
+     "notes": "En lista de canje de Passageiro de Primeira (mar-2025); verificar disponibilidad.",
+     "source": "https://passageirodeprimeira.com/saiba-quais-sao-as-companhias-parceiras-da-smiles",
+     "confidence": "media"
+    },
+    {
+     "airline": "Aegean Airlines",
+     "code": "A3",
+     "basis": "socio bilateral",
+     "notes": "En lista de canje de Passageiro de Primeira (mar-2025); verificar disponibilidad.",
+     "source": "https://passageirodeprimeira.com/saiba-quais-sao-as-companhias-parceiras-da-smiles",
+     "confidence": "media"
+    },
+    {
+     "airline": "Aer Lingus",
+     "code": "EI",
+     "basis": "socio bilateral",
+     "notes": "En lista de canje de Passageiro de Primeira (mar-2025); verificar disponibilidad.",
+     "source": "https://passageirodeprimeira.com/saiba-quais-sao-as-companhias-parceiras-da-smiles",
+     "confidence": "media"
+    },
+    {
+     "airline": "airBaltic",
+     "code": "BT",
+     "basis": "socio bilateral",
+     "notes": "En lista de canje de Passageiro de Primeira (mar-2025); verificar disponibilidad.",
+     "source": "https://passageirodeprimeira.com/saiba-quais-sao-as-companhias-parceiras-da-smiles",
+     "confidence": "media"
+    },
+    {
+     "airline": "Air Europa",
+     "code": "UX",
+     "basis": "socio bilateral",
+     "notes": "En lista de canje de Passageiro de Primeira (mar-2025); verificar disponibilidad.",
+     "source": "https://passageirodeprimeira.com/saiba-quais-sao-as-companhias-parceiras-da-smiles",
+     "confidence": "media"
+    },
+    {
+     "airline": "Brussels Airlines",
+     "code": "SN",
+     "basis": "socio bilateral",
+     "notes": "En lista de canje de Passageiro de Primeira (mar-2025); verificar disponibilidad.",
+     "source": "https://passageirodeprimeira.com/saiba-quais-sao-as-companhias-parceiras-da-smiles",
+     "confidence": "media"
+    },
+    {
+     "airline": "Croatia Airlines",
+     "code": "OU",
+     "basis": "socio bilateral",
+     "notes": "En lista de canje de Passageiro de Primeira (mar-2025); verificar disponibilidad.",
+     "source": "https://passageirodeprimeira.com/saiba-quais-sao-as-companhias-parceiras-da-smiles",
+     "confidence": "media"
+    },
+    {
+     "airline": "Hahn Air",
+     "code": "H1",
+     "basis": "socio bilateral",
+     "notes": "En lista de canje de Passageiro de Primeira (mar-2025); verificar disponibilidad.",
+     "source": "https://passageirodeprimeira.com/saiba-quais-sao-as-companhias-parceiras-da-smiles",
+     "confidence": "media"
+    },
+    {
+     "airline": "Iberia",
+     "code": "IB",
+     "basis": "socio bilateral",
+     "notes": "En lista de canje de Passageiro de Primeira (mar-2025); verificar disponibilidad.",
+     "source": "https://passageirodeprimeira.com/saiba-quais-sao-as-companhias-parceiras-da-smiles",
+     "confidence": "media"
+    },
+    {
+     "airline": "ITA Airways",
+     "code": "AZ",
+     "basis": "socio bilateral",
+     "notes": "En lista de canje de Passageiro de Primeira (mar-2025); verificar disponibilidad.",
+     "source": "https://passageirodeprimeira.com/saiba-quais-sao-as-companhias-parceiras-da-smiles",
+     "confidence": "media"
+    },
+    {
+     "airline": "Sky Express",
+     "code": "GQ",
+     "basis": "socio bilateral",
+     "notes": "En lista de canje de Passageiro de Primeira (mar-2025); verificar disponibilidad.",
+     "source": "https://passageirodeprimeira.com/saiba-quais-sao-as-companhias-parceiras-da-smiles",
+     "confidence": "media"
+    },
+    {
+     "airline": "Volotea",
+     "code": "V7",
+     "basis": "socio bilateral",
+     "notes": "En lista de canje de Passageiro de Primeira (mar-2025); verificar disponibilidad.",
+     "source": "https://passageirodeprimeira.com/saiba-quais-sao-as-companhias-parceiras-da-smiles",
+     "confidence": "media"
+    },
+    {
+     "airline": "Vueling",
+     "code": "VY",
+     "basis": "socio bilateral",
+     "notes": "En lista de canje de Passageiro de Primeira (mar-2025); verificar disponibilidad.",
+     "source": "https://passageirodeprimeira.com/saiba-quais-sao-as-companhias-parceiras-da-smiles",
+     "confidence": "media"
+    },
+    {
+     "airline": "Jetstar",
+     "code": "JQ",
+     "basis": "socio bilateral",
+     "notes": "En lista de canje de Passageiro de Primeira (mar-2025); verificar disponibilidad.",
+     "source": "https://passageirodeprimeira.com/saiba-quais-sao-as-companhias-parceiras-da-smiles",
+     "confidence": "media"
+    },
+    {
+     "airline": "Virgin Australia",
+     "code": "VA",
+     "basis": "socio bilateral",
+     "notes": "En lista de canje de Passageiro de Primeira (mar-2025); verificar disponibilidad.",
+     "source": "https://passageirodeprimeira.com/saiba-quais-sao-as-companhias-parceiras-da-smiles",
+     "confidence": "media"
+    },
+    {
+     "airline": "Etihad Airways",
+     "code": "EY",
+     "basis": "socio bilateral",
+     "notes": "En lista de canje de Passageiro de Primeira (mar-2025); verificar disponibilidad.",
+     "source": "https://passageirodeprimeira.com/saiba-quais-sao-as-companhias-parceiras-da-smiles",
+     "confidence": "media"
+    },
+    {
+     "airline": "flydubai",
+     "code": "FZ",
+     "basis": "socio bilateral",
+     "notes": "En lista de canje de Passageiro de Primeira (mar-2025); verificar disponibilidad.",
+     "source": "https://passageirodeprimeira.com/saiba-quais-sao-as-companhias-parceiras-da-smiles",
+     "confidence": "media"
+    },
+    {
+     "airline": "Saudia",
+     "code": "SV",
+     "basis": "socio bilateral",
+     "notes": "En lista de canje de Passageiro de Primeira (mar-2025); verificar disponibilidad.",
+     "source": "https://passageirodeprimeira.com/saiba-quais-sao-as-companhias-parceiras-da-smiles",
+     "confidence": "media"
+    },
+    {
+     "airline": "Qatar Airways",
+     "code": "QR",
+     "basis": "socio bilateral",
+     "notes": "DUDOSO: fuentes contradictorias (ago-2026 sí / mar-2025 no).",
+     "source": "https://cartoeseviagens.com.br/cias-parcerias-smiles",
+     "confidence": "baja"
+    }
+   ],
+   "transfers_out": [],
+   "pricing": "dinámico",
+   "notes": "Sin alianza; muchos socios bilaterales con precio dinámico. QATAR AIRWAYS: Cartões e Viagens (ago-2026) la cita como canjeable, pero Passageiro de Primeira (mar-2025) NO la lista para canje (la asociación inicial era solo de acumulación) -> no incluida en redeem_on, a verificar. Sin traspasos a otros programas aéreos confirmados.",
+   "sources": [
+    "https://cartoeseviagens.com.br/cias-parcerias-smiles",
+    "https://passageirodeprimeira.com/saiba-quais-sao-as-companhias-parceiras-da-smiles"
+   ],
+   "confidence": "media",
+   "checked": "2026-10"
+  },
+  {
+   "id": "azul-fidelidade",
+   "name": "Azul Fidelidade",
+   "currency": "pontos Azul",
+   "alliance": "ninguna",
+   "redeem_on": [
+    {
+     "airline": "Azul",
+     "code": "AD",
+     "basis": "aerolínea propia",
+     "notes": "",
+     "source": "https://cartoeseviagens.com.br/companhias-parceiras-da-azul",
+     "confidence": "media"
+    },
+    {
+     "airline": "Air Canada",
+     "code": "AC",
+     "basis": "socio bilateral",
+     "notes": "Vía 'Azul Pelo Mundo'; sujeto a disponibilidad.",
+     "source": "https://cartoeseviagens.com.br/companhias-parceiras-da-azul",
+     "confidence": "media"
+    },
+    {
+     "airline": "Copa Airlines",
+     "code": "CM",
+     "basis": "socio bilateral",
+     "notes": "Vía 'Azul Pelo Mundo'; sujeto a disponibilidad.",
+     "source": "https://cartoeseviagens.com.br/companhias-parceiras-da-azul",
+     "confidence": "media"
+    },
+    {
+     "airline": "Emirates",
+     "code": "EK",
+     "basis": "socio bilateral",
+     "notes": "Vía 'Azul Pelo Mundo'; sujeto a disponibilidad.",
+     "source": "https://cartoeseviagens.com.br/companhias-parceiras-da-azul",
+     "confidence": "media"
+    },
+    {
+     "airline": "Etihad Airways",
+     "code": "EY",
+     "basis": "socio bilateral",
+     "notes": "Vía 'Azul Pelo Mundo'; sujeto a disponibilidad.",
+     "source": "https://cartoeseviagens.com.br/companhias-parceiras-da-azul",
+     "confidence": "media"
+    },
+    {
+     "airline": "TAP Air Portugal",
+     "code": "TP",
+     "basis": "socio bilateral",
+     "notes": "Vía 'Azul Pelo Mundo'; sujeto a disponibilidad.",
+     "source": "https://cartoeseviagens.com.br/companhias-parceiras-da-azul",
+     "confidence": "media"
+    },
+    {
+     "airline": "Turkish Airlines",
+     "code": "TK",
+     "basis": "socio bilateral",
+     "notes": "Vía 'Azul Pelo Mundo'; sujeto a disponibilidad.",
+     "source": "https://cartoeseviagens.com.br/companhias-parceiras-da-azul",
+     "confidence": "media"
+    },
+    {
+     "airline": "United Airlines",
+     "code": "UA",
+     "basis": "socio bilateral",
+     "notes": "Vía 'Azul Pelo Mundo'; sujeto a disponibilidad.",
+     "source": "https://cartoeseviagens.com.br/companhias-parceiras-da-azul",
+     "confidence": "media"
+    }
+   ],
+   "transfers_out": [],
+   "pricing": "dinámico",
+   "notes": "Lista oficial de socios con canje comprobada el 14-ago-2026 (Cartões e Viagens). Otras ~30 aerolíneas que aparecen en el buscador se venden por interline/efectivo, no con puntos. Tipo de precio en socios no confirmado (asumido dinámico).",
+   "sources": [
+    "https://cartoeseviagens.com.br/companhias-parceiras-da-azul"
+   ],
+   "confidence": "media",
+   "checked": "2026-10"
+  },
+  {
+   "id": "tap-miles-and-go",
+   "name": "TAP Miles&Go",
+   "currency": "milhas TAP Miles&Go",
+   "alliance": "Star Alliance",
+   "redeem_on": [
+    {
+     "airline": "TAP Air Portugal",
+     "code": "TP",
+     "basis": "aerolínea propia",
+     "notes": "",
+     "source": "https://passageirodeprimeira.com/?p=415654",
+     "confidence": "baja"
+    },
+    {
+     "airline": "Aegean Airlines",
+     "code": "A3",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://passageirodeprimeira.com/?p=415654",
+     "confidence": "baja"
+    },
+    {
+     "airline": "Air Canada",
+     "code": "AC",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://passageirodeprimeira.com/?p=415654",
+     "confidence": "baja"
+    },
+    {
+     "airline": "Air China",
+     "code": "CA",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://passageirodeprimeira.com/?p=415654",
+     "confidence": "baja"
+    },
+    {
+     "airline": "Air India",
+     "code": "AI",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://passageirodeprimeira.com/?p=415654",
+     "confidence": "baja"
+    },
+    {
+     "airline": "Air New Zealand",
+     "code": "NZ",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://passageirodeprimeira.com/?p=415654",
+     "confidence": "baja"
+    },
+    {
+     "airline": "ANA",
+     "code": "NH",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://passageirodeprimeira.com/?p=415654",
+     "confidence": "baja"
+    },
+    {
+     "airline": "Asiana Airlines",
+     "code": "OZ",
+     "basis": "alianza (Star Alliance)",
+     "notes": "Asiana sale de Star Alliance el 16-dic-2026; canjes con viaje hasta esa fecha (según reisetopia).",
+     "source": "https://passageirodeprimeira.com/?p=415654",
+     "confidence": "baja"
+    },
+    {
+     "airline": "Austrian Airlines",
+     "code": "OS",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://passageirodeprimeira.com/?p=415654",
+     "confidence": "baja"
+    },
+    {
+     "airline": "Avianca",
+     "code": "AV",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://passageirodeprimeira.com/?p=415654",
+     "confidence": "baja"
+    },
+    {
+     "airline": "Brussels Airlines",
+     "code": "SN",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://passageirodeprimeira.com/?p=415654",
+     "confidence": "baja"
+    },
+    {
+     "airline": "Copa Airlines",
+     "code": "CM",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://passageirodeprimeira.com/?p=415654",
+     "confidence": "baja"
+    },
+    {
+     "airline": "Croatia Airlines",
+     "code": "OU",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://passageirodeprimeira.com/?p=415654",
+     "confidence": "baja"
+    },
+    {
+     "airline": "EgyptAir",
+     "code": "MS",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://passageirodeprimeira.com/?p=415654",
+     "confidence": "baja"
+    },
+    {
+     "airline": "Ethiopian Airlines",
+     "code": "ET",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://passageirodeprimeira.com/?p=415654",
+     "confidence": "baja"
+    },
+    {
+     "airline": "EVA Air",
+     "code": "BR",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://passageirodeprimeira.com/?p=415654",
+     "confidence": "baja"
+    },
+    {
+     "airline": "ITA Airways",
+     "code": "AZ",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://passageirodeprimeira.com/?p=415654",
+     "confidence": "baja"
+    },
+    {
+     "airline": "LOT Polish Airlines",
+     "code": "LO",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://passageirodeprimeira.com/?p=415654",
+     "confidence": "baja"
+    },
+    {
+     "airline": "Lufthansa",
+     "code": "LH",
+     "basis": "alianza (Star Alliance)",
+     "notes": "First de Lufthansa NO se libera a programas socios desde 1-jun-2026.",
+     "source": "https://passageirodeprimeira.com/?p=415654",
+     "confidence": "baja"
+    },
+    {
+     "airline": "Shenzhen Airlines",
+     "code": "ZH",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://passageirodeprimeira.com/?p=415654",
+     "confidence": "baja"
+    },
+    {
+     "airline": "Singapore Airlines",
+     "code": "SQ",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://passageirodeprimeira.com/?p=415654",
+     "confidence": "baja"
+    },
+    {
+     "airline": "South African Airways",
+     "code": "SA",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://passageirodeprimeira.com/?p=415654",
+     "confidence": "baja"
+    },
+    {
+     "airline": "SWISS",
+     "code": "LX",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://passageirodeprimeira.com/?p=415654",
+     "confidence": "baja"
+    },
+    {
+     "airline": "Thai Airways",
+     "code": "TG",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://passageirodeprimeira.com/?p=415654",
+     "confidence": "baja"
+    },
+    {
+     "airline": "Turkish Airlines",
+     "code": "TK",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://passageirodeprimeira.com/?p=415654",
+     "confidence": "baja"
+    },
+    {
+     "airline": "United Airlines",
+     "code": "UA",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://passageirodeprimeira.com/?p=415654",
+     "confidence": "baja"
+    },
+    {
+     "airline": "Azul",
+     "code": "AD",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://passageirodeprimeira.com/?p=415654",
+     "confidence": "baja"
+    },
+    {
+     "airline": "GOL",
+     "code": "G3",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://passageirodeprimeira.com/?p=415654",
+     "confidence": "baja"
+    },
+    {
+     "airline": "SATA Azores Airlines",
+     "code": "SP",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://passageirodeprimeira.com/?p=415654",
+     "confidence": "baja"
+    },
+    {
+     "airline": "Emirates",
+     "code": "EK",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://passageirodeprimeira.com/?p=415654",
+     "confidence": "baja"
+    }
+   ],
+   "transfers_out": [],
+   "pricing": "tabla por regiones",
+   "notes": "Fuente principal de ene-2025 (Passageiro de Primeira): 28 aerolíneas, la mayoría por call center. Se aplican a todos los miembros Star Alliance 2026 (incluye ITA por pertenencia a la alianza, no confirmado específicamente). Melhores Destinos (2020) además cita Capital Airlines (antigua). Socios con tabla fija origen-destino.",
+   "sources": [
+    "https://passageirodeprimeira.com/?p=415654",
+    "https://www.melhoresdestinos.com.br/tap-milesandgo-parceiros-resgate.html"
+   ],
+   "confidence": "baja",
+   "checked": "2026-10"
+  },
+  {
+   "id": "air-europa-suma",
+   "name": "Air Europa SUMA",
+   "currency": "Millas SUMA",
+   "alliance": "SkyTeam",
+   "redeem_on": [
+    {
+     "airline": "Air Europa",
+     "code": "UX",
+     "basis": "aerolínea propia",
+     "notes": "Desde 1.500 millas.",
+     "source": "https://www.aireuropa.com/es/es/aea/suma/nuestro-programa/nuestros-partners/aereos.html",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Aerolíneas Argentinas",
+     "code": "AR",
+     "basis": "alianza (SkyTeam)",
+     "notes": "Desde 6.000 millas.",
+     "source": "https://www.aireuropa.com/es/es/aea/suma/nuestro-programa/nuestros-partners/aereos.html",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Aeroméxico",
+     "code": "AM",
+     "basis": "alianza (SkyTeam)",
+     "notes": "Desde 6.000 millas.",
+     "source": "https://www.aireuropa.com/es/es/aea/suma/nuestro-programa/nuestros-partners/aereos.html",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Air France",
+     "code": "AF",
+     "basis": "alianza (SkyTeam)",
+     "notes": "Desde 6.000 millas.",
+     "source": "https://www.aireuropa.com/es/es/aea/suma/nuestro-programa/nuestros-partners/aereos.html",
+     "confidence": "alta"
+    },
+    {
+     "airline": "China Airlines",
+     "code": "CI",
+     "basis": "alianza (SkyTeam)",
+     "notes": "Desde 6.000 millas.",
+     "source": "https://www.aireuropa.com/es/es/aea/suma/nuestro-programa/nuestros-partners/aereos.html",
+     "confidence": "alta"
+    },
+    {
+     "airline": "China Eastern",
+     "code": "MU",
+     "basis": "alianza (SkyTeam)",
+     "notes": "Desde 6.000 millas.",
+     "source": "https://www.aireuropa.com/es/es/aea/suma/nuestro-programa/nuestros-partners/aereos.html",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Delta Air Lines",
+     "code": "DL",
+     "basis": "alianza (SkyTeam)",
+     "notes": "Desde 6.000 millas.",
+     "source": "https://www.aireuropa.com/es/es/aea/suma/nuestro-programa/nuestros-partners/aereos.html",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Garuda Indonesia",
+     "code": "GA",
+     "basis": "alianza (SkyTeam)",
+     "notes": "Desde 6.000 millas.",
+     "source": "https://www.aireuropa.com/es/es/aea/suma/nuestro-programa/nuestros-partners/aereos.html",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Kenya Airways",
+     "code": "KQ",
+     "basis": "alianza (SkyTeam)",
+     "notes": "Desde 6.000 millas.",
+     "source": "https://www.aireuropa.com/es/es/aea/suma/nuestro-programa/nuestros-partners/aereos.html",
+     "confidence": "alta"
+    },
+    {
+     "airline": "KLM",
+     "code": "KL",
+     "basis": "alianza (SkyTeam)",
+     "notes": "Desde 6.000 millas.",
+     "source": "https://www.aireuropa.com/es/es/aea/suma/nuestro-programa/nuestros-partners/aereos.html",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Korean Air",
+     "code": "KE",
+     "basis": "alianza (SkyTeam)",
+     "notes": "Desde 6.000 millas.",
+     "source": "https://www.aireuropa.com/es/es/aea/suma/nuestro-programa/nuestros-partners/aereos.html",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Middle East Airlines",
+     "code": "ME",
+     "basis": "alianza (SkyTeam)",
+     "notes": "Desde 6.000 millas.",
+     "source": "https://www.aireuropa.com/es/es/aea/suma/nuestro-programa/nuestros-partners/aereos.html",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Saudia",
+     "code": "SV",
+     "basis": "alianza (SkyTeam)",
+     "notes": "Desde 6.000 millas.",
+     "source": "https://www.aireuropa.com/es/es/aea/suma/nuestro-programa/nuestros-partners/aereos.html",
+     "confidence": "alta"
+    },
+    {
+     "airline": "SAS Scandinavian Airlines",
+     "code": "SK",
+     "basis": "alianza (SkyTeam)",
+     "notes": "Desde 6.000 millas.",
+     "source": "https://www.aireuropa.com/es/es/aea/suma/nuestro-programa/nuestros-partners/aereos.html",
+     "confidence": "alta"
+    },
+    {
+     "airline": "TAROM",
+     "code": "RO",
+     "basis": "alianza (SkyTeam)",
+     "notes": "Desde 6.000 millas.",
+     "source": "https://www.aireuropa.com/es/es/aea/suma/nuestro-programa/nuestros-partners/aereos.html",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Vietnam Airlines",
+     "code": "VN",
+     "basis": "alianza (SkyTeam)",
+     "notes": "Desde 6.000 millas.",
+     "source": "https://www.aireuropa.com/es/es/aea/suma/nuestro-programa/nuestros-partners/aereos.html",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Virgin Atlantic",
+     "code": "VS",
+     "basis": "alianza (SkyTeam)",
+     "notes": "Desde 6.000 millas.",
+     "source": "https://www.aireuropa.com/es/es/aea/suma/nuestro-programa/nuestros-partners/aereos.html",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Xiamen Airlines",
+     "code": "MF",
+     "basis": "alianza (SkyTeam)",
+     "notes": "Desde 6.000 millas.",
+     "source": "https://www.aireuropa.com/es/es/aea/suma/nuestro-programa/nuestros-partners/aereos.html",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Etihad Airways",
+     "code": "EY",
+     "basis": "socio bilateral",
+     "notes": "Desde 7.000 millas.",
+     "source": "https://www.aireuropa.com/es/es/aea/suma/nuestro-programa/nuestros-partners/aereos.html",
+     "confidence": "alta"
+    },
+    {
+     "airline": "GOL",
+     "code": "G3",
+     "basis": "socio bilateral",
+     "notes": "Desde 11.000 millas.",
+     "source": "https://www.aireuropa.com/es/es/aea/suma/nuestro-programa/nuestros-partners/aereos.html",
+     "confidence": "alta"
+    }
+   ],
+   "transfers_out": [],
+   "pricing": "tabla por regiones",
+   "notes": "Web oficial Air Europa. Turkish Airlines compró ~26% de Air Europa (2025-2026) pero no aparece como socio de canje SUMA; Air Europa sigue en SkyTeam. Tipo de tabla para socios no confirmado (asumido por zonas).",
+   "sources": [
+    "https://www.aireuropa.com/es/es/aea/suma/nuestro-programa/nuestros-partners/aereos.html"
+   ],
+   "confidence": "alta",
+   "checked": "2026-10"
+  },
+  {
+   "id": "turkish-miles-and-smiles",
+   "name": "Turkish Airlines Miles&Smiles",
+   "currency": "millas Miles&Smiles",
+   "alliance": "Star Alliance",
+   "redeem_on": [
+    {
+     "airline": "Turkish Airlines",
+     "code": "TK",
+     "basis": "aerolínea propia",
+     "notes": "",
+     "source": "https://awardfares.com/blog/miles-and-smiles-guide/",
+     "confidence": "media"
+    },
+    {
+     "airline": "Aegean Airlines",
+     "code": "A3",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://awardfares.com/blog/miles-and-smiles-guide/",
+     "confidence": "media"
+    },
+    {
+     "airline": "Air Canada",
+     "code": "AC",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://awardfares.com/blog/miles-and-smiles-guide/",
+     "confidence": "media"
+    },
+    {
+     "airline": "Air China",
+     "code": "CA",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://awardfares.com/blog/miles-and-smiles-guide/",
+     "confidence": "media"
+    },
+    {
+     "airline": "Air India",
+     "code": "AI",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://awardfares.com/blog/miles-and-smiles-guide/",
+     "confidence": "media"
+    },
+    {
+     "airline": "Air New Zealand",
+     "code": "NZ",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://awardfares.com/blog/miles-and-smiles-guide/",
+     "confidence": "media"
+    },
+    {
+     "airline": "ANA",
+     "code": "NH",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://awardfares.com/blog/miles-and-smiles-guide/",
+     "confidence": "media"
+    },
+    {
+     "airline": "Asiana Airlines",
+     "code": "OZ",
+     "basis": "alianza (Star Alliance)",
+     "notes": "Asiana sale de Star Alliance el 16-dic-2026; canjes con viaje hasta esa fecha (según reisetopia).",
+     "source": "https://awardfares.com/blog/miles-and-smiles-guide/",
+     "confidence": "media"
+    },
+    {
+     "airline": "Austrian Airlines",
+     "code": "OS",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://awardfares.com/blog/miles-and-smiles-guide/",
+     "confidence": "media"
+    },
+    {
+     "airline": "Avianca",
+     "code": "AV",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://awardfares.com/blog/miles-and-smiles-guide/",
+     "confidence": "media"
+    },
+    {
+     "airline": "Brussels Airlines",
+     "code": "SN",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://awardfares.com/blog/miles-and-smiles-guide/",
+     "confidence": "media"
+    },
+    {
+     "airline": "Copa Airlines",
+     "code": "CM",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://awardfares.com/blog/miles-and-smiles-guide/",
+     "confidence": "media"
+    },
+    {
+     "airline": "Croatia Airlines",
+     "code": "OU",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://awardfares.com/blog/miles-and-smiles-guide/",
+     "confidence": "media"
+    },
+    {
+     "airline": "EgyptAir",
+     "code": "MS",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://awardfares.com/blog/miles-and-smiles-guide/",
+     "confidence": "media"
+    },
+    {
+     "airline": "Ethiopian Airlines",
+     "code": "ET",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://awardfares.com/blog/miles-and-smiles-guide/",
+     "confidence": "media"
+    },
+    {
+     "airline": "EVA Air",
+     "code": "BR",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://awardfares.com/blog/miles-and-smiles-guide/",
+     "confidence": "media"
+    },
+    {
+     "airline": "ITA Airways",
+     "code": "AZ",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://awardfares.com/blog/miles-and-smiles-guide/",
+     "confidence": "media"
+    },
+    {
+     "airline": "LOT Polish Airlines",
+     "code": "LO",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://awardfares.com/blog/miles-and-smiles-guide/",
+     "confidence": "media"
+    },
+    {
+     "airline": "Lufthansa",
+     "code": "LH",
+     "basis": "alianza (Star Alliance)",
+     "notes": "First de Lufthansa NO se libera a programas socios desde 1-jun-2026.",
+     "source": "https://awardfares.com/blog/miles-and-smiles-guide/",
+     "confidence": "media"
+    },
+    {
+     "airline": "Shenzhen Airlines",
+     "code": "ZH",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://awardfares.com/blog/miles-and-smiles-guide/",
+     "confidence": "media"
+    },
+    {
+     "airline": "Singapore Airlines",
+     "code": "SQ",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://awardfares.com/blog/miles-and-smiles-guide/",
+     "confidence": "media"
+    },
+    {
+     "airline": "South African Airways",
+     "code": "SA",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://awardfares.com/blog/miles-and-smiles-guide/",
+     "confidence": "media"
+    },
+    {
+     "airline": "SWISS",
+     "code": "LX",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://awardfares.com/blog/miles-and-smiles-guide/",
+     "confidence": "media"
+    },
+    {
+     "airline": "TAP Air Portugal",
+     "code": "TP",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://awardfares.com/blog/miles-and-smiles-guide/",
+     "confidence": "media"
+    },
+    {
+     "airline": "Thai Airways",
+     "code": "TG",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://awardfares.com/blog/miles-and-smiles-guide/",
+     "confidence": "media"
+    },
+    {
+     "airline": "United Airlines",
+     "code": "UA",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://awardfares.com/blog/miles-and-smiles-guide/",
+     "confidence": "media"
+    }
+   ],
+   "transfers_out": [],
+   "pricing": "tabla por regiones",
+   "notes": "Star Award Ticket con tabla por regiones (domésticos de socios subieron 50% en dic-2025: 15k/22,5k/30k). La fuente no da lista exhaustiva: se asumen todos los miembros Star Alliance 2026. Socios bilaterales de canje no verificados.",
+   "sources": [
+    "https://awardfares.com/blog/miles-and-smiles-guide/"
+   ],
+   "confidence": "media",
+   "checked": "2026-10"
+  },
+  {
+   "id": "sas-eurobonus",
+   "name": "SAS EuroBonus",
+   "currency": "puntos EuroBonus",
+   "alliance": "SkyTeam",
+   "redeem_on": [
+    {
+     "airline": "SAS Scandinavian Airlines",
+     "code": "SK",
+     "basis": "aerolínea propia",
+     "notes": "",
+     "source": "https://www.point.me/insights/the-complete-guide-to-sas-eurobonus",
+     "confidence": "media"
+    },
+    {
+     "airline": "Aerolíneas Argentinas",
+     "code": "AR",
+     "basis": "alianza (SkyTeam)",
+     "notes": "",
+     "source": "https://www.point.me/insights/the-complete-guide-to-sas-eurobonus",
+     "confidence": "media"
+    },
+    {
+     "airline": "Aeroméxico",
+     "code": "AM",
+     "basis": "alianza (SkyTeam)",
+     "notes": "",
+     "source": "https://www.point.me/insights/the-complete-guide-to-sas-eurobonus",
+     "confidence": "media"
+    },
+    {
+     "airline": "Air Europa",
+     "code": "UX",
+     "basis": "alianza (SkyTeam)",
+     "notes": "Cuesta el DOBLE de puntos.",
+     "source": "https://www.point.me/insights/the-complete-guide-to-sas-eurobonus",
+     "confidence": "media"
+    },
+    {
+     "airline": "Air France",
+     "code": "AF",
+     "basis": "alianza (SkyTeam)",
+     "notes": "",
+     "source": "https://www.point.me/insights/the-complete-guide-to-sas-eurobonus",
+     "confidence": "media"
+    },
+    {
+     "airline": "China Airlines",
+     "code": "CI",
+     "basis": "alianza (SkyTeam)",
+     "notes": "Cuesta el DOBLE de puntos.",
+     "source": "https://www.point.me/insights/the-complete-guide-to-sas-eurobonus",
+     "confidence": "media"
+    },
+    {
+     "airline": "China Eastern",
+     "code": "MU",
+     "basis": "alianza (SkyTeam)",
+     "notes": "",
+     "source": "https://www.point.me/insights/the-complete-guide-to-sas-eurobonus",
+     "confidence": "media"
+    },
+    {
+     "airline": "Delta Air Lines",
+     "code": "DL",
+     "basis": "alianza (SkyTeam)",
+     "notes": "Premium Economy canjeable.",
+     "source": "https://www.point.me/insights/the-complete-guide-to-sas-eurobonus",
+     "confidence": "media"
+    },
+    {
+     "airline": "Garuda Indonesia",
+     "code": "GA",
+     "basis": "alianza (SkyTeam)",
+     "notes": "",
+     "source": "https://www.point.me/insights/the-complete-guide-to-sas-eurobonus",
+     "confidence": "media"
+    },
+    {
+     "airline": "Kenya Airways",
+     "code": "KQ",
+     "basis": "alianza (SkyTeam)",
+     "notes": "",
+     "source": "https://www.point.me/insights/the-complete-guide-to-sas-eurobonus",
+     "confidence": "media"
+    },
+    {
+     "airline": "KLM",
+     "code": "KL",
+     "basis": "alianza (SkyTeam)",
+     "notes": "",
+     "source": "https://www.point.me/insights/the-complete-guide-to-sas-eurobonus",
+     "confidence": "media"
+    },
+    {
+     "airline": "Korean Air",
+     "code": "KE",
+     "basis": "alianza (SkyTeam)",
+     "notes": "",
+     "source": "https://www.point.me/insights/the-complete-guide-to-sas-eurobonus",
+     "confidence": "media"
+    },
+    {
+     "airline": "Saudia",
+     "code": "SV",
+     "basis": "alianza (SkyTeam)",
+     "notes": "",
+     "source": "https://www.point.me/insights/the-complete-guide-to-sas-eurobonus",
+     "confidence": "media"
+    },
+    {
+     "airline": "TAROM",
+     "code": "RO",
+     "basis": "alianza (SkyTeam)",
+     "notes": "",
+     "source": "https://www.point.me/insights/the-complete-guide-to-sas-eurobonus",
+     "confidence": "media"
+    },
+    {
+     "airline": "Vietnam Airlines",
+     "code": "VN",
+     "basis": "alianza (SkyTeam)",
+     "notes": "Cuesta el DOBLE de puntos.",
+     "source": "https://www.point.me/insights/the-complete-guide-to-sas-eurobonus",
+     "confidence": "media"
+    },
+    {
+     "airline": "Virgin Atlantic",
+     "code": "VS",
+     "basis": "alianza (SkyTeam)",
+     "notes": "Premium Economy canjeable.",
+     "source": "https://www.point.me/insights/the-complete-guide-to-sas-eurobonus",
+     "confidence": "media"
+    },
+    {
+     "airline": "Xiamen Airlines",
+     "code": "MF",
+     "basis": "alianza (SkyTeam)",
+     "notes": "",
+     "source": "https://www.point.me/insights/the-complete-guide-to-sas-eurobonus",
+     "confidence": "media"
+    },
+    {
+     "airline": "Etihad Airways",
+     "code": "EY",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://www.point.me/insights/the-complete-guide-to-sas-eurobonus",
+     "confidence": "media"
+    },
+    {
+     "airline": "Singapore Airlines",
+     "code": "SQ",
+     "basis": "socio bilateral",
+     "notes": "Socio no-alianza tras la salida de Star; confirmar disponibilidad.",
+     "source": "https://www.point.me/insights/the-complete-guide-to-sas-eurobonus",
+     "confidence": "media"
+    },
+    {
+     "airline": "TAP Air Portugal",
+     "code": "TP",
+     "basis": "socio bilateral",
+     "notes": "Web oficial: se puede ganar y usar puntos en TAP.",
+     "source": "https://www.flysas.com/se-en/eurobonus/points/",
+     "confidence": "media"
+    },
+    {
+     "airline": "Widerøe",
+     "code": "WF",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://www.point.me/insights/the-complete-guide-to-sas-eurobonus",
+     "confidence": "media"
+    }
+   ],
+   "transfers_out": [],
+   "pricing": "tabla por regiones",
+   "notes": "SAS en SkyTeam desde 1-sep-2024: ya no canjea en Star Alliance. MEA excluida (AwardFares). Nuevas tasas de reserva de premio con socios desde 5-may-2026. Canje en Singapore/Etihad citado por point.me sin fecha clara.",
+   "sources": [
+    "https://www.point.me/insights/the-complete-guide-to-sas-eurobonus",
+    "https://awardfares.com/blog/booking-skyteam-airlines-with-eurobonus/",
+    "https://www.bonussok.no/blog/en/skyteam-partner-awards/",
+    "https://www.flysas.com/se-en/eurobonus/points/"
+   ],
+   "confidence": "media",
+   "checked": "2026-10"
+  },
+  {
+   "id": "virgin-atlantic-flying-club",
+   "name": "Virgin Atlantic Flying Club",
+   "currency": "Virgin Points",
+   "alliance": "SkyTeam",
+   "redeem_on": [
+    {
+     "airline": "Virgin Atlantic",
+     "code": "VS",
+     "basis": "aerolínea propia",
+     "notes": "Dinámico desde 30-oct-2024.",
+     "source": "https://awardfares.com/blog/flying-club-guide/",
+     "confidence": "media"
+    },
+    {
+     "airline": "Aerolíneas Argentinas",
+     "code": "AR",
+     "basis": "alianza (SkyTeam)",
+     "notes": "",
+     "source": "https://thepointsguy.com/loyalty-programs/virgin-atlantic-flying-club-partners",
+     "confidence": "media"
+    },
+    {
+     "airline": "Aeroméxico",
+     "code": "AM",
+     "basis": "alianza (SkyTeam)",
+     "notes": "",
+     "source": "https://thepointsguy.com/loyalty-programs/virgin-atlantic-flying-club-partners",
+     "confidence": "media"
+    },
+    {
+     "airline": "Air Europa",
+     "code": "UX",
+     "basis": "alianza (SkyTeam)",
+     "notes": "",
+     "source": "https://thepointsguy.com/loyalty-programs/virgin-atlantic-flying-club-partners",
+     "confidence": "media"
+    },
+    {
+     "airline": "Air France",
+     "code": "AF",
+     "basis": "alianza (SkyTeam)",
+     "notes": "",
+     "source": "https://thepointsguy.com/loyalty-programs/virgin-atlantic-flying-club-partners",
+     "confidence": "media"
+    },
+    {
+     "airline": "China Airlines",
+     "code": "CI",
+     "basis": "alianza (SkyTeam)",
+     "notes": "",
+     "source": "https://thepointsguy.com/loyalty-programs/virgin-atlantic-flying-club-partners",
+     "confidence": "media"
+    },
+    {
+     "airline": "China Eastern",
+     "code": "MU",
+     "basis": "alianza (SkyTeam)",
+     "notes": "",
+     "source": "https://thepointsguy.com/loyalty-programs/virgin-atlantic-flying-club-partners",
+     "confidence": "media"
+    },
+    {
+     "airline": "Delta Air Lines",
+     "code": "DL",
+     "basis": "alianza (SkyTeam)",
+     "notes": "",
+     "source": "https://thepointsguy.com/loyalty-programs/virgin-atlantic-flying-club-partners",
+     "confidence": "media"
+    },
+    {
+     "airline": "Garuda Indonesia",
+     "code": "GA",
+     "basis": "alianza (SkyTeam)",
+     "notes": "",
+     "source": "https://thepointsguy.com/loyalty-programs/virgin-atlantic-flying-club-partners",
+     "confidence": "media"
+    },
+    {
+     "airline": "Kenya Airways",
+     "code": "KQ",
+     "basis": "alianza (SkyTeam)",
+     "notes": "",
+     "source": "https://thepointsguy.com/loyalty-programs/virgin-atlantic-flying-club-partners",
+     "confidence": "media"
+    },
+    {
+     "airline": "KLM",
+     "code": "KL",
+     "basis": "alianza (SkyTeam)",
+     "notes": "",
+     "source": "https://thepointsguy.com/loyalty-programs/virgin-atlantic-flying-club-partners",
+     "confidence": "media"
+    },
+    {
+     "airline": "Korean Air",
+     "code": "KE",
+     "basis": "alianza (SkyTeam)",
+     "notes": "",
+     "source": "https://thepointsguy.com/loyalty-programs/virgin-atlantic-flying-club-partners",
+     "confidence": "media"
+    },
+    {
+     "airline": "Middle East Airlines",
+     "code": "ME",
+     "basis": "alianza (SkyTeam)",
+     "notes": "",
+     "source": "https://thepointsguy.com/loyalty-programs/virgin-atlantic-flying-club-partners",
+     "confidence": "media"
+    },
+    {
+     "airline": "Saudia",
+     "code": "SV",
+     "basis": "alianza (SkyTeam)",
+     "notes": "",
+     "source": "https://thepointsguy.com/loyalty-programs/virgin-atlantic-flying-club-partners",
+     "confidence": "media"
+    },
+    {
+     "airline": "TAROM",
+     "code": "RO",
+     "basis": "alianza (SkyTeam)",
+     "notes": "",
+     "source": "https://thepointsguy.com/loyalty-programs/virgin-atlantic-flying-club-partners",
+     "confidence": "media"
+    },
+    {
+     "airline": "Vietnam Airlines",
+     "code": "VN",
+     "basis": "alianza (SkyTeam)",
+     "notes": "",
+     "source": "https://thepointsguy.com/loyalty-programs/virgin-atlantic-flying-club-partners",
+     "confidence": "media"
+    },
+    {
+     "airline": "Xiamen Airlines",
+     "code": "MF",
+     "basis": "alianza (SkyTeam)",
+     "notes": "",
+     "source": "https://thepointsguy.com/loyalty-programs/virgin-atlantic-flying-club-partners",
+     "confidence": "media"
+    },
+    {
+     "airline": "ANA",
+     "code": "NH",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://awardfares.com/blog/flying-club-guide/",
+     "confidence": "media"
+    },
+    {
+     "airline": "Air New Zealand",
+     "code": "NZ",
+     "basis": "socio bilateral",
+     "notes": "Lista de 2023, no reconfirmada.",
+     "source": "https://thepointsguy.com/loyalty-programs/virgin-atlantic-flying-club-partners",
+     "confidence": "media"
+    },
+    {
+     "airline": "South African Airways",
+     "code": "SA",
+     "basis": "socio bilateral",
+     "notes": "Lista de 2023, no reconfirmada.",
+     "source": "https://thepointsguy.com/loyalty-programs/virgin-atlantic-flying-club-partners",
+     "confidence": "media"
+    },
+    {
+     "airline": "Virgin Australia",
+     "code": "VA",
+     "basis": "socio bilateral",
+     "notes": "Lista de 2023, no reconfirmada.",
+     "source": "https://thepointsguy.com/loyalty-programs/virgin-atlantic-flying-club-partners",
+     "confidence": "media"
+    },
+    {
+     "airline": "Hawaiian Airlines",
+     "code": "HA",
+     "basis": "socio bilateral",
+     "notes": "Lista de 2023, no reconfirmada.",
+     "source": "https://thepointsguy.com/loyalty-programs/virgin-atlantic-flying-club-partners",
+     "confidence": "media"
+    }
+   ],
+   "transfers_out": [],
+   "pricing": "tabla por distancia",
+   "notes": "Vuelos VS dinámicos; socios SkyTeam con tabla por distancia y tramo; ANA y otros con tabla propia. Singapore dejó de ser socio de canje en abr-2025 (KrisFlyer). SAS/IndiGo/LATAM solo acumulación (2023). Air New Zealand, SAA, Virgin Australia, Hawaiian: de lista 2023, por confirmar.",
+   "sources": [
+    "https://awardfares.com/blog/flying-club-guide/",
+    "https://thepointsguy.com/loyalty-programs/virgin-atlantic-flying-club-partners"
+   ],
+   "confidence": "media",
+   "checked": "2026-10"
+  },
+  {
+   "id": "emirates-skywards",
+   "name": "Emirates Skywards",
+   "currency": "millas Skywards",
+   "alliance": "ninguna",
+   "redeem_on": [
+    {
+     "airline": "Emirates",
+     "code": "EK",
+     "basis": "aerolínea propia",
+     "notes": "",
+     "source": "https://www.thepointsguy.com/travel/redeem-emirates-skywards-on-partner-flights",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Aegean Airlines",
+     "code": "A3",
+     "basis": "socio bilateral",
+     "notes": "Tabla por distancia nueva (mar-2026).",
+     "source": "https://www.thepointsguy.com/travel/redeem-emirates-skywards-on-partner-flights",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Air Mauritius",
+     "code": "MK",
+     "basis": "socio bilateral",
+     "notes": "Tabla por distancia nueva (mar-2026).",
+     "source": "https://www.thepointsguy.com/travel/redeem-emirates-skywards-on-partner-flights",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Azul",
+     "code": "AD",
+     "basis": "socio bilateral",
+     "notes": "Tabla por distancia nueva (mar-2026).",
+     "source": "https://www.thepointsguy.com/travel/redeem-emirates-skywards-on-partner-flights",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Bangkok Airways",
+     "code": "PG",
+     "basis": "socio bilateral",
+     "notes": "Tabla por distancia nueva (mar-2026).",
+     "source": "https://www.thepointsguy.com/travel/redeem-emirates-skywards-on-partner-flights",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Condor",
+     "code": "DE",
+     "basis": "socio bilateral",
+     "notes": "Tabla por distancia nueva (mar-2026).",
+     "source": "https://www.thepointsguy.com/travel/redeem-emirates-skywards-on-partner-flights",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Copa Airlines",
+     "code": "CM",
+     "basis": "socio bilateral",
+     "notes": "Tabla por distancia nueva (mar-2026).",
+     "source": "https://www.thepointsguy.com/travel/redeem-emirates-skywards-on-partner-flights",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Garuda Indonesia",
+     "code": "GA",
+     "basis": "socio bilateral",
+     "notes": "Tabla por distancia nueva (mar-2026).",
+     "source": "https://www.thepointsguy.com/travel/redeem-emirates-skywards-on-partner-flights",
+     "confidence": "alta"
+    },
+    {
+     "airline": "GOL",
+     "code": "G3",
+     "basis": "socio bilateral",
+     "notes": "Tabla por distancia nueva (mar-2026).",
+     "source": "https://www.thepointsguy.com/travel/redeem-emirates-skywards-on-partner-flights",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Korean Air",
+     "code": "KE",
+     "basis": "socio bilateral",
+     "notes": "Tabla por distancia nueva (mar-2026).",
+     "source": "https://www.thepointsguy.com/travel/redeem-emirates-skywards-on-partner-flights",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Malaysia Airlines",
+     "code": "MH",
+     "basis": "socio bilateral",
+     "notes": "Tabla por distancia nueva (mar-2026).",
+     "source": "https://www.thepointsguy.com/travel/redeem-emirates-skywards-on-partner-flights",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Olympic Air",
+     "code": "OA",
+     "basis": "socio bilateral",
+     "notes": "Tabla por distancia nueva (mar-2026).",
+     "source": "https://www.thepointsguy.com/travel/redeem-emirates-skywards-on-partner-flights",
+     "confidence": "alta"
+    },
+    {
+     "airline": "South African Airways",
+     "code": "SA",
+     "basis": "socio bilateral",
+     "notes": "Tabla por distancia nueva (mar-2026).",
+     "source": "https://www.thepointsguy.com/travel/redeem-emirates-skywards-on-partner-flights",
+     "confidence": "alta"
+    },
+    {
+     "airline": "TAP Air Portugal",
+     "code": "TP",
+     "basis": "socio bilateral",
+     "notes": "Tabla por distancia nueva (mar-2026).",
+     "source": "https://www.thepointsguy.com/travel/redeem-emirates-skywards-on-partner-flights",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Air Canada",
+     "code": "AC",
+     "basis": "socio bilateral",
+     "notes": "Tabla antigua, más cara.",
+     "source": "https://www.thepointsguy.com/travel/redeem-emirates-skywards-on-partner-flights",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Japan Airlines",
+     "code": "JL",
+     "basis": "socio bilateral",
+     "notes": "Tabla antigua, más cara.",
+     "source": "https://www.thepointsguy.com/travel/redeem-emirates-skywards-on-partner-flights",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Jetstar",
+     "code": "JQ",
+     "basis": "socio bilateral",
+     "notes": "Tabla antigua, más cara.",
+     "source": "https://www.thepointsguy.com/travel/redeem-emirates-skywards-on-partner-flights",
+     "confidence": "alta"
+    },
+    {
+     "airline": "United Airlines",
+     "code": "UA",
+     "basis": "socio bilateral",
+     "notes": "Tabla antigua, más cara.",
+     "source": "https://www.thepointsguy.com/travel/redeem-emirates-skywards-on-partner-flights",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Qantas",
+     "code": "QF",
+     "basis": "socio bilateral",
+     "notes": "Tabla propia.",
+     "source": "https://www.thepointsguy.com/travel/redeem-emirates-skywards-on-partner-flights",
+     "confidence": "alta"
+    },
+    {
+     "airline": "easyJet",
+     "code": "U2",
+     "basis": "socio bilateral",
+     "notes": "Basado en precio en efectivo.",
+     "source": "https://www.thepointsguy.com/travel/redeem-emirates-skywards-on-partner-flights",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Jet2.com",
+     "code": "LS",
+     "basis": "socio bilateral",
+     "notes": "Basado en precio en efectivo.",
+     "source": "https://www.thepointsguy.com/travel/redeem-emirates-skywards-on-partner-flights",
+     "confidence": "alta"
+    },
+    {
+     "airline": "flydubai",
+     "code": "FZ",
+     "basis": "socio bilateral",
+     "notes": "Sin tabla publicada; desde 5.000 millas.",
+     "source": "https://www.thepointsguy.com/travel/redeem-emirates-skywards-on-partner-flights",
+     "confidence": "alta"
+    }
+   ],
+   "transfers_out": [],
+   "pricing": "tabla por distancia",
+   "notes": "Sin alianza. Vuelos EK con tabla por zonas/tarifa y recargos altos; socios con tabla por distancia (mar-2026). S7 suspendido.",
+   "sources": [
+    "https://www.thepointsguy.com/travel/redeem-emirates-skywards-on-partner-flights",
+    "https://www.headforpoints.com/2025/01/20/use-emirates-skywards-miles-on-airline-partners"
+   ],
+   "confidence": "alta",
+   "checked": "2026-10"
+  },
+  {
+   "id": "etihad-guest",
+   "name": "Etihad Guest",
+   "currency": "millas Etihad Guest",
+   "alliance": "ninguna",
+   "redeem_on": [
+    {
+     "airline": "Etihad Airways",
+     "code": "EY",
+     "basis": "aerolínea propia",
+     "notes": "Precio dinámico.",
+     "source": "https://princeoftravel.com/points-programs/etihad-guest",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Air New Zealand",
+     "code": "NZ",
+     "basis": "socio bilateral",
+     "notes": "Por teléfono.",
+     "source": "https://princeoftravel.com/points-programs/etihad-guest",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Air Canada",
+     "code": "AC",
+     "basis": "socio bilateral",
+     "notes": "Por teléfono.",
+     "source": "https://princeoftravel.com/points-programs/etihad-guest",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Air Serbia",
+     "code": "JU",
+     "basis": "socio bilateral",
+     "notes": "Por teléfono.",
+     "source": "https://princeoftravel.com/points-programs/etihad-guest",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Air Europa",
+     "code": "UX",
+     "basis": "socio bilateral",
+     "notes": "Por teléfono.",
+     "source": "https://princeoftravel.com/points-programs/etihad-guest",
+     "confidence": "alta"
+    },
+    {
+     "airline": "ANA",
+     "code": "NH",
+     "basis": "socio bilateral",
+     "notes": "Por teléfono.",
+     "source": "https://princeoftravel.com/points-programs/etihad-guest",
+     "confidence": "alta"
+    },
+    {
+     "airline": "American Airlines",
+     "code": "AA",
+     "basis": "socio bilateral",
+     "notes": "Reservable online.",
+     "source": "https://princeoftravel.com/points-programs/etihad-guest",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Asiana Airlines",
+     "code": "OZ",
+     "basis": "socio bilateral",
+     "notes": "Por teléfono.",
+     "source": "https://princeoftravel.com/points-programs/etihad-guest",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Brussels Airlines",
+     "code": "SN",
+     "basis": "socio bilateral",
+     "notes": "Por teléfono.",
+     "source": "https://princeoftravel.com/points-programs/etihad-guest",
+     "confidence": "alta"
+    },
+    {
+     "airline": "El Al",
+     "code": "LY",
+     "basis": "socio bilateral",
+     "notes": "Por teléfono.",
+     "source": "https://princeoftravel.com/points-programs/etihad-guest",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Garuda Indonesia",
+     "code": "GA",
+     "basis": "socio bilateral",
+     "notes": "Por teléfono.",
+     "source": "https://princeoftravel.com/points-programs/etihad-guest",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Gulf Air",
+     "code": "GF",
+     "basis": "socio bilateral",
+     "notes": "Por teléfono.",
+     "source": "https://princeoftravel.com/points-programs/etihad-guest",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Hainan Airlines",
+     "code": "HU",
+     "basis": "socio bilateral",
+     "notes": "Por teléfono.",
+     "source": "https://princeoftravel.com/points-programs/etihad-guest",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Korean Air",
+     "code": "KE",
+     "basis": "socio bilateral",
+     "notes": "Por teléfono.",
+     "source": "https://princeoftravel.com/points-programs/etihad-guest",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Malaysia Airlines",
+     "code": "MH",
+     "basis": "socio bilateral",
+     "notes": "Por teléfono.",
+     "source": "https://princeoftravel.com/points-programs/etihad-guest",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Oman Air",
+     "code": "WY",
+     "basis": "socio bilateral",
+     "notes": "Por teléfono.",
+     "source": "https://princeoftravel.com/points-programs/etihad-guest",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Royal Air Maroc",
+     "code": "AT",
+     "basis": "socio bilateral",
+     "notes": "Por teléfono.",
+     "source": "https://princeoftravel.com/points-programs/etihad-guest",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Saudia",
+     "code": "SV",
+     "basis": "socio bilateral",
+     "notes": "Por teléfono.",
+     "source": "https://princeoftravel.com/points-programs/etihad-guest",
+     "confidence": "alta"
+    },
+    {
+     "airline": "SAS Scandinavian Airlines",
+     "code": "SK",
+     "basis": "socio bilateral",
+     "notes": "Por teléfono.",
+     "source": "https://princeoftravel.com/points-programs/etihad-guest",
+     "confidence": "alta"
+    },
+    {
+     "airline": "SriLankan Airlines",
+     "code": "UL",
+     "basis": "socio bilateral",
+     "notes": "Por teléfono.",
+     "source": "https://princeoftravel.com/points-programs/etihad-guest",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Virgin Australia",
+     "code": "VA",
+     "basis": "socio bilateral",
+     "notes": "Reservable online.",
+     "source": "https://princeoftravel.com/points-programs/etihad-guest",
+     "confidence": "alta"
+    }
+   ],
+   "transfers_out": [],
+   "pricing": "tabla por distancia",
+   "notes": "Socios con tabla por distancia, solo saver; vuelos Etihad dinámicos. STARLUX anunciado para canje (ago-2026) sin confirmar en lista. Asiana deja Star pero sigue siendo socio bilateral de Etihad según la fuente.",
+   "sources": [
+    "https://princeoftravel.com/points-programs/etihad-guest"
+   ],
+   "confidence": "alta",
+   "checked": "2026-10"
+  },
+  {
+   "id": "air-canada-aeroplan",
+   "name": "Air Canada Aeroplan",
+   "currency": "puntos Aeroplan",
+   "alliance": "Star Alliance",
+   "redeem_on": [
+    {
+     "airline": "Air Canada",
+     "code": "AC",
+     "basis": "aerolínea propia",
+     "notes": "",
+     "source": "https://yourmileagemayvary.com/2026/07/25/frequent-flyer-program-most-airline-partners/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Aegean Airlines",
+     "code": "A3",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://yourmileagemayvary.com/2026/07/25/frequent-flyer-program-most-airline-partners/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Air China",
+     "code": "CA",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://yourmileagemayvary.com/2026/07/25/frequent-flyer-program-most-airline-partners/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Air India",
+     "code": "AI",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://yourmileagemayvary.com/2026/07/25/frequent-flyer-program-most-airline-partners/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Air New Zealand",
+     "code": "NZ",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://yourmileagemayvary.com/2026/07/25/frequent-flyer-program-most-airline-partners/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "ANA",
+     "code": "NH",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://yourmileagemayvary.com/2026/07/25/frequent-flyer-program-most-airline-partners/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Asiana Airlines",
+     "code": "OZ",
+     "basis": "alianza (Star Alliance)",
+     "notes": "Asiana sale de Star Alliance el 16-dic-2026; canjes con viaje hasta esa fecha (según reisetopia).",
+     "source": "https://yourmileagemayvary.com/2026/07/25/frequent-flyer-program-most-airline-partners/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Austrian Airlines",
+     "code": "OS",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://yourmileagemayvary.com/2026/07/25/frequent-flyer-program-most-airline-partners/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Avianca",
+     "code": "AV",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://yourmileagemayvary.com/2026/07/25/frequent-flyer-program-most-airline-partners/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Brussels Airlines",
+     "code": "SN",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://yourmileagemayvary.com/2026/07/25/frequent-flyer-program-most-airline-partners/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Copa Airlines",
+     "code": "CM",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://yourmileagemayvary.com/2026/07/25/frequent-flyer-program-most-airline-partners/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Croatia Airlines",
+     "code": "OU",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://yourmileagemayvary.com/2026/07/25/frequent-flyer-program-most-airline-partners/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "EgyptAir",
+     "code": "MS",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://yourmileagemayvary.com/2026/07/25/frequent-flyer-program-most-airline-partners/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Ethiopian Airlines",
+     "code": "ET",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://yourmileagemayvary.com/2026/07/25/frequent-flyer-program-most-airline-partners/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "EVA Air",
+     "code": "BR",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://yourmileagemayvary.com/2026/07/25/frequent-flyer-program-most-airline-partners/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "ITA Airways",
+     "code": "AZ",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://yourmileagemayvary.com/2026/07/25/frequent-flyer-program-most-airline-partners/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "LOT Polish Airlines",
+     "code": "LO",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://yourmileagemayvary.com/2026/07/25/frequent-flyer-program-most-airline-partners/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Lufthansa",
+     "code": "LH",
+     "basis": "alianza (Star Alliance)",
+     "notes": "First de Lufthansa NO se libera a programas socios desde 1-jun-2026.",
+     "source": "https://yourmileagemayvary.com/2026/07/25/frequent-flyer-program-most-airline-partners/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Shenzhen Airlines",
+     "code": "ZH",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://yourmileagemayvary.com/2026/07/25/frequent-flyer-program-most-airline-partners/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Singapore Airlines",
+     "code": "SQ",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://yourmileagemayvary.com/2026/07/25/frequent-flyer-program-most-airline-partners/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "South African Airways",
+     "code": "SA",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://yourmileagemayvary.com/2026/07/25/frequent-flyer-program-most-airline-partners/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "SWISS",
+     "code": "LX",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://yourmileagemayvary.com/2026/07/25/frequent-flyer-program-most-airline-partners/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "TAP Air Portugal",
+     "code": "TP",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://yourmileagemayvary.com/2026/07/25/frequent-flyer-program-most-airline-partners/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Thai Airways",
+     "code": "TG",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://yourmileagemayvary.com/2026/07/25/frequent-flyer-program-most-airline-partners/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Turkish Airlines",
+     "code": "TK",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://yourmileagemayvary.com/2026/07/25/frequent-flyer-program-most-airline-partners/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "United Airlines",
+     "code": "UA",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://yourmileagemayvary.com/2026/07/25/frequent-flyer-program-most-airline-partners/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Air Dolomiti",
+     "code": "EN",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://yourmileagemayvary.com/2026/07/25/frequent-flyer-program-most-airline-partners/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Air Mauritius",
+     "code": "MK",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://yourmileagemayvary.com/2026/07/25/frequent-flyer-program-most-airline-partners/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Air Serbia",
+     "code": "JU",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://yourmileagemayvary.com/2026/07/25/frequent-flyer-program-most-airline-partners/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "airBaltic",
+     "code": "BT",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://yourmileagemayvary.com/2026/07/25/frequent-flyer-program-most-airline-partners/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Azul",
+     "code": "AD",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://yourmileagemayvary.com/2026/07/25/frequent-flyer-program-most-airline-partners/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Cathay Pacific",
+     "code": "CX",
+     "basis": "socio bilateral",
+     "notes": "Solo rutas dentro de Asia.",
+     "source": "https://yourmileagemayvary.com/2026/07/25/frequent-flyer-program-most-airline-partners/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Discover Airlines",
+     "code": "4Y",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://yourmileagemayvary.com/2026/07/25/frequent-flyer-program-most-airline-partners/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Edelweiss Air",
+     "code": "WK",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://yourmileagemayvary.com/2026/07/25/frequent-flyer-program-most-airline-partners/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Emirates",
+     "code": "EK",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://yourmileagemayvary.com/2026/07/25/frequent-flyer-program-most-airline-partners/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Etihad Airways",
+     "code": "EY",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://yourmileagemayvary.com/2026/07/25/frequent-flyer-program-most-airline-partners/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Eurowings",
+     "code": "EW",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://yourmileagemayvary.com/2026/07/25/frequent-flyer-program-most-airline-partners/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "flydubai",
+     "code": "FZ",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://yourmileagemayvary.com/2026/07/25/frequent-flyer-program-most-airline-partners/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "GOL",
+     "code": "G3",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://yourmileagemayvary.com/2026/07/25/frequent-flyer-program-most-airline-partners/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Gulf Air",
+     "code": "GF",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://yourmileagemayvary.com/2026/07/25/frequent-flyer-program-most-airline-partners/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Juneyao Air",
+     "code": "HO",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://yourmileagemayvary.com/2026/07/25/frequent-flyer-program-most-airline-partners/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Lufthansa City Airlines",
+     "code": "VL",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://yourmileagemayvary.com/2026/07/25/frequent-flyer-program-most-airline-partners/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Olympic Air",
+     "code": "OA",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://yourmileagemayvary.com/2026/07/25/frequent-flyer-program-most-airline-partners/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Oman Air",
+     "code": "WY",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://yourmileagemayvary.com/2026/07/25/frequent-flyer-program-most-airline-partners/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "SunExpress",
+     "code": "XQ",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://yourmileagemayvary.com/2026/07/25/frequent-flyer-program-most-airline-partners/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Virgin Australia",
+     "code": "VA",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://yourmileagemayvary.com/2026/07/25/frequent-flyer-program-most-airline-partners/",
+     "confidence": "alta"
+    }
+   ],
+   "transfers_out": [],
+   "pricing": "tabla por distancia",
+   "notes": "Socios con tabla por distancia y región; vuelos Air Canada dinámicos. Regionales canadienses (Air Creebec, Air Inuit, Bearskin, Calm Air, Canadian North, PAL) no incluidos. Asiana sale de Star dic-2026.",
+   "sources": [
+    "https://yourmileagemayvary.com/2026/07/25/frequent-flyer-program-most-airline-partners/"
+   ],
+   "confidence": "alta",
+   "checked": "2026-10"
+  },
+  {
+   "id": "united-mileageplus",
+   "name": "United MileagePlus",
+   "currency": "millas MileagePlus",
+   "alliance": "Star Alliance",
+   "redeem_on": [
+    {
+     "airline": "United Airlines",
+     "code": "UA",
+     "basis": "aerolínea propia",
+     "notes": "",
+     "source": "https://www.point.me/insights/united-airlines-partners-you-can-book-with-mileageplus-points",
+     "confidence": "media"
+    },
+    {
+     "airline": "Aegean Airlines",
+     "code": "A3",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://www.point.me/insights/united-airlines-partners-you-can-book-with-mileageplus-points",
+     "confidence": "media"
+    },
+    {
+     "airline": "Air Canada",
+     "code": "AC",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://www.point.me/insights/united-airlines-partners-you-can-book-with-mileageplus-points",
+     "confidence": "media"
+    },
+    {
+     "airline": "Air China",
+     "code": "CA",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://www.point.me/insights/united-airlines-partners-you-can-book-with-mileageplus-points",
+     "confidence": "media"
+    },
+    {
+     "airline": "Air India",
+     "code": "AI",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://www.point.me/insights/united-airlines-partners-you-can-book-with-mileageplus-points",
+     "confidence": "media"
+    },
+    {
+     "airline": "Air New Zealand",
+     "code": "NZ",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://www.point.me/insights/united-airlines-partners-you-can-book-with-mileageplus-points",
+     "confidence": "media"
+    },
+    {
+     "airline": "ANA",
+     "code": "NH",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://www.point.me/insights/united-airlines-partners-you-can-book-with-mileageplus-points",
+     "confidence": "media"
+    },
+    {
+     "airline": "Asiana Airlines",
+     "code": "OZ",
+     "basis": "alianza (Star Alliance)",
+     "notes": "Asiana sale de Star Alliance el 16-dic-2026; canjes con viaje hasta esa fecha (según reisetopia).",
+     "source": "https://www.point.me/insights/united-airlines-partners-you-can-book-with-mileageplus-points",
+     "confidence": "media"
+    },
+    {
+     "airline": "Austrian Airlines",
+     "code": "OS",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://www.point.me/insights/united-airlines-partners-you-can-book-with-mileageplus-points",
+     "confidence": "media"
+    },
+    {
+     "airline": "Avianca",
+     "code": "AV",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://www.point.me/insights/united-airlines-partners-you-can-book-with-mileageplus-points",
+     "confidence": "media"
+    },
+    {
+     "airline": "Brussels Airlines",
+     "code": "SN",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://www.point.me/insights/united-airlines-partners-you-can-book-with-mileageplus-points",
+     "confidence": "media"
+    },
+    {
+     "airline": "Copa Airlines",
+     "code": "CM",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://www.point.me/insights/united-airlines-partners-you-can-book-with-mileageplus-points",
+     "confidence": "media"
+    },
+    {
+     "airline": "Croatia Airlines",
+     "code": "OU",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://www.point.me/insights/united-airlines-partners-you-can-book-with-mileageplus-points",
+     "confidence": "media"
+    },
+    {
+     "airline": "EgyptAir",
+     "code": "MS",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://www.point.me/insights/united-airlines-partners-you-can-book-with-mileageplus-points",
+     "confidence": "media"
+    },
+    {
+     "airline": "Ethiopian Airlines",
+     "code": "ET",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://www.point.me/insights/united-airlines-partners-you-can-book-with-mileageplus-points",
+     "confidence": "media"
+    },
+    {
+     "airline": "EVA Air",
+     "code": "BR",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://www.point.me/insights/united-airlines-partners-you-can-book-with-mileageplus-points",
+     "confidence": "media"
+    },
+    {
+     "airline": "ITA Airways",
+     "code": "AZ",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://www.point.me/insights/united-airlines-partners-you-can-book-with-mileageplus-points",
+     "confidence": "media"
+    },
+    {
+     "airline": "LOT Polish Airlines",
+     "code": "LO",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://www.point.me/insights/united-airlines-partners-you-can-book-with-mileageplus-points",
+     "confidence": "media"
+    },
+    {
+     "airline": "Lufthansa",
+     "code": "LH",
+     "basis": "alianza (Star Alliance)",
+     "notes": "First de Lufthansa NO se libera a programas socios desde 1-jun-2026.",
+     "source": "https://www.point.me/insights/united-airlines-partners-you-can-book-with-mileageplus-points",
+     "confidence": "media"
+    },
+    {
+     "airline": "Shenzhen Airlines",
+     "code": "ZH",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://www.point.me/insights/united-airlines-partners-you-can-book-with-mileageplus-points",
+     "confidence": "media"
+    },
+    {
+     "airline": "Singapore Airlines",
+     "code": "SQ",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://www.point.me/insights/united-airlines-partners-you-can-book-with-mileageplus-points",
+     "confidence": "media"
+    },
+    {
+     "airline": "South African Airways",
+     "code": "SA",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://www.point.me/insights/united-airlines-partners-you-can-book-with-mileageplus-points",
+     "confidence": "media"
+    },
+    {
+     "airline": "SWISS",
+     "code": "LX",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://www.point.me/insights/united-airlines-partners-you-can-book-with-mileageplus-points",
+     "confidence": "media"
+    },
+    {
+     "airline": "TAP Air Portugal",
+     "code": "TP",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://www.point.me/insights/united-airlines-partners-you-can-book-with-mileageplus-points",
+     "confidence": "media"
+    },
+    {
+     "airline": "Thai Airways",
+     "code": "TG",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://www.point.me/insights/united-airlines-partners-you-can-book-with-mileageplus-points",
+     "confidence": "media"
+    },
+    {
+     "airline": "Turkish Airlines",
+     "code": "TK",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://www.point.me/insights/united-airlines-partners-you-can-book-with-mileageplus-points",
+     "confidence": "media"
+    },
+    {
+     "airline": "Aer Lingus",
+     "code": "EI",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://www.point.me/insights/united-airlines-partners-you-can-book-with-mileageplus-points",
+     "confidence": "media"
+    },
+    {
+     "airline": "Air Dolomiti",
+     "code": "EN",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://www.point.me/insights/united-airlines-partners-you-can-book-with-mileageplus-points",
+     "confidence": "media"
+    },
+    {
+     "airline": "Airlink",
+     "code": "4Z",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://www.point.me/insights/united-airlines-partners-you-can-book-with-mileageplus-points",
+     "confidence": "media"
+    },
+    {
+     "airline": "Azul",
+     "code": "AD",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://www.point.me/insights/united-airlines-partners-you-can-book-with-mileageplus-points",
+     "confidence": "media"
+    },
+    {
+     "airline": "Discover Airlines",
+     "code": "4Y",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://www.point.me/insights/united-airlines-partners-you-can-book-with-mileageplus-points",
+     "confidence": "media"
+    },
+    {
+     "airline": "Edelweiss Air",
+     "code": "WK",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://www.point.me/insights/united-airlines-partners-you-can-book-with-mileageplus-points",
+     "confidence": "media"
+    },
+    {
+     "airline": "Emirates",
+     "code": "EK",
+     "basis": "socio bilateral",
+     "notes": "Solo desde Dubái combinado con vuelo United EE.UU.-Dubái.",
+     "source": "https://www.point.me/insights/united-airlines-partners-you-can-book-with-mileageplus-points",
+     "confidence": "media"
+    },
+    {
+     "airline": "Eurowings",
+     "code": "EW",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://www.point.me/insights/united-airlines-partners-you-can-book-with-mileageplus-points",
+     "confidence": "media"
+    },
+    {
+     "airline": "flydubai",
+     "code": "FZ",
+     "basis": "socio bilateral",
+     "notes": "Solo desde Dubái combinado con vuelo United EE.UU.-Dubái.",
+     "source": "https://www.point.me/insights/united-airlines-partners-you-can-book-with-mileageplus-points",
+     "confidence": "media"
+    },
+    {
+     "airline": "Hawaiian Airlines",
+     "code": "HA",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://www.point.me/insights/united-airlines-partners-you-can-book-with-mileageplus-points",
+     "confidence": "media"
+    },
+    {
+     "airline": "JSX",
+     "code": "XE",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://www.point.me/insights/united-airlines-partners-you-can-book-with-mileageplus-points",
+     "confidence": "media"
+    },
+    {
+     "airline": "JetBlue",
+     "code": "B6",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://www.point.me/insights/united-airlines-partners-you-can-book-with-mileageplus-points",
+     "confidence": "media"
+    },
+    {
+     "airline": "Juneyao Air",
+     "code": "HO",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://www.point.me/insights/united-airlines-partners-you-can-book-with-mileageplus-points",
+     "confidence": "media"
+    },
+    {
+     "airline": "Lufthansa City Airlines",
+     "code": "VL",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://www.point.me/insights/united-airlines-partners-you-can-book-with-mileageplus-points",
+     "confidence": "media"
+    },
+    {
+     "airline": "Olympic Air",
+     "code": "OA",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://www.point.me/insights/united-airlines-partners-you-can-book-with-mileageplus-points",
+     "confidence": "media"
+    },
+    {
+     "airline": "Virgin Australia",
+     "code": "VA",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://www.point.me/insights/united-airlines-partners-you-can-book-with-mileageplus-points",
+     "confidence": "media"
+    }
+   ],
+   "transfers_out": [],
+   "pricing": "dinámico",
+   "notes": "Fuente de nov-2024: incluía SAS (ya en SkyTeam, eliminado) y Vistara (fusionada con Air India, eliminado). ITA añadida por pertenencia a Star desde abr-2026. Hawaiian ahora es oneworld/Alaska: canje con United no reconfirmado en 2026. Socios menores (Boutique, Cape Air, Silver) omitidos.",
+   "sources": [
+    "https://www.point.me/insights/united-airlines-partners-you-can-book-with-mileageplus-points",
+    "https://onemileatatime.com/news/ita-airways-star-alliance-miles-more/"
+   ],
+   "confidence": "media",
+   "checked": "2026-10"
+  },
+  {
+   "id": "avianca-lifemiles",
+   "name": "Avianca LifeMiles",
+   "currency": "LifeMiles",
+   "alliance": "Star Alliance",
+   "redeem_on": [
+    {
+     "airline": "Avianca",
+     "code": "AV",
+     "basis": "aerolínea propia",
+     "notes": "Dinámico.",
+     "source": "https://princeoftravel.com/points/avianca-lifemiles/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Aegean Airlines",
+     "code": "A3",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://princeoftravel.com/points/avianca-lifemiles/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Air Canada",
+     "code": "AC",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://princeoftravel.com/points/avianca-lifemiles/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Air China",
+     "code": "CA",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://princeoftravel.com/points/avianca-lifemiles/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Air India",
+     "code": "AI",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://princeoftravel.com/points/avianca-lifemiles/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Air New Zealand",
+     "code": "NZ",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://princeoftravel.com/points/avianca-lifemiles/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "ANA",
+     "code": "NH",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://princeoftravel.com/points/avianca-lifemiles/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Asiana Airlines",
+     "code": "OZ",
+     "basis": "alianza (Star Alliance)",
+     "notes": "Asiana sale de Star Alliance el 16-dic-2026; canjes con viaje hasta esa fecha (según reisetopia).",
+     "source": "https://princeoftravel.com/points/avianca-lifemiles/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Austrian Airlines",
+     "code": "OS",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://princeoftravel.com/points/avianca-lifemiles/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Brussels Airlines",
+     "code": "SN",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://princeoftravel.com/points/avianca-lifemiles/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Copa Airlines",
+     "code": "CM",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://princeoftravel.com/points/avianca-lifemiles/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Croatia Airlines",
+     "code": "OU",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://princeoftravel.com/points/avianca-lifemiles/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "EgyptAir",
+     "code": "MS",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://princeoftravel.com/points/avianca-lifemiles/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Ethiopian Airlines",
+     "code": "ET",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://princeoftravel.com/points/avianca-lifemiles/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "EVA Air",
+     "code": "BR",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://princeoftravel.com/points/avianca-lifemiles/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "ITA Airways",
+     "code": "AZ",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://princeoftravel.com/points/avianca-lifemiles/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "LOT Polish Airlines",
+     "code": "LO",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://princeoftravel.com/points/avianca-lifemiles/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Lufthansa",
+     "code": "LH",
+     "basis": "alianza (Star Alliance)",
+     "notes": "First de Lufthansa NO se libera a programas socios desde 1-jun-2026.",
+     "source": "https://princeoftravel.com/points/avianca-lifemiles/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Shenzhen Airlines",
+     "code": "ZH",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://princeoftravel.com/points/avianca-lifemiles/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Singapore Airlines",
+     "code": "SQ",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://princeoftravel.com/points/avianca-lifemiles/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "South African Airways",
+     "code": "SA",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://princeoftravel.com/points/avianca-lifemiles/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "SWISS",
+     "code": "LX",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://princeoftravel.com/points/avianca-lifemiles/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "TAP Air Portugal",
+     "code": "TP",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://princeoftravel.com/points/avianca-lifemiles/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Thai Airways",
+     "code": "TG",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://princeoftravel.com/points/avianca-lifemiles/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Turkish Airlines",
+     "code": "TK",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://princeoftravel.com/points/avianca-lifemiles/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "United Airlines",
+     "code": "UA",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://princeoftravel.com/points/avianca-lifemiles/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "GOL",
+     "code": "G3",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://princeoftravel.com/points/avianca-lifemiles/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Iberia",
+     "code": "IB",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://princeoftravel.com/points/avianca-lifemiles/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "easyfly",
+     "code": "EF",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://princeoftravel.com/points/avianca-lifemiles/",
+     "confidence": "alta"
+    }
+   ],
+   "transfers_out": [],
+   "pricing": "tabla por regiones",
+   "notes": "Socios con tabla por 20 regiones; vuelos Avianca dinámicos. Sin recargos de combustible. ITA canjeable desde abr-2026 (OMAAT). Lista de Prince of Travel (act. 14-oct-2026) aún mencionaba SAS: eliminado por estar en SkyTeam.",
+   "sources": [
+    "https://princeoftravel.com/points/avianca-lifemiles/",
+    "https://onemileatatime.com/news/ita-airways-star-alliance-miles-more/"
+   ],
+   "confidence": "alta",
+   "checked": "2026-10"
+  },
+  {
+   "id": "alaska-atmos-rewards",
+   "name": "Alaska Atmos Rewards (antes Mileage Plan)",
+   "currency": "puntos Atmos",
+   "alliance": "oneworld",
+   "redeem_on": [
+    {
+     "airline": "Alaska Airlines",
+     "code": "AS",
+     "basis": "aerolínea propia",
+     "notes": "",
+     "source": "https://thepointsguy.com/airline/alaska-airlines-atmos-rewards/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Hawaiian Airlines",
+     "code": "HA",
+     "basis": "aerolínea propia (Alaska Air Group)",
+     "notes": "",
+     "source": "https://thepointsguy.com/airline/alaska-airlines-atmos-rewards/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "American Airlines",
+     "code": "AA",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://thepointsguy.com/airline/alaska-airlines-atmos-rewards/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "British Airways",
+     "code": "BA",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://thepointsguy.com/airline/alaska-airlines-atmos-rewards/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Cathay Pacific",
+     "code": "CX",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://thepointsguy.com/airline/alaska-airlines-atmos-rewards/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Finnair",
+     "code": "AY",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://thepointsguy.com/airline/alaska-airlines-atmos-rewards/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Fiji Airways",
+     "code": "FJ",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://thepointsguy.com/airline/alaska-airlines-atmos-rewards/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Iberia",
+     "code": "IB",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://thepointsguy.com/airline/alaska-airlines-atmos-rewards/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Japan Airlines",
+     "code": "JL",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://thepointsguy.com/airline/alaska-airlines-atmos-rewards/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Malaysia Airlines",
+     "code": "MH",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://thepointsguy.com/airline/alaska-airlines-atmos-rewards/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Oman Air",
+     "code": "WY",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://thepointsguy.com/airline/alaska-airlines-atmos-rewards/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Qantas",
+     "code": "QF",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://thepointsguy.com/airline/alaska-airlines-atmos-rewards/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Qatar Airways",
+     "code": "QR",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://thepointsguy.com/airline/alaska-airlines-atmos-rewards/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Royal Air Maroc",
+     "code": "AT",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://thepointsguy.com/airline/alaska-airlines-atmos-rewards/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Royal Jordanian",
+     "code": "RJ",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://thepointsguy.com/airline/alaska-airlines-atmos-rewards/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "SriLankan Airlines",
+     "code": "UL",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://thepointsguy.com/airline/alaska-airlines-atmos-rewards/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Aer Lingus",
+     "code": "EI",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://thepointsguy.com/airline/alaska-airlines-atmos-rewards/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Air Tahiti Nui",
+     "code": "TN",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://thepointsguy.com/airline/alaska-airlines-atmos-rewards/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Condor",
+     "code": "DE",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://thepointsguy.com/airline/alaska-airlines-atmos-rewards/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Hainan Airlines",
+     "code": "HU",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://thepointsguy.com/airline/alaska-airlines-atmos-rewards/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Icelandair",
+     "code": "FI",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://thepointsguy.com/airline/alaska-airlines-atmos-rewards/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Korean Air",
+     "code": "KE",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://thepointsguy.com/airline/alaska-airlines-atmos-rewards/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Philippine Airlines",
+     "code": "PR",
+     "basis": "socio bilateral",
+     "notes": "Visto en buscador desde jul-2026, páginas oficiales no actualizadas.",
+     "source": "https://thepointsguy.com/airline/alaska-airlines-atmos-rewards/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Porter Airlines",
+     "code": "PD",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://thepointsguy.com/airline/alaska-airlines-atmos-rewards/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "STARLUX Airlines",
+     "code": "JX",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://thepointsguy.com/airline/alaska-airlines-atmos-rewards/",
+     "confidence": "alta"
+    }
+   ],
+   "transfers_out": [],
+   "pricing": "tabla por distancia",
+   "notes": "Mileage Plan y HawaiianMiles fusionados en Atmos Rewards. Tablas por distancia con precios 'desde'; tasa no reembolsable de 20 USD por persona y sentido en canjes con socios desde jul-2026. Singapore e ITA: solo acumulación. Traspasos solo a hoteles (Marriott, IHG, etc.) para titulares Summit, no a aerolíneas.",
+   "sources": [
+    "https://thepointsguy.com/airline/alaska-airlines-atmos-rewards/",
+    "https://meilenoptimieren.com/alaska-airlines-mileage-plan-partnerairlines/"
+   ],
+   "confidence": "alta",
+   "checked": "2026-10"
+  },
+  {
+   "id": "american-aadvantage",
+   "name": "American AAdvantage",
+   "currency": "millas AAdvantage",
+   "alliance": "oneworld",
+   "redeem_on": [
+    {
+     "airline": "American Airlines",
+     "code": "AA",
+     "basis": "aerolínea propia",
+     "notes": "",
+     "source": "https://awardwallet.com/blog/american-airlines-partners/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Alaska Airlines",
+     "code": "AS",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://awardwallet.com/blog/american-airlines-partners/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "British Airways",
+     "code": "BA",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://awardwallet.com/blog/american-airlines-partners/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Cathay Pacific",
+     "code": "CX",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://awardwallet.com/blog/american-airlines-partners/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Finnair",
+     "code": "AY",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://awardwallet.com/blog/american-airlines-partners/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Fiji Airways",
+     "code": "FJ",
+     "basis": "alianza (oneworld)",
+     "notes": "Precio dinámico.",
+     "source": "https://awardwallet.com/blog/american-airlines-partners/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Hawaiian Airlines",
+     "code": "HA",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://awardwallet.com/blog/american-airlines-partners/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Iberia",
+     "code": "IB",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://awardwallet.com/blog/american-airlines-partners/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Japan Airlines",
+     "code": "JL",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://awardwallet.com/blog/american-airlines-partners/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Malaysia Airlines",
+     "code": "MH",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://awardwallet.com/blog/american-airlines-partners/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Qantas",
+     "code": "QF",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://awardwallet.com/blog/american-airlines-partners/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Qatar Airways",
+     "code": "QR",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://awardwallet.com/blog/american-airlines-partners/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Royal Air Maroc",
+     "code": "AT",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://awardwallet.com/blog/american-airlines-partners/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Royal Jordanian",
+     "code": "RJ",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://awardwallet.com/blog/american-airlines-partners/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "SriLankan Airlines",
+     "code": "UL",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://awardwallet.com/blog/american-airlines-partners/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Aer Lingus",
+     "code": "EI",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://awardwallet.com/blog/american-airlines-partners/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Air Tahiti Nui",
+     "code": "TN",
+     "basis": "socio bilateral",
+     "notes": "Precio dinámico.",
+     "source": "https://awardwallet.com/blog/american-airlines-partners/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "China Southern Airlines",
+     "code": "CZ",
+     "basis": "socio bilateral",
+     "notes": "Solo por teléfono.",
+     "source": "https://awardwallet.com/blog/american-airlines-partners/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "Etihad Airways",
+     "code": "EY",
+     "basis": "socio bilateral",
+     "notes": "Disponibilidad ~30 días antes.",
+     "source": "https://awardwallet.com/blog/american-airlines-partners/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "GOL",
+     "code": "G3",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://awardwallet.com/blog/american-airlines-partners/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "JetSMART",
+     "code": "JA",
+     "basis": "socio bilateral",
+     "notes": "No combinable con otras aerolíneas.",
+     "source": "https://awardwallet.com/blog/american-airlines-partners/",
+     "confidence": "alta"
+    },
+    {
+     "airline": "LEVEL",
+     "code": "LV",
+     "basis": "socio bilateral",
+     "notes": "Solo vuelos IB2600-IB2699.",
+     "source": "https://awardwallet.com/blog/american-airlines-partners/",
+     "confidence": "alta"
+    }
+   ],
+   "transfers_out": [],
+   "pricing": "tabla por regiones",
+   "notes": "Tabla de socios por regiones, ahora 'valores de partida estimados'. Vuelos AA dinámicos. NO canjeable: Oman Air (pese a ser oneworld), IndiGo, Porter.",
+   "sources": [
+    "https://awardwallet.com/blog/american-airlines-partners/"
+   ],
+   "confidence": "alta",
+   "checked": "2026-10"
+  },
+  {
+   "id": "singapore-krisflyer",
+   "name": "Singapore Airlines KrisFlyer",
+   "currency": "millas KrisFlyer",
+   "alliance": "Star Alliance",
+   "redeem_on": [
+    {
+     "airline": "Singapore Airlines",
+     "code": "SQ",
+     "basis": "aerolínea propia",
+     "notes": "",
+     "source": "https://princeoftravel.com/points-programs/singapore-airlines-krisflyer/",
+     "confidence": "media"
+    },
+    {
+     "airline": "Aegean Airlines",
+     "code": "A3",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://princeoftravel.com/points-programs/singapore-airlines-krisflyer/",
+     "confidence": "media"
+    },
+    {
+     "airline": "Air Canada",
+     "code": "AC",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://princeoftravel.com/points-programs/singapore-airlines-krisflyer/",
+     "confidence": "media"
+    },
+    {
+     "airline": "Air China",
+     "code": "CA",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://princeoftravel.com/points-programs/singapore-airlines-krisflyer/",
+     "confidence": "media"
+    },
+    {
+     "airline": "Air India",
+     "code": "AI",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://princeoftravel.com/points-programs/singapore-airlines-krisflyer/",
+     "confidence": "media"
+    },
+    {
+     "airline": "Air New Zealand",
+     "code": "NZ",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://princeoftravel.com/points-programs/singapore-airlines-krisflyer/",
+     "confidence": "media"
+    },
+    {
+     "airline": "ANA",
+     "code": "NH",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://princeoftravel.com/points-programs/singapore-airlines-krisflyer/",
+     "confidence": "media"
+    },
+    {
+     "airline": "Asiana Airlines",
+     "code": "OZ",
+     "basis": "alianza (Star Alliance)",
+     "notes": "Asiana sale de Star Alliance el 16-dic-2026; canjes con viaje hasta esa fecha (según reisetopia).",
+     "source": "https://princeoftravel.com/points-programs/singapore-airlines-krisflyer/",
+     "confidence": "media"
+    },
+    {
+     "airline": "Austrian Airlines",
+     "code": "OS",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://princeoftravel.com/points-programs/singapore-airlines-krisflyer/",
+     "confidence": "media"
+    },
+    {
+     "airline": "Avianca",
+     "code": "AV",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://princeoftravel.com/points-programs/singapore-airlines-krisflyer/",
+     "confidence": "media"
+    },
+    {
+     "airline": "Brussels Airlines",
+     "code": "SN",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://princeoftravel.com/points-programs/singapore-airlines-krisflyer/",
+     "confidence": "media"
+    },
+    {
+     "airline": "Copa Airlines",
+     "code": "CM",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://princeoftravel.com/points-programs/singapore-airlines-krisflyer/",
+     "confidence": "media"
+    },
+    {
+     "airline": "Croatia Airlines",
+     "code": "OU",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://princeoftravel.com/points-programs/singapore-airlines-krisflyer/",
+     "confidence": "media"
+    },
+    {
+     "airline": "EgyptAir",
+     "code": "MS",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://princeoftravel.com/points-programs/singapore-airlines-krisflyer/",
+     "confidence": "media"
+    },
+    {
+     "airline": "Ethiopian Airlines",
+     "code": "ET",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://princeoftravel.com/points-programs/singapore-airlines-krisflyer/",
+     "confidence": "media"
+    },
+    {
+     "airline": "EVA Air",
+     "code": "BR",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://princeoftravel.com/points-programs/singapore-airlines-krisflyer/",
+     "confidence": "media"
+    },
+    {
+     "airline": "ITA Airways",
+     "code": "AZ",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://princeoftravel.com/points-programs/singapore-airlines-krisflyer/",
+     "confidence": "media"
+    },
+    {
+     "airline": "LOT Polish Airlines",
+     "code": "LO",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://princeoftravel.com/points-programs/singapore-airlines-krisflyer/",
+     "confidence": "media"
+    },
+    {
+     "airline": "Lufthansa",
+     "code": "LH",
+     "basis": "alianza (Star Alliance)",
+     "notes": "First de Lufthansa NO se libera a programas socios desde 1-jun-2026.",
+     "source": "https://princeoftravel.com/points-programs/singapore-airlines-krisflyer/",
+     "confidence": "media"
+    },
+    {
+     "airline": "Shenzhen Airlines",
+     "code": "ZH",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://princeoftravel.com/points-programs/singapore-airlines-krisflyer/",
+     "confidence": "media"
+    },
+    {
+     "airline": "South African Airways",
+     "code": "SA",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://princeoftravel.com/points-programs/singapore-airlines-krisflyer/",
+     "confidence": "media"
+    },
+    {
+     "airline": "SWISS",
+     "code": "LX",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://princeoftravel.com/points-programs/singapore-airlines-krisflyer/",
+     "confidence": "media"
+    },
+    {
+     "airline": "TAP Air Portugal",
+     "code": "TP",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://princeoftravel.com/points-programs/singapore-airlines-krisflyer/",
+     "confidence": "media"
+    },
+    {
+     "airline": "Thai Airways",
+     "code": "TG",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://princeoftravel.com/points-programs/singapore-airlines-krisflyer/",
+     "confidence": "media"
+    },
+    {
+     "airline": "Turkish Airlines",
+     "code": "TK",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://princeoftravel.com/points-programs/singapore-airlines-krisflyer/",
+     "confidence": "media"
+    },
+    {
+     "airline": "United Airlines",
+     "code": "UA",
+     "basis": "alianza (Star Alliance)",
+     "notes": "",
+     "source": "https://princeoftravel.com/points-programs/singapore-airlines-krisflyer/",
+     "confidence": "media"
+    },
+    {
+     "airline": "Garuda Indonesia",
+     "code": "GA",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://singaporeair.com/en_UK/it/ppsclub-krisflyer/use-miles/redeem-miles/award-tickets-on-partner-airlines",
+     "confidence": "media"
+    },
+    {
+     "airline": "Malaysia Airlines",
+     "code": "MH",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://singaporeair.com/en_UK/it/ppsclub-krisflyer/use-miles/redeem-miles/award-tickets-on-partner-airlines",
+     "confidence": "media"
+    },
+    {
+     "airline": "Virgin Australia",
+     "code": "VA",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://singaporeair.com/en_UK/it/ppsclub-krisflyer/use-miles/redeem-miles/award-tickets-on-partner-airlines",
+     "confidence": "media"
+    },
+    {
+     "airline": "Juneyao Air",
+     "code": "HO",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://singaporeair.com/en_UK/it/ppsclub-krisflyer/use-miles/redeem-miles/award-tickets-on-partner-airlines",
+     "confidence": "media"
+    },
+    {
+     "airline": "Alaska Airlines",
+     "code": "AS",
+     "basis": "socio bilateral",
+     "notes": "Por teléfono; tabla por zonas.",
+     "source": "https://princeoftravel.com/points-programs/singapore-airlines-krisflyer/",
+     "confidence": "media"
+    }
+   ],
+   "transfers_out": [],
+   "pricing": "tabla por regiones",
+   "notes": "Star Alliance con tabla de ida y vuelta por zonas. Socios bilaterales según web oficial: Garuda, Malaysia, Virgin Australia, Juneyao (tablas nov/dic-2025); Alaska según Prince of Travel (oct-2026). Vistara ya fusionada con Air India. Virgin Atlantic eliminado abr-2025.",
+   "sources": [
+    "https://singaporeair.com/en_UK/it/ppsclub-krisflyer/use-miles/redeem-miles/award-tickets-on-partner-airlines",
+    "https://princeoftravel.com/points-programs/singapore-airlines-krisflyer/"
+   ],
+   "confidence": "media",
+   "checked": "2026-10"
+  },
+  {
+   "id": "cathay-asia-miles",
+   "name": "Cathay Pacific Asia Miles",
+   "currency": "Asia Miles",
+   "alliance": "oneworld",
+   "redeem_on": [
+    {
+     "airline": "Cathay Pacific",
+     "code": "CX",
+     "basis": "aerolínea propia",
+     "notes": "",
+     "source": "https://princeoftravel.com/points-programs/asia-miles",
+     "confidence": "media"
+    },
+    {
+     "airline": "Alaska Airlines",
+     "code": "AS",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://awardfares.com/programs/cathay-pacific-asia-miles",
+     "confidence": "media"
+    },
+    {
+     "airline": "American Airlines",
+     "code": "AA",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://awardfares.com/programs/cathay-pacific-asia-miles",
+     "confidence": "media"
+    },
+    {
+     "airline": "British Airways",
+     "code": "BA",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://awardfares.com/programs/cathay-pacific-asia-miles",
+     "confidence": "media"
+    },
+    {
+     "airline": "Finnair",
+     "code": "AY",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://awardfares.com/programs/cathay-pacific-asia-miles",
+     "confidence": "media"
+    },
+    {
+     "airline": "Iberia",
+     "code": "IB",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://awardfares.com/programs/cathay-pacific-asia-miles",
+     "confidence": "media"
+    },
+    {
+     "airline": "Japan Airlines",
+     "code": "JL",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://awardfares.com/programs/cathay-pacific-asia-miles",
+     "confidence": "media"
+    },
+    {
+     "airline": "Malaysia Airlines",
+     "code": "MH",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://awardfares.com/programs/cathay-pacific-asia-miles",
+     "confidence": "media"
+    },
+    {
+     "airline": "Qantas",
+     "code": "QF",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://awardfares.com/programs/cathay-pacific-asia-miles",
+     "confidence": "media"
+    },
+    {
+     "airline": "Qatar Airways",
+     "code": "QR",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://awardfares.com/programs/cathay-pacific-asia-miles",
+     "confidence": "media"
+    },
+    {
+     "airline": "Royal Jordanian",
+     "code": "RJ",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://awardfares.com/programs/cathay-pacific-asia-miles",
+     "confidence": "media"
+    },
+    {
+     "airline": "SriLankan Airlines",
+     "code": "UL",
+     "basis": "alianza (oneworld)",
+     "notes": "",
+     "source": "https://awardfares.com/programs/cathay-pacific-asia-miles",
+     "confidence": "media"
+    },
+    {
+     "airline": "LATAM",
+     "code": "LA",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://awardfares.com/programs/cathay-pacific-asia-miles",
+     "confidence": "media"
+    },
+    {
+     "airline": "Aer Lingus",
+     "code": "EI",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://princeoftravel.com/points-programs/asia-miles",
+     "confidence": "media"
+    },
+    {
+     "airline": "Air New Zealand",
+     "code": "NZ",
+     "basis": "socio bilateral",
+     "notes": "",
+     "source": "https://princeoftravel.com/points-programs/asia-miles",
+     "confidence": "media"
+    },
+    {
+     "airline": "Air Canada",
+     "code": "AC",
+     "basis": "socio bilateral",
+     "notes": "AwardFares dice que se puede reservar online pero sin detalle.",
+     "source": "https://awardfares.com/programs/cathay-pacific-asia-miles",
+     "confidence": "baja"
+    },
+    {
+     "airline": "Lufthansa",
+     "code": "LH",
+     "basis": "socio bilateral",
+     "notes": "AwardFares dice que se puede reservar online pero sin detalle.",
+     "source": "https://awardfares.com/programs/cathay-pacific-asia-miles",
+     "confidence": "baja"
+    }
+   ],
+   "transfers_out": [],
+   "pricing": "tabla por distancia",
+   "notes": "Tabla por distancia (5 bandas); socios cuestan 5.000 millas más que Cathay; tabla multi-socio oneworld. Fiji, Oman Air, Royal Air Maroc, Hawaiian no confirmados en las fuentes. S7 aparece en listados antiguos (suspendido). Air Canada/Lufthansa/Swiss y otros bilaterales: confianza baja.",
+   "sources": [
+    "https://princeoftravel.com/points-programs/asia-miles",
+    "https://awardfares.com/programs/cathay-pacific-asia-miles"
+   ],
+   "confidence": "media",
+   "checked": "2026-10"
+  }
+ ]
+}

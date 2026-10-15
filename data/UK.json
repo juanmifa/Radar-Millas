@@ -1,0 +1,287 @@
+{
+  "country": "UK",
+  "country_name": "Reino Unido",
+  "checked": "2026-10",
+  "programs": [
+    {
+      "id": "ba-club-avios",
+      "name": "British Airways Club (Avios)",
+      "type": "airline",
+      "how_to_earn": [
+        "Vuelos BA/oneworld",
+        "Tarjetas BA American Express (1 o 1.25 Avios/£) y Barclaycard Avios (1 o 1.5 Avios/£)",
+        "Conversión desde Amex Membership Rewards UK 1:1",
+        "Nectar 400 = 250 Avios; Heathrow Rewards 1:1",
+        "Uber Eats enlazado a BA: 1 Avios/£ (incl. pedidos Tesco vía Uber Eats)",
+        "RevPoints de Revolut (con bonos puntuales del 20%)"
+      ],
+      "transfers": [
+        { "to": "Iberia Plus / Finnair Plus / Qatar Privilege Club / Aer Lingus AerClub (Avios)", "to_type": "airline", "ratio": "1:1 (Avios combinables entre programas Avios)", "notes": "Finnair recibe Avios 1:1 desde BA/Iberia/Qatar/Aer Lingus según TPG", "source": "https://thepointsguy.com/loyalty-programs/finnair-plus-avios" },
+        { "to": "Nectar", "to_type": "retail", "ratio": "400 Avios = 400 Nectar", "notes": "Hasta 10 días", "source": "https://help.nectar.com/help/faqs/offers/what-is-the-avios-to-nectar-conversion-rate-and-vice-versa" }
+      ],
+      "notes": "Moneda central del ecosistema UK. Desde 2026 BA ofrece status match de pago (39/79/159 EUR) a miembros EuroBonus (ver NORDIC).",
+      "sources": ["https://www.britishairways.com/en-gb/executive-club/collecting-avios/credit-cards/uk", "https://pointszilla.com/tesco-avios-virgin-how-to-double-dip-on-points"],
+      "confidence": "alta"
+    },
+    {
+      "id": "amex-mr-uk",
+      "name": "American Express Membership Rewards (UK)",
+      "type": "bank",
+      "how_to_earn": [
+        "Amex Preferred Rewards Gold: 1 punto/£, 2/£ en aerolíneas, 3/£ en Amex Travel",
+        "Amex Platinum: 1 punto/£, 2/£ en Amex Travel"
+      ],
+      "transfers": [
+        { "to": "British Airways Club (Avios)", "to_type": "airline", "ratio": "1:1", "notes": "Mínimo 1.000 según AwardWallet", "source": "https://www.thepointcalculator.com/gb/amex-membership-rewards-points/amex-transfer-partners/" },
+        { "to": "Iberia Plus (Avios)", "to_type": "airline", "ratio": "1:1", "notes": "500:500, mínimo 1.000", "source": "https://awardwallet.com/news/amex-membership-rewards/amex-uk-removes-singapore-krisflyer/" },
+        { "to": "Qatar Privilege Club (Avios)", "to_type": "airline", "ratio": "1:1", "notes": "", "source": "https://www.thepointcalculator.com/gb/amex-membership-rewards-points/amex-transfer-partners/" },
+        { "to": "Virgin Atlantic Flying Club", "to_type": "airline", "ratio": "1:1", "notes": "Mínimo 1.000", "source": "https://awardwallet.com/news/amex-membership-rewards/emirates-uk-transfer-ratio-devaluation/" },
+        { "to": "Air France-KLM Flying Blue", "to_type": "airline", "ratio": "1:1", "notes": "Mínimo 500", "source": "https://awardwallet.com/news/amex-membership-rewards/amex-uk-removes-singapore-krisflyer/" },
+        { "to": "SAS EuroBonus", "to_type": "airline", "ratio": "1:1", "notes": "Mínimo 1.000. Útil para el ecosistema nórdico", "source": "https://www.thepointcalculator.com/gb/amex-membership-rewards-points/amex-transfer-partners/" },
+        { "to": "Cathay Pacific Asia Miles", "to_type": "airline", "ratio": "1:1", "notes": "Mínimo 1.000", "source": "https://www.thepointcalculator.com/gb/amex-membership-rewards-points/amex-transfer-partners/" },
+        { "to": "Delta SkyMiles", "to_type": "airline", "ratio": "1:1", "notes": "", "source": "https://awardwallet.com/news/amex-membership-rewards/emirates-uk-transfer-ratio-devaluation/" },
+        { "to": "Qantas Frequent Flyer", "to_type": "airline", "ratio": "1:1", "notes": "Mínimo 500", "source": "https://www.thepointcalculator.com/gb/amex-membership-rewards-points/amex-transfer-partners/" },
+        { "to": "Emirates Skywards", "to_type": "airline", "ratio": "2:1", "notes": "Devaluado de 4:3 a 2:1 el 1 feb 2026", "source": "https://awardwallet.com/news/amex-membership-rewards/emirates-uk-transfer-ratio-devaluation/" },
+        { "to": "Singapore KrisFlyer", "to_type": "airline", "ratio": "3:2", "notes": "Eliminado y luego reincorporado; puede volver a desaparecer sin aviso", "source": "https://awardwallet.com/news/amex-membership-rewards/amex-uk-removes-singapore-krisflyer/" },
+        { "to": "Marriott Bonvoy", "to_type": "hotel", "ratio": "2:3", "notes": "", "source": "https://www.thepointcalculator.com/gb/amex-membership-rewards-points/amex-transfer-partners/" },
+        { "to": "Hilton Honors", "to_type": "hotel", "ratio": "1:2", "notes": "Bonus del 40% (1:2.8) hasta el 24 nov 2026 según AwardWallet", "source": "https://awardwallet.com/news/amex-membership-rewards/amex-uk-removes-singapore-krisflyer/" },
+        { "to": "Radisson Rewards", "to_type": "hotel", "ratio": "1:3", "notes": "", "source": "https://www.thepointcalculator.com/gb/amex-membership-rewards-points/amex-transfer-partners/" },
+        { "to": "Accor ALL", "to_type": "hotel", "ratio": "3:1", "notes": "Añadido el 1 may 2026", "source": "https://awardwallet.com/news/amex-membership-rewards/amex-uk-removes-singapore-krisflyer/" },
+        { "to": "Nectar", "to_type": "retail", "ratio": "1:1", "notes": "Nectar luego a Avios 400:250 -> peor que ir directo a Avios", "source": "https://www.thepointcalculator.com/gb/amex-membership-rewards-points/amex-transfer-partners/" },
+        { "to": "Club Eurostar", "to_type": "travel", "ratio": "15:1", "notes": "1.500 MR = 100 puntos Eurostar", "source": "https://www.thepointcalculator.com/gb/amex-membership-rewards-points/amex-transfer-partners/" }
+      ],
+      "notes": "Lista oficial no visible en americanexpress.com/en-gb (la página de transferencias no muestra ratios). Datos de thepointcalculator (actualizado 13 oct 2026) y AwardWallet (mod. abr 2026), coincidentes. Duda: si la Amex Rewards Credit Card (sin cuota) tiene acceso a Avios igual que Gold/Platinum no se pudo confirmar.",
+      "sources": ["https://www.thepointcalculator.com/gb/amex-membership-rewards-points/amex-transfer-partners/", "https://awardwallet.com/news/amex-membership-rewards/amex-uk-removes-singapore-krisflyer/", "https://awardwallet.com/news/amex-membership-rewards/emirates-uk-transfer-ratio-devaluation/"],
+      "confidence": "alta"
+    },
+    {
+      "id": "virgin-flying-club",
+      "name": "Virgin Atlantic Flying Club (Virgin Points)",
+      "type": "airline",
+      "how_to_earn": [
+        "Vuelos Virgin Atlantic / Delta / SkyTeam",
+        "Tarjetas Virgin Atlantic Reward / Reward+ (Virgin Money)",
+        "Amex MR UK 1:1",
+        "Tesco Clubcard: £2.50 vales = 500 Virgin Points (1:2); 2 Virgin Points/£ en Tesco",
+        "Virgin Red (moneda compartida con Flying Club)"
+      ],
+      "transfers": [],
+      "notes": "Socios de transferencia 1:1 adicionales son de EE. UU. (Chase, Citi, Capital One, Bilt, Wells Fargo, Rove), no relevantes en UK. Campañas Tesco: +5.000 Virgin Points por activar auto-exchange (hasta 10 may 2026) y bonos periódicos del 30%.",
+      "sources": ["https://www.virginatlantic.com/flying-club/earn-points/tesco-clubcard", "https://awardtravelfinder.com/transfer-partners/virgin-atlantic-flying-club", "https://www.headforpoints.com/2025/06/04/virgin-points-clubcard-conversion-bonus-launched/comment-page-2"],
+      "confidence": "alta"
+    },
+    {
+      "id": "tesco-clubcard",
+      "name": "Tesco Clubcard",
+      "type": "retail",
+      "how_to_earn": ["Compras en Tesco: 1 punto por £ (100 puntos = £1 en vales)"],
+      "transfers": [
+        { "to": "Virgin Atlantic Flying Club / Virgin Red", "to_type": "airline", "ratio": "£2.50 de vales (250 puntos) = 500 Virgin Points (100 Clubcard = 200 Virgin Points)", "notes": "Mínimo £1.50 manual; auto-exchange trimestral; 'Instant Points' con auto-exchange y ≥150 puntos. Manual tarda hasta 28 días. Rate recortado de 1:2.5 a 1:2 en 2023", "source": "https://www.virginatlantic.com/flying-club/earn-points/tesco-clubcard" },
+        { "to": "Avios", "to_type": "airline", "ratio": "No disponible", "notes": "Avios salió de Clubcard en 2021; en 2026 sigue sin conversión", "source": "https://pointszilla.com/tesco-avios-virgin-how-to-double-dip-on-points" }
+      ],
+      "notes": "El '1 punto por £' de ganancia en tienda no se verificó en fuente 2026 (conocimiento general).",
+      "sources": ["https://www.virginatlantic.com/flying-club/earn-points/tesco-clubcard", "https://pointszilla.com/tesco-avios-virgin-how-to-double-dip-on-points", "https://www.headforpoints.com/2023/03/21/tesco-clubcard-to-virgin-atlantic-conversion-rate-cut"],
+      "confidence": "alta"
+    },
+    {
+      "id": "nectar",
+      "name": "Nectar (Sainsbury's, Argos, eBay...)",
+      "type": "coalition",
+      "how_to_earn": ["Compras en Sainsbury's/Argos y socios", "Amex MR UK 1:1"],
+      "transfers": [
+        { "to": "British Airways Club (Avios)", "to_type": "airline", "ratio": "400 Nectar = 250 Avios", "notes": "Bloques de 400; instantáneo; límites mensuales/trimestrales eliminados en 2026; acuerdo prorrogado hasta 2028. Bonos ocasionales del 20%", "source": "https://rewardflightfinder.com/news-and-advice/nectar-and-british-airways-extend-avios-partnership-to-2028" }
+      ],
+      "notes": "Avios -> Nectar es 1:1 (no tiene sentido para vuelos).",
+      "sources": ["https://help.nectar.com/help/faqs/offers/what-is-the-avios-to-nectar-conversion-rate-and-vice-versa", "https://rewardflightfinder.com/news-and-advice/nectar-and-british-airways-extend-avios-partnership-to-2028"],
+      "confidence": "alta"
+    },
+    {
+      "id": "heathrow-rewards",
+      "name": "Heathrow Rewards",
+      "type": "travel",
+      "how_to_earn": ["Compras en tiendas, restaurantes y parking del aeropuerto de Heathrow"],
+      "transfers": [
+        { "to": "British Airways Club (Avios)", "to_type": "airline", "ratio": "1:1", "notes": "Múltiplos de 250; máx. 1 conversión/día y 10.000 Avios/día", "source": "https://shopping.ba.com/retailers/heathrow-rewards" }
+      ],
+      "notes": "Tasa de ganancia en tiendas no verificada. Conversión a Virgin Points no confirmada en 2026.",
+      "sources": ["https://shopping.ba.com/retailers/heathrow-rewards"],
+      "confidence": "media"
+    },
+    {
+      "id": "revolut-revpoints-uk",
+      "name": "Revolut RevPoints (UK)",
+      "type": "fintech",
+      "how_to_earn": [
+        "Standard 1 punto/£10, Plus 1/£5, Premium 1/£4, Metal 1/£2, Ultra 1/£1",
+        "Spare Change: £1 = 50 puntos (mal valor)"
+      ],
+      "transfers": [
+        { "to": "Avios (BA, Iberia, Aer Lingus, Vueling)", "to_type": "airline", "ratio": "1:1", "notes": "Bono del 20% del 17 al 30 ago 2026. Ratio 1:1 según Points Well Made; otras fuentes no lo confirman explícitamente", "source": "https://www.pointswellmade.co.uk/post/revolut-part-1-what-is-revolut-and-what-are-revpoints" }
+      ],
+      "notes": "Más de 30 aerolíneas socias según Points Well Made; ratios por socio no verificados individualmente. Valor efectivo: Metal ≈ 0.5 Avios/£, Ultra ≈ 1 Avios/£.",
+      "sources": ["https://www.pointswellmade.co.uk/post/revolut-part-1-what-is-revolut-and-what-are-revpoints", "https://depositscout.com/guides/revolut-revpoints-2026-value-earning-rates-uk-alternatives", "https://www.insideflyer.com/posts/revolut-offers-20-bonus-on-avios-transfers/"],
+      "confidence": "media"
+    },
+    {
+      "id": "curve-uk",
+      "name": "Curve",
+      "type": "fintech",
+      "how_to_earn": ["No genera millas propias: agrega tarjetas y la tarjeta subyacente sigue ganando sus Avios/puntos"],
+      "transfers": [],
+      "notes": "Recompensas propias en cashback (p. ej. 1% fuera de Europa en plan premium). Útil para pasar una Amex por comercios que no aceptan Amex, pero Amex UK puede no dar puntos en recargas vía Curve; no verificado en 2026.",
+      "sources": ["https://curve.com/blog/the-best-avios-credit-card"],
+      "confidence": "baja"
+    },
+    {
+      "id": "chase-uk",
+      "name": "Chase UK",
+      "type": "bank",
+      "how_to_earn": ["Cuenta corriente: 1% cashback en supermercado, combustible y transporte, máx. £15/mes"],
+      "transfers": [],
+      "notes": "Sin conversión a millas encontrada. Los bonos Chase Ultimate Rewards -> Avios son del Chase de EE. UU., no del Chase UK.",
+      "sources": ["https://depositscout.com/guides/nationwide-vs-chase-uk-which-bank-pays-you-more-in-2026"],
+      "confidence": "media"
+    }
+  ],
+  "cards": [
+    {
+      "id": "ba-amex-free-uk",
+      "name": "British Airways American Express Credit Card",
+      "issuer": "American Express UK",
+      "annual_fee": "£0",
+      "earns": "Avios (BA Club)",
+      "earn_rate": "1 Avios por £",
+      "welcome_bonus": "5.000 Avios tras gastar £2.000 en 3 meses (oct 2026)",
+      "transfers": [],
+      "notes": "Companion Voucher tras £15.000/año (solo turista según Points Well Made). No elegible al bono si tuviste una tarjeta BA Amex personal en 24 meses.",
+      "sources": ["https://www.britishairways.com/en-gb/executive-club/collecting-avios/credit-cards/uk", "https://www.pointswellmade.co.uk/post/we-ranked-the-best-credit-cards-for-earning-avios-in-the-uk-right-now"],
+      "confidence": "alta"
+    },
+    {
+      "id": "ba-amex-premium-plus-uk",
+      "name": "British Airways American Express Premium Plus Card",
+      "issuer": "American Express UK",
+      "annual_fee": "£300",
+      "earns": "Avios (BA Club)",
+      "earn_rate": "1.25 Avios por £ (también en compras BA) desde 7 oct 2026; antes 1.5/£ y 3/£ en BA",
+      "welcome_bonus": "30.000 Avios tras gastar £6.000 en 3 meses (oct 2026)",
+      "transfers": [],
+      "notes": "Companion Voucher tras £15.000/año, válido en cualquier cabina (24 meses). Desde 1 abr 2027: 1 Tier Point por £10, máx. 3.000/año. Comisión FX 2.99%.",
+      "sources": ["https://www.americanexpress.com/uk/credit-cards/ba-premium-plus-credit-card/", "https://www.insideflyer.com/posts/british-airways-card-devalues-avios-earn-rate", "https://www.britishairways.com/en-gb/executive-club/collecting-avios/credit-cards/uk"],
+      "confidence": "alta"
+    },
+    {
+      "id": "ba-amex-business-uk",
+      "name": "British Airways American Express Accelerating Business Card",
+      "issuer": "American Express UK",
+      "annual_fee": "Con cuota (importe no indicado en la web BA)",
+      "earns": "Avios (BA Club)",
+      "earn_rate": "1.25 Avios por £ de gasto empresarial",
+      "welcome_bonus": "30.000 Avios tras gastar £5.000 en 3 meses",
+      "transfers": [],
+      "notes": "10.000 Avios extra por cada £20.000 (hasta 3 veces/año); hasta £200/año de crédito en hoteles y alquiler de coches de avios.com.",
+      "sources": ["https://www.britishairways.com/en-gb/executive-club/collecting-avios/credit-cards/uk"],
+      "confidence": "media"
+    },
+    {
+      "id": "barclaycard-avios-plus",
+      "name": "Barclaycard Avios Plus Mastercard",
+      "issuer": "Barclaycard",
+      "annual_fee": "£20/mes (£240/año)",
+      "earns": "Avios (BA Club)",
+      "earn_rate": "1.5 Avios por £",
+      "welcome_bonus": "25.000 Avios tras gastar £3.000 en 3 meses (fecha del artículo no confirmada)",
+      "transfers": [],
+      "notes": "Cabin Upgrade Voucher (o 7.000 Avios) tras £10.000/año. Desde 31 jul 2026: transferencias de saldo ganan Avios, tope de ganancia = 4x límite de crédito por periodo, cláusula anti-'misuse' (manufactured spend), 2 años entre bonos contados desde el bono. Solo se puede tener una de las dos Barclaycard Avios.",
+      "sources": ["https://www.pointswellmade.co.uk/post/barclaycard-has-changed-its-avios-rules-and-for-once-one-of-them-is-good-news", "https://www.pointswellmade.co.uk/post/we-ranked-the-best-credit-cards-for-earning-avios-in-the-uk-right-now"],
+      "confidence": "media"
+    },
+    {
+      "id": "barclaycard-avios",
+      "name": "Barclaycard Avios Mastercard",
+      "issuer": "Barclaycard",
+      "annual_fee": "£0",
+      "earns": "Avios (BA Club)",
+      "earn_rate": "1 Avios por £",
+      "welcome_bonus": "5.000 Avios tras gastar £1.000 en 3 meses (fecha no confirmada)",
+      "transfers": [],
+      "notes": "Cabin Upgrade Voucher (o 7.000 Avios) tras £20.000/año. Mismas reglas nuevas desde 31 jul 2026.",
+      "sources": ["https://www.pointswellmade.co.uk/post/barclaycard-has-changed-its-avios-rules-and-for-once-one-of-them-is-good-news", "https://www.pointswellmade.co.uk/post/we-ranked-the-best-credit-cards-for-earning-avios-in-the-uk-right-now"],
+      "confidence": "media"
+    },
+    {
+      "id": "amex-gold-uk",
+      "name": "American Express Preferred Rewards Gold",
+      "issuer": "American Express UK",
+      "annual_fee": "Gratis el 1er año, luego £195",
+      "earns": "Membership Rewards",
+      "earn_rate": "1 punto/£; 2/£ en aerolíneas; 3/£ en Amex Travel",
+      "welcome_bonus": "20.000 MR tras £3.000 en 3 meses (según Points Well Made; InsideFlyer reportó un pico de 40.000, fecha no confirmada)",
+      "transfers": [
+        { "to": "British Airways Club (Avios)", "ratio": "1:1", "source": "https://www.thepointcalculator.com/gb/amex-membership-rewards-points/amex-transfer-partners/" },
+        { "to": "Virgin Atlantic Flying Club", "ratio": "1:1", "source": "https://www.thepointcalculator.com/gb/amex-membership-rewards-points/amex-transfer-partners/" },
+        { "to": "SAS EuroBonus", "ratio": "1:1", "source": "https://www.thepointcalculator.com/gb/amex-membership-rewards-points/amex-transfer-partners/" }
+      ],
+      "notes": "4 visitas Priority Pass, £120 crédito Deliveroo. Resto de socios: ver programa amex-mr-uk.",
+      "sources": ["https://www.pointswellmade.co.uk/post/we-ranked-the-best-credit-cards-for-earning-avios-in-the-uk-right-now", "https://insideflyer.com/posts/amex-gold-bonus-jumps-to-40-000-points/"],
+      "confidence": "media"
+    },
+    {
+      "id": "amex-platinum-uk",
+      "name": "The Platinum Card (American Express UK)",
+      "issuer": "American Express UK",
+      "annual_fee": "£650",
+      "earns": "Membership Rewards",
+      "earn_rate": "1 punto/£; 2/£ en Amex Travel",
+      "welcome_bonus": "50.000 MR tras £6.000 en 3 meses (fecha no confirmada)",
+      "transfers": [
+        { "to": "British Airways Club (Avios)", "ratio": "1:1", "source": "https://www.thepointcalculator.com/gb/amex-membership-rewards-points/amex-transfer-partners/" },
+        { "to": "Virgin Atlantic Flying Club", "ratio": "1:1", "source": "https://www.thepointcalculator.com/gb/amex-membership-rewards-points/amex-transfer-partners/" }
+      ],
+      "notes": "Priority Pass y Centurion ilimitados, £400 crédito restaurantes, status hotelero, seguro de viaje.",
+      "sources": ["https://www.pointswellmade.co.uk/post/we-ranked-the-best-credit-cards-for-earning-avios-in-the-uk-right-now"],
+      "confidence": "media"
+    },
+    {
+      "id": "virgin-reward-plus",
+      "name": "Virgin Atlantic Reward+ Credit Card",
+      "issuer": "Virgin Money",
+      "annual_fee": "£160",
+      "earns": "Virgin Points (Flying Club)",
+      "earn_rate": "1.5 Virgin Points/£; 3/£ en Virgin Atlantic y Virgin Holidays",
+      "welcome_bonus": "Hasta 36.000 (18.000 primera compra + 18.000 tras £3.000 en 90 días) — oferta hasta 18 may 2026, ya caducada; bono estándar ~18.000 según Finder",
+      "transfers": [],
+      "notes": "Reward Voucher (Companion o upgrade a Premium) tras £10.000/año.",
+      "sources": ["https://www.pointswellmade.co.uk/post/earn-up-to-36-000-bonus-virgin-points-with-the-virgin-atlantic-reward-and-reward-credit-cards", "https://www.finder.com/uk/credit-cards/virgin-money/virgin-money-virgin-atlantic-reward-plus-credit-card-review"],
+      "confidence": "alta"
+    },
+    {
+      "id": "virgin-reward",
+      "name": "Virgin Atlantic Reward Credit Card",
+      "issuer": "Virgin Money",
+      "annual_fee": "£0",
+      "earns": "Virgin Points (Flying Club)",
+      "earn_rate": "0.75 Virgin Points/£; 1.5/£ en Virgin Atlantic y Virgin Holidays",
+      "welcome_bonus": "Hasta 6.000 (oferta hasta 18 may 2026, caducada)",
+      "transfers": [],
+      "notes": "Reward Voucher tras £20.000/año.",
+      "sources": ["https://www.pointswellmade.co.uk/post/earn-up-to-36-000-bonus-virgin-points-with-the-virgin-atlantic-reward-and-reward-credit-cards"],
+      "confidence": "alta"
+    },
+    {
+      "id": "hsbc-premier-world-elite",
+      "name": "HSBC Premier World Elite Mastercard",
+      "issuer": "HSBC UK",
+      "annual_fee": "£290",
+      "earns": "HSBC Rewards",
+      "earn_rate": "3 puntos/£; 4/£ en divisa extranjera",
+      "welcome_bonus": "40.000 puntos tras £2.000 en 90 días (fecha no confirmada)",
+      "transfers": [
+        { "to": "British Airways Club (Avios)", "ratio": "2:1", "source": "https://www.pointswellmade.co.uk/post/we-ranked-the-best-credit-cards-for-earning-avios-in-the-uk-right-now" }
+      ],
+      "notes": "Equivale a 1.5 Avios/£ (2/£ en divisa). Requiere cuenta HSBC Premier. Otros socios HSBC no verificados.",
+      "sources": ["https://www.pointswellmade.co.uk/post/we-ranked-the-best-credit-cards-for-earning-avios-in-the-uk-right-now"],
+      "confidence": "media"
+    }
+  ]
+}

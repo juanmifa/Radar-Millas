@@ -1,0 +1,331 @@
+{
+  "country": "NL",
+  "country_name": "Países Bajos",
+  "checked": "2026-10",
+  "programs": [
+    {
+      "id": "flying-blue",
+      "name": "Flying Blue (Air France-KLM)",
+      "type": "airline",
+      "how_to_earn": [
+        "Vuelos AF/KLM/Transavia: 4 (Explorer) / 6 (Silver) / 7 (Gold) / 8 (Platinum) / 9 (Ultimate) millas por EUR de tarifa sin tasas",
+        "Booking.com via Flying Blue: 2 millas/EUR",
+        "Hertz: hasta 12 millas/EUR (6 estándar, 12 eléctrico); Avis 4-5; Europcar hasta 5; Sixt hasta 3",
+        "Uber: 1 milla/EUR, 2 con 4+ viajes/mes",
+        "Portal de compras Flying Blue: ~0,9-5,6 millas/EUR según tienda + 500 millas en primera compra"
+      ],
+      "transfers": [],
+      "notes": "Desde el 4 may 2026 todas las millas caducan a los 24 meses sin actividad (exentos: Elite Silver+, Flying Blue Extra, titulares de tarjeta co-branded, menores). Desde el 8 sep 2026 los canjes en vuelos AF/KLM se venden en tarifas Light/Standard/Flex (combinados con socios solo Standard). Precios de canje dinámicos; Promo Rewards publicados el día 1 de cada mes con hasta -25%. Mercado base de KLM. Subscribe to Miles: 0,011-0,014 EUR por milla (sin XP).",
+      "sources": [
+        "https://milesopedia.fr/programme-fidelite/flying-blue/",
+        "https://milesopedia.fr/aerien/flying-blue-partenaires/",
+        "https://skystatus.pro/guide/nl/flying-blue-miles-verdienen"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "id": "amex-mr-nl",
+      "name": "American Express Membership Rewards (Países Bajos)",
+      "type": "bank",
+      "how_to_earn": [
+        "Amex Gold / Platinum clásicas: 1 punto/EUR (no confirmado en web oficial NL)"
+      ],
+      "transfers": [
+        {
+          "to": "Flying Blue",
+          "to_type": "airline",
+          "ratio": "8 puntos = 4 millas (2:1) desde 1 jul 2026",
+          "notes": "Antes 5:4; devaluación del 37,5%. Sin XP.",
+          "source": "https://loyaltylobby.com/2026/04/29/amex-mr-to-air-france-klm-flying-blue-points-to-miles-conversion-devalues-by-38-on-july-1-2026-in-select-markets/"
+        }
+      ],
+      "notes": "La página oficial americanexpress.com/nl-nl no lista socios ni ratios en texto legible; resto de socios (Avios, etc.) y sus ratios en NL no verificados. Pago con puntos en la app: 1.000 puntos = 3 EUR. Hubo bonus +25% a Flying Blue en oct 2026 (hasta 31 oct) según thepointsparty, pero no se especifica país — probablemente EE. UU.",
+      "sources": [
+        "https://loyaltylobby.com/2026/04/29/amex-mr-to-air-france-klm-flying-blue-points-to-miles-conversion-devalues-by-38-on-july-1-2026-in-select-markets/",
+        "https://skystatus.pro/guide/nl/flying-blue-miles-verdienen",
+        "https://skystatus.pro/question/comparaison-cartes-amex-flying-blue",
+        "https://www.americanexpress.com/nl-nl/rewards/membership-rewards/"
+      ],
+      "confidence": "media"
+    },
+    {
+      "id": "air-miles-nl",
+      "name": "Air Miles Nederland",
+      "type": "coalition",
+      "how_to_earn": [
+        "Albert Heijn: 1 Air Mile por 2,50 EUR (Premium: 2 por 2,50 EUR)",
+        "Shell combustible: 1 Air Mile por litro; Shell tienda: 1 por 2 EUR",
+        "Etos: 1 por 2,50 EUR",
+        "Booking.com: 2 Air Miles/EUR"
+      ],
+      "transfers": [
+        {
+          "to": "Flying Blue",
+          "to_type": "airline",
+          "ratio": "2 Air Miles = 1 milla",
+          "notes": "Mínimo 50 Air Miles, máximo 10.000 por transacción, 1 vez al día, inmediato e irreversible. También al revés 2:1",
+          "source": "https://skystatus.pro/guide/nl/air-miles-omzetten-flying-blue"
+        }
+      ],
+      "notes": "Tasas de ganancia de tabla sept 2026 (SkyStatus); fechas internas de la fuente inconsistentes. Confirmar en airmiles.nl.",
+      "sources": [
+        "https://skystatus.pro/guide/nl/air-miles-omzetten-flying-blue",
+        "https://skystatus.pro/guide/nl/flying-blue-miles-verdienen"
+      ],
+      "confidence": "media"
+    },
+    {
+      "id": "revolut-revpoints",
+      "name": "Revolut RevPoints",
+      "type": "fintech",
+      "how_to_earn": [
+        "Pagos con tarjeta: Standard/Plus 1 RevPoint por 10 EUR; Premium 1 por 4 EUR; Metal 1 por 2 EUR; Ultra 1 por EUR"
+      ],
+      "transfers": [
+        {
+          "to": "Flying Blue",
+          "to_type": "airline",
+          "ratio": "1 RevPoint = 1 milla",
+          "notes": "Sin mínimo según SkyStatus; sin comisión de transferencia",
+          "source": "https://skystatus.pro/guide/revolut-revpoints-flying-blue"
+        },
+        {
+          "to": "Avios (British Airways / Iberia / Aer Lingus / Qatar)",
+          "to_type": "airline",
+          "ratio": "1:1",
+          "notes": "",
+          "source": "https://skystatus.pro/guide/revolut-revpoints-flying-blue"
+        },
+        {
+          "to": "SAS EuroBonus, Aegean Miles+Bonus, Etihad Guest",
+          "to_type": "airline",
+          "ratio": "1:1",
+          "notes": "",
+          "source": "https://skystatus.pro/guide/revolut-revpoints-flying-blue"
+        }
+      ],
+      "notes": "Ultra cuesta ~60 EUR/mes (50 EUR primer mes, dato BE). Lista completa de socios por país puede variar; premium-flights (BE) lista además China Southern, Finnair, TAROM, TAP, Turkish y Virgin Atlantic a 1:1.",
+      "sources": [
+        "https://skystatus.pro/guide/revolut-revpoints-flying-blue",
+        "https://milesopedia.fr/programme-fidelite/flying-blue/"
+      ],
+      "confidence": "media"
+    },
+    {
+      "id": "accor-all",
+      "name": "ALL - Accor Live Limitless",
+      "type": "hotel",
+      "how_to_earn": [
+        "Estancias en hoteles Accor (puntos ALL) y además ~1 milla Flying Blue por 10 EUR si se vincula la cuenta (ganancia simultánea)"
+      ],
+      "transfers": [
+        {
+          "to": "Flying Blue",
+          "to_type": "airline",
+          "ratio": "2.000 ALL = 2.000 millas (1:1)",
+          "notes": "Mínimo 2.000 puntos, abono en hasta 10 días; bonus puntuales (+30% dic 2025)",
+          "source": "https://loyaltylobby.com/2025/12/04/all-accor-to-air-france-klm-flying-blue-points-to-miles-30-conversion-bonus-through-december-17-2025/"
+        },
+        {
+          "to": "Iberia Plus (Avios)",
+          "to_type": "airline",
+          "ratio": "3.000 ALL = 3.000 Avios",
+          "notes": "",
+          "source": "https://loyaltylobby.com/2025/11/20/all-accor-qatar-airways-privilege-club-enhance-conversion-ratios/"
+        },
+        {
+          "to": "Qatar Privilege Club (Avios)",
+          "to_type": "airline",
+          "ratio": "2.000 ALL = 1.500 Avios",
+          "notes": "Mejorado nov 2025",
+          "source": "https://loyaltylobby.com/2025/11/20/all-accor-qatar-airways-privilege-club-enhance-conversion-ratios/"
+        },
+        {
+          "to": "British Airways Club (Avios)",
+          "to_type": "airline",
+          "ratio": "4.000 ALL = 2.000 Avios",
+          "notes": "",
+          "source": "https://loyaltylobby.com/2025/11/20/all-accor-qatar-airways-privilege-club-enhance-conversion-ratios/"
+        },
+        {
+          "to": "Qantas Frequent Flyer",
+          "to_type": "airline",
+          "ratio": "2.000 ALL = 2.500 puntos",
+          "notes": "",
+          "source": "https://loyaltylobby.com/2025/11/20/all-accor-qatar-airways-privilege-club-enhance-conversion-ratios/"
+        },
+        {
+          "to": "Finnair Plus (Avios)",
+          "to_type": "airline",
+          "ratio": "2.000 ALL = 1.300 Avios",
+          "notes": "",
+          "source": "https://loyaltylobby.com/2025/11/20/all-accor-qatar-airways-privilege-club-enhance-conversion-ratios/"
+        },
+        {
+          "to": "LATAM Pass",
+          "to_type": "airline",
+          "ratio": "2 ALL = 1 punto",
+          "notes": "",
+          "source": "https://loyaltylobby.com/2025/11/20/all-accor-qatar-airways-privilege-club-enhance-conversion-ratios/"
+        },
+        {
+          "to": "Emirates / Etihad / Cathay / Delta / Aeroplan / TAP / JAL / Korean / Avianca",
+          "to_type": "airline",
+          "ratio": "4.000 ALL = 2.000 millas",
+          "notes": "",
+          "source": "https://loyaltylobby.com/2025/11/20/all-accor-qatar-airways-privilege-club-enhance-conversion-ratios/"
+        },
+        {
+          "to": "United MileagePlus / Singapore KrisFlyer / Aegean",
+          "to_type": "airline",
+          "ratio": "2.000 ALL = 1.000 millas",
+          "notes": "",
+          "source": "https://loyaltylobby.com/2025/11/20/all-accor-qatar-airways-privilege-club-enhance-conversion-ratios/"
+        },
+        {
+          "to": "ITA Volare",
+          "to_type": "airline",
+          "ratio": "4.000 ALL = 5.000 puntos",
+          "notes": "",
+          "source": "https://loyaltylobby.com/2025/11/20/all-accor-qatar-airways-privilege-club-enhance-conversion-ratios/"
+        }
+      ],
+      "notes": "Programa global, no específico del país. 1 punto ALL vale ~0,02 EUR en hotel, así que 1:1 a Flying Blue o Iberia suele ser buen uso. Ojo: SkyStatus NL (oct 2026) indica '2.000 puntos = 1.000 millas' y Milesopedia FR contiene una cifra contradictoria; la tasa 1:1 vigente desde dic 2022 está confirmada en LoyaltyLobby dic 2025 — verificar en all.accor.com antes de transferir.",
+      "sources": [
+        "https://loyaltylobby.com/2025/11/20/all-accor-qatar-airways-privilege-club-enhance-conversion-ratios/",
+        "https://loyaltylobby.com/2025/12/04/all-accor-to-air-france-klm-flying-blue-points-to-miles-30-conversion-bonus-through-december-17-2025/",
+        "https://milesopedia.fr/aerien/flying-blue-partenaires/",
+        "https://skystatus.pro/guide/nl/flying-blue-miles-verdienen"
+      ],
+      "confidence": "media"
+    },
+    {
+      "id": "bunq-nl",
+      "name": "bunq (puntos)",
+      "type": "fintech",
+      "how_to_earn": [
+        "Cerrado a nueva acumulación desde el 13 abr 2026"
+      ],
+      "transfers": [
+        {
+          "to": "Flying Blue",
+          "to_type": "airline",
+          "ratio": "8 puntos = 1 milla",
+          "notes": "Solo saldo restante, hasta 13 abr 2027",
+          "source": "https://milesopedia.fr/aerien/flying-blue-partenaires/"
+        }
+      ],
+      "notes": "Dato de Milesopedia FR; aplicación concreta en NL no verificada.",
+      "sources": [
+        "https://milesopedia.fr/aerien/flying-blue-partenaires/"
+      ],
+      "confidence": "baja"
+    },
+    {
+      "id": "payback-nl",
+      "name": "Payback / otros bancos (ING, ABN AMRO, Rabobank)",
+      "type": "other",
+      "how_to_earn": [],
+      "transfers": [],
+      "notes": "No encontré Payback en NL ni tarjetas de bancos neerlandeses que den millas en 2025-2026. Sin verificar.",
+      "sources": [],
+      "confidence": "baja"
+    }
+  ],
+  "cards": [
+    {
+      "id": "amex-fb-platinum-nl",
+      "name": "Flying Blue American Express Platinum Card",
+      "issuer": "American Express (NL)",
+      "annual_fee": "EUR 660 (55/mes)",
+      "earns": "Flying Blue",
+      "earn_rate": "1,5 millas/EUR; 2 millas/EUR en KLM, Air France y Hertz",
+      "welcome_bonus": "Hasta 70.000 millas por 4.000 EUR de gasto (50% mes 7, 50% mes 13) según SkyStatus; no visible en web oficial",
+      "transfers": [],
+      "notes": "60 XP/año. La página oficial leída tenía aviso de borrador ('Niet publiceren').",
+      "sources": [
+        "https://www.americanexpress.com/en-nl/cards/flying-blue-platinum-card/",
+        "https://skystatus.pro/question/comparaison-cartes-amex-flying-blue",
+        "https://skystatus.pro/guide/nl/flying-blue-miles-verdienen"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "id": "amex-fb-gold-nl",
+      "name": "Flying Blue American Express Gold Card",
+      "issuer": "American Express (NL)",
+      "annual_fee": "EUR 198 (16,50/mes)",
+      "earns": "Flying Blue",
+      "earn_rate": "1 milla/EUR; 1,5 millas/EUR en KLM, Air France y Hertz",
+      "welcome_bonus": "Hasta 25.000 millas con 1 compra/mes (50% mes 7, 50% mes 13) según SkyStatus",
+      "transfers": [],
+      "notes": "30 XP/año.",
+      "sources": [
+        "https://www.americanexpress.com/en-nl/cards/flying-blue-gold-card/",
+        "https://skystatus.pro/question/comparaison-cartes-amex-flying-blue"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "id": "amex-fb-silver-nl",
+      "name": "Flying Blue American Express Silver Card",
+      "issuer": "American Express (NL)",
+      "annual_fee": "EUR 75 (6,25/mes), primer año gratis",
+      "earns": "Flying Blue",
+      "earn_rate": "0,8 millas/EUR; 1 milla/EUR en KLM, Air France y Hertz",
+      "welcome_bonus": "2.500 millas (meta-descripción oficial, sin condiciones)",
+      "transfers": [],
+      "notes": "15 XP/año; recargo mínimo 2% en transacciones no-EUR. SkyStatus menciona además una versión gratuita a 0,5 millas/EUR — no confirmada.",
+      "sources": [
+        "https://www.americanexpress.com/en-nl/cards/flying-blue-silver-card/",
+        "https://skystatus.pro/guide/nl/flying-blue-miles-verdienen",
+        "https://skystatus.pro/question/comparaison-cartes-amex-flying-blue"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "id": "amex-platinum-gold-nl",
+      "name": "American Express Platinum / Gold (clásicas, NL)",
+      "issuer": "American Express (NL)",
+      "annual_fee": "no confirmada",
+      "earns": "Membership Rewards",
+      "earn_rate": "no confirmado (probablemente 1 punto/EUR)",
+      "welcome_bonus": "",
+      "transfers": [
+        {
+          "to": "Flying Blue",
+          "ratio": "2:1 desde 1 jul 2026",
+          "source": "https://loyaltylobby.com/2026/04/29/amex-mr-to-air-france-klm-flying-blue-points-to-miles-conversion-devalues-by-38-on-july-1-2026-in-select-markets/"
+        }
+      ],
+      "notes": "Tras la devaluación, para Flying Blue conviene más la co-branded. Cuotas y bonus no verificados.",
+      "sources": [
+        "https://loyaltylobby.com/2026/04/29/amex-mr-to-air-france-klm-flying-blue-points-to-miles-conversion-devalues-by-38-on-july-1-2026-in-select-markets/",
+        "https://skystatus.pro/guide/nl/flying-blue-miles-verdienen"
+      ],
+      "confidence": "baja"
+    },
+    {
+      "id": "revolut-ultra-nl",
+      "name": "Revolut Ultra / Metal / Premium",
+      "issuer": "Revolut",
+      "annual_fee": "no confirmada para NL",
+      "earns": "RevPoints",
+      "earn_rate": "Ultra 1/EUR; Metal 1/2 EUR; Premium 1/4 EUR; Standard/Plus 1/10 EUR",
+      "welcome_bonus": "",
+      "transfers": [
+        {
+          "to": "Flying Blue",
+          "ratio": "1:1",
+          "source": "https://skystatus.pro/guide/revolut-revpoints-flying-blue"
+        }
+      ],
+      "notes": "Tras la devaluación de Amex MR en NL, Revolut Ultra (1 milla/EUR) iguala a la Flying Blue Amex Gold en ganancia base.",
+      "sources": [
+        "https://skystatus.pro/guide/revolut-revpoints-flying-blue",
+        "https://skystatus.pro/guide/nl/flying-blue-miles-verdienen"
+      ],
+      "confidence": "media"
+    }
+  ]
+}

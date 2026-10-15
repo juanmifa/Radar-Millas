@@ -1,0 +1,358 @@
+{
+  "country": "DE",
+  "country_name": "Alemania",
+  "checked": "2026-10",
+  "programs": [
+    {
+      "id": "payback-de",
+      "name": "PAYBACK Deutschland",
+      "type": "coalition",
+      "how_to_earn": [
+        "Base en casi todos los socios: aprox. 1 °Punkt por cada 2 EUR (0,5 %); con cupones/multiplicadores (p. ej. 10x-44x) bastante más",
+        "Supermercados: EDEKA, Netto Marken-Discount, Marktkauf, GLOBUS, Alnatura, trinkgut, Getränke Hoffmann (EDEKA/Netto entraron en enero 2025; REWE, Penny y nahkauf salieron el 29.12.2024)",
+        "Droguería/farmacia: dm, LINDA Apotheken, gesund.de",
+        "Gasolinera: ARAL (combustible y tienda), aprox. 1 punto por 2 EUR",
+        "Retail/servicios: C&A, GALERIA, Thalia, Apollo, Dehner, Fressnapf, SIXT, IHG, Best Western, Center Parcs, Sky",
+        "Compras online: cientos de tiendas vía portal/app PAYBACK (algunas, como Möbel Höffner, solo vía portal)",
+        "Tarjeta PAYBACK American Express (gratis): 1 punto por 3 EUR; con PLUS (35 EUR/año, desde 13.10.2026) 2 puntos por 3 EUR hasta 20.000 EUR/año",
+        "Entrada desde Amex Membership Rewards: 3 MR = 1 °Punkt"
+      ],
+      "transfers": [
+        {
+          "to": "Miles & More",
+          "to_type": "airline",
+          "ratio": "1 °Punkt = 1 milla (1:1)",
+          "notes": "Mínimo 200 puntos, máximo 999.999 por transacción; irreversible; 'Meilen-Abo' automático en marzo y septiembre; abono normalmente en pocos días hábiles. Bonos de transferencia periódicos: 20 % (ene 2025), 25 % (may 2025), 25 % (ene 2026), 10 % (jul 2026, mínimo 4.000 puntos por transacción, tope 75.000 millas extra). No hay bono confirmado para octubre 2026.",
+          "source": "https://www.payback.de/pb/miles-and-more/tab/2/id/45080/"
+        }
+      ],
+      "notes": "Es la vía principal en Alemania para alimentar Miles & More desde compras cotidianas. Valor alternativo: 1 punto = 1 céntimo canjeado en efectivo/descuento, así que convertir a millas solo compensa si valoras la milla M&M por encima de 1 ct (y mejor aún esperando un bono de 20-25 %). Historial de bonos: https://meilenoptimieren.com/transferbonus-payback-miles-and-more/ . Socios y tasas: https://www.monsterdealz.de/magazin/payback-punkte-sammeln (agosto 2026).",
+      "sources": [
+        "https://www.payback.de/pb/miles-and-more/tab/2/id/45080/",
+        "https://meilenoptimieren.com/payback-punkte-in-miles-more-meilen-umwandeln-praxisanleitung/",
+        "https://meilenoptimieren.com/transferbonus-payback-miles-and-more/",
+        "https://www.monsterdealz.de/magazin/payback-punkte-sammeln"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "id": "deutschlandcard",
+      "name": "DeutschlandCard (en liquidación)",
+      "type": "coalition",
+      "how_to_earn": [
+        "Aprox. 1 punto por 2 EUR en la mayoría de socios (0,5 %); 2-5 % con cupones",
+        "Socios restantes (julio 2026): Esso (principal socio físico), algunas farmacias, Hammer, ROFU Kinderland, Vergölst y cientos de tiendas online vía portal",
+        "EDEKA, Netto y Marktkauf ya no participan desde inicios de 2025 (se pasaron a PAYBACK)"
+      ],
+      "transfers": [],
+      "notes": "Bertelsmann cierra el programa a más tardar el 30.11.2026. Algunas fuentes dicen que las cuentas se disuelven a finales de noviembre y los puntos caducan; otras, que los puntos siguen canjeables hasta al menos el 31.12.2027. Los plazos no coinciden, así que conviene canjear pronto. Ninguna fuente de 2026 menciona conversión a Miles & More ni a otra aerolínea (antes hubo promociones puntuales de M&M). Canje: descuento en caja (p. ej. Esso), vales, tienda de premios o donación. No sirve para la app de millas.",
+      "sources": [
+        "https://www.mydealz.de/magazin/deutschlandcard-wird-eingestellt-bis-wann-ihr-eure-punkte-retten-muesst-61114",
+        "https://www.monsterdealz.de/magazin/deutschlandcard"
+      ],
+      "confidence": "media"
+    },
+    {
+      "id": "shell-clubsmart-de",
+      "name": "Shell ClubSmart (Alemania)",
+      "type": "retail",
+      "how_to_earn": [
+        "FuelSave Diesel / Super FuelSave E10 / Super FuelSave 95: 2 puntos por litro",
+        "V-Power Diesel / V-Power Racing: 5 puntos por litro",
+        "Carga Shell Recharge en Alemania: 5 puntos por kWh",
+        "Tienda Shell: 1 punto por EUR"
+      ],
+      "transfers": [
+        {
+          "to": "Miles & More",
+          "to_type": "airline",
+          "ratio": "2 puntos ClubSmart = 1 milla",
+          "notes": "Mínimo 1.500 puntos (= 750 millas). Abono en hasta 72 h. Hubo un bono del 25 % del 1 al 30.09.2026 (2 puntos = 1,25 millas). Límites: 100.000 puntos/día y 1.000.000 por año.",
+          "source": "https://pointsmag.com/shell-club-smart-miles-and-more-bonus"
+        }
+      ],
+      "notes": "Es la gasolinera que alimenta M&M directamente (ARAL lo hace vía PAYBACK). Con V-Power, 5 pts/l = 2,5 millas por litro.",
+      "sources": ["https://pointsmag.com/shell-club-smart-miles-and-more-bonus"],
+      "confidence": "alta"
+    },
+    {
+      "id": "amex-membership-rewards-de",
+      "name": "American Express Membership Rewards (Alemania)",
+      "type": "bank",
+      "how_to_earn": [
+        "Amex Card (ex-Green), Gold y Platinum: 1 punto MR por EUR",
+        "MR Turbo (15 EUR/año): 1,5 puntos por EUR; puntos extra Turbo limitados a 20.000/año",
+        "Amex Blue: participación en MR cuesta 30 EUR/año"
+      ],
+      "transfers": [
+        { "to": "British Airways Club (Avios)", "to_type": "airline", "ratio": "5:4", "notes": "Abono inmediato. Ojo: frankfurtflyer (julio 2025) aún hablaba de 1:1; las fuentes de julio-agosto 2026 dan 5:4. Desde BA, los Avios se mueven 1:1 a Qatar, Finnair, Aer Lingus y Vueling, lo que vuelve 5:4 la vía hacia Qatar (directo es 3:2).", "source": "https://meilenoptimieren.com/membership-rewards-punkte-in-meilen-umwandeln/" },
+        { "to": "Iberia Club (Avios)", "to_type": "airline", "ratio": "5:4", "notes": "", "source": "https://reisetopia.de/news/american-express-membership-rewards-accor/" },
+        { "to": "Air France/KLM Flying Blue", "to_type": "airline", "ratio": "5:4", "notes": "Abono inmediato", "source": "https://meilenoptimieren.com/membership-rewards-punkte-in-meilen-umwandeln/" },
+        { "to": "SAS EuroBonus", "to_type": "airline", "ratio": "5:4", "notes": "Mínimo 1.000 puntos por transacción; tasa de 50 SEK por cada 1.000 puntos; máximo 100.000 puntos/año", "source": "https://meilenoptimieren.com/american-express-membership-rewards-punkte-uebertragen/" },
+        { "to": "Qatar Airways Privilege Club (Avios)", "to_type": "airline", "ratio": "3:2", "notes": "Desde el 1.8.2025 (antes 5:4). Es mejor ir vía BA (5:4) y combinar Avios.", "source": "https://pointsmag.com/american-express-membership-rewards-verschlechtert-tauschverhaeltnis-airlineprogramme/" },
+        { "to": "Cathay Pacific Asia Miles", "to_type": "airline", "ratio": "3:2", "notes": "Desde el 1.8.2025 (antes 5:4)", "source": "https://frankfurtflyer.de/letzte-chance-amex-membership-rewards-punkte-zu-alten-umrechnungskursen-uebertragen/" },
+        { "to": "Emirates Skywards", "to_type": "airline", "ratio": "2:1", "notes": "Desde el 1.8.2025 (antes 5:4)", "source": "https://frankfurtflyer.de/letzte-chance-amex-membership-rewards-punkte-zu-alten-umrechnungskursen-uebertragen/" },
+        { "to": "Singapore Airlines KrisFlyer", "to_type": "airline", "ratio": "3:2", "notes": "Abono en aprox. 1 día hábil", "source": "https://reisetopia.de/news/american-express-membership-rewards-accor/" },
+        { "to": "Delta SkyMiles", "to_type": "airline", "ratio": "3:2", "notes": "", "source": "https://reisetopia.de/news/american-express-membership-rewards-accor/" },
+        { "to": "Etihad Guest", "to_type": "airline", "ratio": "YA NO DISPONIBLE (era 3:2)", "notes": "Las transferencias terminaron el 15.06.2026", "source": "https://pointsmag.com/amex-beendet-punktetransfer-zu-etihad-guest/" },
+        { "to": "PAYBACK (luego Miles & More 1:1)", "to_type": "other", "ratio": "3:1 (3 MR = 1 °Punkt = 1 milla M&M)", "notes": "Mínimo 900 MR, en múltiplos de 3. Era 2:1 hasta el 29.02.2024. No hay transferencia directa Amex a M&M. Según un comentario de lector, solo funciona con Amex Alemania.", "source": "https://reisetopia.de/guides/membership-rewards-miles-and-more/" },
+        { "to": "Marriott Bonvoy", "to_type": "hotel", "ratio": "3:2", "notes": "", "source": "https://reisetopia.de/news/american-express-membership-rewards-accor/" },
+        { "to": "Hilton Honors", "to_type": "hotel", "ratio": "1:1", "notes": "", "source": "https://reisetopia.de/news/american-express-membership-rewards-accor/" },
+        { "to": "Radisson Rewards", "to_type": "hotel", "ratio": "1:2", "notes": "", "source": "https://reisetopia.de/news/american-express-membership-rewards-accor/" },
+        { "to": "Accor ALL", "to_type": "hotel", "ratio": "3:1", "notes": "Socio nuevo desde el 6.7.2026. Mínimo 900 MR, en múltiplos de 3, abono en 1 día hábil.", "source": "https://reisetopia.de/news/american-express-membership-rewards-accor/" }
+      ],
+      "notes": "Con Etihad fuera, la lista de aerolíneas queda en 9 (BA, Iberia, Flying Blue, SAS, Qatar, Cathay, Emirates, Singapore, Delta). Lo mejor: 5:4 a Avios (BA/Iberia, y Qatar vía BA) y 5:4 a Flying Blue. A M&M solo se llega a 3:1 vía PAYBACK, que es mal valor. No he podido leer la lista oficial de Amex DE (la página oficial no muestra las tasas sin login), así que las tasas vienen de blogs de jul-oct 2026.",
+      "sources": [
+        "https://meilenoptimieren.com/membership-rewards-punkte-in-meilen-umwandeln/",
+        "https://reisetopia.de/news/american-express-membership-rewards-accor/",
+        "https://reisetopia.de/news/etihad-guest-amex-transferpartner-ende/",
+        "https://pointsmag.com/amex-beendet-punktetransfer-zu-etihad-guest/",
+        "https://frankfurtflyer.de/letzte-chance-amex-membership-rewards-punkte-zu-alten-umrechnungskursen-uebertragen/",
+        "https://reisetopia.de/guides/membership-rewards-miles-and-more/",
+        "https://meilenoptimieren.com/american-express-membership-rewards-punkte-uebertragen/"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "id": "revolut-revpoints-de",
+      "name": "Revolut RevPoints (Alemania)",
+      "type": "fintech",
+      "how_to_earn": [
+        "Solo pagos con tarjeta (no transferencias, retiradas ni cripto)",
+        "Standard (gratis): 1 RevPoint por 10 EUR",
+        "Plus (2,99 EUR/mes): 1 por 10 EUR",
+        "Premium (8,99 EUR/mes): 1 por 4 EUR",
+        "Metal (15,99 EUR/mes): 1 por 2 EUR",
+        "Ultra (65 EUR/mes): 1 por 1 EUR",
+        "Hoteles/experiencias reservadas en la app: el doble",
+        "Points Pocket: puntos por saldo ahorrado (de 2.700/año con 2.500 EUR a 270.000/año con 100.000 EUR)"
+      ],
+      "transfers": [
+        { "to": "Air France/KLM Flying Blue", "to_type": "airline", "ratio": "1:1", "notes": "Sin mínimo, gratis, normalmente inmediato (hasta 24 h)", "source": "https://skystatus.pro/guide/de/revolut-revpoints-flying-blue" },
+        { "to": "British Airways Club (Avios)", "to_type": "airline", "ratio": "1:1", "notes": "", "source": "https://pointsmag.com/guide-revolut-revpoints/" },
+        { "to": "Iberia Plus", "to_type": "airline", "ratio": "1:1", "notes": "", "source": "https://pointsmag.com/guide-revolut-revpoints/" },
+        { "to": "Qatar Airways Privilege Club", "to_type": "airline", "ratio": "1:1", "notes": "", "source": "https://pointsmag.com/guide-revolut-revpoints/" },
+        { "to": "Etihad Guest", "to_type": "airline", "ratio": "1:1", "notes": "Alternativa a Amex tras el 15.06.2026 (pointsmag lo confirma en su artículo sobre Etihad)", "source": "https://pointsmag.com/amex-beendet-punktetransfer-zu-etihad-guest/" },
+        { "to": "Turkish Airlines Miles&Smiles", "to_type": "airline", "ratio": "1:1", "notes": "", "source": "https://pointsmag.com/guide-revolut-revpoints/" },
+        { "to": "TAP Miles&Go", "to_type": "airline", "ratio": "1:1", "notes": "", "source": "https://pointsmag.com/guide-revolut-revpoints/" },
+        { "to": "Aer Lingus AerClub / Vueling Club / Finnair Plus / SAS EuroBonus / Aegean Miles+Bonus / Avianca LifeMiles / Icelandair Saga Club / China Southern", "to_type": "airline", "ratio": "1:1", "notes": "", "source": "https://pointsmag.com/guide-revolut-revpoints/" },
+        { "to": "Emirates Skywards", "to_type": "airline", "ratio": "2:1 (dirección probable: 2 RevPoints = 1 milla)", "notes": "La fuente no aclara la dirección de la tasa; compruébalo en la app", "source": "https://pointsmag.com/guide-revolut-revpoints/" },
+        { "to": "Singapore Airlines KrisFlyer", "to_type": "airline", "ratio": "2:1 (dirección probable: 2 RevPoints = 1 milla)", "notes": "Dirección sin confirmar", "source": "https://pointsmag.com/guide-revolut-revpoints/" },
+        { "to": "Accor ALL", "to_type": "hotel", "ratio": "2:1 (dirección sin confirmar)", "notes": "", "source": "https://pointsmag.com/guide-revolut-revpoints/" }
+      ],
+      "notes": "No transfiere a Miles & More. Los RevPoints valen 3 años. Las tasas de acumulación por plan no coinciden entre fuentes: reisetopia (2024) daba Plus 1/5 EUR y Premium 1/3 EUR; uso las de 2026 (pointsmag/skystatus). Las cuotas mensuales también cambian según la fuente (Premium 7,99 frente a 8,99; Metal 13,99 frente a 15,99; Ultra 50 frente a 65): uso las más recientes.",
+      "sources": [
+        "https://pointsmag.com/guide-revolut-revpoints/",
+        "https://skystatus.pro/guide/de/revolut-revpoints-flying-blue",
+        "https://reisetopia.de/news/avios-sammeln-mit-revolut/"
+      ],
+      "confidence": "media"
+    },
+    {
+      "id": "db-bahnbonus",
+      "name": "DB BahnBonus",
+      "type": "travel",
+      "how_to_earn": [
+        "Billetes DB (Flexpreis; hay contradicción sobre si Sparpreis suma) y BahnCard: 1 punto canjeable + 1 punto de estatus por EUR",
+        "Coches de alquiler (Avis, Europcar, Sixt), Flinkster, Call a Bike, GetYourGuide (1 pt/EUR)",
+        "Entrada desde Accor ALL: 2.000 ALL = 1.000 puntos BahnBonus"
+      ],
+      "transfers": [],
+      "notes": "Ninguna fuente de 2026 indica que BahnBonus pueda convertirse a Miles & More ni a otra aerolínea: es un sistema cerrado (billetes gratis/upgrades). En la app solo es relevante como destino de puntos Accor, no como fuente de millas.",
+      "sources": ["https://reisetopia.de/guides/bahn-bonus/"],
+      "confidence": "media"
+    },
+    {
+      "id": "marriott-bonvoy",
+      "name": "Marriott Bonvoy",
+      "type": "hotel",
+      "how_to_earn": ["Estancias Marriott", "Desde Amex MR DE a 3:2"],
+      "transfers": [
+        { "to": "Mayoría de aerolíneas (Avios BA/Iberia/Aer Lingus/Vueling/Qatar, Flying Blue, Emirates, etc.)", "to_type": "airline", "ratio": "3:1, +5.000 millas por cada bloque de 60.000 (60.000 = 25.000)", "notes": "", "source": "https://meilenoptimieren.com/marriott-bonvoy-punkte-in-meilen-umwandeln/" },
+        { "to": "United MileagePlus", "to_type": "airline", "ratio": "3:1, +10.000 por bloque de 60.000 (60.000 = 30.000)", "notes": "", "source": "https://meilenoptimieren.com/marriott-bonvoy-punkte-in-meilen-umwandeln/" },
+        { "to": "American AAdvantage / Avianca LifeMiles / Delta", "to_type": "airline", "ratio": "3:1 sin bono", "notes": "", "source": "https://meilenoptimieren.com/marriott-bonvoy-punkte-in-meilen-umwandeln/" }
+      ],
+      "notes": "Miles & More NO acepta transferencias desde Marriott (desde 2019, según la fuente). Amex MR, luego Marriott 3:2 y luego aerolínea da 2 MR = 1 milla, o 0,5 + bono: peor que ir directo a Avios a 5:4.",
+      "sources": ["https://meilenoptimieren.com/marriott-bonvoy-punkte-in-meilen-umwandeln/"],
+      "confidence": "alta"
+    },
+    {
+      "id": "hilton-honors",
+      "name": "Hilton Honors",
+      "type": "hotel",
+      "how_to_earn": ["Estancias Hilton", "Desde Amex MR DE a 1:1"],
+      "transfers": [
+        { "to": "Mayoría (BA Avios, Flying Blue, Emirates, Etihad, Qatar, United, Aeroplan, Delta...)", "to_type": "airline", "ratio": "10:1", "notes": "Algunos mejores: Qantas/Virgin Atlantic 10:1,5; KrisFlyer 4.000:500", "source": "https://meilenoptimieren.com/hilton-honors-punkte-in-meilen-umwandeln/" }
+      ],
+      "notes": "No transfiere a Miles & More. 10:1 es muy mal valor: no se usa para millas.",
+      "sources": ["https://meilenoptimieren.com/hilton-honors-punkte-in-meilen-umwandeln/"],
+      "confidence": "alta"
+    },
+    {
+      "id": "accor-all",
+      "name": "Accor Live Limitless (ALL)",
+      "type": "hotel",
+      "how_to_earn": ["Estancias Accor", "Desde Amex MR DE a 3:1 (desde 6.7.2026)", "Desde Revolut (2:1 según pointsmag)"],
+      "transfers": [
+        { "to": "DB BahnBonus", "to_type": "travel", "ratio": "2.000 ALL = 1.000 puntos BahnBonus", "notes": "", "source": "https://reisetopia.de/guides/bahn-bonus/" },
+        { "to": "Aerolíneas (Aeroplan, United, Aegean, etc.)", "to_type": "airline", "ratio": "no confirmado", "notes": "La página oficial de conversión de ALL no muestra la tasa sin login. Habitualmente se cita 2 ALL = 1 milla, pero no lo he podido verificar en una fuente de 2026.", "source": "https://all.accor.com/a/de/loyalty-program/partners/airlines/aircanada/instant-transfer.html" }
+      ],
+      "notes": "Poco útil para millas desde Alemania.",
+      "sources": ["https://reisetopia.de/news/american-express-membership-rewards-accor/", "https://reisetopia.de/guides/bahn-bonus/"],
+      "confidence": "baja"
+    },
+    {
+      "id": "pointspay",
+      "name": "Pointspay",
+      "type": "other",
+      "how_to_earn": [],
+      "transfers": [],
+      "notes": "No he encontrado fuentes de 2025-2026 sobre Pointspay en Alemania como vía para ganar o transferir millas. La asociación con Miles & More que aparece es para pagar con millas en Suiza (miles-at-checkout), no para Alemania. Hay que verificarlo en una búsqueda posterior.",
+      "sources": ["https://thewisemarketer.com/miles-more-and-pointspay-announce-partnership-to-bring-miles-at-checkout-to-members-in-switzerland/"],
+      "confidence": "baja"
+    }
+  ],
+  "cards": [
+    {
+      "id": "amex-gold-de",
+      "name": "American Express Gold Card",
+      "issuer": "American Express Europe S.A. (Germany branch)",
+      "annual_fee": "240 EUR/año (20 EUR/mes)",
+      "earns": "Membership Rewards",
+      "earn_rate": "1 punto MR por EUR (1,5 con Turbo, 15 EUR/año)",
+      "welcome_bonus": "Hasta 50.000 MR: 20.000 con 3.000 EUR en 6 meses + 30.000 al llegar a 5.000 EUR (reisetopia, oct 2026). Meilenoptimieren (sep 2026): 50.000 con 5.000 EUR en 6 meses + 4.500 por la primera tarjeta adicional. Sin fecha de fin.",
+      "transfers": [
+        { "to": "British Airways Club (Avios)", "ratio": "5:4", "source": "https://meilenoptimieren.com/membership-rewards-punkte-in-meilen-umwandeln/" },
+        { "to": "Air France/KLM Flying Blue", "ratio": "5:4", "source": "https://meilenoptimieren.com/membership-rewards-punkte-in-meilen-umwandeln/" },
+        { "to": "Miles & More (vía PAYBACK)", "ratio": "3:1", "source": "https://reisetopia.de/guides/membership-rewards-miles-and-more/" }
+      ],
+      "notes": "Resto de socios: ver programa amex-membership-rewards-de.",
+      "sources": ["https://reisetopia.de/kreditkarten/amex-green-vs-amex-gold/", "https://meilenoptimieren.com/willkommensbonus-american-express-kreditkarten/"],
+      "confidence": "alta"
+    },
+    {
+      "id": "amex-platinum-de",
+      "name": "American Express Platinum Card",
+      "issuer": "American Express Europe S.A. (Germany branch)",
+      "annual_fee": "720 EUR/año (60 EUR/mes)",
+      "earns": "Membership Rewards",
+      "earn_rate": "1 punto MR por EUR (1,5 con Turbo)",
+      "welcome_bonus": "Hasta 85.000 MR vía enlace de referido/blog: 40.000 tras 6.000 EUR + 45.000 tras otros 4.000 EUR (10.000 EUR en 6 meses). No haber sido titular de una Amex DE en 18 meses. 'Puede terminar en cualquier momento' (sep-oct 2026). Directo en la web de Amex suele ofrecerse crédito en cuenta.",
+      "transfers": [
+        { "to": "British Airways Club (Avios)", "ratio": "5:4", "source": "https://meilenoptimieren.com/membership-rewards-punkte-in-meilen-umwandeln/" },
+        { "to": "Air France/KLM Flying Blue", "ratio": "5:4", "source": "https://meilenoptimieren.com/membership-rewards-punkte-in-meilen-umwandeln/" }
+      ],
+      "notes": "Créditos anuales: 200 EUR de viajes, 200 EUR Sixt Ride, 100 EUR shopping (Lodenfrey) y 150 EUR restaurantes. Match de estatus SkyTeam Elite Plus por 260 EUR.",
+      "sources": ["https://meilenoptimieren.com/american-express-platinum-kreditkarte/", "https://meilenoptimieren.com/willkommensbonus-american-express-kreditkarten/"],
+      "confidence": "alta"
+    },
+    {
+      "id": "amex-card-green-de",
+      "name": "American Express Card (ex-Green)",
+      "issuer": "American Express Europe S.A. (Germany branch)",
+      "annual_fee": "55 EUR/año (o 5 EUR/mes); gratis desde el 2.º año con 9.000 EUR de gasto anual",
+      "earns": "Membership Rewards",
+      "earn_rate": "1 punto MR por EUR",
+      "welcome_bonus": "10.000 MR con 2.000 EUR en 6 meses (oct 2026, sin fecha de fin)",
+      "transfers": [ { "to": "British Airways Club (Avios)", "ratio": "5:4", "source": "https://meilenoptimieren.com/membership-rewards-punkte-in-meilen-umwandeln/" } ],
+      "notes": "La misma fuente menciona también 60 EUR/año en otro punto.",
+      "sources": ["https://reisetopia.de/kreditkarten/amex-green-vs-amex-gold/"],
+      "confidence": "media"
+    },
+    {
+      "id": "amex-business-platinum-de",
+      "name": "American Express Business Platinum",
+      "issuer": "American Express Europe S.A. (Germany branch)",
+      "annual_fee": "850 EUR/año",
+      "earns": "Membership Rewards",
+      "earn_rate": "1 punto MR por EUR (1,5 con Turbo)",
+      "welcome_bonus": "200.000 MR con 15.000 EUR en 6 meses (sep 2026, puede terminar en cualquier momento)",
+      "transfers": [ { "to": "British Airways Club (Avios)", "ratio": "5:4", "source": "https://meilenoptimieren.com/membership-rewards-punkte-in-meilen-umwandeln/" } ],
+      "notes": "Requiere actividad empresarial/autónomo.",
+      "sources": ["https://meilenoptimieren.com/willkommensbonus-american-express-kreditkarten/"],
+      "confidence": "media"
+    },
+    {
+      "id": "payback-amex-de",
+      "name": "PAYBACK American Express Karte",
+      "issuer": "American Express Europe S.A. (Germany branch)",
+      "annual_fee": "0 EUR (PLUS opcional: 35 EUR/año desde 13.10.2026, sustituye a PAYBACK MAX)",
+      "earns": "PAYBACK °Punkte",
+      "earn_rate": "1 punto por 3 EUR (aprox. 0,33 millas M&M/EUR); con PLUS 2 por 3 EUR hasta 20.000 EUR/año",
+      "welcome_bonus": "4.000 puntos con 500 EUR en 2 meses, hasta el 01.11.2026 (el bono normal es 1.000). Nuevos clientes: no haber tenido el mismo producto en 18 meses.",
+      "transfers": [ { "to": "Miles & More", "ratio": "1:1 (vía PAYBACK)", "source": "https://www.payback.de/pb/miles-and-more/tab/2/id/45080/" } ],
+      "notes": "Opción gratuita para sumar a M&M; con PLUS llega a 0,67 millas/EUR, mejor que la M&M Blue/Gold privada (0,5).",
+      "sources": ["https://meilenoptimieren.com/payback-american-express-kreditkarte/", "https://reisetopia.de/guides/membership-rewards-miles-and-more/"],
+      "confidence": "alta"
+    },
+    {
+      "id": "mm-gold-de",
+      "name": "Lufthansa Miles & More Credit Card Gold",
+      "issuer": "Deutsche Bank (Mastercard); antes DKB hasta oct 2025",
+      "annual_fee": "138 EUR/año (11,50 EUR/mes)",
+      "earns": "Miles & More",
+      "earn_rate": "1 milla por 2 EUR; Worldshop LH 5 millas por 2 EUR; Avis 5/EUR (mín. 1.000 por alquiler)",
+      "welcome_bonus": "20.000 millas + 40 Points + 4 vales de lounge LH Business; solicitud del 1.10 al 30.11.2026. Sin tarjeta M&M de Deutsche Bank en 12 meses, sin estatus de viajero frecuente, permanencia de 12 meses.",
+      "transfers": [],
+      "notes": "Protección total contra la caducidad de las millas mientras la tarjeta está activa. Estatus Marriott Bonvoy Silver Elite. Los titulares de DKB tuvieron que volver a solicitarla.",
+      "sources": ["https://reisetopia.de/deals/miles-and-more-kreditkarte-bonus/", "https://meilenoptimieren.com/miles-and-more-gold-vs-blue-kreditkarte-vergleich/", "https://pointsmag.com/?p=58556"],
+      "confidence": "alta"
+    },
+    {
+      "id": "mm-blue-de",
+      "name": "Lufthansa Miles & More Credit Card Blue",
+      "issuer": "Deutsche Bank (Mastercard)",
+      "annual_fee": "66 EUR/año (5,50 EUR/mes); un anuncio indica 12 meses sin cuota (sin aclarar)",
+      "earns": "Miles & More",
+      "earn_rate": "1 milla por 2 EUR; Avis 4/EUR",
+      "welcome_bonus": "500 millas + 40 Points (válido hasta el 31.12.2026)",
+      "transfers": [],
+      "notes": "También protege las millas contra la caducidad. Existe una versión MyFlex de 0 EUR (1 milla/2 EUR, sin bono indicado).",
+      "sources": ["https://reisetopia.de/kreditkarten/miles-and-more-kreditkarte/", "https://meilenoptimieren.com/miles-and-more-gold-vs-blue-kreditkarte-vergleich/"],
+      "confidence": "media"
+    },
+    {
+      "id": "mm-gold-business-de",
+      "name": "Lufthansa Miles & More Credit Card Gold Business",
+      "issuer": "Deutsche Bank (Mastercard)",
+      "annual_fee": "11,50 EUR/mes (aprox. 138 EUR/año)",
+      "earns": "Miles & More",
+      "earn_rate": "1 milla por EUR",
+      "welcome_bonus": "50.000 millas + 40 Points + 4 vales de lounge; hasta el 30.11.2026",
+      "transfers": [],
+      "notes": "Blue Business: 5,50 EUR/mes, 1 milla/EUR, 1.000 millas + 40 Points de bono.",
+      "sources": ["https://reisetopia.de/deals/miles-and-more-kreditkarte-bonus/", "https://reisetopia.de/kreditkarten/miles-and-more-kreditkarte/"],
+      "confidence": "alta"
+    },
+    {
+      "id": "eurowings-premium-de",
+      "name": "Eurowings Kreditkarte Premium (VISA)",
+      "issuer": "easybank (BAWAG; antes Barclays Deutschland)",
+      "annual_fee": "49,50 EUR el primer año, luego 99 EUR",
+      "earns": "Miles & More",
+      "earn_rate": "1 milla por 2 EUR",
+      "welcome_bonus": "3.000 millas (regular). Hubo una oferta de 10.000 millas (mydealz), ya caducada.",
+      "transfers": [],
+      "notes": "Sin comisión por divisa extranjera. Las millas caducan a los 36 meses (esta tarjeta no las protege). Classic: 14,50 EUR el primer año, luego 29 EUR; 500 millas de bono; 1,99 % de comisión en divisa extranjera. Barclays Deutschland pasó a llamarse easybank tras la compra por BAWAG.",
+      "sources": ["https://www.biallo.de/verbraucherschutz/news/eurowings-kreditkarten-das-aendert-sich-fuer-sie-durch-den-wechsel-zu-easybank/", "https://www.mydealz.de/deals/eurowings-miles-more-10000-meilen-fur-beantragung-der-goldcard-2804656"],
+      "confidence": "media"
+    },
+    {
+      "id": "revolut-metal-de",
+      "name": "Revolut Metal / Ultra",
+      "issuer": "Revolut Bank UAB",
+      "annual_fee": "Metal 15,99 EUR/mes; Ultra 65 EUR/mes (cifras de 2026, varían según la fuente)",
+      "earns": "RevPoints",
+      "earn_rate": "Metal 1 por 2 EUR; Ultra 1 por EUR",
+      "welcome_bonus": "no confirmado",
+      "transfers": [
+        { "to": "Air France/KLM Flying Blue", "ratio": "1:1", "source": "https://skystatus.pro/guide/de/revolut-revpoints-flying-blue" },
+        { "to": "British Airways Club / Iberia (Avios)", "ratio": "1:1", "source": "https://pointsmag.com/guide-revolut-revpoints/" },
+        { "to": "Qatar / Etihad / Turkish / TAP", "ratio": "1:1", "source": "https://pointsmag.com/guide-revolut-revpoints/" }
+      ],
+      "notes": "Ver programa revolut-revpoints-de. Es la única vía de la lista hacia Etihad y Turkish desde Alemania.",
+      "sources": ["https://pointsmag.com/guide-revolut-revpoints/", "https://skystatus.pro/guide/de/revolut-revpoints-flying-blue"],
+      "confidence": "media"
+    }
+  ]
+}

@@ -1,0 +1,449 @@
+{
+  "country": "BR",
+  "country_name": "Brasil",
+  "checked": "2026-10",
+  "programs": [
+    {
+      "id": "livelo",
+      "name": "Livelo",
+      "type": "coalition",
+      "how_to_earn": [
+        "Tarjetas de crédito que acumulan directamente en Livelo: Banco do Brasil (Ourocard), Bradesco, Digio, Banese, Banco Bari, Next, BTG Pactual (lista de 2024)",
+        "Ejemplos de tasa (2024, verificar): Bradesco Amex The Centurion hasta 7 pts/USD; varios Bradesco Elo/Visa Infinite 2-3,3 pts/USD; Ourocard Visa Altus 2,5 pts/USD; BB Elo Nanquim 2,2; BB Mastercard Black 2; Next Visa Platinum 1,5",
+        "Transferencia desde programas de otros bancos (C6 Átomos, Unicred, Coopera/Sicoob, Banco Pan, etc.)",
+        "Shopping Livelo: compras pagadas 100% en reales en +90 tiendas asociadas (Casas Bahia, Magalu, Decathlon...), típicamente 'hasta 8-10 pts por real' en campañas; crédito en ~10 días",
+        "Clube Livelo (suscripción mensual de puntos): Essencial 1.000 pts/mes R$ 49,90; Especial 5.000 pts/mes R$ 210; Premium 20.000 pts/mes R$ 868,42 (planos nuevos oct 2026)"
+      ],
+      "transfers": [
+        { "to": "LATAM Pass", "to_type": "airline", "ratio": "1:1", "notes": "Mínimo 12.000 pts (bajó de 15.000 en 2026). Bonificaciones frecuentes: 25-30% (p.ej. 25% el 22/06/2026 + 1.000 millas en 1ª transferencia, tope 300.000 extras/CPF).", "source": "https://www.cartoesdecredito.me/milhas/programas-parceiros-da-livelo-2026/" },
+        { "to": "Smiles (GOL)", "to_type": "airline", "ratio": "1:1", "notes": "Mínimo 10.000. Bonificaciones habituales 50% (cliente normal) / hasta 80% (Clube Smiles, Clube Livelo, Diamante/Magno), p.ej. campaña hasta 18/09/2026, tope 300.000 millas bônus/CPF, validez bônus 12 meses.", "source": "https://cartoeseviagens.com.br/parceiros-livelo-transferencia" },
+        { "to": "Azul Fidelidade", "to_type": "airline", "ratio": "1:1", "notes": "Mínimo 1.000. Bonificaciones muy altas: 55%/85% (Clube Azul) + hasta 30% por antigüedad en Clube Azul (julio 2026); 60%/90% + antigüedad (agosto 2026, 'hasta 120%'). Puntos bônus caducan en 6 meses (salvo Clube Azul 10k/20k o tarjetas Azul Itaú Infinite).", "source": "https://www.cartoesdecredito.me/milhas/programas-parceiros-da-livelo-2026/" },
+        { "to": "Iberia Club (Avios)", "to_type": "airline", "ratio": "3,5:1", "notes": "Mínimo 3.500 pts = 1.000 Avios.", "source": "https://www.cartoesdecredito.me/milhas/programas-parceiros-da-livelo-2026/" },
+        { "to": "British Airways Club (Avios)", "to_type": "airline", "ratio": "3,5:1", "notes": "Mínimo 3.500 pts = 1.000 Avios.", "source": "https://www.cartoesdecredito.me/milhas/programas-parceiros-da-livelo-2026/" },
+        { "to": "Flying Blue (Air France-KLM)", "to_type": "airline", "ratio": "3,5:1", "notes": "Mínimo 1.000 millas (3.500 pts). Titulares Bradesco Amex Centurion: 1:1. Campaña 30% de bônus para todos hasta 21/08/2026 (tope 1.050.000 pts/cliente).", "source": "https://passageirodeprimeira.com/?p=559327" },
+        { "to": "United MileagePlus", "to_type": "airline", "ratio": "4:1", "notes": "Mínimo 4.000 pts.", "source": "https://www.cartoesdecredito.me/milhas/programas-parceiros-da-livelo-2026/" },
+        { "to": "Copa ConnectMiles", "to_type": "airline", "ratio": "3:1", "notes": "Mínimo 3.000 pts.", "source": "https://www.cartoesdecredito.me/milhas/programas-parceiros-da-livelo-2026/" },
+        { "to": "Etihad Guest", "to_type": "airline", "ratio": "4,5:1", "notes": "Empeoró en 2026 (antes 3,5:1).", "source": "https://www.cartoesdecredito.me/milhas/programas-parceiros-da-livelo-2026/" },
+        { "to": "Aeroméxico Rewards", "to_type": "airline", "ratio": "3,5:1", "notes": "Mínimo 3.500 pts.", "source": "https://www.cartoesdecredito.me/milhas/programas-parceiros-da-livelo-2026/" },
+        { "to": "ALL Accor", "to_type": "hotel", "ratio": "3,5:1", "notes": "Mínimo 7.000 pts.", "source": "https://www.cartoesdecredito.me/milhas/programas-parceiros-da-livelo-2026/" },
+        { "to": "IHG One Rewards", "to_type": "hotel", "ratio": "2:1", "notes": "Mínimo 2.000 pts.", "source": "https://www.cartoesdecredito.me/milhas/programas-parceiros-da-livelo-2026/" },
+        { "to": "Hilton Honors", "to_type": "hotel", "ratio": "2:1", "notes": "Nuevo socio desde julio 2026.", "source": "https://www.cartoesdecredito.me/milhas/programas-parceiros-da-livelo-2026/" },
+        { "to": "Dotz", "to_type": "retail", "ratio": "1:1", "notes": "Mínimo 1.000.", "source": "https://cartoeseviagens.com.br/parceiros-livelo-transferencia" },
+        { "to": "Seedz", "to_type": "other", "ratio": "1:1", "notes": "Mínimo 1.000.", "source": "https://cartoeseviagens.com.br/parceiros-livelo-transferencia" }
+      ],
+      "notes": "15 socios a sept 2026. TAP Miles&Go YA NO es socio: terminó el 19/08/2024 salvo para Bradesco Amex The Centurion (vía Espaço Centurion) - fuente https://www.tupi.fm/?p=1833391. Para Europa: Iberia/BA a 3,5:1 es caro comparado con Esfera→Iberia 2:1. Los puntos no caducan mientras haya Clube Livelo activo. Clube Especial/Premium baja el mínimo a LATAM/Azul/Smiles a 1.000 pts.",
+      "sources": [
+        "https://www.cartoesdecredito.me/milhas/programas-parceiros-da-livelo-2026/",
+        "https://cartoeseviagens.com.br/parceiros-livelo-transferencia",
+        "https://cartoeseviagens.com.br/artigos/clube-livelo-novos-planos-essencial-especial-premium-2026",
+        "https://passageirodeprimeira.com/quais-as-vantagens-de-comprar-pelo-shopping-livelo",
+        "https://passageirodeprimeira.com/?p=348299",
+        "https://passageirodeprimeira.com/?p=544059",
+        "https://cartoeseviagens.com.br/livelo-smiles-bonus-transferencia-pontos-prorrogada",
+        "https://pontospravoar.com/transfira-pontos-livelo-receba-ate-120-porcento-bonus-azul-fidelidade/",
+        "https://www.melhoresdestinos.com.br/milhas/oferta-azul-livelo-115-bonus-jul26",
+        "https://www.tupi.fm/?p=1833391"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "id": "esfera",
+      "name": "Esfera (Santander)",
+      "type": "bank",
+      "how_to_earn": [
+        "Tarjetas Santander (tasas según ranking 2026, verificar en propuesta): Unlimited Private 3,5 pts/USD nacional y 4 internacional; Unlimited Select 3/3,6; Unique Pontos 2,2/3; Amex Platinum 2,2; Elite Pontos 1,5; Amex Gold 1,2",
+        "Compras en tiendas asociadas vía Esfera",
+        "Clube Esfera (suscripción): planes Essencial 100, Pro 1.000, Master 2.500, VIP 5.000, Premium 10.000, Exclusive 20.000 pts/mes (precios no confirmados)"
+      ],
+      "transfers": [
+        { "to": "LATAM Pass", "to_type": "airline", "ratio": "1:1", "notes": "Mínimo 30.000 (menor con Clube Esfera). Campañas típicas ~25%.", "source": "https://cartoeseviagens.com.br/parceiros-esfera-transferencia" },
+        { "to": "Smiles (GOL)", "to_type": "airline", "ratio": "1:1", "notes": "Mínimo 30.000 (hasta 100 pts con Clube Exclusive). Campañas: 70% (26-27/02/2026) y 75% (13-14/04/2026) para Clube Esfera; históricamente 50/70/80% según Clube Smiles/Esfera.", "source": "https://cartoeseviagens.com.br/parceiros-esfera-transferencia" },
+        { "to": "Azul Fidelidade", "to_type": "airline", "ratio": "1:1", "notes": "Mínimo 30.000.", "source": "https://cartoeseviagens.com.br/parceiros-esfera-transferencia" },
+        { "to": "Iberia Club (Avios)", "to_type": "airline", "ratio": "2:1", "notes": "Mínimo 15.000 pts = 7.500 Avios. Campañas: 10%/20% (Clube) en marzo 2026, 25% en 15-17/06/2026; hasta 30% en otras. Es la mejor vía brasileña a Avios.", "source": "https://passageirodeprimeira.com/?p=534735" },
+        { "to": "TAP Miles&Go", "to_type": "airline", "ratio": "2,7:1 (2,2:1 con Clube Esfera)", "notes": "Campaña hasta 29/09/2026: 2,2:1 general y 1,8:1 Clube. Mínimo 30.000, máx 100.000 por transacción, 1,2 M/CPF/año; millas válidas 3 años; hasta 5 días hábiles.", "source": "https://passageirodeprimeira.com/?p=566521" },
+        { "to": "Copa ConnectMiles", "to_type": "airline", "ratio": "3:1", "notes": "", "source": "https://cartoeseviagens.com.br/parceiros-esfera-transferencia" },
+        { "to": "Aeroméxico Rewards", "to_type": "airline", "ratio": "3,5:1", "notes": "", "source": "https://cartoeseviagens.com.br/parceiros-esfera-transferencia" },
+        { "to": "Flying Blue (Air France-KLM)", "to_type": "airline", "ratio": "3,5:1", "notes": "Fuente 2024 indicaba 1:1 solo para tarjetas Amex (Membership Rewards); no confirmado en 2026.", "source": "https://cartoeseviagens.com.br/parceiros-esfera-transferencia" },
+        { "to": "Turkish Miles&Smiles", "to_type": "airline", "ratio": "4,5:1", "notes": "Solo en una fuente; verificar.", "source": "https://cartoeseviagens.com.br/parceiros-esfera-transferencia" },
+        { "to": "ALL Accor", "to_type": "hotel", "ratio": "3,5:1", "notes": "", "source": "https://cartoeseviagens.com.br/parceiros-esfera-transferencia" },
+        { "to": "IHG One Rewards", "to_type": "hotel", "ratio": "2:1", "notes": "", "source": "https://cartoeseviagens.com.br/parceiros-esfera-transferencia" }
+      ],
+      "notes": "11 socios a 14/09/2026. AAdvantage aparecía en 2024 solo como promoción puntual; no está en la lista 2026. Las tarjetas Santander Amex tenían antes socios extra (KrisFlyer, SkyMiles, Marriott, Hilton) vía Membership Rewards; no verificado en 2026. Puntos protegidos mientras haya Clube Esfera activo.",
+      "sources": [
+        "https://cartoeseviagens.com.br/parceiros-esfera-transferencia",
+        "https://passageirodeprimeira.com/?p=534735",
+        "https://passageirodeprimeira.com/?p=544925",
+        "https://passageirodeprimeira.com/?p=566521",
+        "https://cartoeseviagens.com.br/esfera-para-iberia-com-bonus",
+        "https://cartoeseviagens.com.br/clube-esfera",
+        "https://cartoeseviagens.com.br/melhores-cartoes-para-pontuar-no-esfera",
+        "https://pontospravoar.com/tag/transferencia-de-pontos/",
+        "https://pontospravoar.com/ultimo-dia-transferencia-pontos-esfera-bonus-ate-80-porcento-smiles/",
+        "https://passageirodeprimeira.com/quais-sao-os-parceiros-dos-programas-bancarios-para-a-transferencia-de-pontos/"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "id": "c6-atomos",
+      "name": "Átomos (C6 Bank)",
+      "type": "bank",
+      "how_to_earn": [
+        "C6 Carbon: hasta 3,5 pts/USD (2,5-3,5 según relación)",
+        "C6 Graphene: 5 pts/USD nacional, 8 pts/USD internacional",
+        "Elección entre puntos o cashback en la app"
+      ],
+      "transfers": [
+        { "to": "LATAM Pass", "to_type": "airline", "ratio": "1:1", "notes": "Mínimo: 1.000 (C&V 2026) vs 100 (PP 2024).", "source": "https://cartoeseviagens.com.br/parceiros-atomos-transferencia" },
+        { "to": "Smiles (GOL)", "to_type": "airline", "ratio": "1:1", "notes": "Mínimo 5.000 (2026).", "source": "https://cartoeseviagens.com.br/artigos/quantidade-minima-transferir-pontos" },
+        { "to": "Azul Fidelidade", "to_type": "airline", "ratio": "1:1", "notes": "Mínimo 100.", "source": "https://cartoeseviagens.com.br/artigos/quantidade-minima-transferir-pontos" },
+        { "to": "TAP Miles&Go", "to_type": "airline", "ratio": "1:1", "notes": "Mínimo 50.000. Interesante para Europa.", "source": "https://cartoeseviagens.com.br/artigos/quantidade-minima-transferir-pontos" },
+        { "to": "Livelo", "to_type": "coalition", "ratio": "1:1", "notes": "Mínimo 5.000; da acceso indirecto a Iberia/BA/Flying Blue a 3,5:1.", "source": "https://cartoeseviagens.com.br/artigos/quantidade-minima-transferir-pontos" },
+        { "to": "Passaporte Decolar", "to_type": "travel", "ratio": "1:1", "notes": "", "source": "https://cartoeseviagens.com.br/parceiros-atomos-transferencia" },
+        { "to": "Dotz", "to_type": "retail", "ratio": "no confirmado", "notes": "C6 anunció transferencia a Dotz en su blog; ratio no verificado.", "source": "https://www.c6bank.com.br/blog/c6-bank-libera-transferencia-de-pontos-atomos-para-dotz-diretamente-pelo-app" }
+      ],
+      "notes": "Todo 1:1 según comunicación de C6 (actualizado 16/09/2026). Graphene a 8 pts/USD internacional es de los mejores ratios de acúmulo de Brasil.",
+      "sources": [
+        "https://cartoeseviagens.com.br/parceiros-atomos-transferencia",
+        "https://cartoeseviagens.com.br/artigos/quantidade-minima-transferir-pontos",
+        "https://www.c6bank.com.br/blog/c6-carbon-ou-c6-graphene",
+        "https://passageirodeprimeira.com/quais-sao-os-parceiros-dos-programas-bancarios-para-a-transferencia-de-pontos/"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "id": "itau-pontos",
+      "name": "Programa de Pontos Itaú (antes iupp)",
+      "type": "bank",
+      "how_to_earn": [
+        "Tarjetas Itaú Uniclass Mastercard Black / Visa Infinite: 2,5 pts/USD con gasto ≥ R$ 4.000 por factura, 2 pts/USD si no (desde 29/07/2026)",
+        "Personnalité y Private: tasa no confirmada en 2026 (reportes antiguos citan hasta 3,3 pts/USD)",
+        "Las co-branded (LATAM Pass Itaú, Azul Itaú) NO acumulan aquí sino directamente en la aerolínea"
+      ],
+      "transfers": [
+        { "to": "LATAM Pass", "to_type": "airline", "ratio": "1:1 (dato 2024)", "notes": "Paridad 2026 no publicada; mínimo aparece en el catálogo del cliente. Campañas LATAM Pass para Itaú/Credicard: típicamente 25-30%.", "source": "https://passageirodeprimeira.com/quais-sao-os-parceiros-dos-programas-bancarios-para-a-transferencia-de-pontos/" },
+        { "to": "Smiles (GOL)", "to_type": "airline", "ratio": "1:1 (dato 2024)", "notes": "", "source": "https://passageirodeprimeira.com/quais-sao-os-parceiros-dos-programas-bancarios-para-a-transferencia-de-pontos/" },
+        { "to": "Azul Fidelidade", "to_type": "airline", "ratio": "1:1 (dato 2024)", "notes": "", "source": "https://passageirodeprimeira.com/quais-sao-os-parceiros-dos-programas-bancarios-para-a-transferencia-de-pontos/" },
+        { "to": "TAP Miles&Go", "to_type": "airline", "ratio": "1:1", "notes": "Confirmado en guía de 2026 'en condiciones determinadas'.", "source": "https://cartoeseviagens.com.br/programa-de-pontos-itau-guia-completo" }
+      ],
+      "notes": "Socios en 2026: Azul, LATAM Pass, Smiles, TAP. La marca iupp ya no aparece en guías 2026; parece absorbida en 'Programa de Pontos Itaú' (no confirmado oficialmente). Paridades 1:1 vienen de PP enero 2024.",
+      "sources": [
+        "https://cartoeseviagens.com.br/programa-de-pontos-itau-guia-completo",
+        "https://www.itau.com.br/media/dam/m/144e3f9526da94f4/original/29-07-2026-Clientes-Itau-Uniclass-passam-a-contar-com-ate-2-5-pontos-por-do-lar-gasto-e-4-acessos-anuais-em-salas-VIP-nos-carto-es-de-cre-dito-premium.pdf",
+        "https://passageirodeprimeira.com/quais-sao-os-parceiros-dos-programas-bancarios-para-a-transferencia-de-pontos/"
+      ],
+      "confidence": "media"
+    },
+    {
+      "id": "inter-loop",
+      "name": "Inter Loop (Banco Inter)",
+      "type": "bank",
+      "how_to_earn": [
+        "Compras con tarjeta Inter elegibles, misiones, referidos, Inter Shop y acciones en el Super App (tasa por tarjeta no confirmada)"
+      ],
+      "transfers": [
+        { "to": "Azul Fidelidade", "to_type": "airline", "ratio": "1:1", "notes": "Mínimo 3.000. Campaña hasta 10/07/2026: 55% general / 85% Clube Azul + hasta 30% por antigüedad (máx 115%), +2.000 pts 1ª transferencia.", "source": "https://cartoeseviagens.com.br/parceiros-do-inter-loop" },
+        { "to": "Smiles (GOL)", "to_type": "airline", "ratio": "1:1", "notes": "Mínimo 10.000; solo clientes Inter Prime e Inter Win. Campañas 70-80%.", "source": "https://cartoeseviagens.com.br/parceiros-do-inter-loop" }
+      ],
+      "notes": "Programa gratuito. Solo 2 socios aéreos; sin LATAM ni socios europeos.",
+      "sources": [
+        "https://cartoeseviagens.com.br/parceiros-do-inter-loop",
+        "https://passageirodeprimeira.com/?p=548898",
+        "https://www.melhorescartoes.com.br/smiles-inter-loop-80-bonus-jul26.html"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "id": "nubank-ultravioleta",
+      "name": "Nubank Ultravioleta (puntos)",
+      "type": "fintech",
+      "how_to_earn": [
+        "Tarjeta Ultravioleta: 2,2 pts/USD (o 1,25% cashback)",
+        "Nu Viagens: 9 pts/USD (o 5% cashback)",
+        "'Modo LATAM Pass' (desde marzo 2026): 2,2 millas LATAM/USD directas + 10% bônus del período"
+      ],
+      "transfers": [
+        { "to": "LATAM Pass", "to_type": "airline", "ratio": "1:1", "notes": "Paridad 1:1 citada en campaña. Alternativa: Modo LATAM Pass acumula directamente.", "source": "https://blog.nubank.com.br/como-trocar-pontos-por-milhas-aereas-com-o-cartao-nubank-ultravioleta/" },
+        { "to": "Smiles (GOL)", "to_type": "airline", "ratio": "no publicada", "notes": "Socio confirmado; paridad base no publicada. Campañas de hasta 70% (oct 2025).", "source": "https://blog.nubank.com.br/como-trocar-pontos-por-milhas-aereas-com-o-cartao-nubank-ultravioleta/" },
+        { "to": "Azul Fidelidade", "to_type": "airline", "ratio": "no publicada", "notes": "Socio confirmado; paridad base no publicada.", "source": "https://international.nubank.com.br/company/nubank-ultravioleta-unveils-new-benefits-with-points-program-and-airline-partnerships-or-1-25-cashback/" }
+      ],
+      "notes": "Mensualidad R$ 89 (exenta con gasto ≥ R$ 8.000/mes o R$ 50.000 invertidos). Paridades a Smiles/Azul no confirmadas → probablemente 1:1, pero sin fuente.",
+      "sources": [
+        "https://blog.nubank.com.br/como-trocar-pontos-por-milhas-aereas-com-o-cartao-nubank-ultravioleta/",
+        "https://international.nubank.com.br/company/nubank-ultravioleta-unveils-new-benefits-with-points-program-and-airline-partnerships-or-1-25-cashback/",
+        "https://mercadoeconsumo.com.br/11/03/2026/economia/nubank-lanca-programa-com-latam-pass-para-acelerar-pontos-de-clientes-do-cartao-ultravioleta/amp/"
+      ],
+      "confidence": "media"
+    },
+    {
+      "id": "btg-pontos",
+      "name": "Programa de Fidelidade BTG Pactual",
+      "type": "bank",
+      "how_to_earn": [
+        "Platinum 1,6 pts/USD; Black 2,2; Ultrablue 3 nacional / 3,5 internacional (o cashback 0,5-1,7%)"
+      ],
+      "transfers": [
+        { "to": "Livelo", "to_type": "coalition", "ratio": "1:1", "notes": "", "source": "https://cartoeseviagens.com.br/programa-de-fidelidade-btg-pactual" },
+        { "to": "LATAM Pass", "to_type": "airline", "ratio": "1:1", "notes": "", "source": "https://cartoeseviagens.com.br/programa-de-fidelidade-btg-pactual" },
+        { "to": "Smiles (GOL)", "to_type": "airline", "ratio": "1:1", "notes": "", "source": "https://cartoeseviagens.com.br/programa-de-fidelidade-btg-pactual" },
+        { "to": "Azul Fidelidade", "to_type": "airline", "ratio": "1:1", "notes": "", "source": "https://cartoeseviagens.com.br/programa-de-fidelidade-btg-pactual" }
+      ],
+      "notes": "Puntos Platinum/Black caducan en 24 meses; Ultrablue no caducan. BTG terminó su alianza con Esfera (Melhores Cartões).",
+      "sources": ["https://cartoeseviagens.com.br/programa-de-fidelidade-btg-pactual", "https://www.melhorescartoes.com.br/btg-anuncia-fim-da-parceria-com-a-esfera.html"],
+      "confidence": "media"
+    },
+    {
+      "id": "caixa-uau",
+      "name": "UAU CAIXA (Caixa Econômica Federal)",
+      "type": "bank",
+      "how_to_earn": ["Tarjetas Caixa (tasas no verificadas)"],
+      "transfers": [
+        { "to": "Azul Fidelidade", "to_type": "airline", "ratio": "1:1", "notes": "Mínimo 2.000.", "source": "https://cartoeseviagens.com.br/artigos/quantidade-minima-transferir-pontos" },
+        { "to": "LATAM Pass", "to_type": "airline", "ratio": "1:1", "notes": "Mínimo 2.000.", "source": "https://cartoeseviagens.com.br/artigos/quantidade-minima-transferir-pontos" },
+        { "to": "Smiles (GOL)", "to_type": "airline", "ratio": "1:1", "notes": "Mínimo 4.000.", "source": "https://cartoeseviagens.com.br/artigos/quantidade-minima-transferir-pontos" },
+        { "to": "TAP Miles&Go", "to_type": "airline", "ratio": "2:1", "notes": "Mínimo 10.000.", "source": "https://cartoeseviagens.com.br/artigos/quantidade-minima-transferir-pontos" },
+        { "to": "Dotz", "to_type": "retail", "ratio": "1:1", "notes": "", "source": "https://cartoeseviagens.com.br/programa-dotz" }
+      ],
+      "notes": "",
+      "sources": ["https://cartoeseviagens.com.br/artigos/quantidade-minima-transferir-pontos", "https://cartoeseviagens.com.br/programa-dotz"],
+      "confidence": "media"
+    },
+    {
+      "id": "otros-bancos-regionales",
+      "name": "Otros programas bancarios (Coopera/Sicoob, Juntos/Sicredi, Curtaí/BRB, PortoPlus, Safra Rewards, Único/Unicred, Sisprime)",
+      "type": "bank",
+      "how_to_earn": ["Tarjetas de cada banco/cooperativa"],
+      "transfers": [
+        { "to": "LATAM Pass / Smiles / Azul", "to_type": "airline", "ratio": "1:1", "notes": "Todos 1:1 en 2024; mínimos variables (4.000-40.000). Curtaí y PortoPlus también a TAP 1:1. Coopera y Unicred también a Livelo 1:1.", "source": "https://passageirodeprimeira.com/quais-sao-os-parceiros-dos-programas-bancarios-para-a-transferencia-de-pontos/" }
+      ],
+      "notes": "Datos de enero 2024, no reverificados en 2026.",
+      "sources": ["https://passageirodeprimeira.com/quais-sao-os-parceiros-dos-programas-bancarios-para-a-transferencia-de-pontos/"],
+      "confidence": "baja"
+    },
+    {
+      "id": "dotz",
+      "name": "Dotz",
+      "type": "coalition",
+      "how_to_earn": [
+        "Compras en tiendas asociadas físicas y online (supermercados, farmacias, moda, electrónica); campañas de hasta 11-20 Dotz por real",
+        "Tarjetas asociadas",
+        "Transferencias 1:1 desde Caixa, Livelo, Banestes, BRB (mín. 2.500), C6 y Banco do Brasil"
+      ],
+      "transfers": [],
+      "notes": "Dotz NO transfiere a aerolíneas (LATAM, Smiles, Azul). Solo canje en Dotz Viagens. Útil solo como destino, no como fuente de millas.",
+      "sources": ["https://cartoeseviagens.com.br/programa-dotz"],
+      "confidence": "alta"
+    },
+    {
+      "id": "latam-pass",
+      "name": "LATAM Pass",
+      "type": "airline",
+      "how_to_earn": [
+        "Volar LATAM y socios",
+        "Transferencias 1:1 desde Livelo, Esfera, Átomos, Itaú, Nubank, BTG, Caixa, etc.",
+        "Tarjetas co-branded LATAM Pass Itaú: Internacional 1,3 pts/USD (R$ 450/año); Gold 1,6; Platinum 2; Black/Infinite no confirmado",
+        "Nubank Ultravioleta Modo LATAM Pass: 2,2 millas/USD",
+        "Clube LATAM Pass: Base R$ 40,90 (1.000/mes); +Mais R$ 78,80 (2.000); +Embarque R$ 90,80 (1.000 + 500 calificables); +Acelere R$ 187,80 (5.000, Gold); +Turbo R$ 356,80 (10.000, Gold) — abril 2026"
+      ],
+      "transfers": [],
+      "notes": "Socios de canje (sept 2026): Delta, Aeroméxico, Alaska, Austrian, British Airways, Cathay, Finnair, Iberia, JAL, Lufthansa, Qantas, Qatar, Royal Jordanian, SWISS. La tabla fija de socios se solicita por WhatsApp a la Central de Vendas. Clube LATAM Pass es necesario para captar bonificaciones altas de BB/Bradesco/BTG (de 5-10% a 30%+). Millas caducan a los 36 meses (no para élite).",
+      "sources": [
+        "https://cartoeseviagens.com.br/companhias-parceiras-latam-pass",
+        "https://altarendablog.com.br/?p=84509",
+        "https://cartoesaltarenda.com/?p=12558",
+        "https://passageirodeprimeira.com/?p=544059"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "id": "smiles",
+      "name": "Smiles (GOL)",
+      "type": "airline",
+      "how_to_earn": [
+        "Volar GOL y socios",
+        "Transferencias 1:1 desde Livelo, Esfera, Átomos, Inter Loop, Itaú, Nubank, BTG, Caixa...",
+        "Clube Smiles: 1.000 R$ 46/mes; 2.000 R$ 82; 5.000 R$ 184; 10.000 R$ 340; 20.000 R$ 819 (anual parcelado) — agosto 2026"
+      ],
+      "transfers": [],
+      "notes": "Bonificaciones de transferencia las más frecuentes y agresivas del mercado: típicamente 50% general / 70-80% para Clube Smiles, Diamante o Clube del banco; tope 300.000 millas bônus por CPF; millas bônus válidas 12 meses. Socios de canje: Air France, KLM, TAP, BA, Iberia, ITA, Air Europa, Emirates, Qatar, Turkish, Etihad, Aerolíneas, Copa, American, Ethiopian, etc. (más de 45).",
+      "sources": [
+        "https://cartoeseviagens.com.br/artigos/cias-parcerias-smiles",
+        "https://www.melhorescartoes.com.br/clube-smiles-oferta-270k-ago26.html",
+        "https://cartoeseviagens.com.br/livelo-smiles-bonus-transferencia-pontos-prorrogada",
+        "https://pontospravoar.com/tag/transferencia-de-pontos/"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "id": "azul-fidelidade",
+      "name": "Azul Fidelidade (ex TudoAzul)",
+      "type": "airline",
+      "how_to_earn": [
+        "Volar Azul y socios",
+        "Transferencias 1:1 desde Livelo (mín. 1.000), Esfera, Átomos, Inter Loop, Itaú, Nubank, BTG, Caixa...",
+        "Tarjetas Azul Itaú (Visa Infinite) y Azul Skyline",
+        "Clube Azul (anual en 12 cuotas): 1.000 R$ 42/mes; 2.000 R$ 74; 5.000 R$ 174; 10.000 R$ 344; 20.000 R$ 762 — oct 2026"
+      ],
+      "transfers": [],
+      "notes": "Bonificaciones típicas: 55-60% general, 85-90% Clube Azul, + extra por antigüedad en el club (+5% 6-11 meses ... +30% ≥5 años, máx 100.000 pts/año); se han visto 'hasta 115-120%'. Puntos bônus caducan en 6 meses (salvo Clube 10k/20k o Azul Itaú Infinite/Skyline). Socios de canje: Air Canada, Copa, Emirates, Etihad, TAP, Turkish, United (vía Azul Pelo Mundo).",
+      "sources": [
+        "https://cartoeseviagens.com.br/artigos/clube-azul-fidelidade",
+        "https://cartoeseviagens.com.br/companhias-parceiras-da-azul",
+        "https://pontospravoar.com/transfira-pontos-livelo-receba-ate-120-porcento-bonus-azul-fidelidade/",
+        "https://passageirodeprimeira.com/?p=548898"
+      ],
+      "confidence": "alta"
+    }
+  ],
+  "cards": [
+    {
+      "id": "c6-graphene",
+      "name": "C6 Graphene Mastercard",
+      "issuer": "C6 Bank",
+      "annual_fee": "12 x R$ 330",
+      "earns": "Átomos",
+      "earn_rate": "5 pts/USD nacional, 8 pts/USD internacional",
+      "welcome_bonus": "",
+      "transfers": [
+        { "to": "LATAM Pass / Smiles / Azul / TAP / Livelo", "ratio": "1:1", "source": "https://cartoeseviagens.com.br/parceiros-atomos-transferencia" }
+      ],
+      "notes": "Mejor ratio de acúmulo encontrado.",
+      "sources": ["https://www.c6bank.com.br/blog/c6-carbon-ou-c6-graphene"],
+      "confidence": "alta"
+    },
+    {
+      "id": "c6-carbon",
+      "name": "C6 Carbon Mastercard Black",
+      "issuer": "C6 Bank",
+      "annual_fee": "12 x R$ 98 (exención por gasto/inversión)",
+      "earns": "Átomos",
+      "earn_rate": "2,5 a 3,5 pts/USD según relación",
+      "welcome_bonus": "",
+      "transfers": [
+        { "to": "LATAM Pass / Smiles / Azul / TAP / Livelo", "ratio": "1:1", "source": "https://cartoeseviagens.com.br/parceiros-atomos-transferencia" }
+      ],
+      "notes": "",
+      "sources": ["https://www.c6bank.com.br/blog/c6-carbon-ou-c6-graphene"],
+      "confidence": "alta"
+    },
+    {
+      "id": "santander-unlimited",
+      "name": "Santander Unlimited (Select / Private)",
+      "issuer": "Santander",
+      "annual_fee": "no confirmada",
+      "earns": "Esfera",
+      "earn_rate": "Select 3 nacional / 3,6 internacional; Private 3,5 / 4 pts/USD",
+      "welcome_bonus": "",
+      "transfers": [
+        { "to": "Iberia Club (Avios)", "ratio": "2:1", "source": "https://passageirodeprimeira.com/?p=534735" },
+        { "to": "LATAM Pass / Smiles / Azul", "ratio": "1:1", "source": "https://cartoeseviagens.com.br/parceiros-esfera-transferencia" }
+      ],
+      "notes": "La misma fuente da cifras distintas en el FAQ (2,6-3,0 pts/USD); confirmar en la propuesta del banco.",
+      "sources": ["https://cartoeseviagens.com.br/melhores-cartoes-para-pontuar-no-esfera"],
+      "confidence": "media"
+    },
+    {
+      "id": "santander-unique",
+      "name": "Santander Unique Pontos",
+      "issuer": "Santander",
+      "annual_fee": "no confirmada (exención con R$ 5.000 de gasto para clientes Select)",
+      "earns": "Esfera",
+      "earn_rate": "2,2 pts/USD nacional / 3 internacional",
+      "welcome_bonus": "",
+      "transfers": [
+        { "to": "Iberia Club (Avios)", "ratio": "2:1", "source": "https://passageirodeprimeira.com/?p=534735" }
+      ],
+      "notes": "Cifras inconsistentes en la fuente (FAQ: 1,5-2,0).",
+      "sources": ["https://cartoeseviagens.com.br/melhores-cartoes-para-pontuar-no-esfera"],
+      "confidence": "media"
+    },
+    {
+      "id": "itau-uniclass-black-infinite",
+      "name": "Itaú Uniclass Mastercard Black / Visa Infinite",
+      "issuer": "Itaú",
+      "annual_fee": "Exenta con requisitos Minhas Vantagens (nivel 4+, R$ 50.000 invertidos, R$ 8.000/factura o nómina)",
+      "earns": "Programa de Pontos Itaú",
+      "earn_rate": "2,5 pts/USD (gasto ≥ R$ 4.000/factura) o 2 pts/USD",
+      "welcome_bonus": "",
+      "transfers": [
+        { "to": "LATAM Pass / Smiles / Azul / TAP", "ratio": "1:1 (dato 2024; TAP confirmado 2026)", "source": "https://cartoeseviagens.com.br/programa-de-pontos-itau-guia-completo" }
+      ],
+      "notes": "Vigente desde 29/07/2026.",
+      "sources": ["https://www.itau.com.br/media/dam/m/144e3f9526da94f4/original/29-07-2026-Clientes-Itau-Uniclass-passam-a-contar-com-ate-2-5-pontos-por-do-lar-gasto-e-4-acessos-anuais-em-salas-VIP-nos-carto-es-de-cre-dito-premium.pdf"],
+      "confidence": "alta"
+    },
+    {
+      "id": "latam-pass-itau",
+      "name": "LATAM Pass Itaú (Internacional / Gold / Platinum / Black / Infinite)",
+      "issuer": "Itaú",
+      "annual_fee": "Internacional R$ 450/año (12 x R$ 37,50); resto no confirmado",
+      "earns": "LATAM Pass (directo)",
+      "earn_rate": "Internacional 1,3; Gold 1,6; Platinum 2 pts/USD; Black/Infinite no confirmado",
+      "welcome_bonus": "Campañas de 'pontuação turbinada' hasta 30/09/2026 (hasta 40.000 millas en adhesión según PP); 50% extra para suscriptores Clube LATAM Pass",
+      "transfers": [],
+      "notes": "",
+      "sources": ["https://cartoesaltarenda.com/?p=12558", "https://passageirodeprimeira.com/latam-prorroga-pontuacao-turbinada-do-cartao-latam-pass-peca-ja-o-seu-com-ate-40-000-milhas-na-adesao/"],
+      "confidence": "media"
+    },
+    {
+      "id": "nubank-ultravioleta",
+      "name": "Nubank Ultravioleta Mastercard Black",
+      "issuer": "Nubank",
+      "annual_fee": "R$ 89/mes (exenta con R$ 8.000/mes de gasto o R$ 50.000 invertidos)",
+      "earns": "Puntos Nubank o LATAM Pass directo (Modo LATAM Pass)",
+      "earn_rate": "2,2 pts/USD (9 en Nu Viagens) o 1,25% cashback",
+      "welcome_bonus": "",
+      "transfers": [
+        { "to": "LATAM Pass", "ratio": "1:1", "source": "https://blog.nubank.com.br/como-trocar-pontos-por-milhas-aereas-com-o-cartao-nubank-ultravioleta/" }
+      ],
+      "notes": "Devuelve IOF en compras internacionales.",
+      "sources": ["https://international.nubank.com.br/company/nubank-ultravioleta-unveils-new-benefits-with-points-program-and-airline-partnerships-or-1-25-cashback/", "https://mercadoeconsumo.com.br/11/03/2026/economia/nubank-lanca-programa-com-latam-pass-para-acelerar-pontos-de-clientes-do-cartao-ultravioleta/amp/"],
+      "confidence": "alta"
+    },
+    {
+      "id": "btg-ultrablue",
+      "name": "BTG Pactual Ultrablue / Black",
+      "issuer": "BTG Pactual",
+      "annual_fee": "no confirmada",
+      "earns": "Programa BTG",
+      "earn_rate": "Ultrablue 3 nacional / 3,5 internacional; Black 2,2; Platinum 1,6 pts/USD",
+      "welcome_bonus": "",
+      "transfers": [
+        { "to": "Livelo / LATAM Pass / Smiles / Azul", "ratio": "1:1", "source": "https://cartoeseviagens.com.br/programa-de-fidelidade-btg-pactual" }
+      ],
+      "notes": "Ultrablue: puntos sin caducidad.",
+      "sources": ["https://cartoeseviagens.com.br/programa-de-fidelidade-btg-pactual"],
+      "confidence": "media"
+    },
+    {
+      "id": "bradesco-amex-centurion",
+      "name": "Bradesco American Express The Centurion",
+      "issuer": "Bradesco",
+      "annual_fee": "no confirmada (por invitación)",
+      "earns": "Livelo",
+      "earn_rate": "hasta 7 pts/USD (dato 2024)",
+      "welcome_bonus": "",
+      "transfers": [
+        { "to": "Flying Blue", "ratio": "1:1 (vs 3,5:1 general)", "source": "https://passageirodeprimeira.com/?p=559327" },
+        { "to": "TAP Miles&Go", "ratio": "no confirmado (único con acceso tras 2024)", "source": "https://www.tupi.fm/?p=1833391" }
+      ],
+      "notes": "",
+      "sources": ["https://passageirodeprimeira.com/?p=348299"],
+      "confidence": "baja"
+    },
+    {
+      "id": "ourocard-altus",
+      "name": "Ourocard Visa Altus / Elo Nanquim (Banco do Brasil)",
+      "issuer": "Banco do Brasil",
+      "annual_fee": "Elo Nanquim desde R$ 1.000; Altus no confirmada",
+      "earns": "Livelo",
+      "earn_rate": "Altus 2,5 pts/USD (2024); Elo Nanquim 2,2 (2026)",
+      "welcome_bonus": "",
+      "transfers": [
+        { "to": "LATAM Pass / Smiles / Azul (vía Livelo)", "ratio": "1:1", "source": "https://www.cartoesdecredito.me/milhas/programas-parceiros-da-livelo-2026/" }
+      ],
+      "notes": "",
+      "sources": ["https://passageirodeprimeira.com/?p=348299", "https://cartoeseviagens.com.br/melhores-cartoes-para-pontuar-na-livelo"],
+      "confidence": "baja"
+    }
+  ]
+}

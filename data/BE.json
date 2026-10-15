@@ -1,0 +1,439 @@
+{
+  "country": "BE",
+  "country_name": "Bélgica",
+  "checked": "2026-10",
+  "programs": [
+    {
+      "id": "flying-blue",
+      "name": "Flying Blue (Air France-KLM)",
+      "type": "airline",
+      "how_to_earn": [
+        "Vuelos AF/KLM/Transavia: 4 (Explorer) / 6 (Silver) / 7 (Gold) / 8 (Platinum) / 9 (Ultimate) millas por EUR de tarifa sin tasas",
+        "Booking.com via Flying Blue: 2 millas/EUR",
+        "Hertz: hasta 12 millas/EUR (6 estándar, 12 eléctrico); Avis 4-5; Europcar hasta 5; Sixt hasta 3",
+        "Uber: 1 milla/EUR, 2 con 4+ viajes/mes",
+        "Portal de compras Flying Blue: ~0,9-5,6 millas/EUR según tienda + 500 millas en primera compra"
+      ],
+      "transfers": [],
+      "notes": "Desde el 4 may 2026 todas las millas caducan a los 24 meses sin actividad (exentos: Elite Silver+, Flying Blue Extra, titulares de tarjeta co-branded, menores). Desde el 8 sep 2026 los canjes en vuelos AF/KLM se venden en tarifas Light/Standard/Flex (combinados con socios solo Standard). Precios de canje dinámicos; Promo Rewards publicados el día 1 de cada mes con hasta -25%. En Bélgica no hay tarjeta Amex co-branded Air France-KLM confirmada; las co-branded Flying Blue son de Beobank (Mastercard).",
+      "sources": [
+        "https://milesopedia.fr/programme-fidelite/flying-blue/",
+        "https://milesopedia.fr/aerien/flying-blue-partenaires/",
+        "https://premium-flights.com/earn-miles-with-credit-cards-in-belgium/"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "id": "miles-and-more-be",
+      "name": "Miles & More (Brussels Airlines / Lufthansa Group)",
+      "type": "airline",
+      "how_to_earn": [
+        "Vuelos Brussels Airlines, Lufthansa, SWISS, Austrian y Star Alliance",
+        "Tarjetas Beobank Brussels Airlines Mastercard (Explore / Horizon / Altitude)",
+        "Amex Membership Rewards Bélgica (ver programa amex-mr-be)"
+      ],
+      "transfers": [],
+      "notes": "Brussels Airlines usa Miles & More como programa de fidelidad. Las tarjetas Beobank tienen topes anuales de millas (25k/50k/100k).",
+      "sources": [
+        "https://www.brusselsairlines.com/be/en/extra-services/beobank-mastercard",
+        "https://premium-flights.com/earn-miles-with-credit-cards-in-belgium/"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "id": "amex-mr-be",
+      "name": "American Express Membership Rewards (Bélgica/Luxemburgo)",
+      "type": "bank",
+      "how_to_earn": [
+        "Amex Gold / Platinum: 1 punto/EUR",
+        "Booster (10 EUR/mes): 4 puntos/EUR hasta 50.000 EUR/año natural",
+        "Turbo (ya no se comercializa): 1,5 puntos/EUR hasta 20.000 EUR en 12 meses",
+        "Compra de puntos: 15 EUR por 1.000 puntos, máx. 20% de lo necesario para una recompensa"
+      ],
+      "transfers": [
+        {
+          "to": "Flying Blue",
+          "to_type": "airline",
+          "ratio": "1:1",
+          "notes": "Inmediato; mínimo habitual 1.000 en múltiplos de 1.000. No confirmado en web oficial; desconozco si la devaluación NL del 1 jul 2026 también afectó a BE",
+          "source": "https://travellux.be/en/blog/membership-rewards-transfers-best-airline-partners-for-belgians"
+        },
+        {
+          "to": "Miles & More (Brussels Airlines)",
+          "to_type": "airline",
+          "ratio": "1:1",
+          "notes": "No confirmado en web oficial",
+          "source": "https://travellux.be/en/blog/membership-rewards-transfers-best-airline-partners-for-belgians"
+        },
+        {
+          "to": "British Airways Club (Avios)",
+          "to_type": "airline",
+          "ratio": "1:1",
+          "notes": "Inmediato",
+          "source": "https://travellux.be/en/blog/membership-rewards-transfers-best-airline-partners-for-belgians"
+        },
+        {
+          "to": "Iberia Club (Avios)",
+          "to_type": "airline",
+          "ratio": "1:1",
+          "notes": "Inmediato",
+          "source": "https://travellux.be/en/blog/membership-rewards-transfers-best-airline-partners-for-belgians"
+        },
+        {
+          "to": "Emirates Skywards",
+          "to_type": "airline",
+          "ratio": "1:1",
+          "notes": "",
+          "source": "https://travellux.be/en/blog/membership-rewards-transfers-best-airline-partners-for-belgians"
+        },
+        {
+          "to": "Etihad Guest",
+          "to_type": "airline",
+          "ratio": "1:1",
+          "notes": "1-3 días hábiles",
+          "source": "https://travellux.be/en/blog/membership-rewards-transfers-best-airline-partners-for-belgians"
+        },
+        {
+          "to": "Qatar Privilege Club (Avios)",
+          "to_type": "airline",
+          "ratio": "1:1",
+          "notes": "1-3 días hábiles",
+          "source": "https://travellux.be/en/blog/membership-rewards-transfers-best-airline-partners-for-belgians"
+        },
+        {
+          "to": "Singapore KrisFlyer",
+          "to_type": "airline",
+          "ratio": "1:1",
+          "notes": "1-3 días hábiles",
+          "source": "https://travellux.be/en/blog/membership-rewards-transfers-best-airline-partners-for-belgians"
+        },
+        {
+          "to": "Marriott Bonvoy",
+          "to_type": "hotel",
+          "ratio": "1:1",
+          "notes": "",
+          "source": "https://travellux.be/en/blog/membership-rewards-transfers-best-airline-partners-for-belgians"
+        },
+        {
+          "to": "Hilton Honors",
+          "to_type": "hotel",
+          "ratio": "1:2 (según fuente, sin aclarar)",
+          "notes": "Dudoso",
+          "source": "https://travellux.be/en/blog/membership-rewards-transfers-best-airline-partners-for-belgians"
+        }
+      ],
+      "notes": "Ratios solo de un blog belga (travellux.be, 24 mar 2026), ANTERIOR a la devaluación NL del 1 jul 2026. No pude leer americanexpress.com/be (error de carga) ni la tabla de premium-flights (imagen). Otros socios citados sin ratio: Delta, SAS, Turkish Miles&Smiles. Los bonus de bienvenida se abonan 50% mes 7 y 50% mes 13 con una compra mensual.",
+      "sources": [
+        "https://travellux.be/en/blog/membership-rewards-transfers-best-airline-partners-for-belgians",
+        "https://travellux.be/en/blog/membership-rewards-points-how-to-smartly-earn-transfer-and-redeem-as",
+        "https://www.americanexpress.com/content/dam/amex/be/nl/klantendienst/ATC_MR_AC_CH_V7_FR.pdf",
+        "https://premium-flights.com/earn-miles-with-credit-cards-in-belgium/",
+        "https://premium-flights.com/american-express-points-bonus-pour-la-belgique-et-le-luxembourg/"
+      ],
+      "confidence": "baja"
+    },
+    {
+      "id": "revolut-revpoints",
+      "name": "Revolut RevPoints",
+      "type": "fintech",
+      "how_to_earn": [
+        "Pagos con tarjeta: Standard/Plus 1 RevPoint por 10 EUR; Premium 1 por 4 EUR; Metal 1 por 2 EUR; Ultra 1 por EUR"
+      ],
+      "transfers": [
+        {
+          "to": "Flying Blue",
+          "to_type": "airline",
+          "ratio": "1 RevPoint = 1 milla",
+          "notes": "Sin mínimo según SkyStatus; sin comisión de transferencia",
+          "source": "https://skystatus.pro/guide/revolut-revpoints-flying-blue"
+        },
+        {
+          "to": "Avios (British Airways / Iberia / Aer Lingus / Qatar)",
+          "to_type": "airline",
+          "ratio": "1:1",
+          "notes": "",
+          "source": "https://skystatus.pro/guide/revolut-revpoints-flying-blue"
+        },
+        {
+          "to": "SAS EuroBonus, Aegean Miles+Bonus, Etihad Guest",
+          "to_type": "airline",
+          "ratio": "1:1",
+          "notes": "",
+          "source": "https://skystatus.pro/guide/revolut-revpoints-flying-blue"
+        }
+      ],
+      "notes": "Ultra cuesta ~60 EUR/mes (50 EUR primer mes, dato BE). Lista completa de socios por país puede variar; premium-flights (BE) lista además China Southern, Finnair, TAROM, TAP, Turkish y Virgin Atlantic a 1:1.",
+      "sources": [
+        "https://skystatus.pro/guide/revolut-revpoints-flying-blue",
+        "https://milesopedia.fr/programme-fidelite/flying-blue/",
+        "https://premium-flights.com/earn-miles-with-credit-cards-in-belgium/"
+      ],
+      "confidence": "media"
+    },
+    {
+      "id": "accor-all",
+      "name": "ALL - Accor Live Limitless",
+      "type": "hotel",
+      "how_to_earn": [
+        "Estancias en hoteles Accor (puntos ALL) y además ~1 milla Flying Blue por 10 EUR si se vincula la cuenta (ganancia simultánea)"
+      ],
+      "transfers": [
+        {
+          "to": "Flying Blue",
+          "to_type": "airline",
+          "ratio": "2.000 ALL = 2.000 millas (1:1)",
+          "notes": "Mínimo 2.000 puntos, abono en hasta 10 días; bonus puntuales (+30% dic 2025)",
+          "source": "https://loyaltylobby.com/2025/12/04/all-accor-to-air-france-klm-flying-blue-points-to-miles-30-conversion-bonus-through-december-17-2025/"
+        },
+        {
+          "to": "Iberia Plus (Avios)",
+          "to_type": "airline",
+          "ratio": "3.000 ALL = 3.000 Avios",
+          "notes": "",
+          "source": "https://loyaltylobby.com/2025/11/20/all-accor-qatar-airways-privilege-club-enhance-conversion-ratios/"
+        },
+        {
+          "to": "Qatar Privilege Club (Avios)",
+          "to_type": "airline",
+          "ratio": "2.000 ALL = 1.500 Avios",
+          "notes": "Mejorado nov 2025",
+          "source": "https://loyaltylobby.com/2025/11/20/all-accor-qatar-airways-privilege-club-enhance-conversion-ratios/"
+        },
+        {
+          "to": "British Airways Club (Avios)",
+          "to_type": "airline",
+          "ratio": "4.000 ALL = 2.000 Avios",
+          "notes": "",
+          "source": "https://loyaltylobby.com/2025/11/20/all-accor-qatar-airways-privilege-club-enhance-conversion-ratios/"
+        },
+        {
+          "to": "Qantas Frequent Flyer",
+          "to_type": "airline",
+          "ratio": "2.000 ALL = 2.500 puntos",
+          "notes": "",
+          "source": "https://loyaltylobby.com/2025/11/20/all-accor-qatar-airways-privilege-club-enhance-conversion-ratios/"
+        },
+        {
+          "to": "Finnair Plus (Avios)",
+          "to_type": "airline",
+          "ratio": "2.000 ALL = 1.300 Avios",
+          "notes": "",
+          "source": "https://loyaltylobby.com/2025/11/20/all-accor-qatar-airways-privilege-club-enhance-conversion-ratios/"
+        },
+        {
+          "to": "LATAM Pass",
+          "to_type": "airline",
+          "ratio": "2 ALL = 1 punto",
+          "notes": "",
+          "source": "https://loyaltylobby.com/2025/11/20/all-accor-qatar-airways-privilege-club-enhance-conversion-ratios/"
+        },
+        {
+          "to": "Emirates / Etihad / Cathay / Delta / Aeroplan / TAP / JAL / Korean / Avianca",
+          "to_type": "airline",
+          "ratio": "4.000 ALL = 2.000 millas",
+          "notes": "",
+          "source": "https://loyaltylobby.com/2025/11/20/all-accor-qatar-airways-privilege-club-enhance-conversion-ratios/"
+        },
+        {
+          "to": "United MileagePlus / Singapore KrisFlyer / Aegean",
+          "to_type": "airline",
+          "ratio": "2.000 ALL = 1.000 millas",
+          "notes": "",
+          "source": "https://loyaltylobby.com/2025/11/20/all-accor-qatar-airways-privilege-club-enhance-conversion-ratios/"
+        },
+        {
+          "to": "ITA Volare",
+          "to_type": "airline",
+          "ratio": "4.000 ALL = 5.000 puntos",
+          "notes": "",
+          "source": "https://loyaltylobby.com/2025/11/20/all-accor-qatar-airways-privilege-club-enhance-conversion-ratios/"
+        }
+      ],
+      "notes": "Programa global, no específico del país. 1 punto ALL vale ~0,02 EUR en hotel, así que 1:1 a Flying Blue o Iberia suele ser buen uso. Ojo: SkyStatus NL (oct 2026) indica '2.000 puntos = 1.000 millas' y Milesopedia FR contiene una cifra contradictoria; la tasa 1:1 vigente desde dic 2022 está confirmada en LoyaltyLobby dic 2025 — verificar en all.accor.com antes de transferir.",
+      "sources": [
+        "https://loyaltylobby.com/2025/11/20/all-accor-qatar-airways-privilege-club-enhance-conversion-ratios/",
+        "https://loyaltylobby.com/2025/12/04/all-accor-to-air-france-klm-flying-blue-points-to-miles-30-conversion-bonus-through-december-17-2025/",
+        "https://milesopedia.fr/aerien/flying-blue-partenaires/"
+      ],
+      "confidence": "media"
+    },
+    {
+      "id": "retail-be",
+      "name": "Comercio y coaliciones (Shell, Carrefour, Payback, etc.)",
+      "type": "retail",
+      "how_to_earn": [],
+      "transfers": [],
+      "notes": "No encontré fuentes 2025-2026 que confirmen programas minoristas belgas que conviertan a millas. Payback no consta en Bélgica. Sin verificar.",
+      "sources": [],
+      "confidence": "baja"
+    }
+  ],
+  "cards": [
+    {
+      "id": "amex-platinum-be",
+      "name": "American Express Platinum (BE)",
+      "issuer": "American Express Europe (sucursal belga)",
+      "annual_fee": "EUR 780 (65/mes); EUR 900 con Booster",
+      "earns": "Membership Rewards",
+      "earn_rate": "1 punto/EUR; 4 puntos/EUR con Booster (10 EUR/mes, hasta 50.000 EUR/año)",
+      "welcome_bonus": "Hasta 150.000-250.000 puntos vía referido (premium-flights ago-sep 2026; 50% mes 7 + 50% mes 13 con 1 compra/mes)",
+      "transfers": [
+        {
+          "to": "Flying Blue",
+          "ratio": "1:1 (no oficial)",
+          "source": "https://travellux.be/en/blog/membership-rewards-transfers-best-airline-partners-for-belgians"
+        },
+        {
+          "to": "Miles & More",
+          "ratio": "1:1 (no oficial)",
+          "source": "https://travellux.be/en/blog/membership-rewards-transfers-best-airline-partners-for-belgians"
+        },
+        {
+          "to": "Avios (BA/Iberia)",
+          "ratio": "1:1 (no oficial)",
+          "source": "https://travellux.be/en/blog/membership-rewards-transfers-best-airline-partners-for-belgians"
+        }
+      ],
+      "notes": "Con Booster: 4 millas/EUR efectivas si el ratio 1:1 sigue vigente — muy alto. Priority Pass ilimitado; estatus Gold Hilton/Marriott/Meliá/Radisson.",
+      "sources": [
+        "https://premium-flights.com/earn-miles-with-credit-cards-in-belgium/",
+        "https://premium-flights.com/american-express-points-bonus-pour-la-belgique-et-le-luxembourg/",
+        "https://travellux.be/en/blog/membership-rewards-points-how-to-smartly-earn-transfer-and-redeem-as",
+        "https://www.americanexpress.com/content/dam/amex/be/nl/klantendienst/ATC_MR_AC_CH_V7_FR.pdf"
+      ],
+      "confidence": "media"
+    },
+    {
+      "id": "amex-gold-be",
+      "name": "American Express Gold (BE)",
+      "issuer": "American Express Europe (sucursal belga)",
+      "annual_fee": "EUR 240 (20/mes)",
+      "earns": "Membership Rewards",
+      "earn_rate": "1 punto/EUR",
+      "welcome_bonus": "60.000-100.000 puntos vía referido (premium-flights 2026)",
+      "transfers": [
+        {
+          "to": "Flying Blue",
+          "ratio": "1:1 (no oficial)",
+          "source": "https://travellux.be/en/blog/membership-rewards-transfers-best-airline-partners-for-belgians"
+        }
+      ],
+      "notes": "100 EUR/año en crédito de restaurantes; 4 accesos Priority Pass.",
+      "sources": [
+        "https://premium-flights.com/earn-miles-with-credit-cards-in-belgium/",
+        "https://premium-flights.com/american-express-points-bonus-pour-la-belgique-et-le-luxembourg/"
+      ],
+      "confidence": "media"
+    },
+    {
+      "id": "beobank-flying-blue-world-be",
+      "name": "Beobank Flying Blue World Mastercard",
+      "issuer": "Beobank",
+      "annual_fee": "EUR 75",
+      "earns": "Flying Blue",
+      "earn_rate": "1 milla/EUR",
+      "welcome_bonus": "3.500 millas",
+      "transfers": [],
+      "notes": "Solo una fuente (blog); no verificado en beobank.be.",
+      "sources": [
+        "https://premium-flights.com/earn-miles-with-credit-cards-in-belgium/"
+      ],
+      "confidence": "media"
+    },
+    {
+      "id": "beobank-flying-blue-premium-be",
+      "name": "Beobank Flying Blue World Mastercard Premium",
+      "issuer": "Beobank",
+      "annual_fee": "EUR 150",
+      "earns": "Flying Blue",
+      "earn_rate": "1,25 millas/EUR; 1,5 en Air France/KLM",
+      "welcome_bonus": "5.000 millas",
+      "transfers": [],
+      "notes": "Solo una fuente (blog).",
+      "sources": [
+        "https://premium-flights.com/earn-miles-with-credit-cards-in-belgium/"
+      ],
+      "confidence": "media"
+    },
+    {
+      "id": "beobank-sn-altitude-be",
+      "name": "Beobank Brussels Airlines Altitude Mastercard",
+      "issuer": "Beobank",
+      "annual_fee": "EUR 180",
+      "earns": "Miles & More",
+      "earn_rate": "2 millas/EUR en Brussels Airlines y ciertas compras fuera de Europa; 1,5 en Lufthansa Group/Star Alliance; 1,25 resto",
+      "welcome_bonus": "5.000 millas con primera compra en 3 meses",
+      "transfers": [],
+      "notes": "Tope 100.000 millas/año; 3 vales de salón (The Loft/Sunrise), Priority Pass, embarque prioritario en BRU.",
+      "sources": [
+        "https://www.brusselsairlines.com/be/en/extra-services/beobank-mastercard",
+        "https://premium-flights.com/earn-miles-with-credit-cards-in-belgium/"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "id": "beobank-sn-horizon-be",
+      "name": "Beobank Brussels Airlines Horizon Mastercard",
+      "issuer": "Beobank",
+      "annual_fee": "EUR 100",
+      "earns": "Miles & More",
+      "earn_rate": "2 millas/EUR en Brussels Airlines; 1,5 en LH Group/Star Alliance; 1 resto",
+      "welcome_bonus": "3.000 millas con primera compra en 3 meses",
+      "transfers": [],
+      "notes": "Tope 50.000 millas/año.",
+      "sources": [
+        "https://www.brusselsairlines.com/be/en/extra-services/beobank-mastercard",
+        "https://premium-flights.com/earn-miles-with-credit-cards-in-belgium/"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "id": "beobank-sn-explore-be",
+      "name": "Beobank Brussels Airlines Explore Mastercard",
+      "issuer": "Beobank",
+      "annual_fee": "EUR 20 (vale de 20 EUR el primer año)",
+      "earns": "Miles & More",
+      "earn_rate": "2 millas/EUR en Brussels Airlines; 1 en LH Group/Star Alliance; 0,5 resto",
+      "welcome_bonus": "Vale de 20 EUR",
+      "transfers": [],
+      "notes": "Tope 25.000 millas/año. Sin millas en wallets digitales intermediarios, cripto ni efectivo.",
+      "sources": [
+        "https://www.brusselsairlines.com/be/en/extra-services/beobank-mastercard",
+        "https://premium-flights.com/earn-miles-with-credit-cards-in-belgium/"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "id": "revolut-ultra-be",
+      "name": "Revolut Ultra",
+      "issuer": "Revolut",
+      "annual_fee": "EUR 50 primer mes, luego EUR 60/mes",
+      "earns": "RevPoints",
+      "earn_rate": "1 RevPoint/EUR",
+      "welcome_bonus": "",
+      "transfers": [
+        {
+          "to": "Flying Blue",
+          "ratio": "1:1",
+          "source": "https://premium-flights.com/earn-miles-with-credit-cards-in-belgium/"
+        },
+        {
+          "to": "Avios (BA/Iberia/Qatar)",
+          "ratio": "1:1",
+          "source": "https://premium-flights.com/earn-miles-with-credit-cards-in-belgium/"
+        },
+        {
+          "to": "Turkish, TAP, Finnair, SAS, Etihad, Virgin Atlantic",
+          "ratio": "1:1",
+          "source": "https://premium-flights.com/earn-miles-with-credit-cards-in-belgium/"
+        }
+      ],
+      "notes": "",
+      "sources": [
+        "https://premium-flights.com/earn-miles-with-credit-cards-in-belgium/",
+        "https://skystatus.pro/guide/revolut-revpoints-flying-blue"
+      ],
+      "confidence": "media"
+    }
+  ]
+}

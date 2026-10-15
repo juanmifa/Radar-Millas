@@ -1,0 +1,484 @@
+{
+  "country": "FR",
+  "country_name": "Francia",
+  "checked": "2026-10",
+  "programs": [
+    {
+      "id": "flying-blue",
+      "name": "Flying Blue (Air France-KLM)",
+      "type": "airline",
+      "how_to_earn": [
+        "Vuelos AF/KLM/Transavia: 4 (Explorer) / 6 (Silver) / 7 (Gold) / 8 (Platinum) / 9 (Ultimate) millas por EUR de tarifa sin tasas",
+        "Booking.com via Flying Blue: 2 millas/EUR",
+        "Hertz: hasta 12 millas/EUR (6 estándar, 12 eléctrico); Avis 4-5; Europcar hasta 5; Sixt hasta 3",
+        "Uber: 1 milla/EUR, 2 con 4+ viajes/mes",
+        "Portal de compras Flying Blue: ~0,9-5,6 millas/EUR según tienda + 500 millas en primera compra",
+        "Mooncard (tarjeta profesional): 10 millas por 10 EUR de gasto profesional",
+        "Allianz: 6.000 millas al contratar seguro de coche vía formulario socio",
+        "Trip.com hasta 3 millas/EUR; GetYourGuide 3 millas/EUR; Aelia Duty Free 3 millas/EUR; Kolet eSIM 10 millas/EUR",
+        "Hoteles: Hyatt 500 millas/estancia; IHG 1-2 millas/EUR; Marriott 1-2 millas/USD; Best Western 250 millas/estancia"
+      ],
+      "transfers": [],
+      "notes": "Desde el 4 may 2026 todas las millas caducan a los 24 meses sin actividad (exentos: Elite Silver+, Flying Blue Extra, titulares de tarjeta co-branded, menores). Desde el 8 sep 2026 los canjes en vuelos AF/KLM se venden en tarifas Light/Standard/Flex (combinados con socios solo Standard). Precios de canje dinámicos; Promo Rewards publicados el día 1 de cada mes con hasta -25%. Francia es el mercado base de Air France; amplio ecosistema de socios.",
+      "sources": [
+        "https://milesopedia.fr/programme-fidelite/flying-blue/",
+        "https://milesopedia.fr/aerien/flying-blue-partenaires/"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "id": "amex-mr-fr",
+      "name": "American Express Membership Rewards (Francia)",
+      "type": "bank",
+      "how_to_earn": [
+        "Tarjetas Amex Green / Gold / Platinum: 1 punto por EUR; Centurion 1,5 puntos/EUR",
+        "Sin puntos en retiradas de efectivo, divisas, comisiones ni cuota"
+      ],
+      "transfers": [
+        {
+          "to": "Flying Blue",
+          "to_type": "airline",
+          "ratio": "5 puntos = 4 millas",
+          "notes": "Mínimo 625 puntos, inmediato",
+          "source": "https://milesopedia.fr/finance/american-express-membership-rewards-transfert-points/"
+        },
+        {
+          "to": "British Airways Club (Avios)",
+          "to_type": "airline",
+          "ratio": "5 puntos = 4 Avios",
+          "notes": "Mínimo 1.000, 2 días hábiles",
+          "source": "https://milesopedia.fr/finance/american-express-membership-rewards-transfert-points/"
+        },
+        {
+          "to": "Iberia Club (Avios)",
+          "to_type": "airline",
+          "ratio": "5 puntos = 4 Avios",
+          "notes": "Mínimo 1.000, inmediato",
+          "source": "https://milesopedia.fr/finance/american-express-membership-rewards-transfert-points/"
+        },
+        {
+          "to": "Asia Miles",
+          "to_type": "airline",
+          "ratio": "5 puntos = 4 millas",
+          "notes": "Mínimo 1.600, 3 días",
+          "source": "https://milesopedia.fr/finance/american-express-membership-rewards-transfert-points/"
+        },
+        {
+          "to": "SAS EuroBonus",
+          "to_type": "airline",
+          "ratio": "5 puntos = 4 puntos",
+          "notes": "Mínimo 1.000, 3 días",
+          "source": "https://milesopedia.fr/finance/american-express-membership-rewards-transfert-points/"
+        },
+        {
+          "to": "Qatar Privilege Club (Avios)",
+          "to_type": "airline",
+          "ratio": "6 puntos = 5 Avios",
+          "notes": "Mínimo 600, 3 días",
+          "source": "https://milesopedia.fr/finance/american-express-membership-rewards-transfert-points/"
+        },
+        {
+          "to": "Delta SkyMiles",
+          "to_type": "airline",
+          "ratio": "3 puntos = 2 millas",
+          "notes": "Mínimo 1.500, 3 días",
+          "source": "https://milesopedia.fr/finance/american-express-membership-rewards-transfert-points/"
+        },
+        {
+          "to": "Singapore KrisFlyer",
+          "to_type": "airline",
+          "ratio": "3 puntos = 2 millas",
+          "notes": "Mínimo 1.500, hasta 15 días",
+          "source": "https://milesopedia.fr/finance/american-express-membership-rewards-transfert-points/"
+        },
+        {
+          "to": "Emirates Skywards",
+          "to_type": "airline",
+          "ratio": "2 puntos = 1 milla",
+          "notes": "Mínimo 1.000, 3 días",
+          "source": "https://milesopedia.fr/finance/american-express-membership-rewards-transfert-points/"
+        },
+        {
+          "to": "Club Eurostar",
+          "to_type": "other",
+          "ratio": "20 puntos = 1 punto",
+          "notes": "Mínimo 200",
+          "source": "https://milesopedia.fr/finance/american-express-membership-rewards-transfert-points/"
+        },
+        {
+          "to": "Hilton Honors",
+          "to_type": "hotel",
+          "ratio": "1:1",
+          "notes": "",
+          "source": "https://milesopedia.fr/finance/american-express-membership-rewards-transfert-points/"
+        },
+        {
+          "to": "Marriott Bonvoy",
+          "to_type": "hotel",
+          "ratio": "1:1",
+          "notes": "",
+          "source": "https://milesopedia.fr/finance/american-express-membership-rewards-transfert-points/"
+        },
+        {
+          "to": "Radisson Rewards",
+          "to_type": "hotel",
+          "ratio": "2 puntos = 5 puntos",
+          "notes": "Hasta 10 días",
+          "source": "https://milesopedia.fr/finance/american-express-membership-rewards-transfert-points/"
+        },
+        {
+          "to": "ALL Accor",
+          "to_type": "hotel",
+          "ratio": "3 puntos = 1 punto ALL",
+          "notes": "Nuevo socio desde julio 2026",
+          "source": "https://milesopedia.fr/finance/american-express-membership-rewards-transfert-points/"
+        }
+      ],
+      "notes": "Solo tarjetas personales (Green, Gold, Platinum) transfieren; las Business solo a hoteles. Transferencias definitivas. En Francia NO se ha reportado la devaluación a 2:1 hacia Flying Blue aplicada en NL el 1 jul 2026 (Milesopedia FR actualizado 14 oct 2026 mantiene 5:4). Ruta interesante: MR -> ALL (3:1) -> Iberia (1:1) da 3:1 a Avios, peor que el directo 5:4.",
+      "sources": [
+        "https://milesopedia.fr/finance/american-express-membership-rewards-transfert-points/",
+        "https://milesopedia.fr/programme-fidelite/american-express-membership-rewards-france/"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "id": "revolut-revpoints",
+      "name": "Revolut RevPoints",
+      "type": "fintech",
+      "how_to_earn": [
+        "Pagos con tarjeta: Standard/Plus 1 RevPoint por 10 EUR; Premium 1 por 4 EUR; Metal 1 por 2 EUR; Ultra 1 por EUR"
+      ],
+      "transfers": [
+        {
+          "to": "Flying Blue",
+          "to_type": "airline",
+          "ratio": "1 RevPoint = 1 milla",
+          "notes": "Sin mínimo según SkyStatus; sin comisión de transferencia",
+          "source": "https://skystatus.pro/guide/revolut-revpoints-flying-blue"
+        },
+        {
+          "to": "Avios (British Airways / Iberia / Aer Lingus / Qatar)",
+          "to_type": "airline",
+          "ratio": "1:1",
+          "notes": "",
+          "source": "https://skystatus.pro/guide/revolut-revpoints-flying-blue"
+        },
+        {
+          "to": "SAS EuroBonus, Aegean Miles+Bonus, Etihad Guest",
+          "to_type": "airline",
+          "ratio": "1:1",
+          "notes": "",
+          "source": "https://skystatus.pro/guide/revolut-revpoints-flying-blue"
+        }
+      ],
+      "notes": "Ultra cuesta ~60 EUR/mes (50 EUR primer mes, dato BE). Lista completa de socios por país puede variar; premium-flights (BE) lista además China Southern, Finnair, TAROM, TAP, Turkish y Virgin Atlantic a 1:1.",
+      "sources": [
+        "https://skystatus.pro/guide/revolut-revpoints-flying-blue",
+        "https://milesopedia.fr/programme-fidelite/flying-blue/"
+      ],
+      "confidence": "media"
+    },
+    {
+      "id": "accor-all",
+      "name": "ALL - Accor Live Limitless",
+      "type": "hotel",
+      "how_to_earn": [
+        "Estancias en hoteles Accor (puntos ALL) y además ~1 milla Flying Blue por 10 EUR si se vincula la cuenta (ganancia simultánea)"
+      ],
+      "transfers": [
+        {
+          "to": "Flying Blue",
+          "to_type": "airline",
+          "ratio": "2.000 ALL = 2.000 millas (1:1)",
+          "notes": "Mínimo 2.000 puntos, abono en hasta 10 días; bonus puntuales (+30% dic 2025)",
+          "source": "https://loyaltylobby.com/2025/12/04/all-accor-to-air-france-klm-flying-blue-points-to-miles-30-conversion-bonus-through-december-17-2025/"
+        },
+        {
+          "to": "Iberia Plus (Avios)",
+          "to_type": "airline",
+          "ratio": "3.000 ALL = 3.000 Avios",
+          "notes": "",
+          "source": "https://loyaltylobby.com/2025/11/20/all-accor-qatar-airways-privilege-club-enhance-conversion-ratios/"
+        },
+        {
+          "to": "Qatar Privilege Club (Avios)",
+          "to_type": "airline",
+          "ratio": "2.000 ALL = 1.500 Avios",
+          "notes": "Mejorado nov 2025",
+          "source": "https://loyaltylobby.com/2025/11/20/all-accor-qatar-airways-privilege-club-enhance-conversion-ratios/"
+        },
+        {
+          "to": "British Airways Club (Avios)",
+          "to_type": "airline",
+          "ratio": "4.000 ALL = 2.000 Avios",
+          "notes": "",
+          "source": "https://loyaltylobby.com/2025/11/20/all-accor-qatar-airways-privilege-club-enhance-conversion-ratios/"
+        },
+        {
+          "to": "Qantas Frequent Flyer",
+          "to_type": "airline",
+          "ratio": "2.000 ALL = 2.500 puntos",
+          "notes": "",
+          "source": "https://loyaltylobby.com/2025/11/20/all-accor-qatar-airways-privilege-club-enhance-conversion-ratios/"
+        },
+        {
+          "to": "Finnair Plus (Avios)",
+          "to_type": "airline",
+          "ratio": "2.000 ALL = 1.300 Avios",
+          "notes": "",
+          "source": "https://loyaltylobby.com/2025/11/20/all-accor-qatar-airways-privilege-club-enhance-conversion-ratios/"
+        },
+        {
+          "to": "LATAM Pass",
+          "to_type": "airline",
+          "ratio": "2 ALL = 1 punto",
+          "notes": "",
+          "source": "https://loyaltylobby.com/2025/11/20/all-accor-qatar-airways-privilege-club-enhance-conversion-ratios/"
+        },
+        {
+          "to": "Emirates / Etihad / Cathay / Delta / Aeroplan / TAP / JAL / Korean / Avianca",
+          "to_type": "airline",
+          "ratio": "4.000 ALL = 2.000 millas",
+          "notes": "",
+          "source": "https://loyaltylobby.com/2025/11/20/all-accor-qatar-airways-privilege-club-enhance-conversion-ratios/"
+        },
+        {
+          "to": "United MileagePlus / Singapore KrisFlyer / Aegean",
+          "to_type": "airline",
+          "ratio": "2.000 ALL = 1.000 millas",
+          "notes": "",
+          "source": "https://loyaltylobby.com/2025/11/20/all-accor-qatar-airways-privilege-club-enhance-conversion-ratios/"
+        },
+        {
+          "to": "ITA Volare",
+          "to_type": "airline",
+          "ratio": "4.000 ALL = 5.000 puntos",
+          "notes": "",
+          "source": "https://loyaltylobby.com/2025/11/20/all-accor-qatar-airways-privilege-club-enhance-conversion-ratios/"
+        }
+      ],
+      "notes": "Programa global, no específico del país. 1 punto ALL vale ~0,02 EUR en hotel, así que 1:1 a Flying Blue o Iberia suele ser buen uso. Ojo: SkyStatus NL (oct 2026) indica '2.000 puntos = 1.000 millas' y Milesopedia FR contiene una cifra contradictoria; la tasa 1:1 vigente desde dic 2022 está confirmada en LoyaltyLobby dic 2025 — verificar en all.accor.com antes de transferir.",
+      "sources": [
+        "https://loyaltylobby.com/2025/11/20/all-accor-qatar-airways-privilege-club-enhance-conversion-ratios/",
+        "https://loyaltylobby.com/2025/12/04/all-accor-to-air-france-klm-flying-blue-points-to-miles-30-conversion-bonus-through-december-17-2025/",
+        "https://milesopedia.fr/aerien/flying-blue-partenaires/"
+      ],
+      "confidence": "media"
+    },
+    {
+      "id": "bunq-fr",
+      "name": "bunq (puntos)",
+      "type": "fintech",
+      "how_to_earn": [
+        "Cerrado a nueva acumulación desde el 13 abr 2026"
+      ],
+      "transfers": [
+        {
+          "to": "Flying Blue",
+          "to_type": "airline",
+          "ratio": "8 puntos = 1 milla",
+          "notes": "Solo saldo restante, convertible hasta el 13 abr 2027",
+          "source": "https://milesopedia.fr/aerien/flying-blue-partenaires/"
+        }
+      ],
+      "notes": "Ya no útil para nuevas acumulaciones.",
+      "sources": [
+        "https://milesopedia.fr/aerien/flying-blue-partenaires/"
+      ],
+      "confidence": "media"
+    },
+    {
+      "id": "retail-fr",
+      "name": "Comercio y coaliciones (Shell, Carrefour, Payback)",
+      "type": "retail",
+      "how_to_earn": [],
+      "transfers": [],
+      "notes": "No encontré confirmación 2025-2026 de que Shell, Carrefour o Payback den millas Flying Blue en Francia; Payback no opera en Francia según lo encontrado. Milesopedia FR (lista de socios Flying Blue, oct 2026) no los menciona. No usar sin verificar.",
+      "sources": [
+        "https://milesopedia.fr/aerien/flying-blue-partenaires/"
+      ],
+      "confidence": "baja"
+    }
+  ],
+  "cards": [
+    {
+      "id": "amex-afklm-platinum-fr",
+      "name": "Carte Air France KLM American Express Platinum",
+      "issuer": "American Express",
+      "annual_fee": "EUR 792 (66/mes)",
+      "earns": "Flying Blue",
+      "earn_rate": "1,3 millas/EUR; 3 millas/EUR en Air France, KLM, Transavia y Hertz",
+      "welcome_bonus": "20.000 millas tras 2.500 EUR en 3 meses, hasta el 4 nov 2026",
+      "transfers": [],
+      "notes": "Hasta 80 XP/año; Flying Blue Extra Essentiel con 2 accesos a salón; maleta facturada y wifi AF en corto/medio radio; comisión divisa 2,8%.",
+      "sources": [
+        "https://milesopedia.fr/banque/american-express/carte-air-france-klm-american-express-platinum",
+        "https://milesopedia.fr/banque/american-express"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "id": "amex-afklm-gold-fr",
+      "name": "Carte Air France KLM American Express Gold",
+      "issuer": "American Express",
+      "annual_fee": "EUR 252 (21/mes), primer año gratis",
+      "earns": "Flying Blue",
+      "earn_rate": "1 milla/EUR; 1,5 millas/EUR en AF/KLM/Transavia/Hertz",
+      "welcome_bonus": "12.000 millas tras 1.500 EUR en 3 meses, hasta el 4 nov 2026",
+      "transfers": [],
+      "notes": "Hasta 40 XP/año.",
+      "sources": [
+        "https://milesopedia.fr/banque/american-express",
+        "https://milesopedia.fr/meilleures-cartes-bancaires/flying-blue",
+        "https://milesopedia.fr/programme-fidelite/flying-blue/"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "id": "amex-afklm-silver-fr",
+      "name": "Carte Air France KLM American Express Silver",
+      "issuer": "American Express",
+      "annual_fee": "EUR 65, primer año gratis",
+      "earns": "Flying Blue",
+      "earn_rate": "0,5 millas/EUR; 1 milla/EUR en AF/KLM/Transavia/Hertz",
+      "welcome_bonus": "Hasta 3.000 millas tras 1.000 EUR en 3 meses, hasta el 31 dic 2026",
+      "transfers": [],
+      "notes": "SkyStatus indica 15 XP/año y cuota gratis desde 10.000 EUR de gasto anual (no confirmado en Milesopedia).",
+      "sources": [
+        "https://milesopedia.fr/banque/american-express",
+        "https://milesopedia.fr/programme-fidelite/flying-blue/",
+        "https://skystatus.pro/question/comparaison-cartes-amex-flying-blue"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "id": "amex-afklm-pro-platinum-fr",
+      "name": "Carte PRO Air France KLM American Express Platinum",
+      "issuer": "American Express",
+      "annual_fee": "no confirmada",
+      "earns": "Flying Blue",
+      "earn_rate": "1 milla/EUR; 2 millas/EUR en AF/KLM/Transavia/Hertz",
+      "welcome_bonus": "Hasta 50.000 millas tras 15.000 EUR en 3 meses (fecha fin no indicada)",
+      "transfers": [],
+      "notes": "Tarjeta profesional. Existe también PRO Gold: 0,5 millas/EUR, 1,5 en AF/KLM.",
+      "sources": [
+        "https://milesopedia.fr/programme-fidelite/flying-blue/",
+        "https://milesopedia.fr/meilleures-cartes-bancaires/flying-blue"
+      ],
+      "confidence": "media"
+    },
+    {
+      "id": "amex-platinum-fr",
+      "name": "Carte Platinum American Express",
+      "issuer": "American Express",
+      "annual_fee": "EUR 708 (59/mes)",
+      "earns": "Membership Rewards",
+      "earn_rate": "1 punto/EUR",
+      "welcome_bonus": "Hasta 200 EUR reembolsados tras 2.000 EUR en 3 meses, hasta el 4 nov 2026",
+      "transfers": [
+        {
+          "to": "Flying Blue",
+          "ratio": "5:4",
+          "source": "https://milesopedia.fr/finance/american-express-membership-rewards-transfert-points/"
+        },
+        {
+          "to": "Iberia / British Airways (Avios)",
+          "ratio": "5:4",
+          "source": "https://milesopedia.fr/finance/american-express-membership-rewards-transfert-points/"
+        },
+        {
+          "to": "Qatar (Avios)",
+          "ratio": "6:5",
+          "source": "https://milesopedia.fr/finance/american-express-membership-rewards-transfert-points/"
+        }
+      ],
+      "notes": "Ver lista completa en programa amex-mr-fr.",
+      "sources": [
+        "https://milesopedia.fr/banque/american-express",
+        "https://milesopedia.fr/finance/american-express-membership-rewards-transfert-points/"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "id": "amex-gold-fr",
+      "name": "Carte Gold American Express",
+      "issuer": "American Express",
+      "annual_fee": "EUR 252 (21/mes)",
+      "earns": "Membership Rewards",
+      "earn_rate": "1 punto/EUR",
+      "welcome_bonus": "100 EUR reembolsados tras 1.000 EUR en 3 meses, hasta el 4 nov 2026",
+      "transfers": [
+        {
+          "to": "Flying Blue",
+          "ratio": "5:4",
+          "source": "https://milesopedia.fr/finance/american-express-membership-rewards-transfert-points/"
+        },
+        {
+          "to": "Iberia / British Airways (Avios)",
+          "ratio": "5:4",
+          "source": "https://milesopedia.fr/finance/american-express-membership-rewards-transfert-points/"
+        }
+      ],
+      "notes": "",
+      "sources": [
+        "https://milesopedia.fr/banque/american-express",
+        "https://milesopedia.fr/finance/american-express-membership-rewards-transfert-points/"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "id": "amex-green-fr",
+      "name": "Carte Green American Express",
+      "issuer": "American Express",
+      "annual_fee": "EUR 95, primer año gratis",
+      "earns": "Membership Rewards",
+      "earn_rate": "1 punto/EUR",
+      "welcome_bonus": "10.000 puntos tras 1.000 EUR en 3 meses, hasta el 31 dic 2026",
+      "transfers": [
+        {
+          "to": "Flying Blue",
+          "ratio": "5:4",
+          "source": "https://milesopedia.fr/finance/american-express-membership-rewards-transfert-points/"
+        },
+        {
+          "to": "Iberia / British Airways (Avios)",
+          "ratio": "5:4",
+          "source": "https://milesopedia.fr/finance/american-express-membership-rewards-transfert-points/"
+        }
+      ],
+      "notes": "La tarjeta más barata que transfiere a aerolíneas en Francia.",
+      "sources": [
+        "https://milesopedia.fr/banque/american-express",
+        "https://milesopedia.fr/finance/american-express-membership-rewards-transfert-points/"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "id": "revolut-ultra-fr",
+      "name": "Revolut Ultra (y planes inferiores)",
+      "issuer": "Revolut",
+      "annual_fee": "no confirmada para FR (~60 EUR/mes en BE)",
+      "earns": "RevPoints",
+      "earn_rate": "Ultra 1 RevPoint/EUR; Metal 1/2 EUR; Premium 1/4 EUR; Standard/Plus 1/10 EUR",
+      "welcome_bonus": "",
+      "transfers": [
+        {
+          "to": "Flying Blue",
+          "ratio": "1:1",
+          "source": "https://skystatus.pro/guide/revolut-revpoints-flying-blue"
+        },
+        {
+          "to": "Avios",
+          "ratio": "1:1",
+          "source": "https://skystatus.pro/guide/revolut-revpoints-flying-blue"
+        }
+      ],
+      "notes": "Cuota francesa exacta no verificada.",
+      "sources": [
+        "https://skystatus.pro/guide/revolut-revpoints-flying-blue",
+        "https://milesopedia.fr/programme-fidelite/flying-blue/"
+      ],
+      "confidence": "media"
+    }
+  ]
+}

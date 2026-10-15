@@ -1,0 +1,24 @@
+<p id="aploading" class="note" style="max-width:1120px;margin:8px auto">Cargando aeropuertos del mundo…</p>
+<script>
+(async function(){
+  let cached=null;try{cached=JSON.parse(localStorage.getItem('rdm_ap_v1')||'null')}catch(e){}
+  if(cached&&cached.length>1000){window.__AIRPORTS=cached;return boot()}
+  const URLS=['https://davidmegginson.github.io/ourairports-data/airports.csv','https://raw.githubusercontent.com/davidmegginson/ourairports-data/main/airports.csv'];
+  let text='';
+  for(const u of URLS){try{const r=await fetch(u);if(r.ok){text=await r.text();if(text.length>100000)break}}catch(e){}}
+  const out=[];const lines=text.split('\n');
+  const split=l=>{const a=[];let cur='',q=false;for(let i=0;i<l.length;i++){const ch=l[i];if(ch=='"'){q=!q}else if(ch==','&&!q){a.push(cur);cur=''}else cur+=ch}a.push(cur);return a};
+  for(let i=1;i<lines.length;i++){const l=lines[i];if(!l)continue;
+    if(l.indexOf('large_airport')<0&&l.indexOf('medium_airport')<0)continue;
+    const f=split(l);const t=f[2],sched=f[11],iata=f[13];
+    if((t==='large_airport'||t==='medium_airport')&&sched==='yes'&&iata&&iata.length===3)
+      out.push([iata,(f[3]||'').slice(0,48),(f[10]||'').slice(0,30),f[8],Math.round(+f[4]*1000)/1000,Math.round(+f[5]*1000)/1000,t==='large_airport'?1:0]);}
+  out.sort((a,b)=>a[0]<b[0]?-1:1);
+  if(!out.length){document.getElementById('aploading').textContent='No se pudo cargar la lista de aeropuertos. Revisa la conexión y recarga.';return}
+  window.__AIRPORTS=out;try{localStorage.setItem('rdm_ap_v1',JSON.stringify(out))}catch(e){}
+  boot();
+  function boot(){const go=()=>{const el=document.getElementById('aploading');if(el)el.remove();
+    const s=document.createElement('script');s.textContent=document.getElementById('main-src').textContent;document.body.appendChild(s);};
+    if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',go);else go();}
+})();
+</script>
