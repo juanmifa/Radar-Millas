@@ -17,3 +17,5 @@ git commit -am "..." && git push
 ```
 Cloudflare (Workers Builds, conectado a este repo) despliega `dist/worker.js` con `npx wrangler deploy`
 en cada push a `main`. Los secretos `SEATS_KEY` y `APP_TOKEN` viven en Cloudflare, nunca en el repo.
+
+Último despliegue automático configurado: 15 oct 2026.
