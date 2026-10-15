@@ -2,6 +2,14 @@ name = "radar-millas"
 main = "dist/worker.js"
 compatibility_date = "2026-10-01"
 workers_dev = true
-# Versiones previas por rama: sin secretos propios; la web previa usa la API de producción.
+# Versiones previas por rama: sin secretos ni almacén propios; la web previa usa la API de producción.
 previews = { }
 # Secretos (no van en el repo): SEATS_KEY y APP_TOKEN, ya configurados en Cloudflare.
+
+# Almacén de alertas, canales de aviso y últimas lecturas. Wrangler lo crea solo en el primer despliegue.
+[[kv_namespaces]]
+binding = "ALERTS"
+
+# Revisión de alertas: cada 4 horas, al minuto 17 (6 veces al día)
+[triggers]
+crons = ["17 */4 * * *"]
