@@ -209,8 +209,8 @@ a.st.go:hover{border-color:var(--vfr)}
 .ans-tools{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center}
 .exp-map{width:100%;height:auto;aspect-ratio:2.3/1;display:block;background:var(--paper);border:1px solid var(--rule);border-radius:8px}
 .exp-map .bg{fill:var(--land)}
-.exp-map .rt{fill:none;stroke:var(--vfr);stroke-width:1;opacity:.35}
-.exp-map .rt.top{stroke:var(--route);stroke-width:1.6;opacity:.85}
+.exp-map .rt{fill:none;stroke:var(--vfr);stroke-width:1;opacity:.35;vector-effect:non-scaling-stroke}
+.exp-map .rt.top{stroke:var(--route);stroke-width:1.6;opacity:.85;vector-effect:non-scaling-stroke}
 .exp-map .d{fill:var(--vfr);stroke:var(--surface);stroke-width:1}
 .exp-map .d.top{fill:var(--route)}
 .exp-map .o{fill:var(--ink);stroke:var(--surface);stroke-width:1.5}
@@ -1966,10 +1966,15 @@ function expPaint(){const out=document.getElementById('expOut');const C=state.ca
   const bg=AIRPORTS.filter(a=>a[6]).map(a=>`<circle class="bg" cx="${x(a[5]).toFixed(1)}" cy="${y(a[4]).toFixed(1)}" r="1.1"/>`).join('');
   const rts=top.slice().reverse().map((r,i)=>{const d=AP.get(r.d);if(!d||!o)return '';const isTop=top.indexOf(r)<10;
     const p=gcPts(o,d,40).map(([lo,la])=>`${x(lo).toFixed(1)},${y(la).toFixed(1)}`).join(' ');return `<polyline class="rt${isTop?' top':''}" points="${p}"/>`}).join('');
-  const dots=top.map((r,i)=>{const d=AP.get(r.d);if(!d)return '';return `<g data-exp="${r.d}" style="cursor:pointer"><circle class="d${i<10?' top':''}" cx="${x(d[5]).toFixed(1)}" cy="${y(d[4]).toFixed(1)}" r="${i<10?5:3.5}"><title>${r.d} · CHF ${fmt(totalCHF(r.best,C))}</title></circle>${i<10?`<text x="${(x(d[5])+7).toFixed(1)}" y="${(y(d[4])+3).toFixed(1)}">${r.d} ${fmt(totalCHF(r.best,C))}</text>`:''}</g>`}).join('');
   const pts=[o,...top.map(r=>AP.get(r.d))].filter(Boolean);let x0=Math.min(...pts.map(a=>x(a[5]))),x1=Math.max(...pts.map(a=>x(a[5]))),y0=Math.min(...pts.map(a=>y(a[4]))),y1=Math.max(...pts.map(a=>y(a[4])));
   x0-=50;x1+=70;y0-=40;y1+=40;let vw=x1-x0,vh=y1-y0;const R=2.3;if(vw/vh<R){const n=vh*R;x0-=(n-vw)/2;vw=n}else{const n=vw/R;y0-=(n-vh)/2;vh=n}
-  const map=`<svg class="exp-map" viewBox="${x0.toFixed(0)} ${y0.toFixed(0)} ${vw.toFixed(0)} ${vh.toFixed(0)}" role="img" aria-label="Mapa de destinos con plaza">${bg}${rts}${o?`<circle class="o" cx="${x(o[5])}" cy="${y(o[4])}" r="6"/>`:''}${dots}</svg>`;
+  // etiquetas sin solaparse: tamaño según el zoom y se omite la que choca con otra ya puesta
+  const fs=Math.max(6,vw/85),rr=fs*.45,placed=[];
+  const dots=top.map((r,i)=>{const d=AP.get(r.d);if(!d)return '';const cx=x(d[5]),cy=y(d[4]);const lab=`${r.d} ${fmt(totalCHF(r.best,C))}`;const w=lab.length*fs*.62;
+    let lx=cx+rr*1.6,ly=cy+fs*.35;if(lx+w>x0+vw)lx=cx-rr*1.6-w;const box=[lx,ly-fs,lx+w,ly+2];
+    const free=i<12&&!placed.some(p=>box[0]<p[2]&&box[2]>p[0]&&box[1]<p[3]&&box[3]>p[1]);if(free)placed.push(box);
+    return `<g data-exp="${r.d}" style="cursor:pointer"><circle class="d${i<10?' top':''}" cx="${cx.toFixed(1)}" cy="${cy.toFixed(1)}" r="${(i<10?rr:rr*.7).toFixed(1)}"><title>${cityOf(r.d)} ${r.d} · CHF ${fmt(totalCHF(r.best,C))}</title></circle>${free?`<text x="${lx.toFixed(1)}" y="${ly.toFixed(1)}" style="font-size:${fs.toFixed(1)}px;stroke-width:${(fs*.3).toFixed(1)}px">${lab}</text>`:''}</g>`}).join('');
+  const map=`<svg class="exp-map" viewBox="${x0.toFixed(0)} ${y0.toFixed(0)} ${vw.toFixed(0)} ${vh.toFixed(0)}" role="img" aria-label="Mapa de destinos con plaza">${bg}${rts}${o?`<circle class="o" cx="${x(o[5])}" cy="${y(o[4])}" r="${(rr*1.2).toFixed(1)}"/>`:''}${dots}</svg>`;
   const tr=top.map((r,i)=>{const a=r.best,d=AP.get(r.d),t=taxCHF(a,C);return `<tr data-exp="${r.d}" data-date="${a.Date}"><td class="n">${i+1}</td><td><b>${cityOf(r.d)}</b> <span class="note">${r.d}</span><span class="ct">${d?country(d[3]):''} · desde ${a.Route.OriginAirport}</span></td><td>${dayName(a.Date)} ${dayNum(a.Date)}<span class="ct">${seenTxt(a)}</span></td><td>${progBadge(a.Source)}<span class="pn">${srcName(a.Source)}</span></td><td class="n">${fmt(a[C+'MileageCost'])}</td><td class="n">${t==null?'¿?':'CHF '+fmt(t)}</td><td class="n"><b>CHF ${fmt(totalCHF(a,C))}</b></td><td class="n">${r.days.size}</td><td>${affBadge(a,C)}</td></tr>`}).join('');
   const B=balances();
   out.innerHTML=`<div style="display:grid;gap:12px"><div class="exp-sum"><p class="best-lead" style="margin:0">El destino más barato es <b>${cityOf(list[0].d)}</b> (${list[0].d}): ${fmt(list[0].best[C+'MileageCost'])} millas con ${srcName(list[0].best.Source)} ≈ <b>CHF ${fmt(totalCHF(list[0].best,C))}</b> el ${dayNum(list[0].best.Date)}.</p>
