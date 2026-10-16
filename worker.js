@@ -10,12 +10,15 @@
 //   GET  /alerts            POST /alerts             → listar / crear o editar
 //   DELETE /alerts/{id}     POST /alerts/{id}/run    → borrar / revisar ahora
 //   POST /notify/config     POST /notify/test        → canales de aviso / mensaje de prueba
+//   GET  /cash              POST /cash/config        → precio real en efectivo de Google Flights (vía SerpApi)
 
 const UPSTREAM = 'https://seats.aero/partnerapi';
 const CACHE_SECONDS = 600; // 10 min: ahorra cuota (1.000 llamadas/día)
 const APP_URL = 'https://radar-millas.juanmyf.workers.dev';
 const MAX_ALERTS = 15;
 const LOG_MAX = 40;
+const CASH_TTL = 6 * 3600;   // 6 h: los precios en efectivo cambian poco y la cuota gratis es de 250/mes
+const CASH_FREE = 250;
 const FXFB = { CHF: 1, USD: 0.84, EUR: 0.93, GBP: 1.07, CAD: 0.6, AUD: 0.55, JPY: 0.0056, BRL: 0.15, SGD: 0.64, AED: 0.23, QAR: 0.23, SEK: 0.08, NOK: 0.08, DKK: 0.125, MXN: 0.046 };
 const NAMES = { eurobonus: 'SAS EuroBonus', virginatlantic: 'Virgin Atlantic', aeromexico: 'Aeroméxico', american: 'American AAdvantage', delta: 'Delta SkyMiles', etihad: 'Etihad Guest', united: 'United MileagePlus', emirates: 'Emirates Skywards', aeroplan: 'Aeroplan', alaska: 'Alaska', velocity: 'Velocity', qantas: 'Qantas', connectmiles: 'ConnectMiles', azul: 'Azul', smiles: 'Smiles', flyingblue: 'Flying Blue', jetblue: 'JetBlue', qatar: 'Qatar Privilege Club', turkish: 'Turkish Miles&Smiles', singapore: 'KrisFlyer', ethiopian: 'ShebaMiles', saudia: 'AlFursan', finnair: 'Finnair Plus', lufthansa: 'Miles & More', lifemiles: 'LifeMiles', british: 'British Airways Club', iberia: 'Iberia Club', aerlingus: 'AerClub' };
 // Días de antelación con que cada programa abre el canje (para el aviso de apertura)
@@ -78,6 +81,11 @@ export default {
       catch (e) { return json({ error: String(e && e.message || e) }, 500, origin); }
     }
 
+    if (url.pathname === '/cash' || url.pathname === '/cash/config') {
+      try { return await cashApi(request, env, url, origin); }
+      catch (e) { return json({ error: String(e && e.message || e) }, 500, origin); }
+    }
+
     if (request.method !== 'GET') return json({ error: 'Solo GET' }, 405, origin);
     if (!env.SEATS_KEY) return json({ error: 'Falta el secreto SEATS_KEY en el Worker' }, 500, origin);
 
@@ -121,7 +129,7 @@ async function kvGet(env, k, def) { const v = await env.ALERTS.get(k, 'json'); r
 const kvPut = (env, k, v) => env.ALERTS.put(k, JSON.stringify(v));
 
 function publicCfg(cfg) {
-  return { waPhone: cfg.waPhone || '', waKey: !!cfg.waKey, email: cfg.email || '', resendKey: !!cfg.resendKey };
+  return { waPhone: cfg.waPhone || '', waKey: !!cfg.waKey, email: cfg.email || '', resendKey: !!cfg.resendKey, serpKey: !!cfg.serpKey };
 }
 
 function cleanAlert(b, old) {
@@ -369,4 +377,72 @@ async function runAllAlerts(env, ctx) {
       await addLog(env, { t: new Date().toISOString(), id: a.id, name: a.name, text: text.slice(0, 400), sent });
     }
   }
+}
+
+/* ===================== Precio en efectivo: Google Flights vía SerpApi ===================== */
+// No hay API oficial de Google Flights. SerpApi la consulta por nosotros y devuelve JSON.
+// Clave: secreto SERPAPI_KEY en Cloudflare o guardada desde la web (solo escritura).
+const IATA = /^[A-Z]{3}$/, DAY = /^\d{4}-\d{2}-\d{2}$/;
+async function cashApi(request, env, url, origin) {
+  const cfg = await kvGet(env, 'cfg', {});
+  const month = todayZ().slice(0, 7);
+  if (url.pathname === '/cash/config') {
+    if (request.method !== 'POST') return json({ error: 'Solo POST' }, 405, origin);
+    const b = await request.json().catch(() => ({}));
+    const next = { ...cfg };
+    if (b.serpKey) next.serpKey = String(b.serpKey).trim().slice(0, 120);
+    if (b.clearSerpKey) delete next.serpKey;
+    await kvPut(env, 'cfg', next);
+    return json({ cfg: publicCfg(next), used: await kvGet(env, 'cashcount:' + month, 0), free: CASH_FREE }, 200, origin);
+  }
+  if (request.method !== 'GET') return json({ error: 'Solo GET' }, 405, origin);
+  const key = env.SERPAPI_KEY || cfg.serpKey;
+  const used = await kvGet(env, 'cashcount:' + month, 0);
+  if (!key) return json({ error: 'Falta la clave de SerpApi', need: 'serpKey', used, free: CASH_FREE }, 412, origin);
+  const q = url.searchParams;
+  const codes = s => String(s || '').toUpperCase().split(/[,\s]+/).filter(x => IATA.test(x)).slice(0, 7);
+  const o = codes(q.get('o')), d = codes(q.get('d'));
+  const d1 = q.get('d1') || '', d2 = q.get('d2') || '';
+  const cab = { Y: '1', W: '2', J: '3', F: '4' }[q.get('c')] || '1';
+  const pax = Math.min(9, Math.max(1, Number(q.get('pax')) || 1));
+  if (!o.length || !d.length || !DAY.test(d1) || (d2 && !DAY.test(d2))) return json({ error: 'Faltan origen, destino o fecha' }, 400, origin);
+  const ck = `cash:${o.join(',')}|${d.join(',')}|${d1}|${d2}|${cab}|${pax}`;
+  if (q.get('fresh') !== '1') {
+    const hit = await kvGet(env, ck, null);
+    if (hit) return json({ ...hit, cached: true, used, free: CASH_FREE }, 200, origin);
+  }
+  const p = new URLSearchParams({ engine: 'google_flights', departure_id: o.join(','), arrival_id: d.join(','), outbound_date: d1,
+    type: d2 ? '1' : '2', travel_class: cab, adults: String(pax), currency: 'CHF', gl: 'ch', hl: 'es', api_key: key });
+  if (d2) p.set('return_date', d2);
+  const r = await fetch((env.SERPAPI_URL || 'https://serpapi.com/search.json') + '?' + p, { headers: { Accept: 'application/json' } });
+  const j = await r.json().catch(() => ({}));
+  await kvPut(env, 'cashcount:' + month, used + 1);
+  if (!r.ok || j.error) {
+    const msg = String(j.error || ('SerpApi ' + r.status));
+    const nice = /Invalid API key/i.test(msg) ? 'La clave de SerpApi no es válida.' : /run out|limit/i.test(msg) ? 'Se acabaron las búsquedas de SerpApi de este mes.' : /hasn't returned any results/i.test(msg) ? null : msg;
+    if (nice) return json({ error: nice, used: used + 1, free: CASH_FREE }, 502, origin);
+  }
+  const all = [...(j.best_flights || []).map(x => ({ ...x, _best: true })), ...(j.other_flights || [])].filter(x => x.price);
+  const flights = all.map(x => {
+    const legs = x.flights || [];
+    const f0 = legs[0] || {}, fN = legs[legs.length - 1] || {};
+    return {
+      price: x.price, best: !!x._best, stops: Math.max(0, legs.length - 1), dur: x.total_duration || null,
+      airlines: [...new Set(legs.map(l => l.airline).filter(Boolean))], logo: x.airline_logo || f0.airline_logo || '',
+      nums: legs.map(l => l.flight_number).filter(Boolean),
+      dep: { ap: f0.departure_airport && f0.departure_airport.id, t: f0.departure_airport && f0.departure_airport.time },
+      arr: { ap: fN.arrival_airport && fN.arrival_airport.id, t: fN.arrival_airport && fN.arrival_airport.time },
+      via: (x.layovers || []).map(l => l.id).filter(Boolean),
+    };
+  }).sort((a, b) => a.price - b.price).slice(0, 10);
+  const pi = j.price_insights || {};
+  const out = {
+    at: new Date().toISOString(), q: { o, d, d1, d2, cab, pax }, rt: !!d2,
+    lowest: flights.length ? flights[0].price : (pi.lowest_price || null),
+    level: pi.price_level || null, typical: pi.typical_price_range || null,
+    url: (j.search_metadata && j.search_metadata.google_flights_url) || null,
+    flights,
+  };
+  await env.ALERTS.put(ck, JSON.stringify(out), { expirationTtl: CASH_TTL });
+  return json({ ...out, cached: false, used: used + 1, free: CASH_FREE }, 200, origin);
 }

@@ -182,6 +182,25 @@ a.st.go:hover{border-color:var(--vfr)}
 .combo .tt{font:800 1.1rem var(--f);font-stretch:78%;text-align:right}
 @media (max-width:640px){.combo{grid-template-columns:1fr auto}.combo .legs{grid-column:1/-1;grid-row:2}}
 .subh{font:700 1.05rem var(--f);margin:6px 0 2px}
+/* efectivo: Google Flights */
+.gf{display:grid;gap:10px;padding-bottom:16px;margin-bottom:6px;border-bottom:1px solid var(--rule)}
+.gf-title{display:flex;flex-wrap:wrap;gap:4px 14px;align-items:baseline;justify-content:space-between}
+.gf-head{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:baseline}
+.gf-low{font:600 1.05rem var(--f)}.gf-low b{font:800 1.7rem/1 var(--f);font-stretch:75%}
+.gf-list{display:grid;border:1px solid var(--rule);border-radius:6px;overflow:hidden}
+.gf-row{display:grid;grid-template-columns:minmax(150px,1.6fr) minmax(120px,1fr) minmax(100px,.9fr) minmax(90px,.7fr);gap:10px;align-items:center;padding:9px 12px;border-top:1px solid var(--rule);background:var(--surface)}
+.gf-row:first-child{border-top:0}
+.gf-row.best{box-shadow:inset 4px 0 0 var(--vfr)}
+.gf-row small{display:block;color:var(--muted);font-size:.76rem;font-weight:500}
+.gf-row .al{display:flex;gap:8px;align-items:center;min-width:0}.gf-row .al img{border-radius:4px;flex:none;background:#fff}
+.gf-row .al b{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.gf-row .pr{text-align:right;font:800 1.1rem var(--f);font-stretch:80%;font-variant-numeric:tabular-nums}
+.gf-foot{display:flex;flex-wrap:wrap;gap:6px 14px;justify-content:space-between;align-items:center}
+@media (max-width:640px){.gf-row{grid-template-columns:1fr auto;grid-template-areas:'al pr' 'tm du';gap:6px 10px}.gf-row .al{grid-area:al}.gf-row .tm{grid-area:tm}.gf-row .du{grid-area:du;text-align:right}.gf-row .pr{grid-area:pr}}
+.strip.cashs{border-left-color:var(--vfr);border-left-style:double}
+.strip.cashs .v.tot{color:var(--good)}
+.strip.cashs.cheap .v.tot{color:var(--warn)}
+.gf-wait{padding:10px 16px;border-style:dotted}
 /* respuesta: fichas de progreso de vuelo */
 #answer{display:grid;gap:8px}
 #answer:empty{display:none}
@@ -458,9 +477,22 @@ details.set summary h2{font-size:1.2rem}
     <div id="altOut" hidden></div>
   </div></details></div>
   <div class="view" id="v-cash" hidden><section class="view-body" aria-labelledby="t-cash">
+    <div class="gf" id="gfBox">
+      <div class="gf-title"><h2 id="t-gf">Precio real en Google Flights</h2><span class="note" id="gfQuota"></span></div>
+      <div id="gfOut"><p class="note">Pulsa Buscar para traer el precio en efectivo de esta ruta.</p></div>
+      <details class="sub" id="gfSetup"><summary>Conectar Google Flights</summary>
+        <div class="al-ch" style="margin-top:10px">
+          <ol class="al-steps">
+            <li>Google Flights no tiene API pública. La consulta la hace <a href="https://serpapi.com/users/sign_up" target="_blank" rel="noopener">SerpApi</a>: crea una cuenta gratis (250 búsquedas al mes).</li>
+            <li>Copia tu clave en <a href="https://serpapi.com/manage-api-key" target="_blank" rel="noopener">Api Key</a> y pégala aquí. Se guarda en tu servidor y la web no la vuelve a mostrar.</li>
+          </ol>
+          <div class="field"><label class="label" for="gfKey">Clave de SerpApi</label><input id="gfKey" type="password" autocomplete="off" spellcheck="false"></div>
+          <div class="al-actions"><button type="button" id="gfSave">Guardar clave</button><span class="note" id="gfMsg"></span></div>
+        </div></details>
+    </div>
     <div class="cash">
       <div>
-        <h2 id="t-cash">Precio en efectivo</h2>
+        <h2 id="t-cash">Valor de tus millas</h2>
         <div class="field" style="margin-top:10px"><label class="label" for="cash">Total del viaje (CHF, todos los pasajeros)</label>
           <input id="cash" type="number" min="0" step="1" inputmode="decimal" placeholder="p. ej. 1150"></div>
         <p class="hint" id="cashHint">Busca el precio en uno de los enlaces y apúntalo aquí: así calculo cuántos céntimos (Rappen) vale cada milla.</p>
@@ -1272,11 +1304,12 @@ async function runAll(){if(RUNNING)return;RUNNING=true;const ans=document.getEle
   ans.innerHTML='<div class="ans-empty"><span>Buscando asientos de premio en tu origen y en 52 aeropuertos europeos…</span></div>';
   document.getElementById('euLeg').value='0';
   try{await Promise.all([liveSearch(),euLoad()]);}finally{RUNNING=false}
-  renderSummary();drawMap();
+  renderSummary();drawMap();cashLoad();
   if(currentView()==='cal')calLoad();}
 function currentView(){const b=document.querySelector('.views [aria-selected="true"]');return b?b.dataset.view:'opts'}
 function showView(v){document.querySelectorAll('.views [data-view]').forEach(b=>b.setAttribute('aria-selected',String(b.dataset.view===v)));
   ['opts','best','cal','alt','cash','res'].forEach(k=>{document.getElementById('v-'+k).hidden=k!==v});
+  if(v==='cash')cashPaint();
   if(v==='best'&&!BEST.ready&&wk().tok&&SEL.org&&SEL.dst)bestRun();
   if(v==='cal'&&!CAL.legs[CAL.leg]&&wk().tok&&SEL.org&&SEL.dst)calLoad();
   if(v==='alt'&&!EU.legs&&wk().tok&&SEL.org&&SEL.dst)euLoad();}
@@ -1320,7 +1353,8 @@ function renderSummary(){const ans=document.getElementById('answer');if(!ans)ret
   const all=[...out];
   ans.innerHTML=`<div class="ans-head"><h2>Mejores opciones</h2><button type="button" class="ghost small watch" data-watch>Vigilar este tramo</button><span class="note">${CAB[C]} · ${state.pax} pax · ±${document.getElementById('win').value} días · milla a ${mileVal()} Rp · tasas por persona y trayecto</span></div>`+
     (all.length?all.join(''):`<div class="ans-empty"><span>Sin plazas en ${CAB[C].toLowerCase()} en estas fechas con tu filtro de programas. Prueba otra cabina, más días o el calendario.</span><button type="button" class="ghost" data-view-go="cal">Abrir calendario</button></div>`);
-  const strips=[...ans.querySelectorAll('.strip')];if(strips.length){const out1=strips.filter(el=>!el.classList.contains('ret'));const ok=out1.filter(el=>!el.classList.contains('flag'));const pool=ok.length?ok:out1.length?out1:strips;let min=Infinity,w=null;pool.forEach(el=>{const v=Number(el.querySelector('.tot').textContent.replace(/\D/g,''));if(v<min){min=v;w=el}});w.classList.add('win');const rec=RECBYID[w.dataset.id];if(rec)w.insertAdjacentHTML('afterend',`<div class="win-steps"><span class="k">Cómo conseguir la opción marcada</span>${transferSteps(rec,C)}</div>`)}}
+  const strips=[...ans.querySelectorAll('.strip')];if(strips.length){const out1=strips.filter(el=>!el.classList.contains('ret'));const ok=out1.filter(el=>!el.classList.contains('flag'));const pool=ok.length?ok:out1.length?out1:strips;let min=Infinity,w=null;pool.forEach(el=>{const v=Number(el.querySelector('.tot').textContent.replace(/\D/g,''));if(v<min){min=v;w=el}});w.classList.add('win');const rec=RECBYID[w.dataset.id];if(rec)w.insertAdjacentHTML('afterend',`<div class="win-steps"><span class="k">Cómo conseguir la opción marcada</span>${transferSteps(rec,C)}</div>`)}
+  const cc=typeof CASH!=='undefined'?cashCompare(ans):'';if(cc)ans.insertAdjacentHTML('beforeend',cc)}
 document.getElementById('answer').addEventListener('click',e=>{
   const wb=e.target.closest('[data-watch]');if(wb){showTab('alertas');if(!AL.loaded)alLoad();alFormOpen(null);return}
   const o=e.target.closest('[data-open]');if(o){openSettings(o.dataset.open);return}
@@ -1736,5 +1770,68 @@ document.getElementById('cab').addEventListener('change',()=>{if(BEST.ready)best
   if(c&&/^[YWJF]$/.test(c))document.getElementById('cab').value=c;
   showTab('buscar');render();history.replaceState(null,'',location.pathname);
   if(p.get('go')==='1'&&wk().tok)setTimeout(()=>runAll(),300)})();
+
+/* ===== Fase 3 · Precio real en efectivo (Google Flights vía SerpApi, en tu servidor) ===== */
+const CASH={data:null,err:null,need:false,loading:false,key:'',used:null,free:250};
+function cashQ(){if(!SEL.org||!SEL.dst||!state.d1)return null;
+  return {o:SEL.org.codes.slice(0,7).join(','),d:SEL.dst.codes.slice(0,7).join(','),d1:state.d1,d2:state.d2||'',c:state.cab,pax:String(Number(state.pax)||1)}}
+const cashKeyNow=()=>{const q=cashQ();return q?JSON.stringify(q):''};
+const durTxt=m=>m?`${Math.floor(m/60)} h ${String(m%60).padStart(2,'0')}`:'';
+const lvlTxt={low:'Precio bajo',typical:'Precio normal',high:'Precio alto'};
+async function cashLoad(fresh){const q=cashQ();if(!q)return;const {url,tok}=wk();if(!tok)return;
+  const key=JSON.stringify(q);CASH.key=key;CASH.loading=true;CASH.err=null;cashPaint();
+  try{const r=await fetch(url+'/cash?'+new URLSearchParams({...q,...(fresh?{fresh:'1'}:{})}),{headers:{'X-App-Token':tok}});
+    const j=await r.json().catch(()=>({}));if(CASH.key!==key)return;
+    if(j.used!=null)CASH.used=j.used;if(j.free)CASH.free=j.free;
+    if(r.status===412&&j.need){CASH.need=true;CASH.data=null}
+    else if(r.status===404||r.status===405){CASH.err='Tu servidor todavía no tiene esta función: se activa al publicar esta versión.';CASH.data=null}
+    else if(!r.ok){CASH.err=j.error||('Error '+r.status);CASH.data=null}
+    else{CASH.need=false;CASH.data=j;
+      if(j.lowest){const inp=document.getElementById('cash');inp.value=String(j.lowest);inp.dataset.auto='1';store.set('cash',inp.value)}}
+  }catch(e){if(CASH.key===key){CASH.err='No pude consultar Google Flights: '+e.message;CASH.data=null}}
+  finally{if(CASH.key===key){CASH.loading=false;cashPaint();render()}}}
+function cashPaint(){const out=document.getElementById('gfOut');if(!out)return;const D=CASH.data;
+  const quota=CASH.used!=null?`Consultas a Google Flights este mes: <b>${CASH.used}</b> de ${CASH.free} gratis. Cada ruta y fecha se guarda 6 horas.`:'';
+  document.getElementById('gfQuota').innerHTML=quota;
+  if(CASH.need){out.innerHTML='<p class="status s-none">Conecta Google Flights abajo para ver aquí el precio real en efectivo de cada búsqueda.</p>';document.getElementById('gfSetup').open=true;return}
+  if(CASH.loading){out.innerHTML='<p class="status s-none">Consultando Google Flights…</p>';return}
+  if(CASH.err){out.innerHTML=`<p class="status s-bad">${esc(CASH.err)}</p>`;return}
+  if(!D||CASH.key!==cashKeyNow()){out.innerHTML=`<p class="note">Pulsa Buscar para traer el precio en efectivo de esta ruta.</p>`;return}
+  if(!D.flights.length){out.innerHTML=`<p class="status s-none">Google Flights no muestra vuelos para estas fechas.${D.url?` <a href="${D.url}" target="_blank" rel="noopener">Abrir en Google Flights ↗</a>`:''}</p>`;return}
+  const pax=D.q.pax,trip=D.rt?'ida y vuelta':'solo ida';
+  const lvl=D.level?`<span class="tag ${D.level==='low'?'ok':D.level==='high'?'warn':''}">${lvlTxt[D.level]||D.level}${D.typical?` · lo normal: CHF ${fmt(D.typical[0])}–${fmt(D.typical[1])}`:''}</span>`:'';
+  const row=f=>`<div class="gf-row${f.best?' best':''}">
+    <span class="al">${f.logo?`<img src="${esc(f.logo)}" alt="" width="22" height="22" loading="lazy">`:''}<span><b>${esc(f.airlines.join(', ')||'—')}</b><small>${esc(f.nums.join(' · '))}</small></span></span>
+    <span class="tm"><b>${(f.dep.t||'').slice(11)} → ${(f.arr.t||'').slice(11)}</b><small>${esc(f.dep.ap||'')} → ${esc(f.arr.ap||'')}${f.arr.t&&f.dep.t&&f.arr.t.slice(0,10)!==f.dep.t.slice(0,10)?' (+1)':''}</small></span>
+    <span class="du">${durTxt(f.dur)}<small>${f.stops?`${f.stops} escala${f.stops>1?'s':''}${f.via.length?' · '+esc(f.via.join(', ')):''}`:'directo'}</small></span>
+    <span class="pr">CHF ${fmt(f.price)}${f.best?'<small>de los mejores</small>':''}</span></div>`;
+  out.innerHTML=`<div class="gf-head"><span class="gf-low">Desde <b>CHF ${fmt(D.lowest)}</b></span><span class="note">${trip} · ${pax} ${pax>1?'pasajeros':'pasajero'} · ${CAB[{1:'Y',2:'W',3:'J',4:'F'}[D.q.cab]]} · tasas incluidas</span>${lvl}</div>
+    <div class="gf-list">${D.flights.slice(0,8).map(row).join('')}</div>
+    <div class="gf-foot"><span class="note">${D.cached?`Consultado ${agoTxt(D.at)} (guardado)`:'Recién consultado'}${D.rt?' · el precio es del viaje completo; la vuelta se elige en Google Flights':''}</span>
+      <span>${D.url?`<a href="${D.url}" target="_blank" rel="noopener">Abrir en Google Flights ↗</a>`:''} <button type="button" class="ghost small" id="gfFresh">Actualizar</button></span></div>`}
+function cashCompare(ans){const D=CASH.data;
+  if(CASH.loading&&CASH.key===cashKeyNow())return '<div class="ans-empty gf-wait"><span>Consultando el precio en efectivo en Google Flights…</span></div>';
+  if(CASH.need)return '<div class="ans-empty gf-wait"><span>¿Comparar con el precio real en efectivo? Conecta Google Flights una vez.</span><button type="button" class="ghost small" data-view-go="cash">Conectar</button></div>';
+  if(!D||!D.lowest||CASH.key!==cashKeyNow())return '';
+  const C=state.cab,pax=Number(state.pax)||1;const rt=ans.querySelector('.strip.ret');
+  const cand=[...ans.querySelectorAll('.strip:not(.ret):not(.alt):not(.flag):not(.cashs)')];const w=cand.sort((x,y)=>totalCHF(RECBYID[x.dataset.id],C)-totalCHF(RECBYID[y.dataset.id],C))[0];
+  const a0=w&&RECBYID[w.dataset.id],a1=rt&&RECBYID[rt.dataset.id];const f=D.flights[0];
+  const needRet=D.rt&&!a1;const recs=[a0,a1].filter(Boolean);
+  let milesTot=null,miles=0,tax=0;if(a0&&!needRet){milesTot=0;recs.forEach(a=>{milesTot+=totalCHF(a,C);miles+=Number(a[C+'MileageCost'])||0;const t=taxCHF(a,C);tax+=t==null?taxEst(a.Source,C):t});milesTot*=pax;miles*=pax;tax*=pax}
+  const diff=milesTot!=null?D.lowest-milesTot:null;const rp=milesTot!=null&&miles?(D.lowest-tax)*100/miles:null;
+  const verdict=rp==null?'':rp>=1.5?'buen canje':rp>=1?'canje justo':'mejor pagar';
+  return `<article class="strip cashs${rp!=null&&rp<1?' cheap':''}">
+    <div class="s-head"><span class="k">Efectivo · Google Flights</span><span class="why">${esc(f.dep.ap||'')} → ${esc(f.arr.ap||'')}</span><span class="qb">${D.level?`<span class="tag ${D.level==='low'?'ok':D.level==='high'?'warn':''}">${lvlTxt[D.level]}</span>`:''}</span></div>
+    <div><span class="k">Vuelo más barato</span><span class="v">${esc(f.airlines.join(', '))}</span><span class="k">${f.stops?f.stops+' escala'+(f.stops>1?'s':''):'directo'} · ${durTxt(f.dur)}</span></div>
+    <div><span class="k">Billete ${D.rt?'i/v':'ida'}</span><span class="v big">CHF ${fmt(D.lowest)}</span><span class="k">${pax} pax, tasas incl.</span></div>
+    <div><span class="k">Con millas desde ${esc(a0?a0.Route.OriginAirport:'')}</span><span class="v">${milesTot!=null?'CHF '+fmt(milesTot):'—'}</span><span class="k">${needRet?'falta la vuelta':milesTot!=null?fmt(miles)+' millas':''}</span></div>
+    <div><span class="k">${diff==null?'Diferencia':diff>=0?'Ahorras con millas':'Pagando ahorras'}</span><span class="v big tot">${diff==null?'—':'CHF '+fmt(Math.abs(diff))}</span></div>
+    <div><span class="k">Cada milla rinde</span><span class="v">${rp==null?'—':rp.toFixed(2)+' Rp'}</span><span class="k">${verdict}</span></div>
+    <div class="act"><button type="button" class="ghost small" data-view-go="cash">Ver</button></div></article>`}
+document.getElementById('gfOut').addEventListener('click',e=>{if(e.target.id==='gfFresh'){e.target.disabled=true;cashLoad(true)}});
+document.getElementById('gfSave').addEventListener('click',async()=>{const m=document.getElementById('gfMsg');const k=document.getElementById('gfKey').value.trim();
+  if(!k){m.textContent='Pega primero tu clave.';return}m.textContent='Guardando…';
+  try{const j=await apiSend('/cash/config','POST',{serpKey:k});document.getElementById('gfKey').value='';document.getElementById('gfKey').placeholder='Guardada · escribe para cambiarla';
+    CASH.used=j.used;CASH.need=false;m.textContent='Guardada.';document.getElementById('gfSetup').open=false;cashLoad()}catch(err){m.textContent=err.message}});
 
 </script>
