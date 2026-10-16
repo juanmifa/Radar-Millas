@@ -97,12 +97,14 @@ export default {
     else if (/^\/trips\/[A-Za-z0-9]+$/.test(url.pathname)) path = url.pathname;
     else return json({ error: 'Ruta no permitida' }, 404, origin);
 
+    const fresh = url.searchParams.get('fresh') === '1';
+    url.searchParams.delete('fresh');
     const target = upstream(env) + path + url.search;
 
     // Caché de Cloudflare por URL (la clave nunca forma parte de la URL)
     const cache = caches.default;
     const cacheKey = new Request(target, { method: 'GET' });
-    let res = await cache.match(cacheKey);
+    let res = fresh ? null : await cache.match(cacheKey);
     let hit = true;
     if (!res) {
       hit = false;
@@ -129,7 +131,7 @@ async function kvGet(env, k, def) { const v = await env.ALERTS.get(k, 'json'); r
 const kvPut = (env, k, v) => env.ALERTS.put(k, JSON.stringify(v));
 
 function publicCfg(cfg) {
-  return { waPhone: cfg.waPhone || '', waKey: !!cfg.waKey, email: cfg.email || '', resendKey: !!cfg.resendKey, serpKey: !!cfg.serpKey };
+  return { waPhone: cfg.waPhone || '', waKey: !!cfg.waKey, email: cfg.email || '', resendKey: !!cfg.resendKey, serpKey: !!cfg.serpKey, tgToken: !!cfg.tgToken, tgChat: cfg.tgChat ? String(cfg.tgChat) : '', tgBot: cfg.tgBot || '' };
 }
 
 function cleanAlert(b, old) {
@@ -145,7 +147,7 @@ function cleanAlert(b, old) {
     progs: Array.isArray(b.progs) && b.progs.length ? b.progs.filter(p => /^[a-z]+$/.test(p)).slice(0, 40) : null,
     maxMiles: num(b.maxMiles), maxTax: num(b.maxTax),
     direct: !!b.direct, seats: Math.min(9, Math.max(1, Number(b.seats) || 1)),
-    wa: !!b.wa, email: !!b.email, release: !!b.release,
+    wa: !!b.wa, email: !!b.email, tg: !!b.tg, release: !!b.release,
     active: b.active !== false,
     created: old ? old.created : new Date().toISOString(),
     lastRun: old ? old.lastRun : null, lastCount: old ? old.lastCount : null, lastChange: old ? old.lastChange : null,
@@ -202,12 +204,32 @@ async function alertsApi(request, env, ctx, url, origin) {
     if (body.resendKey) next.resendKey = String(body.resendKey).trim().slice(0, 200);
     if (body.clearWaKey) delete next.waKey;
     if (body.clearResendKey) delete next.resendKey;
+    if (body.tgToken) {
+      const tok = String(body.tgToken).trim().slice(0, 100);
+      if (!/^\d+:[\w-]{20,}$/.test(tok)) return json({ error: 'Esa clave de Telegram no parece válida (formato 123456:ABC…).' }, 400, origin);
+      const me = await fetch(tgUrl(env, tok, 'getMe')).then(r => r.json()).catch(() => null);
+      if (!me || !me.ok) return json({ error: 'Telegram no reconoce esa clave del bot.' }, 400, origin);
+      next.tgToken = tok; next.tgBot = me.result && me.result.username || ''; delete next.tgChat;
+    }
+    if (body.clearTg) { delete next.tgToken; delete next.tgChat; delete next.tgBot; }
     await kvPut(env, 'cfg', next);
     return json({ cfg: publicCfg(next) }, 200, origin);
   }
+  if (parts[0] === 'notify' && parts[1] === 'telegram' && request.method === 'POST') {
+    // Busca el chat: el usuario escribe /start a su bot y aquí se lee el último mensaje
+    if (!cfg.tgToken) return json({ error: 'Guarda primero la clave del bot.' }, 400, origin);
+    const up = await fetch(tgUrl(env, cfg.tgToken, 'getUpdates')).then(r => r.json()).catch(() => null);
+    const msgs = (up && up.result || []).map(u => u.message || u.edited_message).filter(m => m && m.chat && m.chat.type === 'private');
+    const m = msgs[msgs.length - 1];
+    if (!m) return json({ error: `Escribe /start a tu bot${cfg.tgBot ? ' @' + cfg.tgBot : ''} en Telegram y vuelve a pulsar.` }, 404, origin);
+    const next = { ...cfg, tgChat: String(m.chat.id) };
+    await kvPut(env, 'cfg', next);
+    const sent = await notify(env, next, { tg: true }, '', '*Radar de Millas*\nListo: los avisos de tus alertas llegarán a este chat.\n' + APP_URL);
+    return json({ cfg: publicCfg(next), sent }, 200, origin);
+  }
   if (parts[0] === 'notify' && parts[1] === 'test' && request.method === 'POST') {
     const text = '*Radar de Millas*\nMensaje de prueba: los avisos de tus alertas llegarán aquí.\n' + APP_URL;
-    const res = await notify(env, cfg, { wa: true, email: true }, 'Radar de Millas · prueba de avisos', text, `<p>Mensaje de prueba: los avisos de tus alertas llegarán aquí.</p><p><a href="${APP_URL}">Abrir Radar de Millas</a></p>`);
+    const res = await notify(env, cfg, { wa: true, email: true, tg: true }, 'Radar de Millas · prueba de avisos', text, `<p>Mensaje de prueba: los avisos de tus alertas llegarán aquí.</p><p><a href="${APP_URL}">Abrir Radar de Millas</a></p>`);
     return json({ sent: res }, 200, origin);
   }
   return json({ error: 'Ruta no permitida' }, 404, origin);
@@ -272,8 +294,8 @@ async function runAlert(env, a, fx, cfg, opts = {}) {
   let sent = null;
   if (first || changed || opts.manual) {
     const msg = buildMessage(a, { first, neu, drop, gone, cur, bestE, manual: opts.manual && !first && !changed });
-    if ((first || changed) && (a.wa || a.email)) {
-      sent = await notify(env, cfg, { wa: a.wa, email: a.email }, msg.subject, msg.text, msg.html);
+    if ((first || changed) && (a.wa || a.email || a.tg)) {
+      sent = await notify(env, cfg, { wa: a.wa, email: a.email, tg: a.tg }, msg.subject, msg.text, msg.html);
       await addLog(env, { t: new Date().toISOString(), id: a.id, name: a.name, text: msg.text.slice(0, 400), sent });
     }
     return { first, neu: neu.length, drop: drop.length, gone: gone.length, count: a.lastCount, sent, preview: msg.text };
@@ -333,8 +355,21 @@ async function notify(env, cfg, ch, subject, text, html) {
       } catch (e) { out.email = 'error'; }
     }
   }
+  if (ch.tg) {
+    if (!cfg.tgToken || !cfg.tgChat) out.tg = 'sin configurar';
+    else {
+      try {
+        const r = await fetch(tgUrl(env, cfg.tgToken, 'sendMessage'), {
+          method: 'POST', headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ chat_id: cfg.tgChat, text: text.replace(/\*/g, '').slice(0, 4000), disable_web_page_preview: true }),
+        });
+        out.tg = r.ok ? 'enviado' : 'error ' + r.status;
+      } catch (e) { out.tg = 'error'; }
+    }
+  }
   return out;
 }
+const tgUrl = (env, tok, method) => (env.TELEGRAM_URL || 'https://api.telegram.org') + '/bot' + tok + '/' + method;
 
 async function addLog(env, entry) {
   const log = await kvGet(env, 'log', []);
@@ -353,7 +388,7 @@ async function runAllAlerts(env, ctx) {
     if (!a.active) continue;
     await runAlert(env, a, fx, cfg);
     // aviso del día en que se abre una fecha del rango
-    if (a.release && (a.wa || a.email)) {
+    if (a.release && (a.wa || a.email || a.tg)) {
       for (const [prog, days] of Object.entries(RELEASE)) {
         if (a.progs && !a.progs.includes(prog)) continue;
         const target = addDays(today, days);
@@ -373,7 +408,7 @@ async function runAllAlerts(env, ctx) {
       const a = list[0].a;
       const text = `*Radar de Millas · ${a.name}*\nHoy se abre el canje para:\n` + list.map(o => `• ${dShort(o.target)} con ${NAMES[o.prog] || o.prog} (${o.days} días antes)`).join('\n') + `\nLas mejores plazas salen las primeras horas.\n${APP_URL}/?` + new URLSearchParams({ o: a.o[0], d: a.d[0], d1: list[0].target, c: a.cab, go: '1' });
       const html = '<div style="font-family:system-ui,sans-serif;font-size:15px;line-height:1.5">' + text.split('\n').map(l => `<div>${esc(l).replace(/\*(.+?)\*/g, '<b>$1</b>')}</div>`).join('') + '</div>';
-      const sent = await notify(env, cfg, { wa: a.wa, email: a.email }, `${a.name}: hoy se abre el canje`, text, html);
+      const sent = await notify(env, cfg, { wa: a.wa, email: a.email, tg: a.tg }, `${a.name}: hoy se abre el canje`, text, html);
       await addLog(env, { t: new Date().toISOString(), id: a.id, name: a.name, text: text.slice(0, 400), sent });
     }
   }
