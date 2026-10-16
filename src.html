@@ -201,6 +201,25 @@ a.st.go:hover{border-color:var(--vfr)}
 .strip.cashs .v.tot{color:var(--good)}
 .strip.cashs.cheap .v.tot{color:var(--warn)}
 .gf-wait{padding:10px 16px;border-style:dotted}
+/* fase 4: explorar, me alcanza, frescura */
+.tag.aff{background:color-mix(in srgb,var(--good) 14%,transparent);color:var(--good);border-color:color-mix(in srgb,var(--good) 40%,transparent)}
+.tag.afx{background:color-mix(in srgb,var(--warn) 12%,transparent);color:var(--warn);border-color:color-mix(in srgb,var(--warn) 40%,transparent)}
+.tag.afn{color:var(--muted)}
+.fresh{display:block;font-size:.74rem;color:var(--muted);font-weight:500}
+.ans-tools{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center}
+.exp-map{width:100%;height:auto;aspect-ratio:2.3/1;display:block;background:var(--paper);border:1px solid var(--rule);border-radius:8px}
+.exp-map .bg{fill:var(--land)}
+.exp-map .rt{fill:none;stroke:var(--vfr);stroke-width:1;opacity:.35}
+.exp-map .rt.top{stroke:var(--route);stroke-width:1.6;opacity:.85}
+.exp-map .d{fill:var(--vfr);stroke:var(--surface);stroke-width:1}
+.exp-map .d.top{fill:var(--route)}
+.exp-map .o{fill:var(--ink);stroke:var(--surface);stroke-width:1.5}
+.exp-map text{font:700 10px var(--f);fill:var(--ink);paint-order:stroke;stroke:var(--paper);stroke-width:3px}
+.exp-tbl td .ct{display:block;font-size:.76rem;color:var(--muted);font-weight:500}
+.exp-tbl tr{cursor:pointer}
+.exp-tbl tr:hover td{background:color-mix(in srgb,var(--vfr) 6%,transparent)}
+@media (max-width:640px){.exp-tbl th:nth-child(5),.exp-tbl td:nth-child(5),.exp-tbl th:nth-child(6),.exp-tbl td:nth-child(6),.exp-tbl th:nth-child(8),.exp-tbl td:nth-child(8),.exp-tbl .pn,.exp-tbl th:nth-child(1),.exp-tbl td:nth-child(1),.exp-tbl th:nth-child(9),.exp-tbl td:nth-child(9){display:none}.exp-tbl{min-width:0!important}.exp-map{aspect-ratio:1.6/1}}
+.exp-sum{display:flex;flex-wrap:wrap;gap:6px 16px;align-items:baseline}
 /* respuesta: fichas de progreso de vuelo */
 #answer{display:grid;gap:8px}
 #answer:empty{display:none}
@@ -411,6 +430,7 @@ details.set summary h2{font-size:1.2rem}
   <nav class="views" role="tablist" aria-label="Detalle">
     <button type="button" role="tab" data-view="opts" aria-selected="true">Opciones por día</button>
     <button type="button" role="tab" data-view="best" aria-selected="false">Mejor fecha</button>
+    <button type="button" role="tab" data-view="exp" aria-selected="false">Explorar</button>
     <button type="button" role="tab" data-view="cal" aria-selected="false">Calendario</button>
     <button type="button" role="tab" data-view="alt" aria-selected="false">Otros aeropuertos</button>
     <button type="button" role="tab" data-view="cash" aria-selected="false">Efectivo</button>
@@ -438,6 +458,20 @@ details.set summary h2{font-size:1.2rem}
       </div>
     </div>
     <div id="bestOut"><p class="note">Compara todas las fechas y programas con los datos de Seats.aero y te dice cuándo y con qué programa sale más barato, incluidas las mejores combinaciones de ida y vuelta.</p></div>
+  </section></div>
+  <div class="view" id="v-exp" hidden><section class="view-body" aria-labelledby="t-exp">
+    <div class="best-head">
+      <div><h2 id="t-exp">¿A dónde puedo ir?</h2><p class="note" id="expFrom" style="margin:2px 0 0"></p></div>
+      <div class="best-ctl">
+        <label class="label" for="expReg">Destino</label>
+        <select id="expReg" style="width:auto"><option value="Asia">Asia</option><option value="North America">Norteamérica</option><option value="South America">Sudamérica</option><option value="Africa">África</option><option value="Oceania">Oceanía</option><option value="Europe">Europa</option></select>
+        <label class="label" for="expWin">Cuándo</label>
+        <select id="expWin" style="width:auto"><option value="60">Próximos 2 meses</option><option value="180" selected>Próximos 6 meses</option><option value="365">Próximos 12 meses</option></select>
+        <label class="check"><input type="checkbox" id="expNear"> y aeropuertos a ≤ 600 km</label>
+        <button type="button" class="ghost" id="expGo">Explorar</button>
+      </div>
+    </div>
+    <div id="expOut"><p class="note">Busca en todos tus programas a la vez y te enseña los destinos con plaza, ordenados por coste total (millas + tasas). Cada programa gasta 1–4 consultas de Seats.aero.</p></div>
   </section></div>
   <div class="view" id="v-cal" hidden><section class="view-body" aria-labelledby="t-cal" id="calBox" style="display:grid;gap:12px">
     <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;align-items:center">
@@ -516,7 +550,7 @@ details.set summary h2{font-size:1.2rem}
     <section class="panel al-head">
       <div>
         <h2>Alertas de tramo</h2>
-        <p class="note">Reviso tus tramos 6 veces al día y te aviso por WhatsApp o email cuando aparecen plazas nuevas o baja el precio. Cada alerta gasta unas 6 consultas diarias de tus 1.000.</p>
+        <p class="note">Reviso tus tramos 6 veces al día y te aviso por WhatsApp, email o Telegram cuando aparecen plazas nuevas o baja el precio. Cada alerta gasta unas 6 consultas diarias de tus 1.000.</p>
       </div>
       <button type="button" id="alNew">Nueva alerta</button>
     </section>
@@ -536,6 +570,7 @@ details.set summary h2{font-size:1.2rem}
         <fieldset class="al-checks al-wide"><legend class="label">Avisar</legend>
           <label class="check"><input type="checkbox" id="alWa" checked> Por WhatsApp</label>
           <label class="check"><input type="checkbox" id="alEmail" checked> Por email</label>
+          <label class="check"><input type="checkbox" id="alTg"> Por Telegram</label>
           <label class="check"><input type="checkbox" id="alDirect"> Solo vuelos directos</label>
           <label class="check"><input type="checkbox" id="alRelease" checked> El día que se abre el canje (Iberia, BA, Qatar, Miles &amp; More, Flying Blue)</label>
           <label class="check" id="alRetWrap"><input type="checkbox" id="alRet"> Crear también la alerta de vuelta</label>
@@ -559,9 +594,15 @@ details.set summary h2{font-size:1.2rem}
           <div class="field"><label class="label" for="chEmail">Tu email (el de la cuenta de Resend)</label><input id="chEmail" type="email" placeholder="tu@correo.com"></div>
           <div class="field"><label class="label" for="chResend">Clave de Resend</label><input id="chResend" type="password" autocomplete="off"></div>
         </div>
+        <div class="al-chcol">
+          <h3>Telegram</h3>
+          <ol class="note al-steps"><li>En Telegram, abre <a href="https://t.me/BotFather" target="_blank" rel="noopener">@BotFather</a>, envía <i>/newbot</i> y ponle un nombre.</li><li>Pega aquí la clave que te da (123456:ABC…) y guarda.</li><li>Escribe <i>/start</i> a tu bot y pulsa «Conectar chat».</li></ol>
+          <div class="field"><label class="label" for="chTg">Clave del bot</label><input id="chTg" type="password" autocomplete="off"></div>
+          <div class="al-actions"><button type="button" class="ghost" id="chTgLink">Conectar chat</button><span class="note" id="chTgSt"></span></div>
+        </div>
       </div>
       <div class="al-actions"><button type="button" id="chSave">Guardar canales</button><button type="button" class="ghost" id="chTest">Enviar mensaje de prueba</button><span class="note" id="chMsg"></span></div>
-      <p class="note">Las claves se guardan en tu servidor de Cloudflare y la web nunca las vuelve a mostrar. CallMeBot es gratuito solo para uso personal; Resend permite 100 emails al día gratis.</p>
+      <p class="note">Las claves se guardan en tu servidor de Cloudflare y la web nunca las vuelve a mostrar. CallMeBot es gratuito solo para uso personal; Resend permite 100 emails al día gratis; Telegram es gratis y sin límites prácticos.</p>
     </details>
     <section class="panel" aria-labelledby="t-allog"><h2 id="t-allog">Últimos avisos</h2><div id="alLog"></div></section>
   </div>
@@ -654,11 +695,29 @@ Object.entries(METRO).forEach(([k,[n,c]])=>{const cs=c.filter(x=>AP.has(x));if(c
 const byCountry={};AIRPORTS.forEach(a=>{if(a[6])(byCountry[a[3]]=byCountry[a[3]]||[]).push(a[0])});
 Object.keys(byCountry).forEach(cc=>{const cs=(GATEWAYS[cc]||byCountry[cc]).filter(x=>AP.has(x)).slice(0,12);if(cs.length>1)
   INDEX.push({kind:'country',key:cc,codes:cs,title:`${country(cc)} · aeropuertos principales`,sub:cs.join(', '),s:fold(`${country(cc)} ${cc}`),big:1})});
+/* regiones y continentes: grupos de aeropuertos principales (como LON/EUR en Seats.aero o las regiones de Roame) */
+const REGIONS=[
+  ['R-JPKR','JP+KR','Japón y Corea',['HND','NRT','KIX','ICN','NGO','FUK','CTS'],'japon corea tokio osaka seul asia oriental'],
+  ['R-EAS','ASIA E','Asia oriental',['HND','NRT','KIX','ICN','PEK','PVG','HKG','TPE','CAN'],'asia oriental este china japon corea taiwan hong kong'],
+  ['R-SEA','ASIA SE','Sudeste asiático',['BKK','HKT','SIN','KUL','SGN','HAN','MNL','CGK','DPS'],'sudeste asiatico tailandia singapur malasia vietnam filipinas indonesia bali'],
+  ['R-IND','ASIA S','India y Maldivas',['DEL','BOM','BLR','MAA','MLE','CMB'],'india maldivas sri lanka asia sur'],
+  ['R-ME','O.MEDIO','Oriente Medio',['DXB','AUH','DOH','RUH','JED','AMM','TLV','MCT','BAH'],'oriente medio golfo emiratos qatar dubai'],
+  ['R-NAE','N.AM E','Norteamérica este',['JFK','EWR','BOS','IAD','ORD','ATL','MIA','YYZ','YUL','PHL'],'norteamerica costa este estados unidos usa canada nueva york'],
+  ['R-NAW','N.AM O','Norteamérica oeste',['LAX','SFO','SEA','YVR','LAS','DEN','DFW','SAN','PHX'],'norteamerica costa oeste estados unidos usa california'],
+  ['R-NAM','N.AM','Norteamérica',['JFK','EWR','BOS','IAD','ORD','ATL','MIA','YYZ','LAX','SFO','SEA','YVR'],'norteamerica america del norte estados unidos usa canada'],
+  ['R-CAR','CARIBE','Caribe y Centroamérica',['CUN','PUJ','SDQ','HAV','SJO','PTY','MBJ','AUA','SXM'],'caribe centroamerica mexico cancun punta cana cuba costa rica'],
+  ['R-SAM','S.AM','Sudamérica',['GRU','GIG','EZE','SCL','LIM','BOG','MDE','UIO','MVD'],'sudamerica america del sur brasil argentina chile peru colombia latinoamerica'],
+  ['R-AFR','ÁFRICA','África',['JNB','CPT','NBO','ADD','CMN','RAK','CAI','DAR','MRU','SEZ'],'africa sudafrica kenia marruecos egipto mauricio seychelles'],
+  ['R-OCE','OCEANÍA','Oceanía',['SYD','MEL','BNE','PER','AKL','NAN','PPT'],'oceania australia nueva zelanda fiji tahiti'],
+  ['R-EUR','EUROPA','Europa (grandes aeropuertos)',['LHR','CDG','FRA','AMS','MAD','BCN','FCO','MUC','LIS','IST','CPH','ARN','ATH','VIE'],'europa'],
+  ['R-MED','MEDIT.','Mediterráneo e islas',['PMI','IBZ','TFS','LPA','ATH','HER','JTR','SPU','DBV','MLA','CTA','OLB','FAO'],'mediterraneo islas playa canarias baleares grecia croacia'],
+];
+REGIONS.forEach(([k,short,n,c,words])=>{const cs=c.filter(x=>AP.has(x));if(cs.length>1)INDEX.push({kind:'region',key:k,short,codes:cs,title:`${n} · región`,sub:cs.join(', '),s:fold(`${n} ${words} region`),big:1})});
 function searchIndex(q){q=fold(q.trim());if(!q)return [];const Q=q.toUpperCase();
   const scored=[];for(const e of INDEX){let sc=-1;
     if(e.key===Q&&e.kind!=='country')sc=100;else if(e.kind==='ap'&&e.codes[0]===Q)sc=100;
     else if(e.s.startsWith(q))sc=60;else if(e.s.includes(' '+q))sc=45;else if(q.length>=3&&e.s.includes(q))sc=25;
-    if(sc<0)continue; if(e.kind==='country')sc+=12; if(e.kind==='metro')sc+=15; if(e.big)sc+=8; scored.push([sc,e]);}
+    if(sc<0)continue; if(e.kind==='country')sc+=12; if(e.kind==='region')sc+=10; if(e.kind==='metro')sc+=15; if(e.big)sc+=8; scored.push([sc,e]);}
   return scored.sort((a,b)=>b[0]-a[0]).slice(0,9).map(x=>x[1]);}
 function findEntry(kind,key){return INDEX.find(e=>e.kind===kind&&e.key===key)||null}
 const SEL={org:null,dst:null};
@@ -667,7 +726,7 @@ function setSel(id,e){SEL[id]=e;const inp=document.getElementById(id);
   document.getElementById(id+'-chosen').textContent=e?(e.kind==='ap'?`${e.sub}`:`Busca en: ${e.codes.join(', ')}`):'';}
 function initPicker(id){const inp=document.getElementById(id),ul=document.getElementById(id+'-list');let items=[],act=0;
   const close=()=>{ul.hidden=true;inp.setAttribute('aria-expanded','false')};
-  const paint=()=>{ul.innerHTML=items.map((e,i)=>`<li role="option" id="${id}-o${i}" aria-selected="${i===act}" data-i="${i}"><span class="k">${e.kind==='ap'?e.key:e.kind==='metro'?e.key:'País'}</span><span class="t"><b>${e.title}</b><small>${e.sub}</small></span></li>`).join('')||'<li aria-disabled="true"><span></span><span class="t"><small>Sin resultados. Prueba con el nombre en inglés o el código.</small></span></li>';
+  const paint=()=>{ul.innerHTML=items.map((e,i)=>`<li role="option" id="${id}-o${i}" aria-selected="${i===act}" data-i="${i}"><span class="k">${e.kind==='ap'?e.key:e.kind==='metro'?e.key:e.kind==='region'?'Región':'País'}</span><span class="t"><b>${e.title}</b><small>${e.sub}</small></span></li>`).join('')||'<li aria-disabled="true"><span></span><span class="t"><small>Sin resultados. Prueba con el nombre en inglés o el código.</small></span></li>';
     ul.hidden=false;inp.setAttribute('aria-expanded','true');if(items.length)inp.setAttribute('aria-activedescendant',`${id}-o${act}`)};
   const pick=i=>{if(!items[i])return;setSel(id,items[i]);close();render()};
   inp.addEventListener('input',()=>{items=searchIndex(inp.value);act=0;paint()});
@@ -834,7 +893,7 @@ function render(){
   const o=pairs[0][0], d=pairs[0][1];
   state={o,d,so,sd,O,D,d1,d2,cab,pax};
   const dmin=pairs[0][2], dmax=pairs[pairs.length-1][2], b=bandOf(dmin), b2=bandOf(dmax), legs=d2?2:1;
-  const endHtml=(s,list)=>`<div class="ends"><div><div class="iata">${s.kind==='ap'?s.key:(s.kind==='metro'?s.key:s.key)}</div><div class="city">${s.kind==='ap'?`${list[0][2]||list[0][1]} · ${country(list[0][3])}`:s.title.split(' · ')[0]+' · '+s.codes.join(', ')}</div></div></div>`;
+  const endHtml=(s,list)=>`<div class="ends"><div><div class="iata">${s.kind==='region'?s.short:s.key}</div><div class="city">${s.kind==='ap'?`${list[0][2]||list[0][1]} · ${country(list[0][3])}`:s.title.split(' · ')[0]+' · '+s.codes.join(', ')}</div></div></div>`;
   rb.innerHTML=`<div class="route">
     ${endHtml(so,O)}
     <div class="arc" aria-hidden="true"></div>
@@ -964,6 +1023,7 @@ const LIVE={data:[],day:null,ret:false};
 const cabKey={Y:'Y',W:'W',J:'J',F:'F'};
 function wk(){return {url:(store.get('wkUrl','')||'').replace(/\/+$/,''),tok:store.get('wkTok','')}}
 async function api(path){const {url,tok}=wk(); if(!url||!tok) throw new Error('Configura la conexión con tu Worker (botón «Conexión»).');
+  if(window.__radarFresh&&path.startsWith('/search'))path+=(path.includes('?')?'&':'?')+'fresh=1';
   const r=await fetch(url+path,{headers:{'X-App-Token':tok}}); const t=await r.text(); let j; try{j=JSON.parse(t)}catch(e){j={error:t.slice(0,200)}}
   if(!r.ok) throw new Error(j.error||j.message||('Error '+r.status)); return j;}
 const isoAdd=(iso,n)=>addDays(iso,n).toISOString().slice(0,10);
@@ -1308,8 +1368,9 @@ async function runAll(){if(RUNNING)return;RUNNING=true;const ans=document.getEle
   if(currentView()==='cal')calLoad();}
 function currentView(){const b=document.querySelector('.views [aria-selected="true"]');return b?b.dataset.view:'opts'}
 function showView(v){document.querySelectorAll('.views [data-view]').forEach(b=>b.setAttribute('aria-selected',String(b.dataset.view===v)));
-  ['opts','best','cal','alt','cash','res'].forEach(k=>{document.getElementById('v-'+k).hidden=k!==v});
+  ['opts','best','exp','cal','alt','cash','res'].forEach(k=>{document.getElementById('v-'+k).hidden=k!==v});
   if(v==='cash')cashPaint();
+  if(v==='exp'){expFromTxt();if(!EXP.rows&&wk().tok&&SEL.org)expRun()}
   if(v==='best'&&!BEST.ready&&wk().tok&&SEL.org&&SEL.dst)bestRun();
   if(v==='cal'&&!CAL.legs[CAL.leg]&&wk().tok&&SEL.org&&SEL.dst)calLoad();
   if(v==='alt'&&!EU.legs&&wk().tok&&SEL.org&&SEL.dst)euLoad();}
@@ -1323,12 +1384,12 @@ DLG.addEventListener('click',e=>{if(e.target===DLG)DLG.close()});
 function bestBy(arr,cmp){return arr.slice().sort(cmp)[0]||null}
 function strip(a,C,o){const t=taxCHF(a,C);const tot=totalCHF(a,C)+(o.pos||0);RECBYID[a.ID]=a;
   return `<article class="strip ${o.cls||''}${qTier(a,C)?' flag':''}" data-id="${a.ID}">
-    <div class="s-head"><span class="k">${o.why}</span><span class="why">${a.Route.OriginAirport} → ${a.Route.DestinationAirport}</span><span class="qb">${qualBadges(a,C,true)}</span></div>
+    <div class="s-head"><span class="k">${o.why}</span><span class="why">${a.Route.OriginAirport} → ${a.Route.DestinationAirport}</span><span class="qb">${qualBadges(a,C,true)}${typeof afford==='function'?affBadge(a,C):''}</span></div>
     <div><span class="k">Programa</span><span class="v">${progBadge(a.Source)}${srcName(a.Source)}</span></div>
     <div><span class="k">Millas</span><span class="v big">${fmt(a[C+'MileageCost'])}</span></div>
     <div><span class="k">Tasas</span><span class="v">${t==null?'¿? <small class="k">est. '+fmt(taxEst(a.Source,C))+'</small>':'CHF '+fmt(t)}</span></div>
     <div><span class="k">Total aprox.${o.pos?' con llegada':''}</span><span class="v big tot">CHF ${fmt(tot)}</span>${o.save||''}</div>
-    <div><span class="k">${dayName(a.Date)} ${dayNum(a.Date)}</span><span class="v">${a[C+'Airlines']||'—'}${a[C+'Direct']?' · directo':''}</span></div>
+    <div><span class="k">${dayName(a.Date)} ${dayNum(a.Date)}</span><span class="v">${a[C+'Airlines']||'—'}${a[C+'Direct']?' · directo':''}</span><span class="fresh">${typeof seenTxt==='function'?seenTxt(a):''}</span></div>
     <div class="act"><button type="button" class="ghost small" data-goto="${o.go}" data-leg="${o.leg||0}" data-day="${a.Date}">Ver</button></div>
   </article>`}
 function renderSummary(){const ans=document.getElementById('answer');if(!ans)return;
@@ -1336,24 +1397,24 @@ function renderSummary(){const ans=document.getElementById('answer');if(!ans)ret
   if(!wk().tok){ans.innerHTML=`<div class="ans-empty"><span>Conecta Seats.aero para ver asientos de premio reales con sus tasas.</span><button type="button" class="ghost" data-open="wkTok">Conectar</button></div>`;return}
   if(!LIVE.legs&&!EU.legs){ans.innerHTML=`<div class="ans-empty"><span>Elige ruta y fecha y pulsa Buscar.</span></div>`;return}
   const C=state.cab;const home=homeCodes();const out=[];
-  const L0=LIVE.legs&&LIVE.legs[0];const H=L0?L0.data.filter(a=>a[C+'Available']&&progOK(a.Source)):[];
+  const L0=LIVE.legs&&LIVE.legs[0];const H=L0?L0.data.filter(a=>a[C+'Available']&&progOK(a.Source)&&affOK(a,C)):[];
   const bHome=bestBy(H,rankCmp(C));
   const bCheap=bestBy(H,(x,y)=>qScore(x,C)-qScore(y,C));
   const bTax=bestBy(H.filter(a=>taxCHF(a,C)!=null),(x,y)=>qTier(x,C)-qTier(y,C)||taxCHF(x,C)-taxCHF(y,C));
   const homeTot=bCheap?totalCHF(bCheap,C):null;
   if(bHome)out.push(strip(bHome,C,{why:store.get('sortBy','local')==='local'?`Tu zona · desde ${home[0]}`:`Mejor desde ${home[0]}`,cls:'',go:'opts'}));
   if(bCheap&&bCheap!==bHome)out.push(strip(bCheap,C,{why:`Más barato desde ${home[0]}`,go:'opts'}));
-  const alt=(EU.legs&&!EU.legs.li&&EU.rows||[]).filter(r=>!home.includes(r.c)).sort((x,y)=>qTier(x.a,C)-qTier(y.a,C)||x.all-y.all)[0];
+  const alt=(EU.legs&&!EU.legs.li&&EU.rows||[]).filter(r=>!home.includes(r.c)&&affOK(r.a,C)).sort((x,y)=>qTier(x.a,C)-qTier(y.a,C)||x.all-y.all)[0];
   if(alt&&(homeTot==null||alt.all<homeTot)){const sv=homeTot!=null?`<span class="save">${fmt(homeTot-alt.all)} CHF menos que desde ${home[0]}${alt.p?'':' (sin contar llegar)'}</span>`:'';
     out.push(strip(alt.a,C,{why:`Saliendo de ${alt.ap?alt.ap[2]:alt.c}`,cls:'alt',go:'alt',pos:alt.p||0,save:sv}))}
   if(bTax&&bTax!==bHome&&bTax!==bCheap)out.push(strip(bTax,C,{why:'Menos tasas',go:'opts'}));
-  const L1=LIVE.legs&&LIVE.legs[1];if(L1){const R=L1.data.filter(a=>a[C+'Available']&&progOK(a.Source));const bR=bestBy(R,rankCmp(C));
+  const L1=LIVE.legs&&LIVE.legs[1];if(L1){const R=L1.data.filter(a=>a[C+'Available']&&progOK(a.Source)&&affOK(a,C));const bR=bestBy(R,rankCmp(C));
     if(bR)out.push(strip(bR,C,{why:'Vuelta',cls:'ret',go:'opts',leg:1}))}
   // marca la más barata
   const all=[...out];
-  ans.innerHTML=`<div class="ans-head"><h2>Mejores opciones</h2><button type="button" class="ghost small watch" data-watch>Vigilar este tramo</button><span class="note">${CAB[C]} · ${state.pax} pax · ±${document.getElementById('win').value} días · milla a ${mileVal()} Rp · tasas por persona y trayecto</span></div>`+
+  ans.innerHTML=`<div class="ans-head"><h2>Mejores opciones</h2><span class="ans-tools"><button type="button" class="ghost small watch" data-watch>Vigilar este tramo</button><button type="button" class="ghost small" data-fresh title="Vuelve a pedir los datos a Seats.aero sin la caché de 10 minutos">Recargar datos</button>${balances().any?`<label class="check"><input type="checkbox" data-afftoggle ${affOnly()?'checked':''}> Solo lo que me alcanza</label>`:''}</span><span class="note">${CAB[C]} · ${state.pax} pax · ±${document.getElementById('win').value} días · milla a ${mileVal()} Rp · tasas por persona y trayecto</span></div>`+
     (all.length?all.join(''):`<div class="ans-empty"><span>Sin plazas en ${CAB[C].toLowerCase()} en estas fechas con tu filtro de programas. Prueba otra cabina, más días o el calendario.</span><button type="button" class="ghost" data-view-go="cal">Abrir calendario</button></div>`);
-  const strips=[...ans.querySelectorAll('.strip')];if(strips.length){const out1=strips.filter(el=>!el.classList.contains('ret'));const ok=out1.filter(el=>!el.classList.contains('flag'));const pool=ok.length?ok:out1.length?out1:strips;let min=Infinity,w=null;pool.forEach(el=>{const v=Number(el.querySelector('.tot').textContent.replace(/\D/g,''));if(v<min){min=v;w=el}});w.classList.add('win');const rec=RECBYID[w.dataset.id];if(rec)w.insertAdjacentHTML('afterend',`<div class="win-steps"><span class="k">Cómo conseguir la opción marcada</span>${transferSteps(rec,C)}</div>`)}
+  const strips=[...ans.querySelectorAll('.strip')];if(strips.length){const out1=strips.filter(el=>!el.classList.contains('ret'));const ok=out1.filter(el=>!el.classList.contains('flag'));const pool=ok.length?ok:out1.length?out1:strips;let min=Infinity,w=null;pool.forEach(el=>{const v=Number(el.querySelector('.tot').textContent.replace(/\D/g,''));if(v<min){min=v;w=el}});w.classList.add('win');const rec=RECBYID[w.dataset.id];if(rec)w.insertAdjacentHTML('afterend',`<div class="win-steps"><span class="k">Cómo conseguir la opción marcada</span>${transferSteps(rec,C)}<p class="note" id="wbk-${rec.ID}"></p></div>`);winBooking(rec.ID)}
   const cc=typeof CASH!=='undefined'?cashCompare(ans):'';if(cc)ans.insertAdjacentHTML('beforeend',cc)}
 document.getElementById('answer').addEventListener('click',e=>{
   const wb=e.target.closest('[data-watch]');if(wb){showTab('alertas');if(!AL.loaded)alLoad();alFormOpen(null);return}
@@ -1634,7 +1695,7 @@ function alPaint(){const box=document.getElementById('alList');
   if(!AL.list.length){box.innerHTML=`<div class="al-empty"><p style="margin:0">Aún no vigilas ningún tramo.</p><p class="note">Busca una ruta y pulsa «Vigilar este tramo» en Mejores opciones, o crea una alerta con el botón de arriba.</p></div>`;return}
   box.innerHTML=`<p class="note" style="margin:0 0 8px">${AL.list.length} de ${AL.max} alertas · se revisan 6 veces al día</p>`+AL.list.map(a=>`<article class="alc${a.active?'':' off'}" data-id="${a.id}">
     <div class="t"><b>${esc(a.name||(a.o.join('/')+' → '+a.d.join('/')))}</b>${a.name?`<span class="r">${a.o.join('/')} → ${a.d.join('/')}</span>`:''}</div>
-    <div class="chips"><span class="tag">${CAB[a.cab]}</span><span class="tag">${dayNum(a.start)} – ${dayNum(a.end)}</span>${a.maxMiles?`<span class="tag">hasta ${fmt(a.maxMiles)} millas</span>`:''}${a.maxTax!=null?`<span class="tag">tasas hasta CHF ${fmt(a.maxTax)}</span>`:''}${a.direct?'<span class="tag">Solo directos</span>':''}${a.seats>1?`<span class="tag">${a.seats}+ asientos</span>`:''}${a.progs?`<span class="tag">${a.progs.length} programas</span>`:''}${a.wa?'<span class="tag ok">WhatsApp</span>':''}${a.email?'<span class="tag ok">Email</span>':''}${a.release?'<span class="tag">Aviso de apertura</span>':''}${a.active?'':'<span class="tag warn">Pausada</span>'}</div>
+    <div class="chips"><span class="tag">${CAB[a.cab]}</span><span class="tag">${dayNum(a.start)} – ${dayNum(a.end)}</span>${a.maxMiles?`<span class="tag">hasta ${fmt(a.maxMiles)} millas</span>`:''}${a.maxTax!=null?`<span class="tag">tasas hasta CHF ${fmt(a.maxTax)}</span>`:''}${a.direct?'<span class="tag">Solo directos</span>':''}${a.seats>1?`<span class="tag">${a.seats}+ asientos</span>`:''}${a.progs?`<span class="tag">${a.progs.length} programas</span>`:''}${a.wa?'<span class="tag ok">WhatsApp</span>':''}${a.email?'<span class="tag ok">Email</span>':''}${a.tg?'<span class="tag ok">Telegram</span>':''}${a.release?'<span class="tag">Aviso de apertura</span>':''}${a.active?'':'<span class="tag warn">Pausada</span>'}</div>
     <div class="st">Revisada ${agoTxt(a.lastRun)}${a.lastCount!=null?` · ${a.lastCount} ${a.lastCount===1?'opción cumple':'opciones cumplen'} tus filtros`:''}${a.lastChange?` · último cambio ${agoTxt(a.lastChange)}`:''}</div>
     ${a.best?`<div class="best">Mejor ahora: ${bestTxt(a.best)}</div>`:''}
     ${a.lastError?`<div class="status s-bad">${esc(a.lastError)}</div>`:''}
@@ -1642,31 +1703,33 @@ function alPaint(){const box=document.getElementById('alList');
     <div class="al-res" aria-live="polite"></div></article>`).join('')}
 function chPaint(){const c=AL.cfg;document.getElementById('chPhone').value=c.waPhone||'';document.getElementById('chEmail').value=c.email||'';
   document.getElementById('chWaKey').placeholder=c.waKey?'Guardada · escribe para cambiarla':'';document.getElementById('chResend').placeholder=c.resendKey?'Guardada · escribe para cambiarla':'';
-  const wa=c.waPhone&&c.waKey,em=c.email&&c.resendKey;document.getElementById('alChSum').textContent=`WhatsApp ${wa?'listo':'sin configurar'} · Email ${em?'listo':'sin configurar'}`;
-  if(!wa&&!em)document.getElementById('alChBox').open=true}
+  document.getElementById('chTg').placeholder=c.tgToken?'Guardada · escribe para cambiarla':'';
+  const tg=c.tgToken&&c.tgChat;document.getElementById('chTgSt').textContent=c.tgToken?(c.tgChat?`Conectado${c.tgBot?' a @'+c.tgBot:''}.`:`Escribe /start a ${c.tgBot?'@'+c.tgBot:'tu bot'} y pulsa Conectar chat.`):'';
+  const wa=c.waPhone&&c.waKey,em=c.email&&c.resendKey;document.getElementById('alChSum').textContent=`WhatsApp ${wa?'listo':'sin configurar'} · Email ${em?'listo':'sin configurar'} · Telegram ${tg?'listo':'sin configurar'}`;
+  if(!wa&&!em&&!tg)document.getElementById('alChBox').open=true}
 function logPaint(){const box=document.getElementById('alLog');
-  box.innerHTML=AL.log.length?`<div class="al-log">${AL.log.map(e=>`<div class="e"><div class="h"><span>${agoTxt(e.t)}</span><b>${esc(e.name)}</b><span>WhatsApp: ${esc(e.sent&&e.sent.wa||'—')} · Email: ${esc(e.sent&&e.sent.email||'—')}</span></div><pre>${esc(e.text)}</pre></div>`).join('')}</div>`:'<p class="note">Todavía no se ha enviado ningún aviso.</p>'}
+  box.innerHTML=AL.log.length?`<div class="al-log">${AL.log.map(e=>`<div class="e"><div class="h"><span>${agoTxt(e.t)}</span><b>${esc(e.name)}</b><span>${chTxt(e.sent)}</span></div><pre>${esc(e.text)}</pre></div>`).join('')}</div>`:'<p class="note">Todavía no se ha enviado ningún aviso.</p>'}
 function alFormOpen(a){AL.edit=a||null;const box=document.getElementById('alFormBox');box.hidden=false;
   document.getElementById('alFormTitle').textContent=a?'Editar alerta':'Nueva alerta';
   const today=new Date().toISOString().slice(0,10);const clamp=x=>x<today?today:x;
   const set=(id,v)=>{document.getElementById(id).value=v??''};
   if(a){set('alName',a.name);set('alO',a.o.join(', '));set('alD',a.d.join(', '));set('alStart',a.start);set('alEnd',a.end);set('alCab',a.cab);
     set('alProgs',!a.progs?'all':(a.progs.length===MINE.length&&MINE.every(x=>a.progs.includes(x)))?'mine':'filter');set('alMax',a.maxMiles);set('alTax',a.maxTax);set('alSeats',a.seats||1);
-    ['Wa','Email','Direct','Release'].forEach(k=>document.getElementById('al'+k).checked=!!a[k==='Wa'?'wa':k.toLowerCase()]);document.getElementById('alRetWrap').hidden=true}
+    ['Wa','Email','Direct','Release'].forEach(k=>document.getElementById('al'+k).checked=!!a[k==='Wa'?'wa':k.toLowerCase()]);document.getElementById('alTg').checked=!!a.tg;document.getElementById('alRetWrap').hidden=true}
   else{const d1=state.d1||isoAdd(today,60);set('alName','');set('alO',SEL.org?SEL.org.codes.join(', '):'');set('alD',SEL.dst?SEL.dst.codes.join(', '):'');
     set('alStart',clamp(isoAdd(d1,-3)));set('alEnd',isoAdd(d1,3));set('alCab',state.cab||'Y');set('alProgs',progSel()?'filter':'all');set('alMax','');set('alTax','');set('alSeats',state.pax||1);
-    document.getElementById('alWa').checked=true;document.getElementById('alEmail').checked=true;document.getElementById('alDirect').checked=false;document.getElementById('alRelease').checked=true;
+    document.getElementById('alWa').checked=true;document.getElementById('alEmail').checked=true;document.getElementById('alTg').checked=!!(AL.cfg.tgToken&&AL.cfg.tgChat);document.getElementById('alDirect').checked=false;document.getElementById('alRelease').checked=true;
     document.getElementById('alRetWrap').hidden=!state.d2;document.getElementById('alRet').checked=!!state.d2}
   document.getElementById('alMsg').textContent='';box.scrollIntoView({behavior:'smooth',block:'start'})}
 function alBody(){const g=id=>document.getElementById(id).value;const ps=g('alProgs');const a=AL.edit;
   return {id:a?a.id:undefined,name:g('alName').trim(),o:g('alO'),d:g('alD'),start:g('alStart'),end:g('alEnd'),cab:g('alCab'),
     progs:ps==='mine'?MINE.slice():ps==='filter'?((a&&a.progs&&!progSel())?a.progs:(progSel()||null)):null,
     maxMiles:g('alMax'),maxTax:g('alTax'),seats:g('alSeats'),direct:document.getElementById('alDirect').checked,
-    wa:document.getElementById('alWa').checked,email:document.getElementById('alEmail').checked,release:document.getElementById('alRelease').checked,active:a?a.active:true}}
+    wa:document.getElementById('alWa').checked,email:document.getElementById('alEmail').checked,tg:document.getElementById('alTg').checked,release:document.getElementById('alRelease').checked,active:a?a.active:true}}
 async function alRun(id,card){const res=card&&card.querySelector('.al-res');if(res)res.innerHTML='<p class="note">Revisando en Seats.aero…</p>';
   const j=await apiSend(`/alerts/${id}/run`,'POST');AL.list=AL.list.map(x=>x.id===id?j.alert:x);const r=j.result||{};
   alPaint();const c2=document.querySelector(`.alc[data-id="${id}"] .al-res`);
-  const sent=r.sent?` Aviso: WhatsApp ${r.sent.wa||'no pedido'}, email ${r.sent.email||'no pedido'}.`:'';
+  const sent=r.sent?` Aviso: ${chTxt(r.sent)}.`:'';
   const txt=r.error?`<p class="status s-bad">${esc(r.error)}</p>`:r.skipped?'<p class="status s-warn">Las fechas de esta alerta ya pasaron.</p>':
     `<p class="status ${r.neu||r.drop||r.first?'s-good':'s-none'}">${r.first?`Primera revisión: ${r.count} opciones cumplen tus filtros. A partir de ahora te aviso de los cambios.`:`${r.neu} plazas nuevas, ${r.drop} bajadas de precio, ${r.gone} ya no aparecen.`}${sent}</p>`;
   if(c2)c2.innerHTML=txt;if(r.sent)alLoad()}
@@ -1690,10 +1753,14 @@ document.getElementById('alList').addEventListener('click',async e=>{const b=e.t
   }catch(err){card.querySelector('.al-res').innerHTML=`<p class="status s-bad">${esc(err.message)}</p>`;b.disabled=false}});
 document.getElementById('chSave').addEventListener('click',async()=>{const m=document.getElementById('chMsg');m.textContent='Guardando…';
   const body={waPhone:document.getElementById('chPhone').value,email:document.getElementById('chEmail').value};
-  const wk1=document.getElementById('chWaKey').value.trim(),rk=document.getElementById('chResend').value.trim();if(wk1)body.waKey=wk1;if(rk)body.resendKey=rk;
-  try{const j=await apiSend('/notify/config','POST',body);AL.cfg=j.cfg;document.getElementById('chWaKey').value='';document.getElementById('chResend').value='';chPaint();m.textContent='Guardado.'}catch(err){m.textContent=err.message}});
+  const wk1=document.getElementById('chWaKey').value.trim(),rk=document.getElementById('chResend').value.trim(),tk=document.getElementById('chTg').value.trim();if(wk1)body.waKey=wk1;if(rk)body.resendKey=rk;if(tk)body.tgToken=tk;
+  try{const j=await apiSend('/notify/config','POST',body);AL.cfg=j.cfg;document.getElementById('chWaKey').value='';document.getElementById('chResend').value='';document.getElementById('chTg').value='';chPaint();m.textContent='Guardado.'}catch(err){m.textContent=err.message}});
 document.getElementById('chTest').addEventListener('click',async()=>{const m=document.getElementById('chMsg');m.textContent='Enviando…';
-  try{const j=await apiSend('/notify/test','POST',{});const s=j.sent||{};m.textContent=`WhatsApp: ${s.wa||'—'} · Email: ${s.email||'—'}`}catch(err){m.textContent=err.message}});
+  try{const j=await apiSend('/notify/test','POST',{});m.textContent=chTxt(j.sent)}catch(err){m.textContent=err.message}});
+function chTxt(s){s=s||{};return ['WhatsApp:wa','Email:email','Telegram:tg'].map(x=>{const [n,k]=x.split(':');return s[k]?`${n}: ${s[k]}`:''}).filter(Boolean).join(' · ')||'—'}
+document.getElementById('chTgLink').addEventListener('click',async()=>{const m=document.getElementById('chTgSt');m.textContent='Buscando tu chat…';
+  try{const tk=document.getElementById('chTg').value.trim();if(tk){const j0=await apiSend('/notify/config','POST',{tgToken:tk});AL.cfg=j0.cfg;document.getElementById('chTg').value=''}
+    const j=await apiSend('/notify/telegram','POST',{});AL.cfg=j.cfg;chPaint();m.textContent='Conectado: te he enviado un mensaje de prueba.'}catch(err){m.textContent=err.message}});
 document.getElementById('tb-alertas').addEventListener('click',()=>{if(!AL.loaded)alLoad()});
 if(!document.getElementById('tab-alertas').hidden)alLoad();
 
@@ -1716,7 +1783,7 @@ async function bestRun(){const out=document.getElementById('bestOut');
   out.innerHTML='<p class="status s-none">Leyendo los próximos 12 meses en Seats.aero…</p>';bestNightsDefault();
   try{await loadLegWindow(0);if(state.d2)await loadLegWindow(1);BEST.ready=true;bestPaint();renderProgs();if(currentView()==='cal')calPaint()}
   catch(err){out.innerHTML=`<p class="status s-bad">${esc(err.message)}</p>`}}
-function perDay(L,C,lo,hi){const m={};if(!L)return m;L.data.forEach(a=>{if(a.Date<lo||a.Date>hi)return;if(!a[C+'Available']||!progOK(a.Source)||isAnom(a,C))return;
+function perDay(L,C,lo,hi){const m={};if(!L)return m;L.data.forEach(a=>{if(a.Date<lo||a.Date>hi)return;if(!a[C+'Available']||!progOK(a.Source)||isAnom(a,C)||!affOK(a,C))return;
   const s=qScore(a,C);if(!m[a.Date]||s<m[a.Date].s)m[a.Date]={a,s,tot:totalCHF(a,C)}});return m}
 const WD=['lun','mar','mié','jue','vie','sáb','dom'];
 const wdOf=iso=>(new Date(iso+'T12:00:00Z').getUTCDay()+6)%7;
@@ -1728,10 +1795,10 @@ function bestPaint(){const out=document.getElementById('bestOut');const L0=CAL.l
   const best=days[0],mine=P0[state.d1];const ba=best[1].a;
   const lead=`La fecha más barata es el <b>${dayName(best[0])} ${dayNum(best[0])}</b> con ${progBadge(ba.Source)}<b>${srcName(ba.Source)}</b>: ${fmt(ba[C+'MileageCost'])} millas + ${taxCHF(ba,C)==null?'tasas sin dato':'CHF '+fmt(taxCHF(ba,C))} ≈ <b>CHF ${fmt(best[1].tot)}</b>.`+
     (best[0]===state.d1?' Es justo tu fecha.':mine?` Tu fecha (${dayNum(state.d1)}) sale por CHF ${fmt(mine.tot)}: cambiando de día ahorras <b>CHF ${fmt(mine.tot-best[1].tot)}</b>.`:` Tu fecha (${dayNum(state.d1)}) no tiene plazas con estos filtros.`);
-  const row=(date,v,i,li)=>{const a=v.a,t=taxCHF(a,C);return `<button type="button" class="rk${date===(li?state.d2:state.d1)?' mine':''}" data-bd="${date}" data-bl="${li}"><span class="n">${i+1}</span><span class="dt">${dayName(date)} ${dayNum(date)}<small>${date===(li?state.d2:state.d1)?'tu fecha':a[C+'Direct']?'directo':'con escala'}</small></span><span class="pg">${progBadge(a.Source)}${srcName(a.Source)} · ${fmt(a[C+'MileageCost'])}${t==null?'':' + CHF '+fmt(t)}${qTier(a,C)?' · '+qualBadges(a,C,true):''}</span><span class="tt">CHF ${fmt(v.tot)}<small>total</small></span></button>`};
+  const row=(date,v,i,li)=>{const a=v.a,t=taxCHF(a,C);return `<button type="button" class="rk${date===(li?state.d2:state.d1)?' mine':''}" data-bd="${date}" data-bl="${li}"><span class="n">${i+1}</span><span class="dt">${dayName(date)} ${dayNum(date)}<small>${date===(li?state.d2:state.d1)?'tu fecha':a[C+'Direct']?'directo':'con escala'}</small></span><span class="pg">${progBadge(a.Source)}${srcName(a.Source)} · ${fmt(a[C+'MileageCost'])}${t==null?'':' + CHF '+fmt(t)}${qTier(a,C)?' · '+qualBadges(a,C,true):''} ${affBadge(a,C)}</span><span class="tt">CHF ${fmt(v.tot)}<small>total</small></span></button>`};
   const ranks=days.slice(0,8).map(([d,v],i)=>row(d,v,i,0)).join('');
   // por programa
-  const byP={};L0.data.forEach(a=>{if(a.Date<lo||a.Date>hi||!a[C+'Available']||!progOK(a.Source)||isAnom(a,C))return;const s=qScore(a,C);const p=byP[a.Source]=byP[a.Source]||{best:null,s:Infinity,days:new Set()};p.days.add(a.Date);if(s<p.s){p.s=s;p.best=a}});
+  const byP={};L0.data.forEach(a=>{if(a.Date<lo||a.Date>hi||!a[C+'Available']||!progOK(a.Source)||isAnom(a,C)||!affOK(a,C))return;const s=qScore(a,C);const p=byP[a.Source]=byP[a.Source]||{best:null,s:Infinity,days:new Set()};p.days.add(a.Date);if(s<p.s){p.s=s;p.best=a}});
   const progRows=Object.entries(byP).sort((x,y)=>x[1].s-y[1].s).map(([src,p])=>{const a=p.best,t=taxCHF(a,C);return `<tr data-bd="${a.Date}" data-bl="0" style="cursor:pointer"><td>${progBadge(src)}${srcName(src)}</td><td>${dayName(a.Date)} ${dayNum(a.Date)}</td><td class="n">${fmt(a[C+'MileageCost'])}</td><td class="n">${t==null?'¿?':'CHF '+fmt(t)}</td><td class="n"><b>CHF ${fmt(totalCHF(a,C))}</b></td><td class="n">${p.days.size}</td></tr>`}).join('');
   // día de la semana y mes
   const wd=WD.map(()=>[]);days.forEach(([d,v])=>{if(!qTier(v.a,C))wd[wdOf(d)].push(v.tot)});
@@ -1833,5 +1900,89 @@ document.getElementById('gfSave').addEventListener('click',async()=>{const m=doc
   if(!k){m.textContent='Pega primero tu clave.';return}m.textContent='Guardando…';
   try{const j=await apiSend('/cash/config','POST',{serpKey:k});document.getElementById('gfKey').value='';document.getElementById('gfKey').placeholder='Guardada · escribe para cambiarla';
     CASH.used=j.used;CASH.need=false;m.textContent='Guardada.';document.getElementById('gfSetup').open=false;cashLoad()}catch(err){m.textContent=err.message}});
+
+/* ===== Fase 4 · ¿Me alcanza?, frescura, explorar ===== */
+// ¿Me alcanza? — misma lógica que «Cómo conseguirla»: saldo propio + Amex MR CH con sus ratios
+function afford(a,C){const B=balances();if(!B.any)return null;const src=a.Source;const need=(Number(a[C+'MileageCost'])||0)*(Number(state.pax)||1);
+  const amex=Number(store.get('wallet',{}).amex)||0;let own=0,ratio=null;
+  if(AVIOS.includes(src)){own=B.avios;ratio=[3,2]}else if(src==='lufthansa'){own=B.mm;ratio=[2,1]}else if(src==='flyingblue'){own=B.fb;ratio=[2,1]}else if(src==='delta'){ratio=[2,1]}
+  if(!ratio&&!own)return {st:'none',need};
+  if(own>=need)return {st:'own',need};
+  const conv=ratio?Math.floor(amex*ratio[1]/ratio[0]):0;const deficit=need-own;
+  if(conv>=deficit)return {st:'transfer',need,mr:Math.ceil(deficit*ratio[0]/ratio[1])};
+  return {st:'short',need,short:deficit-conv}}
+function affBadge(a,C){const f=afford(a,C);if(!f)return '';
+  if(f.st==='own')return '<span class="tag aff">Te alcanza</span>';
+  if(f.st==='transfer')return `<span class="tag aff">Te alcanza transfiriendo ${fmt(f.mr)} Amex</span>`;
+  if(f.st==='short')return `<span class="tag afx">Te faltan ${fmt(f.short)}</span>`;
+  return '<span class="tag afn">No tienes este programa</span>'}
+const affOnly=()=>!!store.get('affOnly',false)&&balances().any;
+const affOK=(a,C)=>{if(!affOnly())return true;const f=afford(a,C);return !f||f.st==='own'||f.st==='transfer'};
+// frescura: cuánto hace que Seats.aero vio la plaza
+function seenTxt(a){if(!a||!a.UpdatedAt)return '';const m=(Date.now()-Date.parse(a.UpdatedAt))/6e4;return m<60?'visto hace minutos':m<1440?`visto hace ${Math.round(m/60)} h`:m<2880?'visto ayer':`visto hace ${Math.round(m/1440)} días`}
+async function refreshFresh(btn){if(RUNNING)return;btn.disabled=true;btn.textContent='Recargando…';window.__radarFresh=true;try{await runAll()}finally{window.__radarFresh=false}}
+document.getElementById('answer').addEventListener('click',e=>{const b=e.target.closest('[data-fresh]');if(b){refreshFresh(b);return}
+  const t=e.target.closest('[data-afftoggle]');if(t){store.set('affOnly',t.checked);renderSummary();if(typeof BEST!=='undefined'&&BEST.ready)bestPaint();if(EXP.rows)expPaint()}});
+// enlaces de reserva directos de la opción marcada (Seats.aero /trips)
+const BOOK={};
+async function winBooking(id){const box=document.getElementById('wbk-'+id);if(!box)return;
+  try{const j=BOOK[id]||(BOOK[id]=await api('/trips/'+encodeURIComponent(id)));const L=(j.booking_links||[]).filter(l=>l.link);
+    if(L.length&&document.getElementById('wbk-'+id))document.getElementById('wbk-'+id).innerHTML='Reservar directo: '+L.slice(0,3).map(l=>`<a href="${esc(l.link)}" target="_blank" rel="noopener">${esc(l.label||'web del programa')} ↗</a>`).join(' · ')}catch(e){}}
+
+/* Explorar: disponibilidad masiva por región en tus programas */
+const CITYX={KUL:'Kuala Lumpur',DPS:'Bali',CGK:'Yakarta',MLE:'Maldivas',HKT:'Phuket',PUJ:'Punta Cana',CUN:'Cancún',GIG:'Río de Janeiro',GRU:'São Paulo',EZE:'Buenos Aires',MRU:'Mauricio',SEZ:'Seychelles',NAN:'Fiyi',PPT:'Tahití'};
+Object.values(METRO).forEach(([n,c])=>c.forEach(x=>{if(!CITYX[x])CITYX[x]=n}));
+const cityOf=c=>{const a=AP.get(c);return CITYX[c]||(a?(a[2]||a[1]):c)};
+const EXP={rows:null,key:'',failed:[]};
+const CABN={Y:'economy',W:'premium',J:'business',F:'first'};
+function expOrigins(){if(!SEL.org)return [];const base=SEL.org.codes.slice();if(!document.getElementById('expNear').checked)return base;
+  const o=AP.get(base[0]);if(!o)return base;const near=AIRPORTS.filter(a=>a[6]&&miles(o,a)*1.609<=600).map(a=>a[0]);return [...new Set([...base,...near])]}
+function expFromTxt(){const os=expOrigins();document.getElementById('expFrom').textContent=os.length?`Desde ${os.slice(0,12).join(', ')}${os.length>12?' y '+(os.length-12)+' más':''} · ${CAB[state.cab]} · ${progSel()?'tu filtro de programas':'tus programas'}`:''}
+async function expRun(){const out=document.getElementById('expOut');expFromTxt();
+  if(!SEL.org){out.innerHTML='<p class="status s-bad">Elige un origen arriba.</p>';return}
+  if(!wk().tok){out.innerHTML='<p class="status s-none">Conecta Seats.aero en Ajustes para explorar con datos reales.</p>';return}
+  const reg=document.getElementById('expReg').value,win=+document.getElementById('expWin').value;const today=new Date().toISOString().slice(0,10);
+  const srcs=(progSel()||MINE).slice(0,12);const C=state.cab;const os=new Set(expOrigins());
+  const key=[reg,win,C,srcs.join(),[...os].join()].join('|');
+  if(EXP.key===key&&EXP.rows){expPaint();return}
+  const btn=document.getElementById('expGo');btn.disabled=true;let done=0,calls=0;EXP.failed=[];const rows=[];
+  const prog=()=>{out.innerHTML=`<p class="status s-none">Explorando ${srcs.length} programas… ${done}/${srcs.length}</p>`};prog();
+  await Promise.all(srcs.map(async src=>{try{let cursor=null,page=0;
+      do{const q=new URLSearchParams({source:src,cabin:CABN[C],start_date:today,end_date:isoAdd(today,win),origin_region:'Europe',destination_region:reg,take:'1000'});
+        if(cursor){q.set('cursor',cursor);q.set('skip',String(page*1000))}
+        const j=await api('/availability?'+q);calls++;(j.data||[]).forEach(a=>{if(a.Route&&os.has(a.Route.OriginAirport))rows.push(a)});
+        cursor=j.hasMore?j.cursor:null;page++}while(cursor&&page<4)}
+    catch(e){EXP.failed.push(srcName(src))}finally{done++;prog()}}));
+  btn.disabled=false;EXP.rows=tagSet(rows);EXP.key=key;EXP.calls=calls;expPaint()}
+function expPaint(){const out=document.getElementById('expOut');const C=state.cab;const rows=EXP.rows||[];
+  const by={};rows.forEach(a=>{if(!a[C+'Available']||!progOK(a.Source)||isAnom(a,C)||!affOK(a,C))return;const d=a.Route.DestinationAirport;const s=qScore(a,C);
+    const x=by[d]=by[d]||{d,best:null,s:Infinity,days:new Set(),progs:new Set()};x.days.add(a.Date);x.progs.add(a.Source);if(s<x.s){x.s=s;x.best=a}});
+  const list=Object.values(by).sort((x,y)=>x.s-y.s);
+  const fail=EXP.failed.length?`<p class="note">Sin datos de: ${EXP.failed.join(', ')} (Seats.aero no ofrece búsqueda por región para ellos).</p>`:'';
+  if(!list.length){out.innerHTML=`<p class="status s-none">No hay plazas en ${CAB[C].toLowerCase()} hacia esa región con estos filtros. Prueba otra cabina, otra región o «Próximos 12 meses».</p>${fail}`;return}
+  const top=list.slice(0,40);const o=AP.get(SEL.org.codes[0]);
+  // mapa
+  const W=920,H=400,x=lon=>(lon+180)/360*W,y=lat=>(78-lat)/136*H;
+  const bg=AIRPORTS.filter(a=>a[6]).map(a=>`<circle class="bg" cx="${x(a[5]).toFixed(1)}" cy="${y(a[4]).toFixed(1)}" r="1.1"/>`).join('');
+  const rts=top.slice().reverse().map((r,i)=>{const d=AP.get(r.d);if(!d||!o)return '';const isTop=top.indexOf(r)<10;
+    const p=gcPts(o,d,40).map(([lo,la])=>`${x(lo).toFixed(1)},${y(la).toFixed(1)}`).join(' ');return `<polyline class="rt${isTop?' top':''}" points="${p}"/>`}).join('');
+  const dots=top.map((r,i)=>{const d=AP.get(r.d);if(!d)return '';return `<g data-exp="${r.d}" style="cursor:pointer"><circle class="d${i<10?' top':''}" cx="${x(d[5]).toFixed(1)}" cy="${y(d[4]).toFixed(1)}" r="${i<10?5:3.5}"><title>${r.d} · CHF ${fmt(totalCHF(r.best,C))}</title></circle>${i<10?`<text x="${(x(d[5])+7).toFixed(1)}" y="${(y(d[4])+3).toFixed(1)}">${r.d} ${fmt(totalCHF(r.best,C))}</text>`:''}</g>`}).join('');
+  const pts=[o,...top.map(r=>AP.get(r.d))].filter(Boolean);let x0=Math.min(...pts.map(a=>x(a[5]))),x1=Math.max(...pts.map(a=>x(a[5]))),y0=Math.min(...pts.map(a=>y(a[4]))),y1=Math.max(...pts.map(a=>y(a[4])));
+  x0-=50;x1+=70;y0-=40;y1+=40;let vw=x1-x0,vh=y1-y0;const R=2.3;if(vw/vh<R){const n=vh*R;x0-=(n-vw)/2;vw=n}else{const n=vw/R;y0-=(n-vh)/2;vh=n}
+  const map=`<svg class="exp-map" viewBox="${x0.toFixed(0)} ${y0.toFixed(0)} ${vw.toFixed(0)} ${vh.toFixed(0)}" role="img" aria-label="Mapa de destinos con plaza">${bg}${rts}${o?`<circle class="o" cx="${x(o[5])}" cy="${y(o[4])}" r="6"/>`:''}${dots}</svg>`;
+  const tr=top.map((r,i)=>{const a=r.best,d=AP.get(r.d),t=taxCHF(a,C);return `<tr data-exp="${r.d}" data-date="${a.Date}"><td class="n">${i+1}</td><td><b>${cityOf(r.d)}</b> <span class="note">${r.d}</span><span class="ct">${d?country(d[3]):''} · desde ${a.Route.OriginAirport}</span></td><td>${dayName(a.Date)} ${dayNum(a.Date)}<span class="ct">${seenTxt(a)}</span></td><td>${progBadge(a.Source)}<span class="pn">${srcName(a.Source)}</span></td><td class="n">${fmt(a[C+'MileageCost'])}</td><td class="n">${t==null?'¿?':'CHF '+fmt(t)}</td><td class="n"><b>CHF ${fmt(totalCHF(a,C))}</b></td><td class="n">${r.days.size}</td><td>${affBadge(a,C)}</td></tr>`}).join('');
+  const B=balances();
+  out.innerHTML=`<div style="display:grid;gap:12px"><div class="exp-sum"><p class="best-lead" style="margin:0">El destino más barato es <b>${cityOf(list[0].d)}</b> (${list[0].d}): ${fmt(list[0].best[C+'MileageCost'])} millas con ${srcName(list[0].best.Source)} ≈ <b>CHF ${fmt(totalCHF(list[0].best,C))}</b> el ${dayNum(list[0].best.Date)}.</p>
+      ${B.any?`<label class="check"><input type="checkbox" data-expaff ${affOnly()?'checked':''}> Solo lo que me alcanza</label>`:''}</div>
+    ${map}
+    <div class="scroll"><table class="eu exp-tbl"><thead><tr><th>#</th><th>Destino</th><th>Mejor fecha</th><th>Programa</th><th>Millas</th><th>Tasas</th><th>Total</th><th>Días</th><th></th></tr></thead><tbody>${tr}</tbody></table></div>
+    <p class="note">${list.length} destinos con plaza · ${rows.length} resultados · ${EXP.calls||0} consultas a Seats.aero. Total = millas × ${mileVal()} Rp + tasas, por persona y trayecto; no incluye llegar al aeropuerto de salida. Pulsa un destino para buscarlo.</p>${fail}</div>`}
+document.getElementById('expGo').addEventListener('click',()=>{EXP.key='';expRun()});
+document.getElementById('expOut').addEventListener('click',e=>{const c=e.target.closest('[data-expaff]');if(c){store.set('affOnly',c.checked);expPaint();renderSummary();return}
+  const r=e.target.closest('[data-exp]');if(!r)return;const code=r.dataset.exp;const row=(EXP.rows||[]).find(a=>a.Route.DestinationAirport===code);
+  setSel('dst',findEntry('ap',code));const date=r.dataset.date||(row&&row.Date);if(date)document.getElementById('d1').value=date;
+  if(tripSel.value==='rt'){tripSel.value='ow';store.set('trip','ow');applyTrip()}
+  render();showView('opts');window.scrollTo({top:0,behavior:'smooth'});if(wk().tok)runAll()});
+['expReg','expWin','expNear'].forEach(id=>document.getElementById(id).addEventListener('change',()=>{expFromTxt();if(EXP.rows&&!EXP.loading){EXP.key='';expRun()}}));
 
 </script>
